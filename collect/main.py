@@ -97,7 +97,7 @@ def cleanup(data: Dict) -> None:
     urls_to_remove = []
     urls_to_promote = []
     for id in data['by_ids']:
-        url = data['by_ids'][id]
+        url = data['by_ids'].get(id)
         if url is None:
             ids_to_remove += [id]
     for url in data['by_urls']:
