@@ -32,4 +32,4 @@ $(VENV)/bin/activate: requirements.txt
 
 .PHONY: clean
 clean:
-	rm -rf __pycache__ $(VENV) memory docs index
+	rm -rf __pycache__ $(VENV) memory index

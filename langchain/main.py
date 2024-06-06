@@ -3,7 +3,6 @@ import uuid
 
 from rich.console import Console
 from rich.markdown import Markdown
-from langchain_core.runnables.history import RunnableWithMessageHistory
 
 from src.index import save_index
 from src.chain import chain, invoke
