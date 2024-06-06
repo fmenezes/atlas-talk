@@ -1,9 +1,10 @@
-# test atlascli interactive help
+# atlas-talk
+MongoDB Atlas CLI interactive help
 
 ## prerequisites
-- ollama
+- ollama or openai api key
 - python 3
 
 ## running
 
-on a terminal run `ollama serve` and on another you run `make run`
+first run `make prepare` and later `make chat`
