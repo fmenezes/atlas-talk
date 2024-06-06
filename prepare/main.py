@@ -4,44 +4,12 @@ import os
 from llama_index.core import SimpleDirectoryReader, Settings
 from llama_index.core.readers.file.base import default_file_metadata_func
 from llama_index.core.schema import Document
-from llama_index.embeddings.ollama import OllamaEmbedding
-from llama_index.embeddings.openai import OpenAIEmbedding, OpenAIEmbeddingModeModel
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.node_parser.file import MarkdownNodeParser
 from llama_index.core.ingestion import IngestionPipeline
 from llama_index.core.vector_stores.types import VectorStore
-from llama_index.vector_stores.chroma import ChromaVectorStore
-from llama_index.llms.openai import OpenAI
-from llama_index.llms.openai.base import DEFAULT_OPENAI_MODEL
-from llama_index.llms.ollama import Ollama
-import chromadb
-from dotenv import load_dotenv
 
-
-def set_settings() -> None:
-    AI_PLATFORM = os.environ.get('AI_PLATFORM', 'OPENAI')
-    match AI_PLATFORM:
-        case 'OLLAMA':
-            Settings.embed_model = OllamaEmbedding(
-                model_name=os.environ.get(
-                    'OLLAMA_EMBED_MODEL', 'nomic-embed-text')
-            )
-            Settings.llm = Ollama(model=os.environ.get(
-                'OLLAMA_MODEL', 'mistral'), temperature=0.5)
-        case 'OPENAI':
-            Settings.embed_model = OpenAIEmbedding(model=os.environ.get(
-                'OPENAI_EMBED_MODEL', OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002))
-            Settings.llm = OpenAI(model=os.environ.get(
-                'OPENAI_MODEL', DEFAULT_OPENAI_MODEL))
-        case _:
-            raise RuntimeError(f"invalid platform: {AI_PLATFORM}")
-
-
-def vector_store(path: str, collection_name: str) -> VectorStore:
-    chroma_client = chromadb.PersistentClient(path)
-    chroma_collection = chroma_client.get_or_create_collection(collection_name)
-    return ChromaVectorStore(chroma_collection=chroma_collection)
-
+from common import set_settings, index_path, vector_store
 
 def load_metadata(p: str) -> Dict:
     metadata = default_file_metadata_func(p)
@@ -81,21 +49,17 @@ def ingest(vector_store: VectorStore, docs: Iterable[Document]):
 
 
 def main():
-    load_dotenv()
+    set_settings()
 
-    INDEX_PATH = os.environ.get('INDEX_PATH', './data/index')
-    COLLECTION_NAME = os.environ.get('COLLECTION_NAME', 'atlascli-commands')
-
-    if os.path.exists(INDEX_PATH):
-        print(f'index already found in {INDEX_PATH}')
+    if os.path.exists(index_path()):
+        print(f'index already found in {index_path()}')
         exit(0)
 
     if not os.path.exists("./data/atlascli-command-reference"):
         print('docs not captured from atlas cli code')
         exit(1)
 
-    set_settings()
-    vs = vector_store(INDEX_PATH, COLLECTION_NAME)
+    vs = vector_store()
     md_docs = load_docs(srcs=('./data/atlascli-command-reference', './data/extra'), required_exts=['.md'])
     ingest(vs, md_docs)
 
