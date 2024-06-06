@@ -1,0 +1,52 @@
+## atlas serverless create
+
+Creates one serverless instance in the specified project.
+
+
+### Synopsis
+
+To use this command, you must authenticate with a user account or an API key with the Project Owner role.
+
+
+
+```
+
+atlas serverless create <instanceName> [flags]
+atlas sl create <instanceName> [flags]
+```
+
+### Examples
+
+```
+  # Deploy a serverlessIntance named myInstance for the project with the ID 5e2211c17a3e5a48f5497de3:
+  atlas serverless create myInstance --provider AWS --region US_EAST_1 --projectId 5e2211c17a3e5a48f5497de3
+```
+
+
+### Flags
+
+```
+  -h, --help                 help for create
+  -o, --output string        Output format. Valid values are json, json-path, go-template, or go-template-file. To see the full output, use the -o json option.
+      --projectId string     Hexadecimal string that identifies the project to use. This option overrides the settings in the configuration file or environment variable.
+      --provider string      Cloud service provider that applies to the provisioned serverless instance.
+      --region string        Human-readable label that identifies the physical location of your MongoDB serverless instance. The region you choose can affect network latency for clients accessing your databases.
+      --tag stringToString   List that contains key-value pairs between 1 to 255 characters in length for tagging and categorizing the serverless instance. (default [])
+
+```
+
+
+### Flags inherited from parent commands
+
+```
+  -P, --profile string   Name of the profile to use from your configuration file. To learn about profiles for the Atlas CLI, see https://dochub.mongodb.org/core/atlas-cli-save-connection-settings.
+
+```
+
+### SEE ALSO
+
+
+* [atlas serverless](atlas_serverless.md)	- Manage serverless instances for your project.
+
+
+

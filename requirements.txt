@@ -5,5 +5,3 @@ llama-index-vector-stores-chroma
 llama-index-readers-web
 llama-index-llms-ollama
 llama-index-embeddings-ollama
-unstructured
-lxml

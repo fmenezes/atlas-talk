@@ -1,0 +1,64 @@
+## atlas backups exports buckets describe
+
+Return one snapshot export bucket.
+
+
+### Synopsis
+
+To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
+
+
+
+```
+
+atlas backups exports buckets describe [flags]
+atlas backups exports buckets get [flags]
+atlas backups exports bucket describe [flags]
+atlas backups exports bucket get [flags]
+atlas backups export buckets describe [flags]
+atlas backups export buckets get [flags]
+atlas backups export bucket describe [flags]
+atlas backups export bucket get [flags]
+atlas backup exports buckets describe [flags]
+atlas backup exports buckets get [flags]
+atlas backup exports bucket describe [flags]
+atlas backup exports bucket get [flags]
+atlas backup export buckets describe [flags]
+atlas backup export buckets get [flags]
+atlas backup export bucket describe [flags]
+atlas backup export bucket get [flags]
+```
+
+### Examples
+
+```
+  # Return the details for the continuous backup export bucket with the ID dbdb00ca12345678f901a234:
+  atlas backup exports buckets describe dbdb00ca12345678f901a234
+```
+
+
+### Flags
+
+```
+      --bucketId string    Unique identifier that Atlas assigns to the bucket.
+  -h, --help               help for describe
+  -o, --output string      Output format. Valid values are json, json-path, go-template, or go-template-file. To see the full output, use the -o json option.
+      --projectId string   Hexadecimal string that identifies the project to use. This option overrides the settings in the configuration file or environment variable.
+
+```
+
+
+### Flags inherited from parent commands
+
+```
+  -P, --profile string   Name of the profile to use from your configuration file. To learn about profiles for the Atlas CLI, see https://dochub.mongodb.org/core/atlas-cli-save-connection-settings.
+
+```
+
+### SEE ALSO
+
+
+* [atlas backups exports buckets](atlas_backups_exports_buckets.md)	- Manage cloud backup export buckets for your project.
+
+
+

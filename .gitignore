@@ -1,7 +1,6 @@
-data/
-langchain/index
-langchain/memory
-llamaindex/pipeline_storage
+data/*
+!data/extra/
+!data/atlascli-command-reference/
 
 # https://github.com/github/gitignore/blob/main/Python.gitignore
 # Byte-compiled / optimized / DLL files
