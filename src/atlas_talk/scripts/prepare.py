@@ -79,7 +79,7 @@ def run(env: str) -> None:
 def _main() -> None:
     parser = argparse.ArgumentParser(prog="prepare", description="prepare data for atlas-talk")
 
-    parser.add_argument("--env", type=str, help="env to use", default="default")
+    parser.add_argument("--env", type=str, help="env to use")
 
     args = parser.parse_args()
     run(env=args.env)

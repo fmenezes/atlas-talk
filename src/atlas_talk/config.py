@@ -35,9 +35,12 @@ class Config:
         self.ai_platform: str = os.getenv("AI_PLATFORM", "OPENAI")
         self.openai_api_key: Optional[str] = os.getenv("OPENAI_API_KEY")
         self.openai_model: str = os.getenv("OPENAI_MODEL", DEFAULT_OPENAI_MODEL)
-        self.openai_embed_model: str = os.getenv(
-            "OPENAI_EMBED_MODEL", str(OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002)
+        openai_embed_model_name = os.getenv(
+            "OPENAI_EMBED_MODEL", OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002.name
         )
+        self.openai_embed_model: OpenAIEmbeddingModeModel = OpenAIEmbeddingModeModel[
+            openai_embed_model_name
+        ]
         self.ollama_model: str = os.getenv("OLLAMA_MODEL", "mistral")
         self.ollama_embed_model: str = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
         self.llama_cpp_model_url: str = os.getenv(
