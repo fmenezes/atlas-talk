@@ -12,8 +12,8 @@ from rich.markdown import Markdown
 from yaspin import yaspin
 from yaspin.spinners import Spinners
 
-from atlas_talk.settings import model, vector_store
 from atlas_talk.config import Config
+from atlas_talk.settings import model, vector_store
 
 
 def _index(vs: VectorStore) -> VectorStoreIndex:

@@ -10,8 +10,8 @@ from llama_index.core.readers.file.base import default_file_metadata_func
 from llama_index.core.schema import Document
 from llama_index.core.vector_stores.types import VectorStore
 
-from atlas_talk.settings import model, vector_store
 from atlas_talk.config import Config
+from atlas_talk.settings import model, vector_store
 
 
 def _load_metadata(p: str) -> Dict:

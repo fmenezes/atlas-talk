@@ -5,8 +5,8 @@ import dotenv
 from llama_index.embeddings.huggingface.utils import \
     DEFAULT_HUGGINGFACE_EMBEDDING_MODEL
 from llama_index.embeddings.openai import OpenAIEmbeddingModeModel
+from llama_index.llms.llama_cpp.base import DEFAULT_LLAMA_CPP_GGUF_MODEL
 from llama_index.llms.openai.base import DEFAULT_OPENAI_MODEL
-from llama_index.llms.llama_cpp import DEFAULT_LLAMA_CPP_GGUF_MODEL
 
 
 class Config:
@@ -26,20 +26,22 @@ class Config:
             self.env_file, override=True
         )  # loads .env, env/openai.env, env/ollama.env, etc
 
-        self.system_prompt: Optional[str] = os.getenv("SYSTEM_PROMPT")
+        self.system_prompt: str = os.getenv(
+            "SYSTEM_PROMPT",
+            "You are MongoDB Atlas CLI Help Assistant, you know atlas cli command reference. You should assume atlas cli is properly installed. When you don't know the answer try looking up the information first and if you still can't find it say you don't know it, do not try to make up an answer. Format your answers in Markdown.",
+        )
         self.index_path: str = os.getenv("INDEX_PATH", "./data/index")
         self.collection_name: str = os.getenv("COLLECTION_NAME", "atlascli-commands")
         self.ai_platform: str = os.getenv("AI_PLATFORM", "OPENAI")
         self.openai_api_key: Optional[str] = os.getenv("OPENAI_API_KEY")
         self.openai_model: str = os.getenv("OPENAI_MODEL", DEFAULT_OPENAI_MODEL)
         self.openai_embed_model: str = os.getenv(
-            "OPENAI_EMBED_MODEL", OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002
+            "OPENAI_EMBED_MODEL", str(OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002)
         )
         self.ollama_model: str = os.getenv("OLLAMA_MODEL", "mistral")
         self.ollama_embed_model: str = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
         self.llama_cpp_model_url: str = os.getenv(
-            "LLAMA_CPP_MODEL_URL",
-            DEFAULT_LLAMA_CPP_GGUF_MODEL
+            "LLAMA_CPP_MODEL_URL", DEFAULT_LLAMA_CPP_GGUF_MODEL
         )
         try:
             n_gpu_layers = int(
