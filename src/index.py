@@ -1,6 +1,8 @@
 from typing import List
-
+import os
 from urllib.parse import urlparse
+
+from shutil import rmtree
 import ollama
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import OllamaEmbeddings
@@ -13,24 +15,42 @@ from bs4 import BeautifulSoup
 
 from src import EMBEDDING_MODEL
 
-def load_docs() -> List[Document]:
-    to_visit = ["https://www.mongodb.com/docs/atlas/cli/stable/"]
+def save_index(dest: str):
+    process(dest, "https://www.mongodb.com/docs/atlas/", (
+        "https://www.mongodb.com/docs/atlas/",
+        "http://www.mongodb.com/docs/atlas/",
+        "https://mongodb.com/docs/atlas/",
+        "http://mongodb.com/docs/atlas/",
+        "https://docs.mongodb.com/atlas/",
+        "http://docs.mongodb.com/atlas/"
+    ))
 
+ 
+def process(dest: str, url: str, filter: tuple[str, ...]):
+    ollama.pull(EMBEDDING_MODEL)
+    to_visit = [url]
     already_visited = []
-
-    docs = []
-
+    i = 0
+    paths = []
     while len(to_visit) > 0:
         print(f'processing {to_visit}')
-        loader = AsyncChromiumLoader(to_visit)
-        current_docs = loader.load()
+        docs = load_docs(to_visit)
+        current_dest = os.path.join(dest, f'tmp/{i}')
+        vector_store(split_docs(html_to_markdown(docs))
+                     ).save_local(current_dest)
+        paths += [current_dest]
         already_visited += to_visit
-        links = extract_links(current_docs)
-        links = [link for link in links if link.startswith(("https://www.mongodb.com/docs/atlas/cli", "http://www.mongodb.com/docs/atlas/cli", "https://mongodb.com/docs/atlas/cli", "http://www.mongodb.com/docs/atlas/cli", "https://docs.mongodb.com/atlas/cli", "http://docs.mongodb.com/atlas/cli"))]
+        links = extract_links(docs)
+        links = [link for link in links if link.startswith(filter)]
         to_visit = [link for link in links if link not in already_visited]
-        docs += current_docs
+        i += 1
+    merge_indexes(dest, paths)
+    rmtree(os.path.join(dest, 'tmp'))
 
-    return docs
+
+def load_docs(urls: List[str]) -> List[Document]:
+    loader = AsyncChromiumLoader(urls)
+    return loader.load()
 
 
 def extract_links(docs: List[Document]) -> List[str]:
@@ -65,12 +85,18 @@ def split_docs(docs: List[Document]) -> List[Document]:
     return text_splitter.split_documents(docs)
 
 
+def embeddings():
+    return OllamaEmbeddings(model=EMBEDDING_MODEL)
+
+
 def vector_store(docs: List[Document]) -> VectorStore:
-    embeddings = OllamaEmbeddings(model=EMBEDDING_MODEL)
-    return FAISS.from_documents(docs, embeddings)
+    return FAISS.from_documents(docs, embeddings())
 
 
-def save_index(path: str):
-    ollama.pull(EMBEDDING_MODEL)
-    vector_store(split_docs(html_to_markdown(load_docs()))).save_local(path)
-
+def merge_indexes(path: str, src: List[str]):
+    vs = FAISS.load_local(src[0], embeddings(),
+                          allow_dangerous_deserialization=True)
+    for s in src[1:]:
+        vs.merge_from(FAISS.load_local(
+            s, embeddings(), allow_dangerous_deserialization=True))
+    vs.save_local(path)
