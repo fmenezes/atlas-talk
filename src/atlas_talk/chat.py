@@ -12,7 +12,7 @@ from rich.markdown import Markdown
 from yaspin import yaspin
 from yaspin.spinners import Spinners
 
-from atlas_talk import set_settings, vector_store
+from atlas_talk.settings import model, vector_store
 from atlas_talk.config import Config
 
 
@@ -31,7 +31,7 @@ def _setup_index(config: Config) -> BaseIndex:
 
 
 def setup(config: Config) -> BaseChatEngine:
-    set_settings(config)
+    model(config)
 
     return _setup_index(config).as_chat_engine(system_prompt=config.system_prompt)
 

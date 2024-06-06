@@ -10,7 +10,7 @@ from llama_index.core.readers.file.base import default_file_metadata_func
 from llama_index.core.schema import Document
 from llama_index.core.vector_stores.types import VectorStore
 
-from atlas_talk import set_settings, vector_store
+from atlas_talk.settings import model, vector_store
 from atlas_talk.config import Config
 
 
@@ -63,7 +63,7 @@ def _ingest(vs: VectorStore, docs: Iterable[Document]):
 def run(env: str) -> None:
     config = Config(env)
 
-    set_settings(config)
+    model(config)
 
     if os.path.exists(config.index_path):
         raise RuntimeError(f"index already found in {config.index_path}")
