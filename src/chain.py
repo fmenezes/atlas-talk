@@ -29,10 +29,6 @@ def retriever(path: str) -> VectorStoreRetriever:
     return FAISS.load_local(path, embeddings, allow_dangerous_deserialization=True).as_retriever()
 
 
-def load_and_retrieve_docs(retriever: VectorStoreRetriever) -> RunnableParallel:
-    return RunnableParallel({"context": retriever, "input": RunnablePassthrough()})
-
-
 def prompt() -> ChatPromptTemplate:
     return ChatPromptTemplate.from_messages([
         ("system", """You are an assistant helping the user on how to use MongoDB Atlas CLI. If you don't know the answer make sure to say you don't know do not make up an answer. Answer any use questions based on the context below:
