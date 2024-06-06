@@ -56,7 +56,7 @@ def setup() -> BaseChatEngine:
     set_settings()
     cli_commands_index = index(vector_store(INDEX_PATH, COLLECTION_NAME))
 
-    return cli_commands_index.as_chat_engine(system_prompt="You are MongoDB Atlas CLI Help Assistant, you know atlas cli command reference. You should assume atlas cli is properly installed. When you don't know the answer say you don't know it do not try to make up an answer.")
+    return cli_commands_index.as_chat_engine(system_prompt="You are MongoDB Atlas CLI Help Assistant, you know atlas cli command reference. You should assume atlas cli is properly installed. When you don't know the answer try looking up the information first and if you still can't find it say you don't know it, do not try to make up an answer. Format your answers in Markdown.")
 
 
 def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
