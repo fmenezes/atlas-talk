@@ -71,7 +71,7 @@ def ingest(vector_store: VectorStore, docs: Iterable[Document]):
         ],
         vector_store=vector_store,
     )
-    pipeline.run(documents=docs)
+    pipeline.run(documents=docs, show_progress=True)
 
 
 def main():
