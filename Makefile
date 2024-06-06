@@ -25,10 +25,6 @@ install:
 prepare:
 	$(POETRY) run prepare
 
-.PHONY: jsonl
-jsonl:
-	$(POETRY) run jsonl
-
 .PHONY: chat
 chat:
 	$(POETRY) run chat
