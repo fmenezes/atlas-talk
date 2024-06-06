@@ -51,6 +51,9 @@ def setup_docs() -> VectorStore:
 
 
 def main() -> None:
+    if os.path.exists('./data/langchain_index'):
+        print('already done')
+        exit(0)
     ollama.pull(EMBEDDING_MODEL)
     vs = setup_docs()
     vs.save_local('./data/langchain_index')
