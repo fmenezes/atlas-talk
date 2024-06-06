@@ -64,12 +64,12 @@ def process_docs(data: Dict, url: str) -> None:
             print('exiting')
             exit(0)
         url = to_visit.pop()
-        print(f'processing {url}')
+        print(f'processing {url} ({len(already_visited) + 1} of {len(already_visited) + len(to_visit)})')
         already_visited += [url]
         new_url = follow_redirects(url)
         if new_url != url:
             data['redirects'][url] = new_url
-        url = new_url
+            url = new_url
         id = data['by_urls'].get(url) or str(uuid.uuid4())
         p = os.path.abspath(f"./data/html/{id}.html")
         failed = False
