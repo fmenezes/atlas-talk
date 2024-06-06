@@ -5,6 +5,17 @@ Manage AWS Private Endpoints.
 
 
 
+### Aliases
+```
+
+atlas privateEndpoints aws
+atlas privateendpoints aws
+atlas private-endpoints aws
+atlas privateEndpoint aws
+atlas privateendpoint aws
+atlas private-endpoint aws
+```
+
 
 
 ### Flags
@@ -22,7 +33,7 @@ Manage AWS Private Endpoints.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints](atlas_privateEndpoints.md)	- Manage Atlas private endpoints.

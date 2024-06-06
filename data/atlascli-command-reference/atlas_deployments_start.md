@@ -8,11 +8,16 @@ Start a deployment.
 After you stop a machine, it goes into sleep mode, or restarts.
 
 
-
+### Usage
+```
+atlas deployments start <deploymentName> [flags]
 ```
 
-atlas deployments start <deploymentName> [flags]
-atlas deployment start <deploymentName> [flags]
+### Aliases
+```
+
+atlas deployments start
+atlas deployment start
 ```
 
 
@@ -34,7 +39,7 @@ atlas deployment start <deploymentName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments](atlas_deployments.md)	- Manage cloud and local deployments.

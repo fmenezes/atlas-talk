@@ -8,27 +8,32 @@ Remove the specified data federation query limit from your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataFederation queryLimits delete <name> [flags]
 ```
 
-atlas dataFederation queryLimits delete <name> [flags]
-atlas dataFederation querylimits delete <name> [flags]
-atlas dataFederation query-limits delete <name> [flags]
-atlas dataFederation queryLimit delete <name> [flags]
-atlas dataFederation querylimit delete <name> [flags]
-atlas dataFederation query-limit delete <name> [flags]
-atlas datafederation queryLimits delete <name> [flags]
-atlas datafederation querylimits delete <name> [flags]
-atlas datafederation query-limits delete <name> [flags]
-atlas datafederation queryLimit delete <name> [flags]
-atlas datafederation querylimit delete <name> [flags]
-atlas datafederation query-limit delete <name> [flags]
-atlas data-federation queryLimits delete <name> [flags]
-atlas data-federation querylimits delete <name> [flags]
-atlas data-federation query-limits delete <name> [flags]
-atlas data-federation queryLimit delete <name> [flags]
-atlas data-federation querylimit delete <name> [flags]
-atlas data-federation query-limit delete <name> [flags]
+### Aliases
+```
+
+atlas dataFederation queryLimits delete
+atlas dataFederation querylimits delete
+atlas dataFederation query-limits delete
+atlas dataFederation queryLimit delete
+atlas dataFederation querylimit delete
+atlas dataFederation query-limit delete
+atlas datafederation queryLimits delete
+atlas datafederation querylimits delete
+atlas datafederation query-limits delete
+atlas datafederation queryLimit delete
+atlas datafederation querylimit delete
+atlas datafederation query-limit delete
+atlas data-federation queryLimits delete
+atlas data-federation querylimits delete
+atlas data-federation query-limits delete
+atlas data-federation queryLimit delete
+atlas data-federation querylimit delete
+atlas data-federation query-limit delete
 ```
 
 ### Examples
@@ -58,7 +63,7 @@ atlas data-federation query-limit delete <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation queryLimits](atlas_dataFederation_queryLimits.md)	- Data federation query limits.

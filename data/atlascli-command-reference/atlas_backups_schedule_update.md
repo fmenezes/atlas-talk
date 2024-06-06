@@ -10,13 +10,18 @@ The backup schedule defines when MongoDB takes scheduled snapshots and how long 
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas backups schedule update [flags]
 ```
 
-atlas backups schedule update [flags]
-atlas backups schedule updates [flags]
-atlas backup schedule update [flags]
-atlas backup schedule updates [flags]
+### Aliases
+```
+
+atlas backups schedule update
+atlas backups schedule updates
+atlas backup schedule update
+atlas backup schedule updates
 ```
 
 ### Examples
@@ -61,7 +66,7 @@ atlas backup schedule updates [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups schedule](atlas_backups_schedule.md)	- Return a cloud backup schedule for the cluster you specify.

@@ -5,6 +5,17 @@ Manage Atlas maintenance windows.
 
 
 
+### Aliases
+```
+
+atlas maintenanceWindows
+atlas maintenancewindows
+atlas maintenance-windows
+atlas maintenanceWindow
+atlas maintenancewindow
+atlas maintenance-window
+```
+
 
 
 ### Flags
@@ -22,7 +33,7 @@ Manage Atlas maintenance windows.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

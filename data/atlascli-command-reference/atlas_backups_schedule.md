@@ -5,6 +5,13 @@ Return a cloud backup schedule for the cluster you specify.
 
 
 
+### Aliases
+```
+
+atlas backups schedule
+atlas backup schedule
+```
+
 
 
 ### Flags
@@ -22,7 +29,7 @@ Return a cloud backup schedule for the cluster you specify.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups](atlas_backups.md)	- Manage cloud backups for your project.

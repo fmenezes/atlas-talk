@@ -13,11 +13,16 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas serverless watch <instanceName> [flags]
 ```
 
-atlas serverless watch <instanceName> [flags]
-atlas sl watch <instanceName> [flags]
+### Aliases
+```
+
+atlas serverless watch
+atlas sl watch
 ```
 
 ### Examples
@@ -43,7 +48,7 @@ atlas sl watch <instanceName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless](atlas_serverless.md)	- Manage serverless instances for your project.

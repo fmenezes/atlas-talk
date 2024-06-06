@@ -10,6 +10,15 @@ Create, list, update and delete your Atlas Stream Processing instances.
 
 
 
+### Aliases
+```
+
+atlas streams instances
+atlas streams instance
+atlas stream instances
+atlas stream instance
+```
+
 
 
 ### Flags
@@ -27,7 +36,7 @@ Create, list, update and delete your Atlas Stream Processing instances.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams](atlas_streams.md)	- Manage your Atlas Stream Processing deployments.

@@ -3,27 +3,32 @@
 Disable encryption-at-rest for the backup compliance policy for your project.
 
 
-
+### Usage
+```
+atlas backups compliancePolicy encryptionAtRest disable [flags]
 ```
 
-atlas backups compliancePolicy encryptionAtRest disable [flags]
-atlas backups compliancePolicy encryptionatrest disable [flags]
-atlas backups compliancePolicy encryption-at-rest disable [flags]
-atlas backups compliancepolicy encryptionAtRest disable [flags]
-atlas backups compliancepolicy encryptionatrest disable [flags]
-atlas backups compliancepolicy encryption-at-rest disable [flags]
-atlas backups compliance-policy encryptionAtRest disable [flags]
-atlas backups compliance-policy encryptionatrest disable [flags]
-atlas backups compliance-policy encryption-at-rest disable [flags]
-atlas backup compliancePolicy encryptionAtRest disable [flags]
-atlas backup compliancePolicy encryptionatrest disable [flags]
-atlas backup compliancePolicy encryption-at-rest disable [flags]
-atlas backup compliancepolicy encryptionAtRest disable [flags]
-atlas backup compliancepolicy encryptionatrest disable [flags]
-atlas backup compliancepolicy encryption-at-rest disable [flags]
-atlas backup compliance-policy encryptionAtRest disable [flags]
-atlas backup compliance-policy encryptionatrest disable [flags]
-atlas backup compliance-policy encryption-at-rest disable [flags]
+### Aliases
+```
+
+atlas backups compliancePolicy encryptionAtRest disable
+atlas backups compliancePolicy encryptionatrest disable
+atlas backups compliancePolicy encryption-at-rest disable
+atlas backups compliancepolicy encryptionAtRest disable
+atlas backups compliancepolicy encryptionatrest disable
+atlas backups compliancepolicy encryption-at-rest disable
+atlas backups compliance-policy encryptionAtRest disable
+atlas backups compliance-policy encryptionatrest disable
+atlas backups compliance-policy encryption-at-rest disable
+atlas backup compliancePolicy encryptionAtRest disable
+atlas backup compliancePolicy encryptionatrest disable
+atlas backup compliancePolicy encryption-at-rest disable
+atlas backup compliancepolicy encryptionAtRest disable
+atlas backup compliancepolicy encryptionatrest disable
+atlas backup compliancepolicy encryption-at-rest disable
+atlas backup compliance-policy encryptionAtRest disable
+atlas backup compliance-policy encryptionatrest disable
+atlas backup compliance-policy encryption-at-rest disable
 ```
 
 
@@ -46,7 +51,7 @@ atlas backup compliance-policy encryption-at-rest disable [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy encryptionAtRest](atlas_backups_compliancePolicy_encryptionAtRest.md)	- Manage encryption-at-rest for the backup compliance policy for your project. Encryption-at-rest enforces all clusters with a Backup Compliance Policy to use Customer Key Management.

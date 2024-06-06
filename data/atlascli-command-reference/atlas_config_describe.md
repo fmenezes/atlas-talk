@@ -3,11 +3,16 @@
 Return the profile you specify.
 
 
-
+### Usage
+```
+atlas config describe <name> [flags]
 ```
 
-atlas config describe <name> [flags]
-atlas config get <name> [flags]
+### Aliases
+```
+
+atlas config describe
+atlas config get
 ```
 
 
@@ -28,7 +33,7 @@ atlas config get <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas config](atlas_config.md)	- Configure and manage your user profiles.

@@ -5,6 +5,23 @@ Manage Atlas GCP private endpoint interfaces.
 
 
 
+### Aliases
+```
+
+atlas privateEndpoints gcp interfaces
+atlas privateEndpoints gcp interface
+atlas privateendpoints gcp interfaces
+atlas privateendpoints gcp interface
+atlas private-endpoints gcp interfaces
+atlas private-endpoints gcp interface
+atlas privateEndpoint gcp interfaces
+atlas privateEndpoint gcp interface
+atlas privateendpoint gcp interfaces
+atlas privateendpoint gcp interface
+atlas private-endpoint gcp interfaces
+atlas private-endpoint gcp interface
+```
+
 
 
 ### Flags
@@ -22,7 +39,7 @@ Manage Atlas GCP private endpoint interfaces.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints gcp](atlas_privateEndpoints_gcp.md)	- Manage GCP private endpoints.

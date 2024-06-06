@@ -5,6 +5,14 @@ Manage Atlas Federated Authentication.
 
 
 
+### Aliases
+```
+
+atlas federatedAuthentication
+atlas federatedauthentication
+atlas federated-authentication
+```
+
 
 
 ### Flags
@@ -22,7 +30,7 @@ Manage Atlas Federated Authentication.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

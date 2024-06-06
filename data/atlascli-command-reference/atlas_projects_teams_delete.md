@@ -10,17 +10,22 @@ After you remove a team from your project, the team still exists in the organiza
 To use this command, you must authenticate with a user account or an API key with the Project User Admin role.
 
 
-
+### Usage
+```
+atlas projects teams delete <teamId> [flags]
 ```
 
-atlas projects teams delete <teamId> [flags]
-atlas projects teams rm <teamId> [flags]
-atlas projects team delete <teamId> [flags]
-atlas projects team rm <teamId> [flags]
-atlas project teams delete <teamId> [flags]
-atlas project teams rm <teamId> [flags]
-atlas project team delete <teamId> [flags]
-atlas project team rm <teamId> [flags]
+### Aliases
+```
+
+atlas projects teams delete
+atlas projects teams rm
+atlas projects team delete
+atlas projects team rm
+atlas project teams delete
+atlas project teams rm
+atlas project team delete
+atlas project team rm
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas project team rm <teamId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects teams](atlas_projects_teams.md)	- Manage your Atlas teams.

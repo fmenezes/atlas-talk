@@ -5,6 +5,15 @@ Manage users for a project.
 
 
 
+### Aliases
+```
+
+atlas projects users
+atlas projects user
+atlas project users
+atlas project user
+```
+
 
 
 ### Flags
@@ -22,7 +31,7 @@ Manage users for a project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects](atlas_projects.md)	- Manage your Atlas projects.

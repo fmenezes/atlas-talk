@@ -8,21 +8,26 @@ Remove the specified data lake pipeline dataset from your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines datasets delete <pipelineRunId> [flags]
 ```
 
-atlas dataLakePipelines datasets delete <pipelineRunId> [flags]
-atlas dataLakePipelines dataset delete <pipelineRunId> [flags]
-atlas datalakepipelines datasets delete <pipelineRunId> [flags]
-atlas datalakepipelines dataset delete <pipelineRunId> [flags]
-atlas data-lake-pipelines datasets delete <pipelineRunId> [flags]
-atlas data-lake-pipelines dataset delete <pipelineRunId> [flags]
-atlas dataLakePipeline datasets delete <pipelineRunId> [flags]
-atlas dataLakePipeline dataset delete <pipelineRunId> [flags]
-atlas datalakepipeline datasets delete <pipelineRunId> [flags]
-atlas datalakepipeline dataset delete <pipelineRunId> [flags]
-atlas data-lake-pipeline datasets delete <pipelineRunId> [flags]
-atlas data-lake-pipeline dataset delete <pipelineRunId> [flags]
+### Aliases
+```
+
+atlas dataLakePipelines datasets delete
+atlas dataLakePipelines dataset delete
+atlas datalakepipelines datasets delete
+atlas datalakepipelines dataset delete
+atlas data-lake-pipelines datasets delete
+atlas data-lake-pipelines dataset delete
+atlas dataLakePipeline datasets delete
+atlas dataLakePipeline dataset delete
+atlas datalakepipeline datasets delete
+atlas datalakepipeline dataset delete
+atlas data-lake-pipeline datasets delete
+atlas data-lake-pipeline dataset delete
 ```
 
 ### Examples
@@ -52,7 +57,7 @@ atlas data-lake-pipeline dataset delete <pipelineRunId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines datasets](atlas_dataLakePipelines_datasets.md)	- Manage datasets for the specified data lake pipeline.

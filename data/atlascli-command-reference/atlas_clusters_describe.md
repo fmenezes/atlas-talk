@@ -8,13 +8,18 @@ Return the details for the specified cluster for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas clusters describe <clusterName> [flags]
 ```
 
-atlas clusters describe <clusterName> [flags]
-atlas clusters get <clusterName> [flags]
-atlas cluster describe <clusterName> [flags]
-atlas cluster get <clusterName> [flags]
+### Aliases
+```
+
+atlas clusters describe
+atlas clusters get
+atlas cluster describe
+atlas cluster get
 ```
 
 ### Examples
@@ -42,7 +47,7 @@ atlas cluster get <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

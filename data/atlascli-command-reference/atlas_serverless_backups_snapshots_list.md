@@ -8,25 +8,30 @@ Return all cloud backup snapshots for the specified serverless instance in your 
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas serverless backups snapshots list <clusterName> [flags]
 ```
 
-atlas serverless backups snapshots list <clusterName> [flags]
-atlas serverless backups snapshots ls <clusterName> [flags]
-atlas serverless backups snapshot list <clusterName> [flags]
-atlas serverless backups snapshot ls <clusterName> [flags]
-atlas serverless backup snapshots list <clusterName> [flags]
-atlas serverless backup snapshots ls <clusterName> [flags]
-atlas serverless backup snapshot list <clusterName> [flags]
-atlas serverless backup snapshot ls <clusterName> [flags]
-atlas sl backups snapshots list <clusterName> [flags]
-atlas sl backups snapshots ls <clusterName> [flags]
-atlas sl backups snapshot list <clusterName> [flags]
-atlas sl backups snapshot ls <clusterName> [flags]
-atlas sl backup snapshots list <clusterName> [flags]
-atlas sl backup snapshots ls <clusterName> [flags]
-atlas sl backup snapshot list <clusterName> [flags]
-atlas sl backup snapshot ls <clusterName> [flags]
+### Aliases
+```
+
+atlas serverless backups snapshots list
+atlas serverless backups snapshots ls
+atlas serverless backups snapshot list
+atlas serverless backups snapshot ls
+atlas serverless backup snapshots list
+atlas serverless backup snapshots ls
+atlas serverless backup snapshot list
+atlas serverless backup snapshot ls
+atlas sl backups snapshots list
+atlas sl backups snapshots ls
+atlas sl backups snapshot list
+atlas sl backups snapshot ls
+atlas sl backup snapshots list
+atlas sl backup snapshots ls
+atlas sl backup snapshot list
+atlas sl backup snapshot ls
 ```
 
 ### Examples
@@ -57,7 +62,7 @@ atlas sl backup snapshot ls <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless backups snapshots](atlas_serverless_backups_snapshots.md)	- Manage cloud backup snapshots for your project.

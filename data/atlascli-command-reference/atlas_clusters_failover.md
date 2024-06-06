@@ -8,11 +8,16 @@ Starts a failover test for the specified cluster in the specified project.
 Clusters contain a group of hosts that maintain the same data set. A failover test checks how MongoDB Cloud handles the failure of the cluster's primary node. During the test, MongoDB Cloud shuts down the primary node and elects a new primary.
 
 
-
+### Usage
+```
+atlas clusters failover <clusterName> [flags]
 ```
 
-atlas clusters failover <clusterName> [flags]
-atlas cluster failover <clusterName> [flags]
+### Aliases
+```
+
+atlas clusters failover
+atlas cluster failover
 ```
 
 ### Examples
@@ -40,7 +45,7 @@ atlas cluster failover <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

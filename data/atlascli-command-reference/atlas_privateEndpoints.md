@@ -5,6 +5,17 @@ Manage Atlas private endpoints.
 
 
 
+### Aliases
+```
+
+atlas privateEndpoints
+atlas privateendpoints
+atlas private-endpoints
+atlas privateEndpoint
+atlas privateendpoint
+atlas private-endpoint
+```
+
 
 
 ### Flags
@@ -22,7 +33,7 @@ Manage Atlas private endpoints.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

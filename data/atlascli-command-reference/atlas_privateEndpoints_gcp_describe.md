@@ -8,21 +8,26 @@ Return a specific GCP private endpoint for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints gcp describe <privateEndpointId> [flags]
 ```
 
-atlas privateEndpoints gcp describe <privateEndpointId> [flags]
-atlas privateEndpoints gcp get <privateEndpointId> [flags]
-atlas privateendpoints gcp describe <privateEndpointId> [flags]
-atlas privateendpoints gcp get <privateEndpointId> [flags]
-atlas private-endpoints gcp describe <privateEndpointId> [flags]
-atlas private-endpoints gcp get <privateEndpointId> [flags]
-atlas privateEndpoint gcp describe <privateEndpointId> [flags]
-atlas privateEndpoint gcp get <privateEndpointId> [flags]
-atlas privateendpoint gcp describe <privateEndpointId> [flags]
-atlas privateendpoint gcp get <privateEndpointId> [flags]
-atlas private-endpoint gcp describe <privateEndpointId> [flags]
-atlas private-endpoint gcp get <privateEndpointId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints gcp describe
+atlas privateEndpoints gcp get
+atlas privateendpoints gcp describe
+atlas privateendpoints gcp get
+atlas private-endpoints gcp describe
+atlas private-endpoints gcp get
+atlas privateEndpoint gcp describe
+atlas privateEndpoint gcp get
+atlas privateendpoint gcp describe
+atlas privateendpoint gcp get
+atlas private-endpoint gcp describe
+atlas private-endpoint gcp get
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas private-endpoint gcp get <privateEndpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints gcp](atlas_privateEndpoints_gcp.md)	- Manage GCP private endpoints.

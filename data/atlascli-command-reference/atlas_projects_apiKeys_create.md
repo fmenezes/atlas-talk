@@ -10,21 +10,26 @@ MongoDB returns the private API key only once. After you run this command, immed
 To use this command, you must authenticate with a user account or an API key with the Project User Admin role.
 
 
-
+### Usage
+```
+atlas projects apiKeys create [flags]
 ```
 
-atlas projects apiKeys create [flags]
-atlas projects apikeys create [flags]
-atlas projects api-keys create [flags]
-atlas projects apiKey create [flags]
-atlas projects apikey create [flags]
-atlas projects api-key create [flags]
-atlas project apiKeys create [flags]
-atlas project apikeys create [flags]
-atlas project api-keys create [flags]
-atlas project apiKey create [flags]
-atlas project apikey create [flags]
-atlas project api-key create [flags]
+### Aliases
+```
+
+atlas projects apiKeys create
+atlas projects apikeys create
+atlas projects api-keys create
+atlas projects apiKey create
+atlas projects apikey create
+atlas projects api-key create
+atlas project apiKeys create
+atlas project apikeys create
+atlas project api-keys create
+atlas project apiKey create
+atlas project apikey create
+atlas project api-key create
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas project api-key create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects apiKeys](atlas_projects_apiKeys.md)	- Manage API Keys for your project.

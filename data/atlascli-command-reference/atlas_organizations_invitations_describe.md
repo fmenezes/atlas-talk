@@ -8,25 +8,30 @@ Return the details for the specified pending invitation to your organization.
 To use this command, you must authenticate with a user account or an API key with the Organization User Admin role.
 
 
-
+### Usage
+```
+atlas organizations invitations describe <invitationId> [flags]
 ```
 
-atlas organizations invitations describe <invitationId> [flags]
-atlas organizations invitations get <invitationId> [flags]
-atlas organizations invitation describe <invitationId> [flags]
-atlas organizations invitation get <invitationId> [flags]
-atlas organization invitations describe <invitationId> [flags]
-atlas organization invitations get <invitationId> [flags]
-atlas organization invitation describe <invitationId> [flags]
-atlas organization invitation get <invitationId> [flags]
-atlas orgs invitations describe <invitationId> [flags]
-atlas orgs invitations get <invitationId> [flags]
-atlas orgs invitation describe <invitationId> [flags]
-atlas orgs invitation get <invitationId> [flags]
-atlas org invitations describe <invitationId> [flags]
-atlas org invitations get <invitationId> [flags]
-atlas org invitation describe <invitationId> [flags]
-atlas org invitation get <invitationId> [flags]
+### Aliases
+```
+
+atlas organizations invitations describe
+atlas organizations invitations get
+atlas organizations invitation describe
+atlas organizations invitation get
+atlas organization invitations describe
+atlas organization invitations get
+atlas organization invitation describe
+atlas organization invitation get
+atlas orgs invitations describe
+atlas orgs invitations get
+atlas orgs invitation describe
+atlas orgs invitation get
+atlas org invitations describe
+atlas org invitations get
+atlas org invitation describe
+atlas org invitation get
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas org invitation get <invitationId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations invitations](atlas_organizations_invitations.md)	- Invitation operations.

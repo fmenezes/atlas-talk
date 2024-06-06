@@ -8,11 +8,16 @@ Modify the details of a database user in your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dbusers update <username> [flags]
 ```
 
-atlas dbusers update <username> [flags]
-atlas dbuser update <username> [flags]
+### Aliases
+```
+
+atlas dbusers update
+atlas dbuser update
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas dbuser update <username> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dbusers](atlas_dbusers.md)	- Manage database users for your project.

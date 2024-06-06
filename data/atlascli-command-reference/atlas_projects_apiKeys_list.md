@@ -8,33 +8,38 @@ Return all organization API keys assigned to your project.
 To use this command, you must authenticate with a user account or an API key with the Project User Admin role.
 
 
-
+### Usage
+```
+atlas projects apiKeys list [flags]
 ```
 
-atlas projects apiKeys list [flags]
-atlas projects apiKeys ls [flags]
-atlas projects apikeys list [flags]
-atlas projects apikeys ls [flags]
-atlas projects api-keys list [flags]
-atlas projects api-keys ls [flags]
-atlas projects apiKey list [flags]
-atlas projects apiKey ls [flags]
-atlas projects apikey list [flags]
-atlas projects apikey ls [flags]
-atlas projects api-key list [flags]
-atlas projects api-key ls [flags]
-atlas project apiKeys list [flags]
-atlas project apiKeys ls [flags]
-atlas project apikeys list [flags]
-atlas project apikeys ls [flags]
-atlas project api-keys list [flags]
-atlas project api-keys ls [flags]
-atlas project apiKey list [flags]
-atlas project apiKey ls [flags]
-atlas project apikey list [flags]
-atlas project apikey ls [flags]
-atlas project api-key list [flags]
-atlas project api-key ls [flags]
+### Aliases
+```
+
+atlas projects apiKeys list
+atlas projects apiKeys ls
+atlas projects apikeys list
+atlas projects apikeys ls
+atlas projects api-keys list
+atlas projects api-keys ls
+atlas projects apiKey list
+atlas projects apiKey ls
+atlas projects apikey list
+atlas projects apikey ls
+atlas projects api-key list
+atlas projects api-key ls
+atlas project apiKeys list
+atlas project apiKeys ls
+atlas project apikeys list
+atlas project apikeys ls
+atlas project api-keys list
+atlas project api-keys ls
+atlas project apiKey list
+atlas project apiKey ls
+atlas project apikey list
+atlas project apikey ls
+atlas project api-key list
+atlas project api-key ls
 ```
 
 ### Examples
@@ -66,7 +71,7 @@ atlas project api-key ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects apiKeys](atlas_projects_apiKeys.md)	- Manage API Keys for your project.

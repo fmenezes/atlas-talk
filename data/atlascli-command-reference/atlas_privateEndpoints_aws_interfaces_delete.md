@@ -8,33 +8,38 @@ Remove the specified AWS private endpoint interface and related service from you
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints aws interfaces delete <interfaceEndpointId> [flags]
 ```
 
-atlas privateEndpoints aws interfaces delete <interfaceEndpointId> [flags]
-atlas privateEndpoints aws interfaces rm <interfaceEndpointId> [flags]
-atlas privateEndpoints aws interface delete <interfaceEndpointId> [flags]
-atlas privateEndpoints aws interface rm <interfaceEndpointId> [flags]
-atlas privateendpoints aws interfaces delete <interfaceEndpointId> [flags]
-atlas privateendpoints aws interfaces rm <interfaceEndpointId> [flags]
-atlas privateendpoints aws interface delete <interfaceEndpointId> [flags]
-atlas privateendpoints aws interface rm <interfaceEndpointId> [flags]
-atlas private-endpoints aws interfaces delete <interfaceEndpointId> [flags]
-atlas private-endpoints aws interfaces rm <interfaceEndpointId> [flags]
-atlas private-endpoints aws interface delete <interfaceEndpointId> [flags]
-atlas private-endpoints aws interface rm <interfaceEndpointId> [flags]
-atlas privateEndpoint aws interfaces delete <interfaceEndpointId> [flags]
-atlas privateEndpoint aws interfaces rm <interfaceEndpointId> [flags]
-atlas privateEndpoint aws interface delete <interfaceEndpointId> [flags]
-atlas privateEndpoint aws interface rm <interfaceEndpointId> [flags]
-atlas privateendpoint aws interfaces delete <interfaceEndpointId> [flags]
-atlas privateendpoint aws interfaces rm <interfaceEndpointId> [flags]
-atlas privateendpoint aws interface delete <interfaceEndpointId> [flags]
-atlas privateendpoint aws interface rm <interfaceEndpointId> [flags]
-atlas private-endpoint aws interfaces delete <interfaceEndpointId> [flags]
-atlas private-endpoint aws interfaces rm <interfaceEndpointId> [flags]
-atlas private-endpoint aws interface delete <interfaceEndpointId> [flags]
-atlas private-endpoint aws interface rm <interfaceEndpointId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints aws interfaces delete
+atlas privateEndpoints aws interfaces rm
+atlas privateEndpoints aws interface delete
+atlas privateEndpoints aws interface rm
+atlas privateendpoints aws interfaces delete
+atlas privateendpoints aws interfaces rm
+atlas privateendpoints aws interface delete
+atlas privateendpoints aws interface rm
+atlas private-endpoints aws interfaces delete
+atlas private-endpoints aws interfaces rm
+atlas private-endpoints aws interface delete
+atlas private-endpoints aws interface rm
+atlas privateEndpoint aws interfaces delete
+atlas privateEndpoint aws interfaces rm
+atlas privateEndpoint aws interface delete
+atlas privateEndpoint aws interface rm
+atlas privateendpoint aws interfaces delete
+atlas privateendpoint aws interfaces rm
+atlas privateendpoint aws interface delete
+atlas privateendpoint aws interface rm
+atlas private-endpoint aws interfaces delete
+atlas private-endpoint aws interfaces rm
+atlas private-endpoint aws interface delete
+atlas private-endpoint aws interface rm
 ```
 
 ### Examples
@@ -63,7 +68,7 @@ atlas private-endpoint aws interface rm <interfaceEndpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints aws interfaces](atlas_privateEndpoints_aws_interfaces.md)	- Manage Atlas AWS private endpoint interfaces.

@@ -8,17 +8,22 @@ Returns all Atlas Stream Processing connections from your Atlas Stream Processin
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas streams connections list [flags]
 ```
 
-atlas streams connections list [flags]
-atlas streams connections ls [flags]
-atlas streams connection list [flags]
-atlas streams connection ls [flags]
-atlas stream connections list [flags]
-atlas stream connections ls [flags]
-atlas stream connection list [flags]
-atlas stream connection ls [flags]
+### Aliases
+```
+
+atlas streams connections list
+atlas streams connections ls
+atlas streams connection list
+atlas streams connection ls
+atlas stream connections list
+atlas stream connections ls
+atlas stream connection list
+atlas stream connection ls
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas streams connection list --instance ExampleInstance
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams connections](atlas_streams_connections.md)	- Manage Atlas Stream Processing connections.

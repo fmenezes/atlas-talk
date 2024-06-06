@@ -8,17 +8,22 @@ Remove the specified pending invitation to your project.
 To use this command, you must authenticate with a user account or an API key with the Project User Admin role.
 
 
-
+### Usage
+```
+atlas projects invitations delete <invitationId> [flags]
 ```
 
-atlas projects invitations delete <invitationId> [flags]
-atlas projects invitations rm <invitationId> [flags]
-atlas projects invitation delete <invitationId> [flags]
-atlas projects invitation rm <invitationId> [flags]
-atlas project invitations delete <invitationId> [flags]
-atlas project invitations rm <invitationId> [flags]
-atlas project invitation delete <invitationId> [flags]
-atlas project invitation rm <invitationId> [flags]
+### Aliases
+```
+
+atlas projects invitations delete
+atlas projects invitations rm
+atlas projects invitation delete
+atlas projects invitation rm
+atlas project invitations delete
+atlas project invitations rm
+atlas project invitation delete
+atlas project invitation rm
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas project invitation rm <invitationId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects invitations](atlas_projects_invitations.md)	- Invitation operations.

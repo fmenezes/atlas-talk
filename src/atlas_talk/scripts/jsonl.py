@@ -77,7 +77,7 @@ def generate_aliases_prompt(content: Dict) -> None:
     if content.get('CommandPathAliases') is None:
         return
     print_prompt(f'Are there any aliases or shortcuts to command `{content['CommandPath']}`?', f"""Yes, here are some of the aliases:
-{'\n'.join([f'- {alias}' for alias in content['CommandPathAliases']])}""")
+{'\n'.join([f'- `{alias}`' for alias in content['CommandPathAliases']])}""")
 
 
 def generate_prompts(content: Dict) -> None:

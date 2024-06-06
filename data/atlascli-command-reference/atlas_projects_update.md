@@ -8,11 +8,16 @@ Update a project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas projects update <ID> [flags]
 ```
 
-atlas projects update <ID> [flags]
-atlas project update <ID> [flags]
+### Aliases
+```
+
+atlas projects update
+atlas project update
 ```
 
 ### Examples
@@ -40,7 +45,7 @@ atlas project update <ID> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects](atlas_projects.md)	- Manage your Atlas projects.

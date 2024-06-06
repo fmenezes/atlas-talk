@@ -5,6 +5,17 @@ Manage cloud provider access in Atlas using AWS IAM roles.
 
 
 
+### Aliases
+```
+
+atlas cloudProviders
+atlas cloudproviders
+atlas cloud-providers
+atlas cloudProvider
+atlas cloudprovider
+atlas cloud-provider
+```
+
 
 
 ### Flags
@@ -22,7 +33,7 @@ Manage cloud provider access in Atlas using AWS IAM roles.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

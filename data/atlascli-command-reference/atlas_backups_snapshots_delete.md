@@ -9,17 +9,22 @@ To use this command, you must authenticate with a user account or an API key wit
 Atlas supports this command only for M10+ clusters.
 
 
-
+### Usage
+```
+atlas backups snapshots delete <snapshotId> [flags]
 ```
 
-atlas backups snapshots delete <snapshotId> [flags]
-atlas backups snapshots rm <snapshotId> [flags]
-atlas backups snapshot delete <snapshotId> [flags]
-atlas backups snapshot rm <snapshotId> [flags]
-atlas backup snapshots delete <snapshotId> [flags]
-atlas backup snapshots rm <snapshotId> [flags]
-atlas backup snapshot delete <snapshotId> [flags]
-atlas backup snapshot rm <snapshotId> [flags]
+### Aliases
+```
+
+atlas backups snapshots delete
+atlas backups snapshots rm
+atlas backups snapshot delete
+atlas backups snapshot rm
+atlas backup snapshots delete
+atlas backup snapshots rm
+atlas backup snapshot delete
+atlas backup snapshot rm
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas backup snapshot rm <snapshotId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups snapshots](atlas_backups_snapshots.md)	- Manage cloud backup snapshots for your project.

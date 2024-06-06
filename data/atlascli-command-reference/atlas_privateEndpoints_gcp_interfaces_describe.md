@@ -8,33 +8,38 @@ Return a specific GCP private endpoint interface for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints gcp interfaces describe <id> [flags]
 ```
 
-atlas privateEndpoints gcp interfaces describe <id> [flags]
-atlas privateEndpoints gcp interfaces get <id> [flags]
-atlas privateEndpoints gcp interface describe <id> [flags]
-atlas privateEndpoints gcp interface get <id> [flags]
-atlas privateendpoints gcp interfaces describe <id> [flags]
-atlas privateendpoints gcp interfaces get <id> [flags]
-atlas privateendpoints gcp interface describe <id> [flags]
-atlas privateendpoints gcp interface get <id> [flags]
-atlas private-endpoints gcp interfaces describe <id> [flags]
-atlas private-endpoints gcp interfaces get <id> [flags]
-atlas private-endpoints gcp interface describe <id> [flags]
-atlas private-endpoints gcp interface get <id> [flags]
-atlas privateEndpoint gcp interfaces describe <id> [flags]
-atlas privateEndpoint gcp interfaces get <id> [flags]
-atlas privateEndpoint gcp interface describe <id> [flags]
-atlas privateEndpoint gcp interface get <id> [flags]
-atlas privateendpoint gcp interfaces describe <id> [flags]
-atlas privateendpoint gcp interfaces get <id> [flags]
-atlas privateendpoint gcp interface describe <id> [flags]
-atlas privateendpoint gcp interface get <id> [flags]
-atlas private-endpoint gcp interfaces describe <id> [flags]
-atlas private-endpoint gcp interfaces get <id> [flags]
-atlas private-endpoint gcp interface describe <id> [flags]
-atlas private-endpoint gcp interface get <id> [flags]
+### Aliases
+```
+
+atlas privateEndpoints gcp interfaces describe
+atlas privateEndpoints gcp interfaces get
+atlas privateEndpoints gcp interface describe
+atlas privateEndpoints gcp interface get
+atlas privateendpoints gcp interfaces describe
+atlas privateendpoints gcp interfaces get
+atlas privateendpoints gcp interface describe
+atlas privateendpoints gcp interface get
+atlas private-endpoints gcp interfaces describe
+atlas private-endpoints gcp interfaces get
+atlas private-endpoints gcp interface describe
+atlas private-endpoints gcp interface get
+atlas privateEndpoint gcp interfaces describe
+atlas privateEndpoint gcp interfaces get
+atlas privateEndpoint gcp interface describe
+atlas privateEndpoint gcp interface get
+atlas privateendpoint gcp interfaces describe
+atlas privateendpoint gcp interfaces get
+atlas privateendpoint gcp interface describe
+atlas privateendpoint gcp interface get
+atlas private-endpoint gcp interfaces describe
+atlas private-endpoint gcp interfaces get
+atlas private-endpoint gcp interface describe
+atlas private-endpoint gcp interface get
 ```
 
 ### Examples
@@ -63,7 +68,7 @@ atlas private-endpoint gcp interface get <id> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints gcp interfaces](atlas_privateEndpoints_gcp_interfaces.md)	- Manage Atlas GCP private endpoint interfaces.

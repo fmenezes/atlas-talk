@@ -8,33 +8,38 @@ Delete a specific GCP private endpoint interface for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints gcp interfaces delete <id> [flags]
 ```
 
-atlas privateEndpoints gcp interfaces delete <id> [flags]
-atlas privateEndpoints gcp interfaces rm <id> [flags]
-atlas privateEndpoints gcp interface delete <id> [flags]
-atlas privateEndpoints gcp interface rm <id> [flags]
-atlas privateendpoints gcp interfaces delete <id> [flags]
-atlas privateendpoints gcp interfaces rm <id> [flags]
-atlas privateendpoints gcp interface delete <id> [flags]
-atlas privateendpoints gcp interface rm <id> [flags]
-atlas private-endpoints gcp interfaces delete <id> [flags]
-atlas private-endpoints gcp interfaces rm <id> [flags]
-atlas private-endpoints gcp interface delete <id> [flags]
-atlas private-endpoints gcp interface rm <id> [flags]
-atlas privateEndpoint gcp interfaces delete <id> [flags]
-atlas privateEndpoint gcp interfaces rm <id> [flags]
-atlas privateEndpoint gcp interface delete <id> [flags]
-atlas privateEndpoint gcp interface rm <id> [flags]
-atlas privateendpoint gcp interfaces delete <id> [flags]
-atlas privateendpoint gcp interfaces rm <id> [flags]
-atlas privateendpoint gcp interface delete <id> [flags]
-atlas privateendpoint gcp interface rm <id> [flags]
-atlas private-endpoint gcp interfaces delete <id> [flags]
-atlas private-endpoint gcp interfaces rm <id> [flags]
-atlas private-endpoint gcp interface delete <id> [flags]
-atlas private-endpoint gcp interface rm <id> [flags]
+### Aliases
+```
+
+atlas privateEndpoints gcp interfaces delete
+atlas privateEndpoints gcp interfaces rm
+atlas privateEndpoints gcp interface delete
+atlas privateEndpoints gcp interface rm
+atlas privateendpoints gcp interfaces delete
+atlas privateendpoints gcp interfaces rm
+atlas privateendpoints gcp interface delete
+atlas privateendpoints gcp interface rm
+atlas private-endpoints gcp interfaces delete
+atlas private-endpoints gcp interfaces rm
+atlas private-endpoints gcp interface delete
+atlas private-endpoints gcp interface rm
+atlas privateEndpoint gcp interfaces delete
+atlas privateEndpoint gcp interfaces rm
+atlas privateEndpoint gcp interface delete
+atlas privateEndpoint gcp interface rm
+atlas privateendpoint gcp interfaces delete
+atlas privateendpoint gcp interfaces rm
+atlas privateendpoint gcp interface delete
+atlas privateendpoint gcp interface rm
+atlas private-endpoint gcp interfaces delete
+atlas private-endpoint gcp interfaces rm
+atlas private-endpoint gcp interface delete
+atlas private-endpoint gcp interface rm
 ```
 
 ### Examples
@@ -63,7 +68,7 @@ atlas private-endpoint gcp interface rm <id> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints gcp interfaces](atlas_privateEndpoints_gcp_interfaces.md)	- Manage Atlas GCP private endpoint interfaces.

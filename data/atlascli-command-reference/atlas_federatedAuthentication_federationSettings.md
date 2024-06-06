@@ -5,6 +5,29 @@ Manage Atlas Federated Authentication Federation Settings
 
 
 
+### Aliases
+```
+
+atlas federatedAuthentication federationSettings
+atlas federatedAuthentication federationsettings
+atlas federatedAuthentication federation-settings
+atlas federatedAuthentication federationSetting
+atlas federatedAuthentication federationsetting
+atlas federatedAuthentication federation-setting
+atlas federatedauthentication federationSettings
+atlas federatedauthentication federationsettings
+atlas federatedauthentication federation-settings
+atlas federatedauthentication federationSetting
+atlas federatedauthentication federationsetting
+atlas federatedauthentication federation-setting
+atlas federated-authentication federationSettings
+atlas federated-authentication federationsettings
+atlas federated-authentication federation-settings
+atlas federated-authentication federationSetting
+atlas federated-authentication federationsetting
+atlas federated-authentication federation-setting
+```
+
 
 
 ### Flags
@@ -22,7 +45,7 @@ Manage Atlas Federated Authentication Federation Settings
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas federatedAuthentication](atlas_federatedAuthentication.md)	- Manage Atlas Federated Authentication.

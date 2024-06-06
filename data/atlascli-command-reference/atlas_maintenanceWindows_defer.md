@@ -10,15 +10,20 @@ To learn more about maintenance windows, see https://www.mongodb.com/docs/atlas/
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas maintenanceWindows defer [flags]
 ```
 
-atlas maintenanceWindows defer [flags]
-atlas maintenancewindows defer [flags]
-atlas maintenance-windows defer [flags]
-atlas maintenanceWindow defer [flags]
-atlas maintenancewindow defer [flags]
-atlas maintenance-window defer [flags]
+### Aliases
+```
+
+atlas maintenanceWindows defer
+atlas maintenancewindows defer
+atlas maintenance-windows defer
+atlas maintenanceWindow defer
+atlas maintenancewindow defer
+atlas maintenance-window defer
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas maintenance-window defer [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas maintenanceWindows](atlas_maintenanceWindows.md)	- Manage Atlas maintenance windows.

@@ -3,13 +3,18 @@
 Pause a deployment.
 
 
-
+### Usage
+```
+atlas deployments pause <deploymentName> [flags]
 ```
 
-atlas deployments pause <deploymentName> [flags]
-atlas deployments stop <deploymentName> [flags]
-atlas deployment pause <deploymentName> [flags]
-atlas deployment stop <deploymentName> [flags]
+### Aliases
+```
+
+atlas deployments pause
+atlas deployments stop
+atlas deployment pause
+atlas deployment stop
 ```
 
 
@@ -31,7 +36,7 @@ atlas deployment stop <deploymentName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments](atlas_deployments.md)	- Manage cloud and local deployments.

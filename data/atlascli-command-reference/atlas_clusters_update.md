@@ -15,11 +15,16 @@ To use this command, you must authenticate with a user account or an API key wit
 Atlas supports this command only for M10+ clusters
 
 
-
+### Usage
+```
+atlas clusters update <clusterName> [flags]
 ```
 
-atlas clusters update <clusterName> [flags]
-atlas cluster update <clusterName> [flags]
+### Aliases
+```
+
+atlas clusters update
+atlas cluster update
 ```
 
 ### Examples
@@ -51,7 +56,7 @@ atlas cluster update <clusterName> [flags]
       --disableTerminationProtection   Disables termination protection for your cluster. You can delete a cluster with termination protection disabled.
       --diskSizeGB float               Capacity, in gigabytes, of the host's root volume.
       --enableTerminationProtection    Enables termination protection for your cluster. You can't delete a cluster with termination protection enabled.
-  -f, --file string                    Path to an optional JSON configuration file that defines cluster settings. To learn more about cluster configuration files for the Atlas CLI, see https://dochub.mongodb.org/core/cluster-config-file-atlascli. To learn more about cluster configuration files for MongoCLI, see https://dochub.mongodb.org/core/mms-cluster-settings-file-mcli.
+  -f, --file string                    Path to an optional JSON configuration file that defines cluster settings. To learn more about cluster configuration files for the Atlas CLI, see https://dochub.mongodb.org/core/cluster-config-file-atlascli.
   -h, --help                           help for update
       --mdbVersion string              Major MongoDB version of the cluster.
   -o, --output string                  Output format. Valid values are json, json-path, go-template, or go-template-file. To see the full output, use the -o json option.
@@ -69,7 +74,7 @@ atlas cluster update <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

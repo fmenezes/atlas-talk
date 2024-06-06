@@ -5,6 +5,13 @@ Manage Network Peering containers.
 
 
 
+### Aliases
+```
+
+atlas networking containers
+atlas networking container
+```
+
 
 
 ### Flags
@@ -22,7 +29,7 @@ Manage Network Peering containers.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas networking](atlas_networking.md)	- Manage or configure network peering for your Atlas project.

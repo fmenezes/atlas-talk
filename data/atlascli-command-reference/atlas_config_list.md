@@ -8,11 +8,16 @@ Return a list of available profiles by name.
 If you did not specify a name for your profile, it displays as the default profile.
 
 
-
+### Usage
+```
+atlas config list [flags]
 ```
 
-atlas config list [flags]
-atlas config ls [flags]
+### Aliases
+```
+
+atlas config list
+atlas config ls
 ```
 
 ### Examples
@@ -38,7 +43,7 @@ atlas config ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas config](atlas_config.md)	- Configure and manage your user profiles.

@@ -8,17 +8,22 @@ Create a search node for a cluster.
 To use this command, you must authenticate with a user account or an API key with the Organization Owner or Project Owner role.
 
 
-
+### Usage
+```
+atlas clusters search nodes create [flags]
 ```
 
-atlas clusters search nodes create [flags]
-atlas clusters search node create [flags]
-atlas clusters fts nodes create [flags]
-atlas clusters fts node create [flags]
-atlas cluster search nodes create [flags]
-atlas cluster search node create [flags]
-atlas cluster fts nodes create [flags]
-atlas cluster fts node create [flags]
+### Aliases
+```
+
+atlas clusters search nodes create
+atlas clusters search node create
+atlas clusters fts nodes create
+atlas clusters fts node create
+atlas cluster search nodes create
+atlas cluster search node create
+atlas cluster fts nodes create
+atlas cluster fts node create
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas cluster fts node create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters search nodes](atlas_clusters_search_nodes.md)	- Manage Atlas Search nodes for your cluster.

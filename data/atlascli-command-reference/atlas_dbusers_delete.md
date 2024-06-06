@@ -8,13 +8,18 @@ Remove the specified database user from your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dbusers delete <username> [flags]
 ```
 
-atlas dbusers delete <username> [flags]
-atlas dbusers rm <username> [flags]
-atlas dbuser delete <username> [flags]
-atlas dbuser rm <username> [flags]
+### Aliases
+```
+
+atlas dbusers delete
+atlas dbusers rm
+atlas dbuser delete
+atlas dbuser rm
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas dbuser rm <username> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dbusers](atlas_dbusers.md)	- Manage database users for your project.

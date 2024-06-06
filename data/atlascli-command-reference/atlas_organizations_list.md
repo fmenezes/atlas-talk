@@ -8,17 +8,22 @@ Return all organizations.
 To use this command, you must authenticate with a user account or an API key with the Organization Member role.
 
 
-
+### Usage
+```
+atlas organizations list [flags]
 ```
 
-atlas organizations list [flags]
-atlas organizations ls [flags]
-atlas organization list [flags]
-atlas organization ls [flags]
-atlas orgs list [flags]
-atlas orgs ls [flags]
-atlas org list [flags]
-atlas org ls [flags]
+### Aliases
+```
+
+atlas organizations list
+atlas organizations ls
+atlas organization list
+atlas organization ls
+atlas orgs list
+atlas orgs ls
+atlas org list
+atlas org ls
 ```
 
 ### Examples
@@ -53,7 +58,7 @@ atlas org ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations](atlas_organizations.md)	- Manage your Atlas organizations.

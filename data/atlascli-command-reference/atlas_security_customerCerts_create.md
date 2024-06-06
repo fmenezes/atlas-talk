@@ -10,16 +10,21 @@ Saving a customer-managed X.509 configuration triggers a rolling restart.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas security customerCerts create [flags]
 ```
 
-atlas security customerCerts create [flags]
-atlas security customercerts create [flags]
-atlas security customer-certs create [flags]
-atlas security customerCert create [flags]
-atlas security customercert create [flags]
-atlas security customer-cert create [flags]
-atlas security certs create [flags]
+### Aliases
+```
+
+atlas security customerCerts create
+atlas security customercerts create
+atlas security customer-certs create
+atlas security customerCert create
+atlas security customercert create
+atlas security customer-cert create
+atlas security certs create
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas security certs create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas security customerCerts](atlas_security_customerCerts.md)	- Manage customer x509 certificates for your project.

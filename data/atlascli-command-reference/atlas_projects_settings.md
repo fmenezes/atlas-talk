@@ -10,6 +10,15 @@ Manage your project settings.
 
 
 
+### Aliases
+```
+
+atlas projects settings
+atlas projects setting
+atlas project settings
+atlas project setting
+```
+
 
 
 ### Flags
@@ -27,7 +36,7 @@ Manage your project settings.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects](atlas_projects.md)	- Manage your Atlas projects.

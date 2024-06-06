@@ -8,13 +8,18 @@ Return all projects.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Read/Write role.
 
 
-
+### Usage
+```
+atlas projects list [flags]
 ```
 
-atlas projects list [flags]
-atlas projects ls [flags]
-atlas project list [flags]
-atlas project ls [flags]
+### Aliases
+```
+
+atlas projects list
+atlas projects ls
+atlas project list
+atlas project ls
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas project ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects](atlas_projects.md)	- Manage your Atlas projects.

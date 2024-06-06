@@ -8,17 +8,22 @@ Delete a search node for a cluster.
 To use this command, you must authenticate with a user account or an API key with the Organization Owner or Project Owner role.
 
 
-
+### Usage
+```
+atlas clusters search nodes delete [flags]
 ```
 
-atlas clusters search nodes delete [flags]
-atlas clusters search node delete [flags]
-atlas clusters fts nodes delete [flags]
-atlas clusters fts node delete [flags]
-atlas cluster search nodes delete [flags]
-atlas cluster search node delete [flags]
-atlas cluster fts nodes delete [flags]
-atlas cluster fts node delete [flags]
+### Aliases
+```
+
+atlas clusters search nodes delete
+atlas clusters search node delete
+atlas clusters fts nodes delete
+atlas clusters fts node delete
+atlas cluster search nodes delete
+atlas cluster search node delete
+atlas cluster fts nodes delete
+atlas cluster fts node delete
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas cluster fts node delete [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters search nodes](atlas_clusters_search_nodes.md)	- Manage Atlas Search nodes for your cluster.

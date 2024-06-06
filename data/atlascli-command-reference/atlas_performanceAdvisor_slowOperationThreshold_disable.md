@@ -10,27 +10,32 @@ The slow operation threshold determines which operations are flagged by the Perf
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas performanceAdvisor slowOperationThreshold disable [flags]
 ```
 
-atlas performanceAdvisor slowOperationThreshold disable [flags]
-atlas performanceAdvisor slowoperationthreshold disable [flags]
-atlas performanceAdvisor slow-operation-threshold disable [flags]
-atlas performanceAdvisor slowOT disable [flags]
-atlas performanceAdvisor sot disable [flags]
-atlas performanceAdvisor slowMS disable [flags]
-atlas performanceadvisor slowOperationThreshold disable [flags]
-atlas performanceadvisor slowoperationthreshold disable [flags]
-atlas performanceadvisor slow-operation-threshold disable [flags]
-atlas performanceadvisor slowOT disable [flags]
-atlas performanceadvisor sot disable [flags]
-atlas performanceadvisor slowMS disable [flags]
-atlas performance-advisor slowOperationThreshold disable [flags]
-atlas performance-advisor slowoperationthreshold disable [flags]
-atlas performance-advisor slow-operation-threshold disable [flags]
-atlas performance-advisor slowOT disable [flags]
-atlas performance-advisor sot disable [flags]
-atlas performance-advisor slowMS disable [flags]
+### Aliases
+```
+
+atlas performanceAdvisor slowOperationThreshold disable
+atlas performanceAdvisor slowoperationthreshold disable
+atlas performanceAdvisor slow-operation-threshold disable
+atlas performanceAdvisor slowOT disable
+atlas performanceAdvisor sot disable
+atlas performanceAdvisor slowMS disable
+atlas performanceadvisor slowOperationThreshold disable
+atlas performanceadvisor slowoperationthreshold disable
+atlas performanceadvisor slow-operation-threshold disable
+atlas performanceadvisor slowOT disable
+atlas performanceadvisor sot disable
+atlas performanceadvisor slowMS disable
+atlas performance-advisor slowOperationThreshold disable
+atlas performance-advisor slowoperationthreshold disable
+atlas performance-advisor slow-operation-threshold disable
+atlas performance-advisor slowOT disable
+atlas performance-advisor sot disable
+atlas performance-advisor slowMS disable
 ```
 
 
@@ -51,7 +56,7 @@ atlas performance-advisor slowMS disable [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas performanceAdvisor slowOperationThreshold](atlas_performanceAdvisor_slowOperationThreshold.md)	- Enable or disable management of the slow operation threshold for your cluster.

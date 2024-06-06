@@ -8,13 +8,18 @@ Create a rolling index for the specified cluster for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Admin role.
 
 
-
+### Usage
+```
+atlas clusters indexes create <indexName> [flags]
 ```
 
-atlas clusters indexes create <indexName> [flags]
-atlas clusters index create <indexName> [flags]
-atlas cluster indexes create <indexName> [flags]
-atlas cluster index create <indexName> [flags]
+### Aliases
+```
+
+atlas clusters indexes create
+atlas clusters index create
+atlas cluster indexes create
+atlas cluster index create
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas cluster index create <indexName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters indexes](atlas_clusters_indexes.md)	- Manage cluster rolling indexes for your project.

@@ -5,6 +5,15 @@ Manage cloud backup snapshots for your project.
 
 
 
+### Aliases
+```
+
+atlas backups snapshots
+atlas backups snapshot
+atlas backup snapshots
+atlas backup snapshot
+```
+
 
 
 ### Flags
@@ -22,7 +31,7 @@ Manage cloud backup snapshots for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups](atlas_backups.md)	- Manage cloud backups for your project.

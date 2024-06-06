@@ -8,27 +8,32 @@ Return the details for the specified data federation private endpoint for your p
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataFederation privateEndpoints describe <endpointId> [flags]
 ```
 
-atlas dataFederation privateEndpoints describe <endpointId> [flags]
-atlas dataFederation privateendpoints describe <endpointId> [flags]
-atlas dataFederation private-endpoints describe <endpointId> [flags]
-atlas dataFederation privateEndpoint describe <endpointId> [flags]
-atlas dataFederation privateendpoint describe <endpointId> [flags]
-atlas dataFederation private-endpoint describe <endpointId> [flags]
-atlas datafederation privateEndpoints describe <endpointId> [flags]
-atlas datafederation privateendpoints describe <endpointId> [flags]
-atlas datafederation private-endpoints describe <endpointId> [flags]
-atlas datafederation privateEndpoint describe <endpointId> [flags]
-atlas datafederation privateendpoint describe <endpointId> [flags]
-atlas datafederation private-endpoint describe <endpointId> [flags]
-atlas data-federation privateEndpoints describe <endpointId> [flags]
-atlas data-federation privateendpoints describe <endpointId> [flags]
-atlas data-federation private-endpoints describe <endpointId> [flags]
-atlas data-federation privateEndpoint describe <endpointId> [flags]
-atlas data-federation privateendpoint describe <endpointId> [flags]
-atlas data-federation private-endpoint describe <endpointId> [flags]
+### Aliases
+```
+
+atlas dataFederation privateEndpoints describe
+atlas dataFederation privateendpoints describe
+atlas dataFederation private-endpoints describe
+atlas dataFederation privateEndpoint describe
+atlas dataFederation privateendpoint describe
+atlas dataFederation private-endpoint describe
+atlas datafederation privateEndpoints describe
+atlas datafederation privateendpoints describe
+atlas datafederation private-endpoints describe
+atlas datafederation privateEndpoint describe
+atlas datafederation privateendpoint describe
+atlas datafederation private-endpoint describe
+atlas data-federation privateEndpoints describe
+atlas data-federation privateendpoints describe
+atlas data-federation private-endpoints describe
+atlas data-federation privateEndpoint describe
+atlas data-federation privateendpoint describe
+atlas data-federation private-endpoint describe
 ```
 
 ### Examples
@@ -57,7 +62,7 @@ atlas data-federation private-endpoint describe <endpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation privateEndpoints](atlas_dataFederation_privateEndpoints.md)	- Data federation private endpoints.

@@ -8,21 +8,26 @@ Pause the specfied online archive for your cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Admin role.
 
 
-
+### Usage
+```
+atlas clusters onlineArchives pause <archiveId> [flags]
 ```
 
-atlas clusters onlineArchives pause <archiveId> [flags]
-atlas clusters onlinearchives pause <archiveId> [flags]
-atlas clusters online-archives pause <archiveId> [flags]
-atlas clusters onlineArchive pause <archiveId> [flags]
-atlas clusters onlinearchive pause <archiveId> [flags]
-atlas clusters online-archive pause <archiveId> [flags]
-atlas cluster onlineArchives pause <archiveId> [flags]
-atlas cluster onlinearchives pause <archiveId> [flags]
-atlas cluster online-archives pause <archiveId> [flags]
-atlas cluster onlineArchive pause <archiveId> [flags]
-atlas cluster onlinearchive pause <archiveId> [flags]
-atlas cluster online-archive pause <archiveId> [flags]
+### Aliases
+```
+
+atlas clusters onlineArchives pause
+atlas clusters onlinearchives pause
+atlas clusters online-archives pause
+atlas clusters onlineArchive pause
+atlas clusters onlinearchive pause
+atlas clusters online-archive pause
+atlas cluster onlineArchives pause
+atlas cluster onlinearchives pause
+atlas cluster online-archives pause
+atlas cluster onlineArchive pause
+atlas cluster onlinearchive pause
+atlas cluster online-archive pause
 ```
 
 ### Examples
@@ -51,7 +56,7 @@ atlas cluster online-archive pause <archiveId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters onlineArchives](atlas_clusters_onlineArchives.md)	- Manage online archives for your cluster.

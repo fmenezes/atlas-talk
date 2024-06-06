@@ -5,6 +5,15 @@ Manage cluster rolling indexes for your project.
 
 
 
+### Aliases
+```
+
+atlas clusters indexes
+atlas clusters index
+atlas cluster indexes
+atlas cluster index
+```
+
 
 
 ### Flags
@@ -22,7 +31,7 @@ Manage cluster rolling indexes for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

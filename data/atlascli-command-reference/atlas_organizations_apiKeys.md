@@ -5,6 +5,35 @@ Organization API Keys operations.
 
 
 
+### Aliases
+```
+
+atlas organizations apiKeys
+atlas organizations apikeys
+atlas organizations api-keys
+atlas organizations apiKey
+atlas organizations apikey
+atlas organizations api-key
+atlas organization apiKeys
+atlas organization apikeys
+atlas organization api-keys
+atlas organization apiKey
+atlas organization apikey
+atlas organization api-key
+atlas orgs apiKeys
+atlas orgs apikeys
+atlas orgs api-keys
+atlas orgs apiKey
+atlas orgs apikey
+atlas orgs api-key
+atlas org apiKeys
+atlas org apikeys
+atlas org api-keys
+atlas org apiKey
+atlas org apikey
+atlas org api-key
+```
+
 
 
 ### Flags
@@ -22,7 +51,7 @@ Organization API Keys operations.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations](atlas_organizations.md)	- Manage your Atlas organizations.

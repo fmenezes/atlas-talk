@@ -5,6 +5,13 @@ Manage search for cloud and local deployments.
 
 
 
+### Aliases
+```
+
+atlas deployments search
+atlas deployment search
+```
+
 
 
 ### Flags
@@ -22,7 +29,7 @@ Manage search for cloud and local deployments.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments](atlas_deployments.md)	- Manage cloud and local deployments.

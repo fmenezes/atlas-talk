@@ -5,6 +5,15 @@ Manage your Atlas teams.
 
 
 
+### Aliases
+```
+
+atlas projects teams
+atlas projects team
+atlas project teams
+atlas project team
+```
+
 
 
 ### Flags
@@ -22,7 +31,7 @@ Manage your Atlas teams.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects](atlas_projects.md)	- Manage your Atlas projects.

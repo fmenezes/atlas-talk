@@ -5,6 +5,23 @@ Manage the on-demand policy item of the backup compliance policy for your projec
 
 
 
+### Aliases
+```
+
+atlas backups compliancePolicy policies ondemand
+atlas backups compliancePolicy policy ondemand
+atlas backups compliancepolicy policies ondemand
+atlas backups compliancepolicy policy ondemand
+atlas backups compliance-policy policies ondemand
+atlas backups compliance-policy policy ondemand
+atlas backup compliancePolicy policies ondemand
+atlas backup compliancePolicy policy ondemand
+atlas backup compliancepolicy policies ondemand
+atlas backup compliancepolicy policy ondemand
+atlas backup compliance-policy policies ondemand
+atlas backup compliance-policy policy ondemand
+```
+
 
 
 ### Flags
@@ -22,7 +39,7 @@ Manage the on-demand policy item of the backup compliance policy for your projec
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy policies](atlas_backups_compliancePolicy_policies.md)	- Manage the individual policy items of the backup compliance policy for your project.

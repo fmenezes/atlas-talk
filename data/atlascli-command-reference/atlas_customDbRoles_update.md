@@ -8,16 +8,21 @@ Update a custom database role for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas customDbRoles update <roleName> [flags]
 ```
 
-atlas customDbRoles update <roleName> [flags]
-atlas customdbroles update <roleName> [flags]
-atlas custom-db-roles update <roleName> [flags]
-atlas customDbRole update <roleName> [flags]
-atlas customdbrole update <roleName> [flags]
-atlas custom-db-role update <roleName> [flags]
-atlas customDBRoles update <roleName> [flags]
+### Aliases
+```
+
+atlas customDbRoles update
+atlas customdbroles update
+atlas custom-db-roles update
+atlas customDbRole update
+atlas customdbrole update
+atlas custom-db-role update
+atlas customDBRoles update
 ```
 
 
@@ -42,7 +47,7 @@ atlas customDBRoles update <roleName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas customDbRoles](atlas_customDbRoles.md)	- Manage custom database roles for your project.

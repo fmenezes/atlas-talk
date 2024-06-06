@@ -8,13 +8,18 @@ Describe an Atlas Stream Processing instance for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas streams instances describe <name> [flags]
 ```
 
-atlas streams instances describe <name> [flags]
-atlas streams instance describe <name> [flags]
-atlas stream instances describe <name> [flags]
-atlas stream instance describe <name> [flags]
+### Aliases
+```
+
+atlas streams instances describe
+atlas streams instance describe
+atlas stream instances describe
+atlas stream instance describe
 ```
 
 ### Examples
@@ -44,7 +49,7 @@ atlas stream instance describe <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams instances](atlas_streams_instances.md)	- Manage Atlas Stream Processing instances.

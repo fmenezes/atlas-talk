@@ -8,25 +8,30 @@ Delete the specified search index from the specified cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Admin role.
 
 
-
+### Usage
+```
+atlas clusters search indexes delete <indexId> [flags]
 ```
 
-atlas clusters search indexes delete <indexId> [flags]
-atlas clusters search indexes rm <indexId> [flags]
-atlas clusters search index delete <indexId> [flags]
-atlas clusters search index rm <indexId> [flags]
-atlas clusters fts indexes delete <indexId> [flags]
-atlas clusters fts indexes rm <indexId> [flags]
-atlas clusters fts index delete <indexId> [flags]
-atlas clusters fts index rm <indexId> [flags]
-atlas cluster search indexes delete <indexId> [flags]
-atlas cluster search indexes rm <indexId> [flags]
-atlas cluster search index delete <indexId> [flags]
-atlas cluster search index rm <indexId> [flags]
-atlas cluster fts indexes delete <indexId> [flags]
-atlas cluster fts indexes rm <indexId> [flags]
-atlas cluster fts index delete <indexId> [flags]
-atlas cluster fts index rm <indexId> [flags]
+### Aliases
+```
+
+atlas clusters search indexes delete
+atlas clusters search indexes rm
+atlas clusters search index delete
+atlas clusters search index rm
+atlas clusters fts indexes delete
+atlas clusters fts indexes rm
+atlas clusters fts index delete
+atlas clusters fts index rm
+atlas cluster search indexes delete
+atlas cluster search indexes rm
+atlas cluster search index delete
+atlas cluster search index rm
+atlas cluster fts indexes delete
+atlas cluster fts indexes rm
+atlas cluster fts index delete
+atlas cluster fts index rm
 ```
 
 ### Examples
@@ -55,7 +60,7 @@ atlas cluster fts index rm <indexId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters search indexes](atlas_clusters_search_indexes.md)	- Manage Atlas Search indexes for your cluster.

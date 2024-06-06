@@ -8,25 +8,30 @@ Return all cloud backup restore jobs for the specified serverless instance in yo
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas serverless backups restores list <clusterName> [flags]
 ```
 
-atlas serverless backups restores list <clusterName> [flags]
-atlas serverless backups restores ls <clusterName> [flags]
-atlas serverless backups restore list <clusterName> [flags]
-atlas serverless backups restore ls <clusterName> [flags]
-atlas serverless backup restores list <clusterName> [flags]
-atlas serverless backup restores ls <clusterName> [flags]
-atlas serverless backup restore list <clusterName> [flags]
-atlas serverless backup restore ls <clusterName> [flags]
-atlas sl backups restores list <clusterName> [flags]
-atlas sl backups restores ls <clusterName> [flags]
-atlas sl backups restore list <clusterName> [flags]
-atlas sl backups restore ls <clusterName> [flags]
-atlas sl backup restores list <clusterName> [flags]
-atlas sl backup restores ls <clusterName> [flags]
-atlas sl backup restore list <clusterName> [flags]
-atlas sl backup restore ls <clusterName> [flags]
+### Aliases
+```
+
+atlas serverless backups restores list
+atlas serverless backups restores ls
+atlas serverless backups restore list
+atlas serverless backups restore ls
+atlas serverless backup restores list
+atlas serverless backup restores ls
+atlas serverless backup restore list
+atlas serverless backup restore ls
+atlas sl backups restores list
+atlas sl backups restores ls
+atlas sl backups restore list
+atlas sl backups restore ls
+atlas sl backup restores list
+atlas sl backup restores ls
+atlas sl backup restore list
+atlas sl backup restore ls
 ```
 
 ### Examples
@@ -57,7 +62,7 @@ atlas sl backup restore ls <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless backups restores](atlas_serverless_backups_restores.md)	- Manage cloud backup restore jobs for your project.

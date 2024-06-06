@@ -13,15 +13,20 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints azure watch <privateEndpointId> [flags]
 ```
 
-atlas privateEndpoints azure watch <privateEndpointId> [flags]
-atlas privateendpoints azure watch <privateEndpointId> [flags]
-atlas private-endpoints azure watch <privateEndpointId> [flags]
-atlas privateEndpoint azure watch <privateEndpointId> [flags]
-atlas privateendpoint azure watch <privateEndpointId> [flags]
-atlas private-endpoint azure watch <privateEndpointId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints azure watch
+atlas privateendpoints azure watch
+atlas private-endpoints azure watch
+atlas privateEndpoint azure watch
+atlas privateendpoint azure watch
+atlas private-endpoint azure watch
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas private-endpoint azure watch <privateEndpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints azure](atlas_privateEndpoints_azure.md)	- Manage Azure Private Endpoints.

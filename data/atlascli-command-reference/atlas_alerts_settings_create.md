@@ -8,13 +8,18 @@ Create an alert configuration for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas alerts settings create [flags]
 ```
 
-atlas alerts settings create [flags]
-atlas alerts config create [flags]
-atlas alert settings create [flags]
-atlas alert config create [flags]
+### Aliases
+```
+
+atlas alerts settings create
+atlas alerts config create
+atlas alert settings create
+atlas alert config create
 ```
 
 ### Examples
@@ -76,7 +81,7 @@ atlas alert config create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas alerts settings](atlas_alerts_settings.md)	- Manages alerts configuration for your project.

@@ -8,16 +8,21 @@ Create a custom database role for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas customDbRoles create <roleName> [flags]
 ```
 
-atlas customDbRoles create <roleName> [flags]
-atlas customdbroles create <roleName> [flags]
-atlas custom-db-roles create <roleName> [flags]
-atlas customDbRole create <roleName> [flags]
-atlas customdbrole create <roleName> [flags]
-atlas custom-db-role create <roleName> [flags]
-atlas customDBRoles create <roleName> [flags]
+### Aliases
+```
+
+atlas customDbRoles create
+atlas customdbroles create
+atlas custom-db-roles create
+atlas customDbRole create
+atlas customdbrole create
+atlas custom-db-role create
+atlas customDBRoles create
 ```
 
 ### Examples
@@ -56,7 +61,7 @@ atlas customDBRoles create <roleName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas customDbRoles](atlas_customDbRoles.md)	- Manage custom database roles for your project.

@@ -3,21 +3,26 @@
 Create a scheduled policy item for the backup compliance policy for your project.
 
 
-
+### Usage
+```
+atlas backups compliancePolicy policies scheduled create [flags]
 ```
 
-atlas backups compliancePolicy policies scheduled create [flags]
-atlas backups compliancePolicy policy scheduled create [flags]
-atlas backups compliancepolicy policies scheduled create [flags]
-atlas backups compliancepolicy policy scheduled create [flags]
-atlas backups compliance-policy policies scheduled create [flags]
-atlas backups compliance-policy policy scheduled create [flags]
-atlas backup compliancePolicy policies scheduled create [flags]
-atlas backup compliancePolicy policy scheduled create [flags]
-atlas backup compliancepolicy policies scheduled create [flags]
-atlas backup compliancepolicy policy scheduled create [flags]
-atlas backup compliance-policy policies scheduled create [flags]
-atlas backup compliance-policy policy scheduled create [flags]
+### Aliases
+```
+
+atlas backups compliancePolicy policies scheduled create
+atlas backups compliancePolicy policy scheduled create
+atlas backups compliancepolicy policies scheduled create
+atlas backups compliancepolicy policy scheduled create
+atlas backups compliance-policy policies scheduled create
+atlas backups compliance-policy policy scheduled create
+atlas backup compliancePolicy policies scheduled create
+atlas backup compliancePolicy policy scheduled create
+atlas backup compliancepolicy policies scheduled create
+atlas backup compliancepolicy policy scheduled create
+atlas backup compliance-policy policies scheduled create
+atlas backup compliance-policy policy scheduled create
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas backup compliance-policy policy scheduled create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy policies scheduled](atlas_backups_compliancePolicy_policies_scheduled.md)	- Manage the scheduled policy items of the backup compliance policy for your project.

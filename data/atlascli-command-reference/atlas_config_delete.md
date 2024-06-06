@@ -3,11 +3,16 @@
 Delete a profile.
 
 
-
+### Usage
+```
+atlas config delete <name> [flags]
 ```
 
-atlas config delete <name> [flags]
-atlas config rm <name> [flags]
+### Aliases
+```
+
+atlas config delete
+atlas config rm
 ```
 
 ### Examples
@@ -37,7 +42,7 @@ atlas config rm <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas config](atlas_config.md)	- Configure and manage your user profiles.

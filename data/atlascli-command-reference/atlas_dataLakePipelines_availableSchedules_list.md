@@ -8,81 +8,86 @@ Return all available schedules for the specified data lake pipeline.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines availableSchedules list [flags]
 ```
 
-atlas dataLakePipelines availableSchedules list [flags]
-atlas dataLakePipelines availableSchedules ls [flags]
-atlas dataLakePipelines availableschedules list [flags]
-atlas dataLakePipelines availableschedules ls [flags]
-atlas dataLakePipelines available-schedules list [flags]
-atlas dataLakePipelines available-schedules ls [flags]
-atlas dataLakePipelines availableSchedule list [flags]
-atlas dataLakePipelines availableSchedule ls [flags]
-atlas dataLakePipelines availableschedule list [flags]
-atlas dataLakePipelines availableschedule ls [flags]
-atlas dataLakePipelines available-schedule list [flags]
-atlas dataLakePipelines available-schedule ls [flags]
-atlas datalakepipelines availableSchedules list [flags]
-atlas datalakepipelines availableSchedules ls [flags]
-atlas datalakepipelines availableschedules list [flags]
-atlas datalakepipelines availableschedules ls [flags]
-atlas datalakepipelines available-schedules list [flags]
-atlas datalakepipelines available-schedules ls [flags]
-atlas datalakepipelines availableSchedule list [flags]
-atlas datalakepipelines availableSchedule ls [flags]
-atlas datalakepipelines availableschedule list [flags]
-atlas datalakepipelines availableschedule ls [flags]
-atlas datalakepipelines available-schedule list [flags]
-atlas datalakepipelines available-schedule ls [flags]
-atlas data-lake-pipelines availableSchedules list [flags]
-atlas data-lake-pipelines availableSchedules ls [flags]
-atlas data-lake-pipelines availableschedules list [flags]
-atlas data-lake-pipelines availableschedules ls [flags]
-atlas data-lake-pipelines available-schedules list [flags]
-atlas data-lake-pipelines available-schedules ls [flags]
-atlas data-lake-pipelines availableSchedule list [flags]
-atlas data-lake-pipelines availableSchedule ls [flags]
-atlas data-lake-pipelines availableschedule list [flags]
-atlas data-lake-pipelines availableschedule ls [flags]
-atlas data-lake-pipelines available-schedule list [flags]
-atlas data-lake-pipelines available-schedule ls [flags]
-atlas dataLakePipeline availableSchedules list [flags]
-atlas dataLakePipeline availableSchedules ls [flags]
-atlas dataLakePipeline availableschedules list [flags]
-atlas dataLakePipeline availableschedules ls [flags]
-atlas dataLakePipeline available-schedules list [flags]
-atlas dataLakePipeline available-schedules ls [flags]
-atlas dataLakePipeline availableSchedule list [flags]
-atlas dataLakePipeline availableSchedule ls [flags]
-atlas dataLakePipeline availableschedule list [flags]
-atlas dataLakePipeline availableschedule ls [flags]
-atlas dataLakePipeline available-schedule list [flags]
-atlas dataLakePipeline available-schedule ls [flags]
-atlas datalakepipeline availableSchedules list [flags]
-atlas datalakepipeline availableSchedules ls [flags]
-atlas datalakepipeline availableschedules list [flags]
-atlas datalakepipeline availableschedules ls [flags]
-atlas datalakepipeline available-schedules list [flags]
-atlas datalakepipeline available-schedules ls [flags]
-atlas datalakepipeline availableSchedule list [flags]
-atlas datalakepipeline availableSchedule ls [flags]
-atlas datalakepipeline availableschedule list [flags]
-atlas datalakepipeline availableschedule ls [flags]
-atlas datalakepipeline available-schedule list [flags]
-atlas datalakepipeline available-schedule ls [flags]
-atlas data-lake-pipeline availableSchedules list [flags]
-atlas data-lake-pipeline availableSchedules ls [flags]
-atlas data-lake-pipeline availableschedules list [flags]
-atlas data-lake-pipeline availableschedules ls [flags]
-atlas data-lake-pipeline available-schedules list [flags]
-atlas data-lake-pipeline available-schedules ls [flags]
-atlas data-lake-pipeline availableSchedule list [flags]
-atlas data-lake-pipeline availableSchedule ls [flags]
-atlas data-lake-pipeline availableschedule list [flags]
-atlas data-lake-pipeline availableschedule ls [flags]
-atlas data-lake-pipeline available-schedule list [flags]
-atlas data-lake-pipeline available-schedule ls [flags]
+### Aliases
+```
+
+atlas dataLakePipelines availableSchedules list
+atlas dataLakePipelines availableSchedules ls
+atlas dataLakePipelines availableschedules list
+atlas dataLakePipelines availableschedules ls
+atlas dataLakePipelines available-schedules list
+atlas dataLakePipelines available-schedules ls
+atlas dataLakePipelines availableSchedule list
+atlas dataLakePipelines availableSchedule ls
+atlas dataLakePipelines availableschedule list
+atlas dataLakePipelines availableschedule ls
+atlas dataLakePipelines available-schedule list
+atlas dataLakePipelines available-schedule ls
+atlas datalakepipelines availableSchedules list
+atlas datalakepipelines availableSchedules ls
+atlas datalakepipelines availableschedules list
+atlas datalakepipelines availableschedules ls
+atlas datalakepipelines available-schedules list
+atlas datalakepipelines available-schedules ls
+atlas datalakepipelines availableSchedule list
+atlas datalakepipelines availableSchedule ls
+atlas datalakepipelines availableschedule list
+atlas datalakepipelines availableschedule ls
+atlas datalakepipelines available-schedule list
+atlas datalakepipelines available-schedule ls
+atlas data-lake-pipelines availableSchedules list
+atlas data-lake-pipelines availableSchedules ls
+atlas data-lake-pipelines availableschedules list
+atlas data-lake-pipelines availableschedules ls
+atlas data-lake-pipelines available-schedules list
+atlas data-lake-pipelines available-schedules ls
+atlas data-lake-pipelines availableSchedule list
+atlas data-lake-pipelines availableSchedule ls
+atlas data-lake-pipelines availableschedule list
+atlas data-lake-pipelines availableschedule ls
+atlas data-lake-pipelines available-schedule list
+atlas data-lake-pipelines available-schedule ls
+atlas dataLakePipeline availableSchedules list
+atlas dataLakePipeline availableSchedules ls
+atlas dataLakePipeline availableschedules list
+atlas dataLakePipeline availableschedules ls
+atlas dataLakePipeline available-schedules list
+atlas dataLakePipeline available-schedules ls
+atlas dataLakePipeline availableSchedule list
+atlas dataLakePipeline availableSchedule ls
+atlas dataLakePipeline availableschedule list
+atlas dataLakePipeline availableschedule ls
+atlas dataLakePipeline available-schedule list
+atlas dataLakePipeline available-schedule ls
+atlas datalakepipeline availableSchedules list
+atlas datalakepipeline availableSchedules ls
+atlas datalakepipeline availableschedules list
+atlas datalakepipeline availableschedules ls
+atlas datalakepipeline available-schedules list
+atlas datalakepipeline available-schedules ls
+atlas datalakepipeline availableSchedule list
+atlas datalakepipeline availableSchedule ls
+atlas datalakepipeline availableschedule list
+atlas datalakepipeline availableschedule ls
+atlas datalakepipeline available-schedule list
+atlas datalakepipeline available-schedule ls
+atlas data-lake-pipeline availableSchedules list
+atlas data-lake-pipeline availableSchedules ls
+atlas data-lake-pipeline availableschedules list
+atlas data-lake-pipeline availableschedules ls
+atlas data-lake-pipeline available-schedules list
+atlas data-lake-pipeline available-schedules ls
+atlas data-lake-pipeline availableSchedule list
+atlas data-lake-pipeline availableSchedule ls
+atlas data-lake-pipeline availableschedule list
+atlas data-lake-pipeline availableschedule ls
+atlas data-lake-pipeline available-schedule list
+atlas data-lake-pipeline available-schedule ls
 ```
 
 ### Examples
@@ -112,7 +117,7 @@ atlas data-lake-pipeline available-schedule ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines availableSchedules](atlas_dataLakePipelines_availableSchedules.md)	- Manage available schedules for the specified data lake pipeline.

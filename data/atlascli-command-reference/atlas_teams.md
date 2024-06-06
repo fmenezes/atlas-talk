@@ -10,6 +10,13 @@ Create, list and manage your Atlas teams.
 
 
 
+### Aliases
+```
+
+atlas teams
+atlas team
+```
+
 
 
 ### Flags
@@ -27,7 +34,7 @@ Create, list and manage your Atlas teams.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

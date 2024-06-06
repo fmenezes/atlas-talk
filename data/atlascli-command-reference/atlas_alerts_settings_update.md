@@ -8,13 +8,18 @@ Modify the details of the specified alert configuration for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas alerts settings update <alertConfigId> [flags]
 ```
 
-atlas alerts settings update <alertConfigId> [flags]
-atlas alerts config update <alertConfigId> [flags]
-atlas alert settings update <alertConfigId> [flags]
-atlas alert config update <alertConfigId> [flags]
+### Aliases
+```
+
+atlas alerts settings update
+atlas alerts config update
+atlas alert settings update
+atlas alert config update
 ```
 
 ### Examples
@@ -77,7 +82,7 @@ atlas alert config update <alertConfigId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas alerts settings](atlas_alerts_settings.md)	- Manages alerts configuration for your project.

@@ -5,6 +5,12 @@ LDAP operations.
 
 
 
+### Aliases
+```
+
+atlas security ldap
+```
+
 
 
 ### Flags
@@ -22,7 +28,7 @@ LDAP operations.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas security](atlas_security.md)	- Manage security configuration for your project.

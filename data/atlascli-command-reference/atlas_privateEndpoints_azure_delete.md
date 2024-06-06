@@ -8,21 +8,26 @@ Remove the specified Azure private endpoint from your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints azure delete <privateEndpointId> [flags]
 ```
 
-atlas privateEndpoints azure delete <privateEndpointId> [flags]
-atlas privateEndpoints azure rm <privateEndpointId> [flags]
-atlas privateendpoints azure delete <privateEndpointId> [flags]
-atlas privateendpoints azure rm <privateEndpointId> [flags]
-atlas private-endpoints azure delete <privateEndpointId> [flags]
-atlas private-endpoints azure rm <privateEndpointId> [flags]
-atlas privateEndpoint azure delete <privateEndpointId> [flags]
-atlas privateEndpoint azure rm <privateEndpointId> [flags]
-atlas privateendpoint azure delete <privateEndpointId> [flags]
-atlas privateendpoint azure rm <privateEndpointId> [flags]
-atlas private-endpoint azure delete <privateEndpointId> [flags]
-atlas private-endpoint azure rm <privateEndpointId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints azure delete
+atlas privateEndpoints azure rm
+atlas privateendpoints azure delete
+atlas privateendpoints azure rm
+atlas private-endpoints azure delete
+atlas private-endpoints azure rm
+atlas privateEndpoint azure delete
+atlas privateEndpoint azure rm
+atlas privateendpoint azure delete
+atlas privateendpoint azure rm
+atlas private-endpoint azure delete
+atlas private-endpoint azure rm
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas private-endpoint azure rm <privateEndpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints azure](atlas_privateEndpoints_azure.md)	- Manage Azure Private Endpoints.

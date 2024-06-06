@@ -5,6 +5,13 @@ Configure third-party integrations for your Atlas project.
 
 
 
+### Aliases
+```
+
+atlas integrations
+atlas integration
+```
+
 
 
 ### Flags
@@ -22,7 +29,7 @@ Configure third-party integrations for your Atlas project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

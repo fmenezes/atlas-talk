@@ -8,33 +8,38 @@ Remove the specified online archive from your cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Admin role.
 
 
-
+### Usage
+```
+atlas clusters onlineArchives delete <archiveId> [flags]
 ```
 
-atlas clusters onlineArchives delete <archiveId> [flags]
-atlas clusters onlineArchives rm <archiveId> [flags]
-atlas clusters onlinearchives delete <archiveId> [flags]
-atlas clusters onlinearchives rm <archiveId> [flags]
-atlas clusters online-archives delete <archiveId> [flags]
-atlas clusters online-archives rm <archiveId> [flags]
-atlas clusters onlineArchive delete <archiveId> [flags]
-atlas clusters onlineArchive rm <archiveId> [flags]
-atlas clusters onlinearchive delete <archiveId> [flags]
-atlas clusters onlinearchive rm <archiveId> [flags]
-atlas clusters online-archive delete <archiveId> [flags]
-atlas clusters online-archive rm <archiveId> [flags]
-atlas cluster onlineArchives delete <archiveId> [flags]
-atlas cluster onlineArchives rm <archiveId> [flags]
-atlas cluster onlinearchives delete <archiveId> [flags]
-atlas cluster onlinearchives rm <archiveId> [flags]
-atlas cluster online-archives delete <archiveId> [flags]
-atlas cluster online-archives rm <archiveId> [flags]
-atlas cluster onlineArchive delete <archiveId> [flags]
-atlas cluster onlineArchive rm <archiveId> [flags]
-atlas cluster onlinearchive delete <archiveId> [flags]
-atlas cluster onlinearchive rm <archiveId> [flags]
-atlas cluster online-archive delete <archiveId> [flags]
-atlas cluster online-archive rm <archiveId> [flags]
+### Aliases
+```
+
+atlas clusters onlineArchives delete
+atlas clusters onlineArchives rm
+atlas clusters onlinearchives delete
+atlas clusters onlinearchives rm
+atlas clusters online-archives delete
+atlas clusters online-archives rm
+atlas clusters onlineArchive delete
+atlas clusters onlineArchive rm
+atlas clusters onlinearchive delete
+atlas clusters onlinearchive rm
+atlas clusters online-archive delete
+atlas clusters online-archive rm
+atlas cluster onlineArchives delete
+atlas cluster onlineArchives rm
+atlas cluster onlinearchives delete
+atlas cluster onlinearchives rm
+atlas cluster online-archives delete
+atlas cluster online-archives rm
+atlas cluster onlineArchive delete
+atlas cluster onlineArchive rm
+atlas cluster onlinearchive delete
+atlas cluster onlinearchive rm
+atlas cluster online-archive delete
+atlas cluster online-archive rm
 ```
 
 ### Examples
@@ -63,7 +68,7 @@ atlas cluster online-archive rm <archiveId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters onlineArchives](atlas_clusters_onlineArchives.md)	- Manage online archives for your cluster.

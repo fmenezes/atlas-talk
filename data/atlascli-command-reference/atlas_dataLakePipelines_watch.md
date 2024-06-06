@@ -8,15 +8,20 @@ Watch for the specified data lake pipeline to complete.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines watch <pipelineName> [flags]
 ```
 
-atlas dataLakePipelines watch <pipelineName> [flags]
-atlas datalakepipelines watch <pipelineName> [flags]
-atlas data-lake-pipelines watch <pipelineName> [flags]
-atlas dataLakePipeline watch <pipelineName> [flags]
-atlas datalakepipeline watch <pipelineName> [flags]
-atlas data-lake-pipeline watch <pipelineName> [flags]
+### Aliases
+```
+
+atlas dataLakePipelines watch
+atlas datalakepipelines watch
+atlas data-lake-pipelines watch
+atlas dataLakePipeline watch
+atlas datalakepipeline watch
+atlas data-lake-pipeline watch
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas data-lake-pipeline watch <pipelineName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines](atlas_dataLakePipelines.md)	- Data Lake pipelines.

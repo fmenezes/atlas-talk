@@ -8,33 +8,38 @@ Return all online archives for your cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas clusters onlineArchives list [flags]
 ```
 
-atlas clusters onlineArchives list [flags]
-atlas clusters onlineArchives ls [flags]
-atlas clusters onlinearchives list [flags]
-atlas clusters onlinearchives ls [flags]
-atlas clusters online-archives list [flags]
-atlas clusters online-archives ls [flags]
-atlas clusters onlineArchive list [flags]
-atlas clusters onlineArchive ls [flags]
-atlas clusters onlinearchive list [flags]
-atlas clusters onlinearchive ls [flags]
-atlas clusters online-archive list [flags]
-atlas clusters online-archive ls [flags]
-atlas cluster onlineArchives list [flags]
-atlas cluster onlineArchives ls [flags]
-atlas cluster onlinearchives list [flags]
-atlas cluster onlinearchives ls [flags]
-atlas cluster online-archives list [flags]
-atlas cluster online-archives ls [flags]
-atlas cluster onlineArchive list [flags]
-atlas cluster onlineArchive ls [flags]
-atlas cluster onlinearchive list [flags]
-atlas cluster onlinearchive ls [flags]
-atlas cluster online-archive list [flags]
-atlas cluster online-archive ls [flags]
+### Aliases
+```
+
+atlas clusters onlineArchives list
+atlas clusters onlineArchives ls
+atlas clusters onlinearchives list
+atlas clusters onlinearchives ls
+atlas clusters online-archives list
+atlas clusters online-archives ls
+atlas clusters onlineArchive list
+atlas clusters onlineArchive ls
+atlas clusters onlinearchive list
+atlas clusters onlinearchive ls
+atlas clusters online-archive list
+atlas clusters online-archive ls
+atlas cluster onlineArchives list
+atlas cluster onlineArchives ls
+atlas cluster onlinearchives list
+atlas cluster onlinearchives ls
+atlas cluster online-archives list
+atlas cluster online-archives ls
+atlas cluster onlineArchive list
+atlas cluster onlineArchive ls
+atlas cluster onlinearchive list
+atlas cluster onlinearchive ls
+atlas cluster online-archive list
+atlas cluster online-archive ls
 ```
 
 ### Examples
@@ -66,7 +71,7 @@ atlas cluster online-archive ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters onlineArchives](atlas_clusters_onlineArchives.md)	- Manage online archives for your cluster.

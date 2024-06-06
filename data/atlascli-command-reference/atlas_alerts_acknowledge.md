@@ -8,13 +8,18 @@ Acknowledges the specified alert for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas alerts acknowledge <alertId> [flags]
 ```
 
-atlas alerts acknowledge <alertId> [flags]
-atlas alerts ack <alertId> [flags]
-atlas alert acknowledge <alertId> [flags]
-atlas alert ack <alertId> [flags]
+### Aliases
+```
+
+atlas alerts acknowledge
+atlas alerts ack
+atlas alert acknowledge
+atlas alert ack
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas alert ack <alertId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas alerts](atlas_alerts.md)	- Manage alerts for your project.

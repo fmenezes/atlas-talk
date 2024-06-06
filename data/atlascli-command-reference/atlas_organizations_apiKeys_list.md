@@ -8,57 +8,62 @@ Return all API keys for your organization.
 To use this command, you must authenticate with a user account or an API key with the Organization Member role.
 
 
-
+### Usage
+```
+atlas organizations apiKeys list [flags]
 ```
 
-atlas organizations apiKeys list [flags]
-atlas organizations apiKeys ls [flags]
-atlas organizations apikeys list [flags]
-atlas organizations apikeys ls [flags]
-atlas organizations api-keys list [flags]
-atlas organizations api-keys ls [flags]
-atlas organizations apiKey list [flags]
-atlas organizations apiKey ls [flags]
-atlas organizations apikey list [flags]
-atlas organizations apikey ls [flags]
-atlas organizations api-key list [flags]
-atlas organizations api-key ls [flags]
-atlas organization apiKeys list [flags]
-atlas organization apiKeys ls [flags]
-atlas organization apikeys list [flags]
-atlas organization apikeys ls [flags]
-atlas organization api-keys list [flags]
-atlas organization api-keys ls [flags]
-atlas organization apiKey list [flags]
-atlas organization apiKey ls [flags]
-atlas organization apikey list [flags]
-atlas organization apikey ls [flags]
-atlas organization api-key list [flags]
-atlas organization api-key ls [flags]
-atlas orgs apiKeys list [flags]
-atlas orgs apiKeys ls [flags]
-atlas orgs apikeys list [flags]
-atlas orgs apikeys ls [flags]
-atlas orgs api-keys list [flags]
-atlas orgs api-keys ls [flags]
-atlas orgs apiKey list [flags]
-atlas orgs apiKey ls [flags]
-atlas orgs apikey list [flags]
-atlas orgs apikey ls [flags]
-atlas orgs api-key list [flags]
-atlas orgs api-key ls [flags]
-atlas org apiKeys list [flags]
-atlas org apiKeys ls [flags]
-atlas org apikeys list [flags]
-atlas org apikeys ls [flags]
-atlas org api-keys list [flags]
-atlas org api-keys ls [flags]
-atlas org apiKey list [flags]
-atlas org apiKey ls [flags]
-atlas org apikey list [flags]
-atlas org apikey ls [flags]
-atlas org api-key list [flags]
-atlas org api-key ls [flags]
+### Aliases
+```
+
+atlas organizations apiKeys list
+atlas organizations apiKeys ls
+atlas organizations apikeys list
+atlas organizations apikeys ls
+atlas organizations api-keys list
+atlas organizations api-keys ls
+atlas organizations apiKey list
+atlas organizations apiKey ls
+atlas organizations apikey list
+atlas organizations apikey ls
+atlas organizations api-key list
+atlas organizations api-key ls
+atlas organization apiKeys list
+atlas organization apiKeys ls
+atlas organization apikeys list
+atlas organization apikeys ls
+atlas organization api-keys list
+atlas organization api-keys ls
+atlas organization apiKey list
+atlas organization apiKey ls
+atlas organization apikey list
+atlas organization apikey ls
+atlas organization api-key list
+atlas organization api-key ls
+atlas orgs apiKeys list
+atlas orgs apiKeys ls
+atlas orgs apikeys list
+atlas orgs apikeys ls
+atlas orgs api-keys list
+atlas orgs api-keys ls
+atlas orgs apiKey list
+atlas orgs apiKey ls
+atlas orgs apikey list
+atlas orgs apikey ls
+atlas orgs api-key list
+atlas orgs api-key ls
+atlas org apiKeys list
+atlas org apiKeys ls
+atlas org apikeys list
+atlas org apikeys ls
+atlas org api-keys list
+atlas org api-keys ls
+atlas org apiKey list
+atlas org apiKey ls
+atlas org apikey list
+atlas org apikey ls
+atlas org api-key list
+atlas org api-key ls
 ```
 
 ### Examples
@@ -90,7 +95,7 @@ atlas org api-key ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations apiKeys](atlas_organizations_apiKeys.md)	- Organization API Keys operations.

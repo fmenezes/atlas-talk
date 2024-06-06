@@ -8,21 +8,26 @@ List GCP private endpoints for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints gcp list [flags]
 ```
 
-atlas privateEndpoints gcp list [flags]
-atlas privateEndpoints gcp ls [flags]
-atlas privateendpoints gcp list [flags]
-atlas privateendpoints gcp ls [flags]
-atlas private-endpoints gcp list [flags]
-atlas private-endpoints gcp ls [flags]
-atlas privateEndpoint gcp list [flags]
-atlas privateEndpoint gcp ls [flags]
-atlas privateendpoint gcp list [flags]
-atlas privateendpoint gcp ls [flags]
-atlas private-endpoint gcp list [flags]
-atlas private-endpoint gcp ls [flags]
+### Aliases
+```
+
+atlas privateEndpoints gcp list
+atlas privateEndpoints gcp ls
+atlas privateendpoints gcp list
+atlas privateendpoints gcp ls
+atlas private-endpoints gcp list
+atlas private-endpoints gcp ls
+atlas privateEndpoint gcp list
+atlas privateEndpoint gcp ls
+atlas privateendpoint gcp list
+atlas privateendpoint gcp ls
+atlas private-endpoint gcp list
+atlas private-endpoint gcp ls
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas private-endpoint gcp ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints gcp](atlas_privateEndpoints_gcp.md)	- Manage GCP private endpoints.

@@ -10,6 +10,13 @@ The streams command provides access to your Atlas Stream Processing configuratio
 
 
 
+### Aliases
+```
+
+atlas streams
+atlas stream
+```
+
 
 
 ### Flags
@@ -27,7 +34,7 @@ The streams command provides access to your Atlas Stream Processing configuratio
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

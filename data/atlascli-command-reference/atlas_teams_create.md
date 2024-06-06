@@ -8,11 +8,16 @@ Create a team for your organization.
 To use this command, you must authenticate with a user account or an API key with the Organization Owner role.
 
 
-
+### Usage
+```
+atlas teams create <name> [flags]
 ```
 
-atlas teams create <name> [flags]
-atlas team create <name> [flags]
+### Aliases
+```
+
+atlas teams create
+atlas team create
 ```
 
 ### Examples
@@ -41,7 +46,7 @@ atlas team create <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas teams](atlas_teams.md)	- Manage your Atlas teams.

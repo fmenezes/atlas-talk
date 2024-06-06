@@ -10,45 +10,50 @@ This disables the ability to create multiple private resources per region in all
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints regionalModes disable [flags]
 ```
 
-atlas privateEndpoints regionalModes disable [flags]
-atlas privateEndpoints regionalmodes disable [flags]
-atlas privateEndpoints regional-modes disable [flags]
-atlas privateEndpoints regionalMode disable [flags]
-atlas privateEndpoints regionalmode disable [flags]
-atlas privateEndpoints regional-mode disable [flags]
-atlas privateendpoints regionalModes disable [flags]
-atlas privateendpoints regionalmodes disable [flags]
-atlas privateendpoints regional-modes disable [flags]
-atlas privateendpoints regionalMode disable [flags]
-atlas privateendpoints regionalmode disable [flags]
-atlas privateendpoints regional-mode disable [flags]
-atlas private-endpoints regionalModes disable [flags]
-atlas private-endpoints regionalmodes disable [flags]
-atlas private-endpoints regional-modes disable [flags]
-atlas private-endpoints regionalMode disable [flags]
-atlas private-endpoints regionalmode disable [flags]
-atlas private-endpoints regional-mode disable [flags]
-atlas privateEndpoint regionalModes disable [flags]
-atlas privateEndpoint regionalmodes disable [flags]
-atlas privateEndpoint regional-modes disable [flags]
-atlas privateEndpoint regionalMode disable [flags]
-atlas privateEndpoint regionalmode disable [flags]
-atlas privateEndpoint regional-mode disable [flags]
-atlas privateendpoint regionalModes disable [flags]
-atlas privateendpoint regionalmodes disable [flags]
-atlas privateendpoint regional-modes disable [flags]
-atlas privateendpoint regionalMode disable [flags]
-atlas privateendpoint regionalmode disable [flags]
-atlas privateendpoint regional-mode disable [flags]
-atlas private-endpoint regionalModes disable [flags]
-atlas private-endpoint regionalmodes disable [flags]
-atlas private-endpoint regional-modes disable [flags]
-atlas private-endpoint regionalMode disable [flags]
-atlas private-endpoint regionalmode disable [flags]
-atlas private-endpoint regional-mode disable [flags]
+### Aliases
+```
+
+atlas privateEndpoints regionalModes disable
+atlas privateEndpoints regionalmodes disable
+atlas privateEndpoints regional-modes disable
+atlas privateEndpoints regionalMode disable
+atlas privateEndpoints regionalmode disable
+atlas privateEndpoints regional-mode disable
+atlas privateendpoints regionalModes disable
+atlas privateendpoints regionalmodes disable
+atlas privateendpoints regional-modes disable
+atlas privateendpoints regionalMode disable
+atlas privateendpoints regionalmode disable
+atlas privateendpoints regional-mode disable
+atlas private-endpoints regionalModes disable
+atlas private-endpoints regionalmodes disable
+atlas private-endpoints regional-modes disable
+atlas private-endpoints regionalMode disable
+atlas private-endpoints regionalmode disable
+atlas private-endpoints regional-mode disable
+atlas privateEndpoint regionalModes disable
+atlas privateEndpoint regionalmodes disable
+atlas privateEndpoint regional-modes disable
+atlas privateEndpoint regionalMode disable
+atlas privateEndpoint regionalmode disable
+atlas privateEndpoint regional-mode disable
+atlas privateendpoint regionalModes disable
+atlas privateendpoint regionalmodes disable
+atlas privateendpoint regional-modes disable
+atlas privateendpoint regionalMode disable
+atlas privateendpoint regionalmode disable
+atlas privateendpoint regional-mode disable
+atlas private-endpoint regionalModes disable
+atlas private-endpoint regionalmodes disable
+atlas private-endpoint regional-modes disable
+atlas private-endpoint regionalMode disable
+atlas private-endpoint regionalmode disable
+atlas private-endpoint regional-mode disable
 ```
 
 ### Examples
@@ -76,7 +81,7 @@ atlas private-endpoint regional-mode disable [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints regionalModes](atlas_privateEndpoints_regionalModes.md)	- Manage regionalized private endpoint setting for your Atlas project.

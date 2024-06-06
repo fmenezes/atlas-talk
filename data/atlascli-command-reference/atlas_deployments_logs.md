@@ -3,13 +3,18 @@
 Get deployment logs.
 
 
-
+### Usage
+```
+atlas deployments logs [flags]
 ```
 
-atlas deployments logs [flags]
-atlas deployments log [flags]
-atlas deployment logs [flags]
-atlas deployment log [flags]
+### Aliases
+```
+
+atlas deployments logs
+atlas deployments log
+atlas deployment logs
+atlas deployment log
 ```
 
 
@@ -38,7 +43,7 @@ atlas deployment log [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments](atlas_deployments.md)	- Manage cloud and local deployments.

@@ -8,25 +8,30 @@ Return all users for an organization.
 To use this command, you must authenticate with a user account or an API key with the Organization Member role.
 
 
-
+### Usage
+```
+atlas organizations users list [flags]
 ```
 
-atlas organizations users list [flags]
-atlas organizations users ls [flags]
-atlas organizations user list [flags]
-atlas organizations user ls [flags]
-atlas organization users list [flags]
-atlas organization users ls [flags]
-atlas organization user list [flags]
-atlas organization user ls [flags]
-atlas orgs users list [flags]
-atlas orgs users ls [flags]
-atlas orgs user list [flags]
-atlas orgs user ls [flags]
-atlas org users list [flags]
-atlas org users ls [flags]
-atlas org user list [flags]
-atlas org user ls [flags]
+### Aliases
+```
+
+atlas organizations users list
+atlas organizations users ls
+atlas organizations user list
+atlas organizations user ls
+atlas organization users list
+atlas organization users ls
+atlas organization user list
+atlas organization user ls
+atlas orgs users list
+atlas orgs users ls
+atlas orgs user list
+atlas orgs user ls
+atlas org users list
+atlas org users ls
+atlas org user list
+atlas org user ls
 ```
 
 ### Examples
@@ -57,7 +62,7 @@ atlas org user ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations users](atlas_organizations_users.md)	- Manage your Atlas users.

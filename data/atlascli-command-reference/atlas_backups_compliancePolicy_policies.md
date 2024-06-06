@@ -5,6 +5,23 @@ Manage the individual policy items of the backup compliance policy for your proj
 
 
 
+### Aliases
+```
+
+atlas backups compliancePolicy policies
+atlas backups compliancePolicy policy
+atlas backups compliancepolicy policies
+atlas backups compliancepolicy policy
+atlas backups compliance-policy policies
+atlas backups compliance-policy policy
+atlas backup compliancePolicy policies
+atlas backup compliancePolicy policy
+atlas backup compliancepolicy policies
+atlas backup compliancepolicy policy
+atlas backup compliance-policy policies
+atlas backup compliance-policy policy
+```
+
 
 
 ### Flags
@@ -22,7 +39,7 @@ Manage the individual policy items of the backup compliance policy for your proj
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy](atlas_backups_compliancePolicy.md)	- Manage cloud backup compliance policy for your project. Use "atlas backups compliancepolicy setup" to enable backup compliance policy with a full configuration. Use "atlas backups compliancepolicy enable" to enable backup compliance policy without any configuration.

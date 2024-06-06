@@ -11,13 +11,18 @@ If you run the command in the terminal, it blocks the terminal session until the
 You can interrupt the command's polling at any time with CTRL-C.
 
 
-
+### Usage
+```
+atlas backups restores watch <restoreJobId> [flags]
 ```
 
-atlas backups restores watch <restoreJobId> [flags]
-atlas backups restore watch <restoreJobId> [flags]
-atlas backup restores watch <restoreJobId> [flags]
-atlas backup restore watch <restoreJobId> [flags]
+### Aliases
+```
+
+atlas backups restores watch
+atlas backups restore watch
+atlas backup restores watch
+atlas backup restore watch
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas backup restore watch <restoreJobId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups restores](atlas_backups_restores.md)	- Manage cloud backup restore jobs for your project.

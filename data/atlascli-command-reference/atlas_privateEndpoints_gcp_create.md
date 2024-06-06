@@ -8,15 +8,20 @@ Create a new GCP private endpoint for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints gcp create [flags]
 ```
 
-atlas privateEndpoints gcp create [flags]
-atlas privateendpoints gcp create [flags]
-atlas private-endpoints gcp create [flags]
-atlas privateEndpoint gcp create [flags]
-atlas privateendpoint gcp create [flags]
-atlas private-endpoint gcp create [flags]
+### Aliases
+```
+
+atlas privateEndpoints gcp create
+atlas privateendpoints gcp create
+atlas private-endpoints gcp create
+atlas privateEndpoint gcp create
+atlas privateendpoint gcp create
+atlas private-endpoint gcp create
 ```
 
 ### Examples
@@ -44,7 +49,7 @@ atlas private-endpoint gcp create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints gcp](atlas_privateEndpoints_gcp.md)	- Manage GCP private endpoints.

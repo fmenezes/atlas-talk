@@ -3,17 +3,22 @@
 Delete the specified search index from the specified deployment.
 
 
-
+### Usage
+```
+atlas deployments search indexes delete <indexId> [flags]
 ```
 
-atlas deployments search indexes delete <indexId> [flags]
-atlas deployments search indexes rm <indexId> [flags]
-atlas deployments search index delete <indexId> [flags]
-atlas deployments search index rm <indexId> [flags]
-atlas deployment search indexes delete <indexId> [flags]
-atlas deployment search indexes rm <indexId> [flags]
-atlas deployment search index delete <indexId> [flags]
-atlas deployment search index rm <indexId> [flags]
+### Aliases
+```
+
+atlas deployments search indexes delete
+atlas deployments search indexes rm
+atlas deployments search index delete
+atlas deployments search index rm
+atlas deployment search indexes delete
+atlas deployment search indexes rm
+atlas deployment search index delete
+atlas deployment search index rm
 ```
 
 
@@ -40,7 +45,7 @@ atlas deployment search index rm <indexId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments search indexes](atlas_deployments_search_indexes.md)	- Manage cloud and local search indexes.

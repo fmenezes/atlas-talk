@@ -10,6 +10,13 @@ Create, list and manage your Atlas users.
 
 
 
+### Aliases
+```
+
+atlas users
+atlas user
+```
+
 
 
 ### Flags
@@ -27,7 +34,7 @@ Create, list and manage your Atlas users.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

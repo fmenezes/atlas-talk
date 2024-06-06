@@ -8,33 +8,38 @@ Create a GCP private endpoint interface.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints gcp interfaces create <endpointGroupId> [flags]
 ```
 
-atlas privateEndpoints gcp interfaces create <endpointGroupId> [flags]
-atlas privateEndpoints gcp interfaces add <endpointGroupId> [flags]
-atlas privateEndpoints gcp interface create <endpointGroupId> [flags]
-atlas privateEndpoints gcp interface add <endpointGroupId> [flags]
-atlas privateendpoints gcp interfaces create <endpointGroupId> [flags]
-atlas privateendpoints gcp interfaces add <endpointGroupId> [flags]
-atlas privateendpoints gcp interface create <endpointGroupId> [flags]
-atlas privateendpoints gcp interface add <endpointGroupId> [flags]
-atlas private-endpoints gcp interfaces create <endpointGroupId> [flags]
-atlas private-endpoints gcp interfaces add <endpointGroupId> [flags]
-atlas private-endpoints gcp interface create <endpointGroupId> [flags]
-atlas private-endpoints gcp interface add <endpointGroupId> [flags]
-atlas privateEndpoint gcp interfaces create <endpointGroupId> [flags]
-atlas privateEndpoint gcp interfaces add <endpointGroupId> [flags]
-atlas privateEndpoint gcp interface create <endpointGroupId> [flags]
-atlas privateEndpoint gcp interface add <endpointGroupId> [flags]
-atlas privateendpoint gcp interfaces create <endpointGroupId> [flags]
-atlas privateendpoint gcp interfaces add <endpointGroupId> [flags]
-atlas privateendpoint gcp interface create <endpointGroupId> [flags]
-atlas privateendpoint gcp interface add <endpointGroupId> [flags]
-atlas private-endpoint gcp interfaces create <endpointGroupId> [flags]
-atlas private-endpoint gcp interfaces add <endpointGroupId> [flags]
-atlas private-endpoint gcp interface create <endpointGroupId> [flags]
-atlas private-endpoint gcp interface add <endpointGroupId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints gcp interfaces create
+atlas privateEndpoints gcp interfaces add
+atlas privateEndpoints gcp interface create
+atlas privateEndpoints gcp interface add
+atlas privateendpoints gcp interfaces create
+atlas privateendpoints gcp interfaces add
+atlas privateendpoints gcp interface create
+atlas privateendpoints gcp interface add
+atlas private-endpoints gcp interfaces create
+atlas private-endpoints gcp interfaces add
+atlas private-endpoints gcp interface create
+atlas private-endpoints gcp interface add
+atlas privateEndpoint gcp interfaces create
+atlas privateEndpoint gcp interfaces add
+atlas privateEndpoint gcp interface create
+atlas privateEndpoint gcp interface add
+atlas privateendpoint gcp interfaces create
+atlas privateendpoint gcp interfaces add
+atlas privateendpoint gcp interface create
+atlas privateendpoint gcp interface add
+atlas private-endpoint gcp interfaces create
+atlas private-endpoint gcp interfaces add
+atlas private-endpoint gcp interface create
+atlas private-endpoint gcp interface add
 ```
 
 ### Examples
@@ -67,7 +72,7 @@ atlas private-endpoint gcp interface add <endpointGroupId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints gcp interfaces](atlas_privateEndpoints_gcp_interfaces.md)	- Manage Atlas GCP private endpoint interfaces.

@@ -8,17 +8,22 @@ Create a search index for a cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Admin role.
 
 
-
+### Usage
+```
+atlas clusters search indexes create <indexName> [flags]
 ```
 
-atlas clusters search indexes create <indexName> [flags]
-atlas clusters search index create <indexName> [flags]
-atlas clusters fts indexes create <indexName> [flags]
-atlas clusters fts index create <indexName> [flags]
-atlas cluster search indexes create <indexName> [flags]
-atlas cluster search index create <indexName> [flags]
-atlas cluster fts indexes create <indexName> [flags]
-atlas cluster fts index create <indexName> [flags]
+### Aliases
+```
+
+atlas clusters search indexes create
+atlas clusters search index create
+atlas clusters fts indexes create
+atlas clusters fts index create
+atlas cluster search indexes create
+atlas cluster search index create
+atlas cluster fts indexes create
+atlas cluster fts index create
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas cluster fts index create <indexName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters search indexes](atlas_clusters_search_indexes.md)	- Manage Atlas Search indexes for your cluster.

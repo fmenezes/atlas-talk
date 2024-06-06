@@ -8,11 +8,16 @@ Creates one serverless instance in the specified project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas serverless create <instanceName> [flags]
 ```
 
-atlas serverless create <instanceName> [flags]
-atlas sl create <instanceName> [flags]
+### Aliases
+```
+
+atlas serverless create
+atlas sl create
 ```
 
 ### Examples
@@ -43,7 +48,7 @@ atlas sl create <instanceName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless](atlas_serverless.md)	- Manage serverless instances for your project.

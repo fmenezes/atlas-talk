@@ -10,25 +10,30 @@ You can use either the invitation ID or the user's email address to specify the 
 To use this command, you must authenticate with a user account or an API key with the Organization Owner role.
 
 
-
+### Usage
+```
+atlas organizations invitations update <invitationId> [flags]
 ```
 
-atlas organizations invitations update <invitationId> [flags]
-atlas organizations invitations updates <invitationId> [flags]
-atlas organizations invitation update <invitationId> [flags]
-atlas organizations invitation updates <invitationId> [flags]
-atlas organization invitations update <invitationId> [flags]
-atlas organization invitations updates <invitationId> [flags]
-atlas organization invitation update <invitationId> [flags]
-atlas organization invitation updates <invitationId> [flags]
-atlas orgs invitations update <invitationId> [flags]
-atlas orgs invitations updates <invitationId> [flags]
-atlas orgs invitation update <invitationId> [flags]
-atlas orgs invitation updates <invitationId> [flags]
-atlas org invitations update <invitationId> [flags]
-atlas org invitations updates <invitationId> [flags]
-atlas org invitation update <invitationId> [flags]
-atlas org invitation updates <invitationId> [flags]
+### Aliases
+```
+
+atlas organizations invitations update
+atlas organizations invitations updates
+atlas organizations invitation update
+atlas organizations invitation updates
+atlas organization invitations update
+atlas organization invitations updates
+atlas organization invitation update
+atlas organization invitation updates
+atlas orgs invitations update
+atlas orgs invitations updates
+atlas orgs invitation update
+atlas orgs invitation updates
+atlas org invitations update
+atlas org invitations updates
+atlas org invitation update
+atlas org invitation updates
 ```
 
 ### Examples
@@ -61,7 +66,7 @@ atlas org invitation updates <invitationId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations invitations](atlas_organizations_invitations.md)	- Invitation operations.

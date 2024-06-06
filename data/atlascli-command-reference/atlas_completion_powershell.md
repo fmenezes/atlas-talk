@@ -16,10 +16,15 @@ to your powershell profile.
 
 
 
-
+### Usage
+```
+atlas completion powershell [flags]
 ```
 
-atlas completion powershell [flags]
+### Aliases
+```
+
+atlas completion powershell
 ```
 
 
@@ -40,7 +45,7 @@ atlas completion powershell [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas completion](atlas_completion.md)	- Generate the autocompletion script for the specified shell

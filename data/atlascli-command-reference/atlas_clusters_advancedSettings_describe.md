@@ -8,37 +8,42 @@ Retrieve advanced configuration settings for one cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas clusters advancedSettings describe <clusterName> [flags]
 ```
 
-atlas clusters advancedSettings describe <clusterName> [flags]
-atlas clusters advancedSettings get <clusterName> [flags]
-atlas clusters advancedsettings describe <clusterName> [flags]
-atlas clusters advancedsettings get <clusterName> [flags]
-atlas clusters advanced-settings describe <clusterName> [flags]
-atlas clusters advanced-settings get <clusterName> [flags]
-atlas clusters advancedSetting describe <clusterName> [flags]
-atlas clusters advancedSetting get <clusterName> [flags]
-atlas clusters advancedsetting describe <clusterName> [flags]
-atlas clusters advancedsetting get <clusterName> [flags]
-atlas clusters advanced-setting describe <clusterName> [flags]
-atlas clusters advanced-setting get <clusterName> [flags]
-atlas clusters settings describe <clusterName> [flags]
-atlas clusters settings get <clusterName> [flags]
-atlas cluster advancedSettings describe <clusterName> [flags]
-atlas cluster advancedSettings get <clusterName> [flags]
-atlas cluster advancedsettings describe <clusterName> [flags]
-atlas cluster advancedsettings get <clusterName> [flags]
-atlas cluster advanced-settings describe <clusterName> [flags]
-atlas cluster advanced-settings get <clusterName> [flags]
-atlas cluster advancedSetting describe <clusterName> [flags]
-atlas cluster advancedSetting get <clusterName> [flags]
-atlas cluster advancedsetting describe <clusterName> [flags]
-atlas cluster advancedsetting get <clusterName> [flags]
-atlas cluster advanced-setting describe <clusterName> [flags]
-atlas cluster advanced-setting get <clusterName> [flags]
-atlas cluster settings describe <clusterName> [flags]
-atlas cluster settings get <clusterName> [flags]
+### Aliases
+```
+
+atlas clusters advancedSettings describe
+atlas clusters advancedSettings get
+atlas clusters advancedsettings describe
+atlas clusters advancedsettings get
+atlas clusters advanced-settings describe
+atlas clusters advanced-settings get
+atlas clusters advancedSetting describe
+atlas clusters advancedSetting get
+atlas clusters advancedsetting describe
+atlas clusters advancedsetting get
+atlas clusters advanced-setting describe
+atlas clusters advanced-setting get
+atlas clusters settings describe
+atlas clusters settings get
+atlas cluster advancedSettings describe
+atlas cluster advancedSettings get
+atlas cluster advancedsettings describe
+atlas cluster advancedsettings get
+atlas cluster advanced-settings describe
+atlas cluster advanced-settings get
+atlas cluster advancedSetting describe
+atlas cluster advancedSetting get
+atlas cluster advancedsetting describe
+atlas cluster advancedsetting get
+atlas cluster advanced-setting describe
+atlas cluster advanced-setting get
+atlas cluster settings describe
+atlas cluster settings get
 ```
 
 ### Examples
@@ -65,7 +70,7 @@ atlas cluster settings get <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters advancedSettings](atlas_clusters_advancedSettings.md)	- Manage advanced configuration settings for your cluster.

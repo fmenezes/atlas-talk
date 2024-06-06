@@ -3,37 +3,42 @@
 Lists all key provider configurations found in the encrypted audit log file.
 
 
-
+### Usage
+```
+atlas logs keyProviders list [flags]
 ```
 
-atlas logs keyProviders list [flags]
-atlas logs keyProviders ls [flags]
-atlas logs keyproviders list [flags]
-atlas logs keyproviders ls [flags]
-atlas logs key-providers list [flags]
-atlas logs key-providers ls [flags]
-atlas logs keyProvider list [flags]
-atlas logs keyProvider ls [flags]
-atlas logs keyprovider list [flags]
-atlas logs keyprovider ls [flags]
-atlas logs key-provider list [flags]
-atlas logs key-provider ls [flags]
-atlas logs keys list [flags]
-atlas logs keys ls [flags]
-atlas log keyProviders list [flags]
-atlas log keyProviders ls [flags]
-atlas log keyproviders list [flags]
-atlas log keyproviders ls [flags]
-atlas log key-providers list [flags]
-atlas log key-providers ls [flags]
-atlas log keyProvider list [flags]
-atlas log keyProvider ls [flags]
-atlas log keyprovider list [flags]
-atlas log keyprovider ls [flags]
-atlas log key-provider list [flags]
-atlas log key-provider ls [flags]
-atlas log keys list [flags]
-atlas log keys ls [flags]
+### Aliases
+```
+
+atlas logs keyProviders list
+atlas logs keyProviders ls
+atlas logs keyproviders list
+atlas logs keyproviders ls
+atlas logs key-providers list
+atlas logs key-providers ls
+atlas logs keyProvider list
+atlas logs keyProvider ls
+atlas logs keyprovider list
+atlas logs keyprovider ls
+atlas logs key-provider list
+atlas logs key-provider ls
+atlas logs keys list
+atlas logs keys ls
+atlas log keyProviders list
+atlas log keyProviders ls
+atlas log keyproviders list
+atlas log keyproviders ls
+atlas log key-providers list
+atlas log key-providers ls
+atlas log keyProvider list
+atlas log keyProvider ls
+atlas log keyprovider list
+atlas log keyprovider ls
+atlas log key-provider list
+atlas log key-provider ls
+atlas log keys list
+atlas log keys ls
 ```
 
 ### Examples
@@ -60,7 +65,7 @@ atlas log keys ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas logs keyProviders](atlas_logs_keyProviders.md)	- Manage your key collections.

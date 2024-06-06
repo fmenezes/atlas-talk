@@ -5,6 +5,17 @@ Retrieve namespaces for collections experiencing slow queries
 
 
 
+### Aliases
+```
+
+atlas performanceAdvisor namespaces
+atlas performanceAdvisor namespace
+atlas performanceadvisor namespaces
+atlas performanceadvisor namespace
+atlas performance-advisor namespaces
+atlas performance-advisor namespace
+```
+
 
 
 ### Flags
@@ -22,7 +33,7 @@ Retrieve namespaces for collections experiencing slow queries
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas performanceAdvisor](atlas_performanceAdvisor.md)	- Learn more about slow queries and get suggestions to improve database performance.

@@ -8,13 +8,18 @@ Return the details for the specified database user for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas dbusers describe <username> [flags]
 ```
 
-atlas dbusers describe <username> [flags]
-atlas dbusers get <username> [flags]
-atlas dbuser describe <username> [flags]
-atlas dbuser get <username> [flags]
+### Aliases
+```
+
+atlas dbusers describe
+atlas dbusers get
+atlas dbuser describe
+atlas dbuser get
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas dbuser get <username> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dbusers](atlas_dbusers.md)	- Manage database users for your project.

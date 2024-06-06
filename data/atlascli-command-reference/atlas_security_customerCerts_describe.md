@@ -8,16 +8,21 @@ Return the details for the current customer-managed X.509 configuration for your
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas security customerCerts describe [flags]
 ```
 
-atlas security customerCerts describe [flags]
-atlas security customercerts describe [flags]
-atlas security customer-certs describe [flags]
-atlas security customerCert describe [flags]
-atlas security customercert describe [flags]
-atlas security customer-cert describe [flags]
-atlas security certs describe [flags]
+### Aliases
+```
+
+atlas security customerCerts describe
+atlas security customercerts describe
+atlas security customer-certs describe
+atlas security customerCert describe
+atlas security customercert describe
+atlas security customer-cert describe
+atlas security certs describe
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas security certs describe [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas security customerCerts](atlas_security_customerCerts.md)	- Manage customer x509 certificates for your project.

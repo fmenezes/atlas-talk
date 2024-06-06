@@ -5,6 +5,13 @@ Manage cloud and local deployments.
 
 
 
+### Aliases
+```
+
+atlas deployments
+atlas deployment
+```
+
 
 
 ### Flags
@@ -22,7 +29,7 @@ Manage cloud and local deployments.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

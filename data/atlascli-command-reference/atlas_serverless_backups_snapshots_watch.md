@@ -12,17 +12,22 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas serverless backups snapshots watch [flags]
 ```
 
-atlas serverless backups snapshots watch [flags]
-atlas serverless backups snapshot watch [flags]
-atlas serverless backup snapshots watch [flags]
-atlas serverless backup snapshot watch [flags]
-atlas sl backups snapshots watch [flags]
-atlas sl backups snapshot watch [flags]
-atlas sl backup snapshots watch [flags]
-atlas sl backup snapshot watch [flags]
+### Aliases
+```
+
+atlas serverless backups snapshots watch
+atlas serverless backups snapshot watch
+atlas serverless backup snapshots watch
+atlas serverless backup snapshot watch
+atlas sl backups snapshots watch
+atlas sl backups snapshot watch
+atlas sl backup snapshots watch
+atlas sl backup snapshot watch
 ```
 
 ### Examples
@@ -51,7 +56,7 @@ atlas sl backup snapshot watch [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless backups snapshots](atlas_serverless_backups_snapshots.md)	- Manage cloud backup snapshots for your project.

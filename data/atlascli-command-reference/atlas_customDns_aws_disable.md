@@ -8,21 +8,26 @@ Disable the custom DNS configuration of an Atlas cluster deployed to AWS in the 
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas customDns aws disable [flags]
 ```
 
-atlas customDns aws disable [flags]
-atlas customDns aw disable [flags]
-atlas customdns aws disable [flags]
-atlas customdns aw disable [flags]
-atlas custom-dns aws disable [flags]
-atlas custom-dns aw disable [flags]
-atlas customDn aws disable [flags]
-atlas customDn aw disable [flags]
-atlas customdn aws disable [flags]
-atlas customdn aw disable [flags]
-atlas custom-dn aws disable [flags]
-atlas custom-dn aw disable [flags]
+### Aliases
+```
+
+atlas customDns aws disable
+atlas customDns aw disable
+atlas customdns aws disable
+atlas customdns aw disable
+atlas custom-dns aws disable
+atlas custom-dns aw disable
+atlas customDn aws disable
+atlas customDn aw disable
+atlas customdn aws disable
+atlas customdn aw disable
+atlas custom-dn aws disable
+atlas custom-dn aw disable
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas custom-dn aw disable [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas customDns aws](atlas_customDns_aws.md)	- Manage DNS configuration of an Atlas project’s cluster deployed to AWS.

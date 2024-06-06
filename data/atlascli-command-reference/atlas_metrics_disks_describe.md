@@ -11,17 +11,22 @@ atlas processes list
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas metrics disks describe <hostname:port> <diskName> [flags]
 ```
 
-atlas metrics disks describe <hostname:port> <diskName> [flags]
-atlas metrics disk describe <hostname:port> <diskName> [flags]
-atlas metric disks describe <hostname:port> <diskName> [flags]
-atlas metric disk describe <hostname:port> <diskName> [flags]
-atlas measurements disks describe <hostname:port> <diskName> [flags]
-atlas measurements disk describe <hostname:port> <diskName> [flags]
-atlas measurement disks describe <hostname:port> <diskName> [flags]
-atlas measurement disk describe <hostname:port> <diskName> [flags]
+### Aliases
+```
+
+atlas metrics disks describe
+atlas metrics disk describe
+atlas metric disks describe
+atlas metric disk describe
+atlas measurements disks describe
+atlas measurements disk describe
+atlas measurement disks describe
+atlas measurement disk describe
 ```
 
 ### Examples
@@ -56,7 +61,7 @@ atlas measurement disk describe <hostname:port> <diskName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas metrics disks](atlas_metrics_disks.md)	- List available disks or disk metrics for a given host.

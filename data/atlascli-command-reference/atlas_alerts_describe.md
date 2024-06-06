@@ -8,13 +8,18 @@ Return the details for the specified alert for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas alerts describe <alertId> [flags]
 ```
 
-atlas alerts describe <alertId> [flags]
-atlas alerts get <alertId> [flags]
-atlas alert describe <alertId> [flags]
-atlas alert get <alertId> [flags]
+### Aliases
+```
+
+atlas alerts describe
+atlas alerts get
+atlas alert describe
+atlas alert get
 ```
 
 ### Examples
@@ -42,7 +47,7 @@ atlas alert get <alertId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas alerts](atlas_alerts.md)	- Manage alerts for your project.

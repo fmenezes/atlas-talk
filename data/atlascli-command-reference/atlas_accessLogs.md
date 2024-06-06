@@ -5,6 +5,17 @@ Return the access logs for a cluster.
 
 
 
+### Aliases
+```
+
+atlas accessLogs
+atlas accesslogs
+atlas access-logs
+atlas accessLog
+atlas accesslog
+atlas access-log
+```
+
 
 
 ### Flags
@@ -22,7 +33,7 @@ Return the access logs for a cluster.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

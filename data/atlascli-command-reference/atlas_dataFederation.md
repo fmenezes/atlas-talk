@@ -5,6 +5,14 @@ Data federation.
 
 
 
+### Aliases
+```
+
+atlas dataFederation
+atlas datafederation
+atlas data-federation
+```
+
 
 
 ### Flags
@@ -22,7 +30,7 @@ Data federation.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

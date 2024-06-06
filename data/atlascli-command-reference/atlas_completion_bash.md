@@ -28,10 +28,15 @@ You will need to start a new shell for this setup to take effect.
 
 
 
-
+### Usage
+```
+atlas completion bash
 ```
 
-atlas completion bash 
+### Aliases
+```
+
+atlas completion bash
 ```
 
 
@@ -52,7 +57,7 @@ atlas completion bash
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas completion](atlas_completion.md)	- Generate the autocompletion script for the specified shell

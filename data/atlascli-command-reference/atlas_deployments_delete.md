@@ -13,13 +13,18 @@ Deleting a Local deployment also deletes any local data volumes.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas deployments delete <deploymentName> [flags]
 ```
 
-atlas deployments delete <deploymentName> [flags]
-atlas deployments rm <deploymentName> [flags]
-atlas deployment delete <deploymentName> [flags]
-atlas deployment rm <deploymentName> [flags]
+### Aliases
+```
+
+atlas deployments delete
+atlas deployments rm
+atlas deployment delete
+atlas deployment rm
 ```
 
 ### Examples
@@ -56,7 +61,7 @@ atlas deployment rm <deploymentName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments](atlas_deployments.md)	- Manage cloud and local deployments.

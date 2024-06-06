@@ -5,6 +5,13 @@ Manage MongoDB processes for your project.
 
 
 
+### Aliases
+```
+
+atlas processes
+atlas process
+```
+
 
 
 ### Flags
@@ -22,7 +29,7 @@ Manage MongoDB processes for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

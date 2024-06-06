@@ -5,6 +5,23 @@ Manage available regions for your project.
 
 
 
+### Aliases
+```
+
+atlas clusters availableRegions
+atlas clusters availableregions
+atlas clusters available-regions
+atlas clusters availableRegion
+atlas clusters availableregion
+atlas clusters available-region
+atlas cluster availableRegions
+atlas cluster availableregions
+atlas cluster available-regions
+atlas cluster availableRegion
+atlas cluster availableregion
+atlas cluster available-region
+```
+
 
 
 ### Flags
@@ -22,7 +39,7 @@ Manage available regions for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

@@ -8,21 +8,26 @@ Retrieve the access logs of a cluster identified by the cluster's name or hostna
 To use this command, you must authenticate with a user account or an API key with the Project Monitoring Admin role.
 
 
-
+### Usage
+```
+atlas accessLogs list [flags]
 ```
 
-atlas accessLogs list [flags]
-atlas accessLogs ls [flags]
-atlas accesslogs list [flags]
-atlas accesslogs ls [flags]
-atlas access-logs list [flags]
-atlas access-logs ls [flags]
-atlas accessLog list [flags]
-atlas accessLog ls [flags]
-atlas accesslog list [flags]
-atlas accesslog ls [flags]
-atlas access-log list [flags]
-atlas access-log ls [flags]
+### Aliases
+```
+
+atlas accessLogs list
+atlas accessLogs ls
+atlas accesslogs list
+atlas accesslogs ls
+atlas access-logs list
+atlas access-logs ls
+atlas accessLog list
+atlas accessLog ls
+atlas accesslog list
+atlas accesslog ls
+atlas access-log list
+atlas access-log ls
 ```
 
 ### Examples
@@ -57,7 +62,7 @@ atlas access-log ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas accessLogs](atlas_accessLogs.md)	- Return the access logs for a cluster.

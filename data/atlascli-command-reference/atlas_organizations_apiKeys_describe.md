@@ -10,57 +10,62 @@ To view possible values for the ID argument, run atlas organizations apiKeys lis
 To use this command, you must authenticate with a user account or an API key with the Organization Member role.
 
 
-
+### Usage
+```
+atlas organizations apiKeys describe <ID> [flags]
 ```
 
-atlas organizations apiKeys describe <ID> [flags]
-atlas organizations apiKeys show <ID> [flags]
-atlas organizations apikeys describe <ID> [flags]
-atlas organizations apikeys show <ID> [flags]
-atlas organizations api-keys describe <ID> [flags]
-atlas organizations api-keys show <ID> [flags]
-atlas organizations apiKey describe <ID> [flags]
-atlas organizations apiKey show <ID> [flags]
-atlas organizations apikey describe <ID> [flags]
-atlas organizations apikey show <ID> [flags]
-atlas organizations api-key describe <ID> [flags]
-atlas organizations api-key show <ID> [flags]
-atlas organization apiKeys describe <ID> [flags]
-atlas organization apiKeys show <ID> [flags]
-atlas organization apikeys describe <ID> [flags]
-atlas organization apikeys show <ID> [flags]
-atlas organization api-keys describe <ID> [flags]
-atlas organization api-keys show <ID> [flags]
-atlas organization apiKey describe <ID> [flags]
-atlas organization apiKey show <ID> [flags]
-atlas organization apikey describe <ID> [flags]
-atlas organization apikey show <ID> [flags]
-atlas organization api-key describe <ID> [flags]
-atlas organization api-key show <ID> [flags]
-atlas orgs apiKeys describe <ID> [flags]
-atlas orgs apiKeys show <ID> [flags]
-atlas orgs apikeys describe <ID> [flags]
-atlas orgs apikeys show <ID> [flags]
-atlas orgs api-keys describe <ID> [flags]
-atlas orgs api-keys show <ID> [flags]
-atlas orgs apiKey describe <ID> [flags]
-atlas orgs apiKey show <ID> [flags]
-atlas orgs apikey describe <ID> [flags]
-atlas orgs apikey show <ID> [flags]
-atlas orgs api-key describe <ID> [flags]
-atlas orgs api-key show <ID> [flags]
-atlas org apiKeys describe <ID> [flags]
-atlas org apiKeys show <ID> [flags]
-atlas org apikeys describe <ID> [flags]
-atlas org apikeys show <ID> [flags]
-atlas org api-keys describe <ID> [flags]
-atlas org api-keys show <ID> [flags]
-atlas org apiKey describe <ID> [flags]
-atlas org apiKey show <ID> [flags]
-atlas org apikey describe <ID> [flags]
-atlas org apikey show <ID> [flags]
-atlas org api-key describe <ID> [flags]
-atlas org api-key show <ID> [flags]
+### Aliases
+```
+
+atlas organizations apiKeys describe
+atlas organizations apiKeys show
+atlas organizations apikeys describe
+atlas organizations apikeys show
+atlas organizations api-keys describe
+atlas organizations api-keys show
+atlas organizations apiKey describe
+atlas organizations apiKey show
+atlas organizations apikey describe
+atlas organizations apikey show
+atlas organizations api-key describe
+atlas organizations api-key show
+atlas organization apiKeys describe
+atlas organization apiKeys show
+atlas organization apikeys describe
+atlas organization apikeys show
+atlas organization api-keys describe
+atlas organization api-keys show
+atlas organization apiKey describe
+atlas organization apiKey show
+atlas organization apikey describe
+atlas organization apikey show
+atlas organization api-key describe
+atlas organization api-key show
+atlas orgs apiKeys describe
+atlas orgs apiKeys show
+atlas orgs apikeys describe
+atlas orgs apikeys show
+atlas orgs api-keys describe
+atlas orgs api-keys show
+atlas orgs apiKey describe
+atlas orgs apiKey show
+atlas orgs apikey describe
+atlas orgs apikey show
+atlas orgs api-key describe
+atlas orgs api-key show
+atlas org apiKeys describe
+atlas org apiKeys show
+atlas org apikeys describe
+atlas org apikeys show
+atlas org api-keys describe
+atlas org api-keys show
+atlas org apiKey describe
+atlas org apiKey show
+atlas org apikey describe
+atlas org apikey show
+atlas org api-key describe
+atlas org api-key show
 ```
 
 ### Examples
@@ -88,7 +93,7 @@ atlas org api-key show <ID> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations apiKeys](atlas_organizations_apiKeys.md)	- Organization API Keys operations.

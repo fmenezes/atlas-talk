@@ -12,6 +12,12 @@ See each sub-command's help for details on how to use the generated script.
 
 
 
+### Aliases
+```
+
+atlas completion
+```
+
 
 
 ### Flags
@@ -29,7 +35,7 @@ See each sub-command's help for details on how to use the generated script.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

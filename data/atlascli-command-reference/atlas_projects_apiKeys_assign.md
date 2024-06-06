@@ -10,33 +10,38 @@ When you modify the roles for an organization API key with this command, the val
 To view possible values for the ID argument, run atlas organizations apiKeys list.
 
 
-
+### Usage
+```
+atlas projects apiKeys assign <ID> [flags]
 ```
 
-atlas projects apiKeys assign <ID> [flags]
-atlas projects apiKeys update <ID> [flags]
-atlas projects apikeys assign <ID> [flags]
-atlas projects apikeys update <ID> [flags]
-atlas projects api-keys assign <ID> [flags]
-atlas projects api-keys update <ID> [flags]
-atlas projects apiKey assign <ID> [flags]
-atlas projects apiKey update <ID> [flags]
-atlas projects apikey assign <ID> [flags]
-atlas projects apikey update <ID> [flags]
-atlas projects api-key assign <ID> [flags]
-atlas projects api-key update <ID> [flags]
-atlas project apiKeys assign <ID> [flags]
-atlas project apiKeys update <ID> [flags]
-atlas project apikeys assign <ID> [flags]
-atlas project apikeys update <ID> [flags]
-atlas project api-keys assign <ID> [flags]
-atlas project api-keys update <ID> [flags]
-atlas project apiKey assign <ID> [flags]
-atlas project apiKey update <ID> [flags]
-atlas project apikey assign <ID> [flags]
-atlas project apikey update <ID> [flags]
-atlas project api-key assign <ID> [flags]
-atlas project api-key update <ID> [flags]
+### Aliases
+```
+
+atlas projects apiKeys assign
+atlas projects apiKeys update
+atlas projects apikeys assign
+atlas projects apikeys update
+atlas projects api-keys assign
+atlas projects api-keys update
+atlas projects apiKey assign
+atlas projects apiKey update
+atlas projects apikey assign
+atlas projects apikey update
+atlas projects api-key assign
+atlas projects api-key update
+atlas project apiKeys assign
+atlas project apiKeys update
+atlas project apikeys assign
+atlas project apikeys update
+atlas project api-keys assign
+atlas project api-keys update
+atlas project apiKey assign
+atlas project apiKey update
+atlas project apikey assign
+atlas project apikey update
+atlas project api-key assign
+atlas project api-key update
 ```
 
 ### Examples
@@ -65,7 +70,7 @@ atlas project api-key update <ID> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects apiKeys](atlas_projects_apiKeys.md)	- Manage API Keys for your project.

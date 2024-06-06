@@ -8,13 +8,18 @@ Return the details for the specified Atlas Stream Processing connection.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas streams connections describe <streamConnectionName> [flags]
 ```
 
-atlas streams connections describe <streamConnectionName> [flags]
-atlas streams connection describe <streamConnectionName> [flags]
-atlas stream connections describe <streamConnectionName> [flags]
-atlas stream connection describe <streamConnectionName> [flags]
+### Aliases
+```
+
+atlas streams connections describe
+atlas streams connection describe
+atlas stream connections describe
+atlas stream connection describe
 ```
 
 ### Examples
@@ -44,7 +49,7 @@ atlas streams connection describe ExampleConnection --instance ExampleInstance
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams connections](atlas_streams_connections.md)	- Manage Atlas Stream Processing connections.

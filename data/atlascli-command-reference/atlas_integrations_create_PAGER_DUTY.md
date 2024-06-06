@@ -10,21 +10,26 @@ The requesting API key must have the Organization Owner or Project Owner role to
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas integrations create PAGER_DUTY [flags]
 ```
 
-atlas integrations create PAGER_DUTY [flags]
-atlas integrations create pager_duty [flags]
-atlas integrations create pagerDuty [flags]
-atlas integrations update PAGER_DUTY [flags]
-atlas integrations update pager_duty [flags]
-atlas integrations update pagerDuty [flags]
-atlas integration create PAGER_DUTY [flags]
-atlas integration create pager_duty [flags]
-atlas integration create pagerDuty [flags]
-atlas integration update PAGER_DUTY [flags]
-atlas integration update pager_duty [flags]
-atlas integration update pagerDuty [flags]
+### Aliases
+```
+
+atlas integrations create PAGER_DUTY
+atlas integrations create pager_duty
+atlas integrations create pagerDuty
+atlas integrations update PAGER_DUTY
+atlas integrations update pager_duty
+atlas integrations update pagerDuty
+atlas integration create PAGER_DUTY
+atlas integration create pager_duty
+atlas integration create pagerDuty
+atlas integration update PAGER_DUTY
+atlas integration update pager_duty
+atlas integration update pagerDuty
 ```
 
 ### Examples
@@ -53,7 +58,7 @@ atlas integration update pagerDuty [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas integrations create](atlas_integrations_create.md)	- Create operations.

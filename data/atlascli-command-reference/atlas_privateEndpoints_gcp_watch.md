@@ -13,15 +13,20 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints gcp watch <privateEndpointId> [flags]
 ```
 
-atlas privateEndpoints gcp watch <privateEndpointId> [flags]
-atlas privateendpoints gcp watch <privateEndpointId> [flags]
-atlas private-endpoints gcp watch <privateEndpointId> [flags]
-atlas privateEndpoint gcp watch <privateEndpointId> [flags]
-atlas privateendpoint gcp watch <privateEndpointId> [flags]
-atlas private-endpoint gcp watch <privateEndpointId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints gcp watch
+atlas privateendpoints gcp watch
+atlas private-endpoints gcp watch
+atlas privateEndpoint gcp watch
+atlas privateendpoint gcp watch
+atlas private-endpoint gcp watch
 ```
 
 ### Examples
@@ -47,7 +52,7 @@ atlas private-endpoint gcp watch <privateEndpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints gcp](atlas_privateEndpoints_gcp.md)	- Manage GCP private endpoints.

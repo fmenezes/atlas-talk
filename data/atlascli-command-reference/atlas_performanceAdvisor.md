@@ -5,6 +5,14 @@ Learn more about slow queries and get suggestions to improve database performanc
 
 
 
+### Aliases
+```
+
+atlas performanceAdvisor
+atlas performanceadvisor
+atlas performance-advisor
+```
+
 
 
 ### Flags
@@ -22,7 +30,7 @@ Learn more about slow queries and get suggestions to improve database performanc
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

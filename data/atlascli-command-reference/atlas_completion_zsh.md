@@ -30,10 +30,15 @@ You will need to start a new shell for this setup to take effect.
 
 
 
-
+### Usage
+```
+atlas completion zsh [flags]
 ```
 
-atlas completion zsh [flags]
+### Aliases
+```
+
+atlas completion zsh
 ```
 
 
@@ -54,7 +59,7 @@ atlas completion zsh [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas completion](atlas_completion.md)	- Generate the autocompletion script for the specified shell

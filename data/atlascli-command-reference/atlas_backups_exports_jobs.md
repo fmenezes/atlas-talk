@@ -5,6 +5,19 @@ Manage cloud backup export jobs for your project.
 
 
 
+### Aliases
+```
+
+atlas backups exports jobs
+atlas backups exports job
+atlas backups export jobs
+atlas backups export job
+atlas backup exports jobs
+atlas backup exports job
+atlas backup export jobs
+atlas backup export job
+```
+
 
 
 ### Flags
@@ -22,7 +35,7 @@ Manage cloud backup export jobs for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups exports](atlas_backups_exports.md)	- Manage cloud backup export jobs for your project.

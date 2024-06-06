@@ -8,10 +8,15 @@ Get the status of an LDAP configuration request.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas security ldap verify status <requestId> [flags]
 ```
 
-atlas security ldap verify status <requestId> [flags]
+### Aliases
+```
+
+atlas security ldap verify status
 ```
 
 
@@ -33,7 +38,7 @@ atlas security ldap verify status <requestId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas security ldap verify](atlas_security_ldap_verify.md)	- Request verification of an LDAP configuration for your project.

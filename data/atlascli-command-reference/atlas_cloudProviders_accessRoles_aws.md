@@ -5,6 +5,47 @@ Manage AWS IAM role access in Atlas.
 
 
 
+### Aliases
+```
+
+atlas cloudProviders accessRoles aws
+atlas cloudProviders accessroles aws
+atlas cloudProviders access-roles aws
+atlas cloudProviders accessRole aws
+atlas cloudProviders accessrole aws
+atlas cloudProviders access-role aws
+atlas cloudproviders accessRoles aws
+atlas cloudproviders accessroles aws
+atlas cloudproviders access-roles aws
+atlas cloudproviders accessRole aws
+atlas cloudproviders accessrole aws
+atlas cloudproviders access-role aws
+atlas cloud-providers accessRoles aws
+atlas cloud-providers accessroles aws
+atlas cloud-providers access-roles aws
+atlas cloud-providers accessRole aws
+atlas cloud-providers accessrole aws
+atlas cloud-providers access-role aws
+atlas cloudProvider accessRoles aws
+atlas cloudProvider accessroles aws
+atlas cloudProvider access-roles aws
+atlas cloudProvider accessRole aws
+atlas cloudProvider accessrole aws
+atlas cloudProvider access-role aws
+atlas cloudprovider accessRoles aws
+atlas cloudprovider accessroles aws
+atlas cloudprovider access-roles aws
+atlas cloudprovider accessRole aws
+atlas cloudprovider accessrole aws
+atlas cloudprovider access-role aws
+atlas cloud-provider accessRoles aws
+atlas cloud-provider accessroles aws
+atlas cloud-provider access-roles aws
+atlas cloud-provider accessRole aws
+atlas cloud-provider accessrole aws
+atlas cloud-provider access-role aws
+```
+
 
 
 ### Flags
@@ -22,7 +63,7 @@ Manage AWS IAM role access in Atlas.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas cloudProviders accessRoles](atlas_cloudProviders_accessRoles.md)	- Manage AWS IAM role access in Atlas.

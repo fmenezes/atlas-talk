@@ -8,13 +8,18 @@ Return all database users for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas dbusers list [flags]
 ```
 
-atlas dbusers list [flags]
-atlas dbusers ls [flags]
-atlas dbuser list [flags]
-atlas dbuser ls [flags]
+### Aliases
+```
+
+atlas dbusers list
+atlas dbusers ls
+atlas dbuser list
+atlas dbuser ls
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas dbuser ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dbusers](atlas_dbusers.md)	- Manage database users for your project.

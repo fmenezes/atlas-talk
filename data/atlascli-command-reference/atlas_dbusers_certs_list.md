@@ -10,17 +10,22 @@ You can't use this command to return certificates if you are managing your own C
 The user you specify must authenticate using X.509 certificates.
 
 
-
+### Usage
+```
+atlas dbusers certs list <username> [flags]
 ```
 
-atlas dbusers certs list <username> [flags]
-atlas dbusers certs ls <username> [flags]
-atlas dbusers cert list <username> [flags]
-atlas dbusers cert ls <username> [flags]
-atlas dbuser certs list <username> [flags]
-atlas dbuser certs ls <username> [flags]
-atlas dbuser cert list <username> [flags]
-atlas dbuser cert ls <username> [flags]
+### Aliases
+```
+
+atlas dbusers certs list
+atlas dbusers certs ls
+atlas dbusers cert list
+atlas dbusers cert ls
+atlas dbuser certs list
+atlas dbuser certs ls
+atlas dbuser cert list
+atlas dbuser cert ls
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas dbuser cert ls <username> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dbusers certs](atlas_dbusers_certs.md)	- Manage Atlas x509 certificates for your database users.

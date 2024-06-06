@@ -3,11 +3,16 @@
 Return the details for the specified MongoDB process for your project.
 
 
-
+### Usage
+```
+atlas processes describe <hostname:port> [flags]
 ```
 
-atlas processes describe <hostname:port> [flags]
-atlas process describe <hostname:port> [flags]
+### Aliases
+```
+
+atlas processes describe
+atlas process describe
 ```
 
 ### Examples
@@ -35,7 +40,7 @@ atlas process describe <hostname:port> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas processes](atlas_processes.md)	- Manage MongoDB processes for your project.

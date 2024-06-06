@@ -8,13 +8,18 @@ Create an Atlas Stream Processing instance for your project
 To get started quickly, specify a name, a cloud provider, and a region to configure an Atlas Stream Processing instance.To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas streams instances create <name> [flags]
 ```
 
-atlas streams instances create <name> [flags]
-atlas streams instance create <name> [flags]
-atlas stream instances create <name> [flags]
-atlas stream instance create <name> [flags]
+### Aliases
+```
+
+atlas streams instances create
+atlas streams instance create
+atlas stream instances create
+atlas stream instance create
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas stream instance create <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams instances](atlas_streams_instances.md)	- Manage Atlas Stream Processing instances.

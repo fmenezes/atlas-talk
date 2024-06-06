@@ -3,10 +3,15 @@
 Register with MongoDB Atlas.
 
 
-
+### Usage
+```
+atlas auth register [flags]
 ```
 
-atlas auth register [flags]
+### Aliases
+```
+
+atlas auth register
 ```
 
 ### Examples
@@ -34,7 +39,7 @@ atlas auth register [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas auth](atlas_auth.md)	- Manage the CLI's authentication state.

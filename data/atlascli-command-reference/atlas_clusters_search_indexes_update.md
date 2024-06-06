@@ -8,17 +8,22 @@ Modify a search index for a cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Admin role.
 
 
-
+### Usage
+```
+atlas clusters search indexes update <indexId> [flags]
 ```
 
-atlas clusters search indexes update <indexId> [flags]
-atlas clusters search index update <indexId> [flags]
-atlas clusters fts indexes update <indexId> [flags]
-atlas clusters fts index update <indexId> [flags]
-atlas cluster search indexes update <indexId> [flags]
-atlas cluster search index update <indexId> [flags]
-atlas cluster fts indexes update <indexId> [flags]
-atlas cluster fts index update <indexId> [flags]
+### Aliases
+```
+
+atlas clusters search indexes update
+atlas clusters search index update
+atlas clusters fts indexes update
+atlas clusters fts index update
+atlas cluster search indexes update
+atlas cluster search index update
+atlas cluster fts indexes update
+atlas cluster fts index update
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas cluster fts index update <indexId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters search indexes](atlas_clusters_search_indexes.md)	- Manage Atlas Search indexes for your cluster.

@@ -8,23 +8,28 @@ Remove the specified custom database role from your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas customDbRoles delete <roleName> [flags]
 ```
 
-atlas customDbRoles delete <roleName> [flags]
-atlas customDbRoles rm <roleName> [flags]
-atlas customdbroles delete <roleName> [flags]
-atlas customdbroles rm <roleName> [flags]
-atlas custom-db-roles delete <roleName> [flags]
-atlas custom-db-roles rm <roleName> [flags]
-atlas customDbRole delete <roleName> [flags]
-atlas customDbRole rm <roleName> [flags]
-atlas customdbrole delete <roleName> [flags]
-atlas customdbrole rm <roleName> [flags]
-atlas custom-db-role delete <roleName> [flags]
-atlas custom-db-role rm <roleName> [flags]
-atlas customDBRoles delete <roleName> [flags]
-atlas customDBRoles rm <roleName> [flags]
+### Aliases
+```
+
+atlas customDbRoles delete
+atlas customDbRoles rm
+atlas customdbroles delete
+atlas customdbroles rm
+atlas custom-db-roles delete
+atlas custom-db-roles rm
+atlas customDbRole delete
+atlas customDbRole rm
+atlas customdbrole delete
+atlas customdbrole rm
+atlas custom-db-role delete
+atlas custom-db-role rm
+atlas customDBRoles delete
+atlas customDBRoles rm
 ```
 
 
@@ -46,7 +51,7 @@ atlas customDBRoles rm <roleName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas customDbRoles](atlas_customDbRoles.md)	- Manage custom database roles for your project.

@@ -8,16 +8,21 @@ Create a new push live migration.
 To migrate using scripts, use mongomirror instead of the Atlas CLI. To learn more about mongomirror, see https://www.mongodb.com/docs/atlas/reference/mongomirror/.
 
 
-
+### Usage
+```
+atlas liveMigrations create [flags]
 ```
 
-atlas liveMigrations create [flags]
-atlas livemigrations create [flags]
-atlas live-migrations create [flags]
-atlas liveMigration create [flags]
-atlas livemigration create [flags]
-atlas live-migration create [flags]
-atlas lm create [flags]
+### Aliases
+```
+
+atlas liveMigrations create
+atlas livemigrations create
+atlas live-migrations create
+atlas liveMigration create
+atlas livemigration create
+atlas live-migration create
+atlas lm create
 ```
 
 
@@ -50,7 +55,7 @@ atlas lm create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas liveMigrations](atlas_liveMigrations.md)	- Manage a Live Migration to Atlas for your organization.

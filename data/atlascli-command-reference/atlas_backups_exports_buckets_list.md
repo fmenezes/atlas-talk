@@ -8,25 +8,30 @@ List cloud backup restore buckets for your project and cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas backups exports buckets list [flags]
 ```
 
-atlas backups exports buckets list [flags]
-atlas backups exports buckets ls [flags]
-atlas backups exports bucket list [flags]
-atlas backups exports bucket ls [flags]
-atlas backups export buckets list [flags]
-atlas backups export buckets ls [flags]
-atlas backups export bucket list [flags]
-atlas backups export bucket ls [flags]
-atlas backup exports buckets list [flags]
-atlas backup exports buckets ls [flags]
-atlas backup exports bucket list [flags]
-atlas backup exports bucket ls [flags]
-atlas backup export buckets list [flags]
-atlas backup export buckets ls [flags]
-atlas backup export bucket list [flags]
-atlas backup export bucket ls [flags]
+### Aliases
+```
+
+atlas backups exports buckets list
+atlas backups exports buckets ls
+atlas backups exports bucket list
+atlas backups exports bucket ls
+atlas backups export buckets list
+atlas backups export buckets ls
+atlas backups export bucket list
+atlas backups export bucket ls
+atlas backup exports buckets list
+atlas backup exports buckets ls
+atlas backup exports bucket list
+atlas backup exports bucket ls
+atlas backup export buckets list
+atlas backup export buckets ls
+atlas backup export bucket list
+atlas backup export bucket ls
 ```
 
 ### Examples
@@ -57,7 +62,7 @@ atlas backup export bucket ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups exports buckets](atlas_backups_exports_buckets.md)	- Manage cloud backup export buckets for your project.

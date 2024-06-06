@@ -12,21 +12,26 @@ The requesting API key must have the Organization Owner or Project Owner role to
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas integrations create VICTOR_OPS [flags]
 ```
 
-atlas integrations create VICTOR_OPS [flags]
-atlas integrations create victor_ops [flags]
-atlas integrations create victorOps [flags]
-atlas integrations update VICTOR_OPS [flags]
-atlas integrations update victor_ops [flags]
-atlas integrations update victorOps [flags]
-atlas integration create VICTOR_OPS [flags]
-atlas integration create victor_ops [flags]
-atlas integration create victorOps [flags]
-atlas integration update VICTOR_OPS [flags]
-atlas integration update victor_ops [flags]
-atlas integration update victorOps [flags]
+### Aliases
+```
+
+atlas integrations create VICTOR_OPS
+atlas integrations create victor_ops
+atlas integrations create victorOps
+atlas integrations update VICTOR_OPS
+atlas integrations update victor_ops
+atlas integrations update victorOps
+atlas integration create VICTOR_OPS
+atlas integration create victor_ops
+atlas integration create victorOps
+atlas integration update VICTOR_OPS
+atlas integration update victor_ops
+atlas integration update victorOps
 ```
 
 ### Examples
@@ -56,7 +61,7 @@ atlas integration update victorOps [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas integrations create](atlas_integrations_create.md)	- Create operations.

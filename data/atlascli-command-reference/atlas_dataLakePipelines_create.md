@@ -8,15 +8,20 @@ Creates a new Data Lake Pipeline.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines create <pipelineName> [flags]
 ```
 
-atlas dataLakePipelines create <pipelineName> [flags]
-atlas datalakepipelines create <pipelineName> [flags]
-atlas data-lake-pipelines create <pipelineName> [flags]
-atlas dataLakePipeline create <pipelineName> [flags]
-atlas datalakepipeline create <pipelineName> [flags]
-atlas data-lake-pipeline create <pipelineName> [flags]
+### Aliases
+```
+
+atlas dataLakePipelines create
+atlas datalakepipelines create
+atlas data-lake-pipelines create
+atlas dataLakePipeline create
+atlas datalakepipeline create
+atlas data-lake-pipeline create
 ```
 
 ### Examples
@@ -55,7 +60,7 @@ atlas data-lake-pipeline create <pipelineName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines](atlas_dataLakePipelines.md)	- Data Lake pipelines.

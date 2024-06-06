@@ -5,6 +5,47 @@ Manage regionalized private endpoint setting for your Atlas project.
 
 
 
+### Aliases
+```
+
+atlas privateEndpoints regionalModes
+atlas privateEndpoints regionalmodes
+atlas privateEndpoints regional-modes
+atlas privateEndpoints regionalMode
+atlas privateEndpoints regionalmode
+atlas privateEndpoints regional-mode
+atlas privateendpoints regionalModes
+atlas privateendpoints regionalmodes
+atlas privateendpoints regional-modes
+atlas privateendpoints regionalMode
+atlas privateendpoints regionalmode
+atlas privateendpoints regional-mode
+atlas private-endpoints regionalModes
+atlas private-endpoints regionalmodes
+atlas private-endpoints regional-modes
+atlas private-endpoints regionalMode
+atlas private-endpoints regionalmode
+atlas private-endpoints regional-mode
+atlas privateEndpoint regionalModes
+atlas privateEndpoint regionalmodes
+atlas privateEndpoint regional-modes
+atlas privateEndpoint regionalMode
+atlas privateEndpoint regionalmode
+atlas privateEndpoint regional-mode
+atlas privateendpoint regionalModes
+atlas privateendpoint regionalmodes
+atlas privateendpoint regional-modes
+atlas privateendpoint regionalMode
+atlas privateendpoint regionalmode
+atlas privateendpoint regional-mode
+atlas private-endpoint regionalModes
+atlas private-endpoint regionalmodes
+atlas private-endpoint regional-modes
+atlas private-endpoint regionalMode
+atlas private-endpoint regionalmode
+atlas private-endpoint regional-mode
+```
+
 
 
 ### Flags
@@ -22,7 +63,7 @@ Manage regionalized private endpoint setting for your Atlas project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints](atlas_privateEndpoints.md)	- Manage Atlas private endpoints.

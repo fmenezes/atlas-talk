@@ -11,25 +11,30 @@ atlas processes list
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas metrics databases list <hostname:port> [flags]
 ```
 
-atlas metrics databases list <hostname:port> [flags]
-atlas metrics databases ls <hostname:port> [flags]
-atlas metrics database list <hostname:port> [flags]
-atlas metrics database ls <hostname:port> [flags]
-atlas metric databases list <hostname:port> [flags]
-atlas metric databases ls <hostname:port> [flags]
-atlas metric database list <hostname:port> [flags]
-atlas metric database ls <hostname:port> [flags]
-atlas measurements databases list <hostname:port> [flags]
-atlas measurements databases ls <hostname:port> [flags]
-atlas measurements database list <hostname:port> [flags]
-atlas measurements database ls <hostname:port> [flags]
-atlas measurement databases list <hostname:port> [flags]
-atlas measurement databases ls <hostname:port> [flags]
-atlas measurement database list <hostname:port> [flags]
-atlas measurement database ls <hostname:port> [flags]
+### Aliases
+```
+
+atlas metrics databases list
+atlas metrics databases ls
+atlas metrics database list
+atlas metrics database ls
+atlas metric databases list
+atlas metric databases ls
+atlas metric database list
+atlas metric database ls
+atlas measurements databases list
+atlas measurements databases ls
+atlas measurements database list
+atlas measurements database ls
+atlas measurement databases list
+atlas measurement databases ls
+atlas measurement database list
+atlas measurement database ls
 ```
 
 ### Examples
@@ -60,7 +65,7 @@ atlas measurement database ls <hostname:port> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas metrics databases](atlas_metrics_databases.md)	- List available databases or database metrics for a given host.

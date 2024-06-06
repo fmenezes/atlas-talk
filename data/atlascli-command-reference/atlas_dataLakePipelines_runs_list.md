@@ -8,33 +8,38 @@ Returns all data lake pipeline runs for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines runs list [flags]
 ```
 
-atlas dataLakePipelines runs list [flags]
-atlas dataLakePipelines runs ls [flags]
-atlas dataLakePipelines run list [flags]
-atlas dataLakePipelines run ls [flags]
-atlas datalakepipelines runs list [flags]
-atlas datalakepipelines runs ls [flags]
-atlas datalakepipelines run list [flags]
-atlas datalakepipelines run ls [flags]
-atlas data-lake-pipelines runs list [flags]
-atlas data-lake-pipelines runs ls [flags]
-atlas data-lake-pipelines run list [flags]
-atlas data-lake-pipelines run ls [flags]
-atlas dataLakePipeline runs list [flags]
-atlas dataLakePipeline runs ls [flags]
-atlas dataLakePipeline run list [flags]
-atlas dataLakePipeline run ls [flags]
-atlas datalakepipeline runs list [flags]
-atlas datalakepipeline runs ls [flags]
-atlas datalakepipeline run list [flags]
-atlas datalakepipeline run ls [flags]
-atlas data-lake-pipeline runs list [flags]
-atlas data-lake-pipeline runs ls [flags]
-atlas data-lake-pipeline run list [flags]
-atlas data-lake-pipeline run ls [flags]
+### Aliases
+```
+
+atlas dataLakePipelines runs list
+atlas dataLakePipelines runs ls
+atlas dataLakePipelines run list
+atlas dataLakePipelines run ls
+atlas datalakepipelines runs list
+atlas datalakepipelines runs ls
+atlas datalakepipelines run list
+atlas datalakepipelines run ls
+atlas data-lake-pipelines runs list
+atlas data-lake-pipelines runs ls
+atlas data-lake-pipelines run list
+atlas data-lake-pipelines run ls
+atlas dataLakePipeline runs list
+atlas dataLakePipeline runs ls
+atlas dataLakePipeline run list
+atlas dataLakePipeline run ls
+atlas datalakepipeline runs list
+atlas datalakepipeline runs ls
+atlas datalakepipeline run list
+atlas datalakepipeline run ls
+atlas data-lake-pipeline runs list
+atlas data-lake-pipeline runs ls
+atlas data-lake-pipeline run list
+atlas data-lake-pipeline run ls
 ```
 
 ### Examples
@@ -64,7 +69,7 @@ atlas data-lake-pipeline run ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines runs](atlas_dataLakePipelines_runs.md)	- Data Lake pipelines runs.

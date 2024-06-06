@@ -5,6 +5,29 @@ Manage copy protection of the backup compliance policy for your project. Learn m
 
 
 
+### Aliases
+```
+
+atlas backups compliancePolicy copyProtection
+atlas backups compliancePolicy copyprotection
+atlas backups compliancePolicy copy-protection
+atlas backups compliancepolicy copyProtection
+atlas backups compliancepolicy copyprotection
+atlas backups compliancepolicy copy-protection
+atlas backups compliance-policy copyProtection
+atlas backups compliance-policy copyprotection
+atlas backups compliance-policy copy-protection
+atlas backup compliancePolicy copyProtection
+atlas backup compliancePolicy copyprotection
+atlas backup compliancePolicy copy-protection
+atlas backup compliancepolicy copyProtection
+atlas backup compliancepolicy copyprotection
+atlas backup compliancepolicy copy-protection
+atlas backup compliance-policy copyProtection
+atlas backup compliance-policy copyprotection
+atlas backup compliance-policy copy-protection
+```
+
 
 
 ### Flags
@@ -22,7 +45,7 @@ Manage copy protection of the backup compliance policy for your project. Learn m
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy](atlas_backups_compliancePolicy.md)	- Manage cloud backup compliance policy for your project. Use "atlas backups compliancepolicy setup" to enable backup compliance policy with a full configuration. Use "atlas backups compliancepolicy enable" to enable backup compliance policy without any configuration.

@@ -8,17 +8,22 @@ Modify the roles for the specified team for your project.
 To use this command, you must authenticate with a user account or an API key with the Project User Admin role.
 
 
-
+### Usage
+```
+atlas projects teams update <teamId> [flags]
 ```
 
-atlas projects teams update <teamId> [flags]
-atlas projects teams updates <teamId> [flags]
-atlas projects team update <teamId> [flags]
-atlas projects team updates <teamId> [flags]
-atlas project teams update <teamId> [flags]
-atlas project teams updates <teamId> [flags]
-atlas project team update <teamId> [flags]
-atlas project team updates <teamId> [flags]
+### Aliases
+```
+
+atlas projects teams update
+atlas projects teams updates
+atlas projects team update
+atlas projects team updates
+atlas project teams update
+atlas project teams updates
+atlas project team update
+atlas project team updates
 ```
 
 ### Examples
@@ -47,7 +52,7 @@ atlas project team updates <teamId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects teams](atlas_projects_teams.md)	- Manage your Atlas teams.

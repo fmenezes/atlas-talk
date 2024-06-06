@@ -8,15 +8,20 @@ Pause the specified data lake pipeline for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines pause <pipelineName> [flags]
 ```
 
-atlas dataLakePipelines pause <pipelineName> [flags]
-atlas datalakepipelines pause <pipelineName> [flags]
-atlas data-lake-pipelines pause <pipelineName> [flags]
-atlas dataLakePipeline pause <pipelineName> [flags]
-atlas datalakepipeline pause <pipelineName> [flags]
-atlas data-lake-pipeline pause <pipelineName> [flags]
+### Aliases
+```
+
+atlas dataLakePipelines pause
+atlas datalakepipelines pause
+atlas data-lake-pipelines pause
+atlas dataLakePipeline pause
+atlas datalakepipeline pause
+atlas data-lake-pipeline pause
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas data-lake-pipeline pause <pipelineName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines](atlas_dataLakePipelines.md)	- Data Lake pipelines.

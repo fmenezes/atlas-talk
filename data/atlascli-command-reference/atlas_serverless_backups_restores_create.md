@@ -11,17 +11,22 @@ To use this command, you must authenticate with a user account or an API key wit
 Atlas supports this command only for M10+ clusters.
 
 
-
+### Usage
+```
+atlas serverless backups restores create [flags]
 ```
 
-atlas serverless backups restores create [flags]
-atlas serverless backups restore create [flags]
-atlas serverless backup restores create [flags]
-atlas serverless backup restore create [flags]
-atlas sl backups restores create [flags]
-atlas sl backups restore create [flags]
-atlas sl backup restores create [flags]
-atlas sl backup restore create [flags]
+### Aliases
+```
+
+atlas serverless backups restores create
+atlas serverless backups restore create
+atlas serverless backup restores create
+atlas serverless backup restore create
+atlas sl backups restores create
+atlas sl backups restore create
+atlas sl backup restores create
+atlas sl backup restore create
 ```
 
 ### Examples
@@ -76,7 +81,7 @@ atlas sl backup restore create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless backups restores](atlas_serverless_backups_restores.md)	- Manage cloud backup restore jobs for your project.

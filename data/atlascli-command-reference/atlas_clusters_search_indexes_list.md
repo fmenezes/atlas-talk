@@ -8,25 +8,30 @@ List all Atlas Search indexes for a cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Read/Write role.
 
 
-
+### Usage
+```
+atlas clusters search indexes list [flags]
 ```
 
-atlas clusters search indexes list [flags]
-atlas clusters search indexes ls [flags]
-atlas clusters search index list [flags]
-atlas clusters search index ls [flags]
-atlas clusters fts indexes list [flags]
-atlas clusters fts indexes ls [flags]
-atlas clusters fts index list [flags]
-atlas clusters fts index ls [flags]
-atlas cluster search indexes list [flags]
-atlas cluster search indexes ls [flags]
-atlas cluster search index list [flags]
-atlas cluster search index ls [flags]
-atlas cluster fts indexes list [flags]
-atlas cluster fts indexes ls [flags]
-atlas cluster fts index list [flags]
-atlas cluster fts index ls [flags]
+### Aliases
+```
+
+atlas clusters search indexes list
+atlas clusters search indexes ls
+atlas clusters search index list
+atlas clusters search index ls
+atlas clusters fts indexes list
+atlas clusters fts indexes ls
+atlas clusters fts index list
+atlas clusters fts index ls
+atlas cluster search indexes list
+atlas cluster search indexes ls
+atlas cluster search index list
+atlas cluster search index ls
+atlas cluster fts indexes list
+atlas cluster fts indexes ls
+atlas cluster fts index list
+atlas cluster fts index ls
 ```
 
 ### Examples
@@ -57,7 +62,7 @@ atlas cluster fts index ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters search indexes](atlas_clusters_search_indexes.md)	- Manage Atlas Search indexes for your cluster.

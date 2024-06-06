@@ -11,11 +11,16 @@ For full control of your deployment, or to create multi-cloud clusters, provide 
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas clusters create <name> [flags]
 ```
 
-atlas clusters create <name> [flags]
-atlas cluster create <name> [flags]
+### Aliases
+```
+
+atlas clusters create
+atlas cluster create
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas cluster create <name> [flags]
       --biConnector                   Flag that enables BI Connector for Atlas on the deployment.
       --diskSizeGB float              Capacity, in gigabytes, of the host's root volume. (default 2)
       --enableTerminationProtection   Enables termination protection for your cluster. You can't delete a cluster with termination protection enabled.
-  -f, --file string                   Path to an optional JSON configuration file that defines cluster settings. To learn more about cluster configuration files for the Atlas CLI, see https://dochub.mongodb.org/core/cluster-config-file-atlascli. To learn more about cluster configuration files for MongoCLI, see https://dochub.mongodb.org/core/mms-cluster-settings-file-mcli.
+  -f, --file string                   Path to an optional JSON configuration file that defines cluster settings. To learn more about cluster configuration files for the Atlas CLI, see https://dochub.mongodb.org/core/cluster-config-file-atlascli.
   -h, --help                          help for create
       --mdbVersion string             Major MongoDB version of the cluster. (default "7.0")
   -m, --members int                   Number of members in the replica set. (default 3)
@@ -73,7 +78,7 @@ atlas cluster create <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

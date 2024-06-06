@@ -10,6 +10,12 @@ This command provides your Kubernetes configuration access to Atlas.
 
 
 
+### Aliases
+```
+
+atlas kubernetes config
+```
+
 
 
 ### Flags
@@ -27,7 +33,7 @@ This command provides your Kubernetes configuration access to Atlas.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas kubernetes](atlas_kubernetes.md)	- Manage Kubernetes resources.

@@ -11,13 +11,18 @@ To use this command, you must authenticate with a user account or an API key wit
 Atlas supports this command only for M10+ clusters.
 
 
-
+### Usage
+```
+atlas backups restores start <automated|download|pointInTime> [flags]
 ```
 
-atlas backups restores start <automated|download|pointInTime> [flags]
-atlas backups restore start <automated|download|pointInTime> [flags]
-atlas backup restores start <automated|download|pointInTime> [flags]
-atlas backup restore start <automated|download|pointInTime> [flags]
+### Aliases
+```
+
+atlas backups restores start
+atlas backups restore start
+atlas backup restores start
+atlas backup restore start
 ```
 
 ### Examples
@@ -68,7 +73,7 @@ atlas backup restore start <automated|download|pointInTime> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups restores](atlas_backups_restores.md)	- Manage cloud backup restore jobs for your project.

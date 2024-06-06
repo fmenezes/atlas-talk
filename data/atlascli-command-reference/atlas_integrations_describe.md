@@ -8,11 +8,16 @@ Return the details for the specified third-party integration for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas integrations describe <integrationType> [flags]
 ```
 
-atlas integrations describe <integrationType> [flags]
-atlas integration describe <integrationType> [flags]
+### Aliases
+```
+
+atlas integrations describe
+atlas integration describe
 ```
 
 ### Examples
@@ -40,7 +45,7 @@ atlas integration describe <integrationType> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas integrations](atlas_integrations.md)	- Configure third-party integrations for your Atlas project.

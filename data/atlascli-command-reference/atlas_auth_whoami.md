@@ -3,10 +3,15 @@
 Verifies and displays information about your authentication state.
 
 
-
+### Usage
+```
+atlas auth whoami [flags]
 ```
 
-atlas auth whoami [flags]
+### Aliases
+```
+
+atlas auth whoami
 ```
 
 ### Examples
@@ -33,7 +38,7 @@ atlas auth whoami [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas auth](atlas_auth.md)	- Manage the CLI's authentication state.

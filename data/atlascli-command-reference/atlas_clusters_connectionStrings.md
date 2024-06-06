@@ -5,6 +5,25 @@ Manage MongoDB cluster connection string.
 
 
 
+### Aliases
+```
+
+atlas clusters connectionStrings
+atlas clusters connectionstrings
+atlas clusters connection-strings
+atlas clusters connectionString
+atlas clusters connectionstring
+atlas clusters connection-string
+atlas clusters cs
+atlas cluster connectionStrings
+atlas cluster connectionstrings
+atlas cluster connection-strings
+atlas cluster connectionString
+atlas cluster connectionstring
+atlas cluster connection-string
+atlas cluster cs
+```
+
 
 
 ### Flags
@@ -22,7 +41,7 @@ Manage MongoDB cluster connection string.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

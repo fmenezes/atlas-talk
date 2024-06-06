@@ -10,17 +10,22 @@ You can use either the invitation ID or the user's email address to specify the 
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas projects invitations update <invitationId> [flags]
 ```
 
-atlas projects invitations update <invitationId> [flags]
-atlas projects invitations updates <invitationId> [flags]
-atlas projects invitation update <invitationId> [flags]
-atlas projects invitation updates <invitationId> [flags]
-atlas project invitations update <invitationId> [flags]
-atlas project invitations updates <invitationId> [flags]
-atlas project invitation update <invitationId> [flags]
-atlas project invitation updates <invitationId> [flags]
+### Aliases
+```
+
+atlas projects invitations update
+atlas projects invitations updates
+atlas projects invitation update
+atlas projects invitation updates
+atlas project invitations update
+atlas project invitations updates
+atlas project invitation update
+atlas project invitation updates
 ```
 
 ### Examples
@@ -53,7 +58,7 @@ atlas project invitation updates <invitationId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects invitations](atlas_projects_invitations.md)	- Invitation operations.

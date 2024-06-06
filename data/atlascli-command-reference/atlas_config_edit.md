@@ -8,10 +8,15 @@ Opens the config file with the default text editor.
 Uses the default editor to open the config file. You can use EDITOR or VISUAL envs to change the default.
 
 
-
+### Usage
+```
+atlas config edit [flags]
 ```
 
-atlas config edit [flags]
+### Aliases
+```
+
+atlas config edit
 ```
 
 ### Examples
@@ -38,7 +43,7 @@ atlas config edit [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas config](atlas_config.md)	- Configure and manage your user profiles.

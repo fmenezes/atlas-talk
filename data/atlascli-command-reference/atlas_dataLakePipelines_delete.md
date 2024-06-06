@@ -8,21 +8,26 @@ Remove the specified data lake pipeline from your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines delete <pipelineName> [flags]
 ```
 
-atlas dataLakePipelines delete <pipelineName> [flags]
-atlas dataLakePipelines rm <pipelineName> [flags]
-atlas datalakepipelines delete <pipelineName> [flags]
-atlas datalakepipelines rm <pipelineName> [flags]
-atlas data-lake-pipelines delete <pipelineName> [flags]
-atlas data-lake-pipelines rm <pipelineName> [flags]
-atlas dataLakePipeline delete <pipelineName> [flags]
-atlas dataLakePipeline rm <pipelineName> [flags]
-atlas datalakepipeline delete <pipelineName> [flags]
-atlas datalakepipeline rm <pipelineName> [flags]
-atlas data-lake-pipeline delete <pipelineName> [flags]
-atlas data-lake-pipeline rm <pipelineName> [flags]
+### Aliases
+```
+
+atlas dataLakePipelines delete
+atlas dataLakePipelines rm
+atlas datalakepipelines delete
+atlas datalakepipelines rm
+atlas data-lake-pipelines delete
+atlas data-lake-pipelines rm
+atlas dataLakePipeline delete
+atlas dataLakePipeline rm
+atlas datalakepipeline delete
+atlas datalakepipeline rm
+atlas data-lake-pipeline delete
+atlas data-lake-pipeline rm
 ```
 
 ### Examples
@@ -51,7 +56,7 @@ atlas data-lake-pipeline rm <pipelineName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines](atlas_dataLakePipelines.md)	- Data Lake pipelines.

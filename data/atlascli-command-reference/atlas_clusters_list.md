@@ -8,13 +8,18 @@ Return all clusters for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas clusters list [flags]
 ```
 
-atlas clusters list [flags]
-atlas clusters ls [flags]
-atlas cluster list [flags]
-atlas cluster ls [flags]
+### Aliases
+```
+
+atlas clusters list
+atlas clusters ls
+atlas cluster list
+atlas cluster ls
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas cluster ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

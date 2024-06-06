@@ -5,6 +5,15 @@ Create operations.
 
 
 
+### Aliases
+```
+
+atlas integrations create
+atlas integrations update
+atlas integration create
+atlas integration update
+```
+
 
 
 ### Flags
@@ -22,7 +31,7 @@ Create operations.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas integrations](atlas_integrations.md)	- Configure third-party integrations for your Atlas project.

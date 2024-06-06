@@ -13,10 +13,15 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas networking peering watch <peerId> [flags]
 ```
 
-atlas networking peering watch <peerId> [flags]
+### Aliases
+```
+
+atlas networking peering watch
 ```
 
 ### Examples
@@ -44,7 +49,7 @@ atlas networking peering watch <peerId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas networking peering](atlas_networking_peering.md)	- Manage Network Peering connections.

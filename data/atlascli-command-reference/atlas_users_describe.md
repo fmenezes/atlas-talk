@@ -10,13 +10,18 @@ You can specify either the unique 24-digit ID that identifies the Atlas user or 
 User accounts and API keys with any role can run this command.
 
 
-
+### Usage
+```
+atlas users describe [flags]
 ```
 
-atlas users describe [flags]
-atlas users get [flags]
-atlas user describe [flags]
-atlas user get [flags]
+### Aliases
+```
+
+atlas users describe
+atlas users get
+atlas user describe
+atlas user get
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas user get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas users](atlas_users.md)	- Manage your Atlas users.

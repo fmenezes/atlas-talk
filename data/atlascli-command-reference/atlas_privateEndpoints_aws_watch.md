@@ -13,15 +13,20 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints aws watch <privateEndpointId> [flags]
 ```
 
-atlas privateEndpoints aws watch <privateEndpointId> [flags]
-atlas privateendpoints aws watch <privateEndpointId> [flags]
-atlas private-endpoints aws watch <privateEndpointId> [flags]
-atlas privateEndpoint aws watch <privateEndpointId> [flags]
-atlas privateendpoint aws watch <privateEndpointId> [flags]
-atlas private-endpoint aws watch <privateEndpointId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints aws watch
+atlas privateendpoints aws watch
+atlas private-endpoints aws watch
+atlas privateEndpoint aws watch
+atlas privateendpoint aws watch
+atlas private-endpoint aws watch
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas private-endpoint aws watch <privateEndpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints aws](atlas_privateEndpoints_aws.md)	- Manage AWS Private Endpoints.

@@ -8,23 +8,28 @@ List custom database roles for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas customDbRoles list [flags]
 ```
 
-atlas customDbRoles list [flags]
-atlas customDbRoles ls [flags]
-atlas customdbroles list [flags]
-atlas customdbroles ls [flags]
-atlas custom-db-roles list [flags]
-atlas custom-db-roles ls [flags]
-atlas customDbRole list [flags]
-atlas customDbRole ls [flags]
-atlas customdbrole list [flags]
-atlas customdbrole ls [flags]
-atlas custom-db-role list [flags]
-atlas custom-db-role ls [flags]
-atlas customDBRoles list [flags]
-atlas customDBRoles ls [flags]
+### Aliases
+```
+
+atlas customDbRoles list
+atlas customDbRoles ls
+atlas customdbroles list
+atlas customdbroles ls
+atlas custom-db-roles list
+atlas custom-db-roles ls
+atlas customDbRole list
+atlas customDbRole ls
+atlas customdbrole list
+atlas customdbrole ls
+atlas custom-db-role list
+atlas custom-db-role ls
+atlas customDBRoles list
+atlas customDBRoles ls
 ```
 
 
@@ -46,7 +51,7 @@ atlas customDBRoles ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas customDbRoles](atlas_customDbRoles.md)	- Manage custom database roles for your project.

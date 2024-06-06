@@ -5,6 +5,17 @@ Manage DNS configuration of Atlas project’s clusters deployed to AWS.
 
 
 
+### Aliases
+```
+
+atlas customDns
+atlas customdns
+atlas custom-dns
+atlas customDn
+atlas customdn
+atlas custom-dn
+```
+
 
 
 ### Flags
@@ -22,7 +33,7 @@ Manage DNS configuration of Atlas project’s clusters deployed to AWS.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

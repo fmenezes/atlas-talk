@@ -3,57 +3,62 @@
 Return the scheduled policy items of the backup compliance policy for your project.
 
 
-
+### Usage
+```
+atlas backups compliancePolicy policies scheduled describe [flags]
 ```
 
-atlas backups compliancePolicy policies scheduled describe [flags]
-atlas backups compliancePolicy policies scheduled get [flags]
-atlas backups compliancePolicy policies scheduled list [flags]
-atlas backups compliancePolicy policies scheduled ls [flags]
-atlas backups compliancePolicy policy scheduled describe [flags]
-atlas backups compliancePolicy policy scheduled get [flags]
-atlas backups compliancePolicy policy scheduled list [flags]
-atlas backups compliancePolicy policy scheduled ls [flags]
-atlas backups compliancepolicy policies scheduled describe [flags]
-atlas backups compliancepolicy policies scheduled get [flags]
-atlas backups compliancepolicy policies scheduled list [flags]
-atlas backups compliancepolicy policies scheduled ls [flags]
-atlas backups compliancepolicy policy scheduled describe [flags]
-atlas backups compliancepolicy policy scheduled get [flags]
-atlas backups compliancepolicy policy scheduled list [flags]
-atlas backups compliancepolicy policy scheduled ls [flags]
-atlas backups compliance-policy policies scheduled describe [flags]
-atlas backups compliance-policy policies scheduled get [flags]
-atlas backups compliance-policy policies scheduled list [flags]
-atlas backups compliance-policy policies scheduled ls [flags]
-atlas backups compliance-policy policy scheduled describe [flags]
-atlas backups compliance-policy policy scheduled get [flags]
-atlas backups compliance-policy policy scheduled list [flags]
-atlas backups compliance-policy policy scheduled ls [flags]
-atlas backup compliancePolicy policies scheduled describe [flags]
-atlas backup compliancePolicy policies scheduled get [flags]
-atlas backup compliancePolicy policies scheduled list [flags]
-atlas backup compliancePolicy policies scheduled ls [flags]
-atlas backup compliancePolicy policy scheduled describe [flags]
-atlas backup compliancePolicy policy scheduled get [flags]
-atlas backup compliancePolicy policy scheduled list [flags]
-atlas backup compliancePolicy policy scheduled ls [flags]
-atlas backup compliancepolicy policies scheduled describe [flags]
-atlas backup compliancepolicy policies scheduled get [flags]
-atlas backup compliancepolicy policies scheduled list [flags]
-atlas backup compliancepolicy policies scheduled ls [flags]
-atlas backup compliancepolicy policy scheduled describe [flags]
-atlas backup compliancepolicy policy scheduled get [flags]
-atlas backup compliancepolicy policy scheduled list [flags]
-atlas backup compliancepolicy policy scheduled ls [flags]
-atlas backup compliance-policy policies scheduled describe [flags]
-atlas backup compliance-policy policies scheduled get [flags]
-atlas backup compliance-policy policies scheduled list [flags]
-atlas backup compliance-policy policies scheduled ls [flags]
-atlas backup compliance-policy policy scheduled describe [flags]
-atlas backup compliance-policy policy scheduled get [flags]
-atlas backup compliance-policy policy scheduled list [flags]
-atlas backup compliance-policy policy scheduled ls [flags]
+### Aliases
+```
+
+atlas backups compliancePolicy policies scheduled describe
+atlas backups compliancePolicy policies scheduled get
+atlas backups compliancePolicy policies scheduled list
+atlas backups compliancePolicy policies scheduled ls
+atlas backups compliancePolicy policy scheduled describe
+atlas backups compliancePolicy policy scheduled get
+atlas backups compliancePolicy policy scheduled list
+atlas backups compliancePolicy policy scheduled ls
+atlas backups compliancepolicy policies scheduled describe
+atlas backups compliancepolicy policies scheduled get
+atlas backups compliancepolicy policies scheduled list
+atlas backups compliancepolicy policies scheduled ls
+atlas backups compliancepolicy policy scheduled describe
+atlas backups compliancepolicy policy scheduled get
+atlas backups compliancepolicy policy scheduled list
+atlas backups compliancepolicy policy scheduled ls
+atlas backups compliance-policy policies scheduled describe
+atlas backups compliance-policy policies scheduled get
+atlas backups compliance-policy policies scheduled list
+atlas backups compliance-policy policies scheduled ls
+atlas backups compliance-policy policy scheduled describe
+atlas backups compliance-policy policy scheduled get
+atlas backups compliance-policy policy scheduled list
+atlas backups compliance-policy policy scheduled ls
+atlas backup compliancePolicy policies scheduled describe
+atlas backup compliancePolicy policies scheduled get
+atlas backup compliancePolicy policies scheduled list
+atlas backup compliancePolicy policies scheduled ls
+atlas backup compliancePolicy policy scheduled describe
+atlas backup compliancePolicy policy scheduled get
+atlas backup compliancePolicy policy scheduled list
+atlas backup compliancePolicy policy scheduled ls
+atlas backup compliancepolicy policies scheduled describe
+atlas backup compliancepolicy policies scheduled get
+atlas backup compliancepolicy policies scheduled list
+atlas backup compliancepolicy policies scheduled ls
+atlas backup compliancepolicy policy scheduled describe
+atlas backup compliancepolicy policy scheduled get
+atlas backup compliancepolicy policy scheduled list
+atlas backup compliancepolicy policy scheduled ls
+atlas backup compliance-policy policies scheduled describe
+atlas backup compliance-policy policies scheduled get
+atlas backup compliance-policy policies scheduled list
+atlas backup compliance-policy policies scheduled ls
+atlas backup compliance-policy policy scheduled describe
+atlas backup compliance-policy policy scheduled get
+atlas backup compliance-policy policy scheduled list
+atlas backup compliance-policy policy scheduled ls
 ```
 
 
@@ -75,7 +80,7 @@ atlas backup compliance-policy policy scheduled ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy policies scheduled](atlas_backups_compliancePolicy_policies_scheduled.md)	- Manage the scheduled policy items of the backup compliance policy for your project.

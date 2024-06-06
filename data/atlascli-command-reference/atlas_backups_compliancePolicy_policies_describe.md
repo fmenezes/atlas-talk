@@ -3,33 +3,38 @@
 Return the individual policy items of the backup compliance policy for your project.
 
 
-
+### Usage
+```
+atlas backups compliancePolicy policies describe [flags]
 ```
 
-atlas backups compliancePolicy policies describe [flags]
-atlas backups compliancePolicy policies get [flags]
-atlas backups compliancePolicy policy describe [flags]
-atlas backups compliancePolicy policy get [flags]
-atlas backups compliancepolicy policies describe [flags]
-atlas backups compliancepolicy policies get [flags]
-atlas backups compliancepolicy policy describe [flags]
-atlas backups compliancepolicy policy get [flags]
-atlas backups compliance-policy policies describe [flags]
-atlas backups compliance-policy policies get [flags]
-atlas backups compliance-policy policy describe [flags]
-atlas backups compliance-policy policy get [flags]
-atlas backup compliancePolicy policies describe [flags]
-atlas backup compliancePolicy policies get [flags]
-atlas backup compliancePolicy policy describe [flags]
-atlas backup compliancePolicy policy get [flags]
-atlas backup compliancepolicy policies describe [flags]
-atlas backup compliancepolicy policies get [flags]
-atlas backup compliancepolicy policy describe [flags]
-atlas backup compliancepolicy policy get [flags]
-atlas backup compliance-policy policies describe [flags]
-atlas backup compliance-policy policies get [flags]
-atlas backup compliance-policy policy describe [flags]
-atlas backup compliance-policy policy get [flags]
+### Aliases
+```
+
+atlas backups compliancePolicy policies describe
+atlas backups compliancePolicy policies get
+atlas backups compliancePolicy policy describe
+atlas backups compliancePolicy policy get
+atlas backups compliancepolicy policies describe
+atlas backups compliancepolicy policies get
+atlas backups compliancepolicy policy describe
+atlas backups compliancepolicy policy get
+atlas backups compliance-policy policies describe
+atlas backups compliance-policy policies get
+atlas backups compliance-policy policy describe
+atlas backups compliance-policy policy get
+atlas backup compliancePolicy policies describe
+atlas backup compliancePolicy policies get
+atlas backup compliancePolicy policy describe
+atlas backup compliancePolicy policy get
+atlas backup compliancepolicy policies describe
+atlas backup compliancepolicy policies get
+atlas backup compliancepolicy policy describe
+atlas backup compliancepolicy policy get
+atlas backup compliance-policy policies describe
+atlas backup compliance-policy policies get
+atlas backup compliance-policy policy describe
+atlas backup compliance-policy policy get
 ```
 
 
@@ -51,7 +56,7 @@ atlas backup compliance-policy policy get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy policies](atlas_backups_compliancePolicy_policies.md)	- Manage the individual policy items of the backup compliance policy for your project.

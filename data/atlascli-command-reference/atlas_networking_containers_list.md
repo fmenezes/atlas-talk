@@ -8,13 +8,18 @@ Return all network peering containers for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas networking containers list [flags]
 ```
 
-atlas networking containers list [flags]
-atlas networking containers ls [flags]
-atlas networking container list [flags]
-atlas networking container ls [flags]
+### Aliases
+```
+
+atlas networking containers list
+atlas networking containers ls
+atlas networking container list
+atlas networking container ls
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas networking container ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas networking containers](atlas_networking_containers.md)	- Manage Network Peering containers.

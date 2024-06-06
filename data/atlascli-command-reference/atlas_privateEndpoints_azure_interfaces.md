@@ -5,6 +5,23 @@ Manage Atlas Azure private endpoint interfaces.
 
 
 
+### Aliases
+```
+
+atlas privateEndpoints azure interfaces
+atlas privateEndpoints azure interface
+atlas privateendpoints azure interfaces
+atlas privateendpoints azure interface
+atlas private-endpoints azure interfaces
+atlas private-endpoints azure interface
+atlas privateEndpoint azure interfaces
+atlas privateEndpoint azure interface
+atlas privateendpoint azure interfaces
+atlas privateendpoint azure interface
+atlas private-endpoint azure interfaces
+atlas private-endpoint azure interface
+```
+
 
 
 ### Flags
@@ -22,7 +39,7 @@ Manage Atlas Azure private endpoint interfaces.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints azure](atlas_privateEndpoints_azure.md)	- Manage Azure Private Endpoints.

@@ -8,16 +8,21 @@ Start the cutover for a push live migration and confirm when the cutover complet
 To migrate using scripts, use mongomirror instead of the Atlas CLI. To learn more about mongomirror, see https://www.mongodb.com/docs/atlas/reference/mongomirror/.
 
 
-
+### Usage
+```
+atlas liveMigrations cutover [flags]
 ```
 
-atlas liveMigrations cutover [flags]
-atlas livemigrations cutover [flags]
-atlas live-migrations cutover [flags]
-atlas liveMigration cutover [flags]
-atlas livemigration cutover [flags]
-atlas live-migration cutover [flags]
-atlas lm cutover [flags]
+### Aliases
+```
+
+atlas liveMigrations cutover
+atlas livemigrations cutover
+atlas live-migrations cutover
+atlas liveMigration cutover
+atlas livemigration cutover
+atlas live-migration cutover
+atlas lm cutover
 ```
 
 
@@ -40,7 +45,7 @@ atlas lm cutover [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas liveMigrations](atlas_liveMigrations.md)	- Manage a Live Migration to Atlas for your organization.

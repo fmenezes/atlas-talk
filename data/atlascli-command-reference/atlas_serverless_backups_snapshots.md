@@ -5,6 +5,19 @@ Manage cloud backup snapshots for your project.
 
 
 
+### Aliases
+```
+
+atlas serverless backups snapshots
+atlas serverless backups snapshot
+atlas serverless backup snapshots
+atlas serverless backup snapshot
+atlas sl backups snapshots
+atlas sl backups snapshot
+atlas sl backup snapshots
+atlas sl backup snapshot
+```
+
 
 
 ### Flags
@@ -22,7 +35,7 @@ Manage cloud backup snapshots for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless backups](atlas_serverless_backups.md)	- Manage cloud backups for your project.

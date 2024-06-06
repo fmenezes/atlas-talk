@@ -8,11 +8,16 @@ Register, authenticate, create, and access an Atlas cluster.
 This command takes you through registration, login, default profile creation, creating your first free tier cluster and connecting to it using MongoDB Shell.
 
 
-
+### Usage
+```
+atlas setup [flags]
 ```
 
-atlas setup [flags]
-atlas quickstart [flags]
+### Aliases
+```
+
+atlas setup
+atlas quickstart
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas quickstart [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

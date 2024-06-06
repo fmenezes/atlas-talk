@@ -8,21 +8,26 @@ Start a paused online archive from a cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Admin role.
 
 
-
+### Usage
+```
+atlas clusters onlineArchives start <archiveId> [flags]
 ```
 
-atlas clusters onlineArchives start <archiveId> [flags]
-atlas clusters onlinearchives start <archiveId> [flags]
-atlas clusters online-archives start <archiveId> [flags]
-atlas clusters onlineArchive start <archiveId> [flags]
-atlas clusters onlinearchive start <archiveId> [flags]
-atlas clusters online-archive start <archiveId> [flags]
-atlas cluster onlineArchives start <archiveId> [flags]
-atlas cluster onlinearchives start <archiveId> [flags]
-atlas cluster online-archives start <archiveId> [flags]
-atlas cluster onlineArchive start <archiveId> [flags]
-atlas cluster onlinearchive start <archiveId> [flags]
-atlas cluster online-archive start <archiveId> [flags]
+### Aliases
+```
+
+atlas clusters onlineArchives start
+atlas clusters onlinearchives start
+atlas clusters online-archives start
+atlas clusters onlineArchive start
+atlas clusters onlinearchive start
+atlas clusters online-archive start
+atlas cluster onlineArchives start
+atlas cluster onlinearchives start
+atlas cluster online-archives start
+atlas cluster onlineArchive start
+atlas cluster onlinearchive start
+atlas cluster online-archive start
 ```
 
 
@@ -45,7 +50,7 @@ atlas cluster online-archive start <archiveId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters onlineArchives](atlas_clusters_onlineArchives.md)	- Manage online archives for your cluster.

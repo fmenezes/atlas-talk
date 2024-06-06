@@ -3,13 +3,18 @@
 Enables one alert configuration for the specified project.
 
 
-
+### Usage
+```
+atlas alerts settings enable <alertConfigId> [flags]
 ```
 
-atlas alerts settings enable <alertConfigId> [flags]
-atlas alerts config enable <alertConfigId> [flags]
-atlas alert settings enable <alertConfigId> [flags]
-atlas alert config enable <alertConfigId> [flags]
+### Aliases
+```
+
+atlas alerts settings enable
+atlas alerts config enable
+atlas alert settings enable
+atlas alert config enable
 ```
 
 ### Examples
@@ -37,7 +42,7 @@ atlas alert config enable <alertConfigId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas alerts settings](atlas_alerts_settings.md)	- Manages alerts configuration for your project.

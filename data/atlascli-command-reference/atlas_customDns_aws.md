@@ -5,6 +5,23 @@ Manage DNS configuration of an Atlas project’s cluster deployed to AWS.
 
 
 
+### Aliases
+```
+
+atlas customDns aws
+atlas customDns aw
+atlas customdns aws
+atlas customdns aw
+atlas custom-dns aws
+atlas custom-dns aw
+atlas customDn aws
+atlas customDn aw
+atlas customdn aws
+atlas customdn aw
+atlas custom-dn aws
+atlas custom-dn aw
+```
+
 
 
 ### Flags
@@ -22,7 +39,7 @@ Manage DNS configuration of an Atlas project’s cluster deployed to AWS.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas customDns](atlas_customDns.md)	- Manage DNS configuration of Atlas project’s clusters deployed to AWS.

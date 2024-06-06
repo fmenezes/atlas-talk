@@ -8,25 +8,30 @@ Invite the specified MongoDB user to your organization.
 To use this command, you must authenticate with a user account or an API key with the Organization User Admin role.
 
 
-
+### Usage
+```
+atlas organizations invitations invite <email> [flags]
 ```
 
-atlas organizations invitations invite <email> [flags]
-atlas organizations invitations create <email> [flags]
-atlas organizations invitation invite <email> [flags]
-atlas organizations invitation create <email> [flags]
-atlas organization invitations invite <email> [flags]
-atlas organization invitations create <email> [flags]
-atlas organization invitation invite <email> [flags]
-atlas organization invitation create <email> [flags]
-atlas orgs invitations invite <email> [flags]
-atlas orgs invitations create <email> [flags]
-atlas orgs invitation invite <email> [flags]
-atlas orgs invitation create <email> [flags]
-atlas org invitations invite <email> [flags]
-atlas org invitations create <email> [flags]
-atlas org invitation invite <email> [flags]
-atlas org invitation create <email> [flags]
+### Aliases
+```
+
+atlas organizations invitations invite
+atlas organizations invitations create
+atlas organizations invitation invite
+atlas organizations invitation create
+atlas organization invitations invite
+atlas organization invitations create
+atlas organization invitation invite
+atlas organization invitation create
+atlas orgs invitations invite
+atlas orgs invitations create
+atlas orgs invitation invite
+atlas orgs invitation create
+atlas org invitations invite
+atlas org invitations create
+atlas org invitation invite
+atlas org invitation create
 ```
 
 ### Examples
@@ -56,7 +61,7 @@ atlas org invitation create <email> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations invitations](atlas_organizations_invitations.md)	- Invitation operations.

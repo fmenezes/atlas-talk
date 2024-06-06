@@ -8,13 +8,18 @@ List all the Atlas Stream Processing instances for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas streams instances list [flags]
 ```
 
-atlas streams instances list [flags]
-atlas streams instance list [flags]
-atlas stream instances list [flags]
-atlas stream instance list [flags]
+### Aliases
+```
+
+atlas streams instances list
+atlas streams instance list
+atlas stream instances list
+atlas stream instance list
 ```
 
 ### Examples
@@ -44,7 +49,7 @@ atlas stream instance list [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams instances](atlas_streams_instances.md)	- Manage Atlas Stream Processing instances.

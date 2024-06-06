@@ -8,17 +8,22 @@ Return all users for a team.
 To use this command, you must authenticate with a user account or an API key with the Organization Member role.
 
 
-
+### Usage
+```
+atlas teams users list [flags]
 ```
 
-atlas teams users list [flags]
-atlas teams users ls [flags]
-atlas teams user list [flags]
-atlas teams user ls [flags]
-atlas team users list [flags]
-atlas team users ls [flags]
-atlas team user list [flags]
-atlas team user ls [flags]
+### Aliases
+```
+
+atlas teams users list
+atlas teams users ls
+atlas teams user list
+atlas teams user ls
+atlas team users list
+atlas team users ls
+atlas team user list
+atlas team user ls
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas team user ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas teams users](atlas_teams_users.md)	- Manage your Atlas users.

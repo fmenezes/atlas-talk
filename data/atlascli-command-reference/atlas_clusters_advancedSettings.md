@@ -5,6 +5,25 @@ Manage advanced configuration settings for your cluster.
 
 
 
+### Aliases
+```
+
+atlas clusters advancedSettings
+atlas clusters advancedsettings
+atlas clusters advanced-settings
+atlas clusters advancedSetting
+atlas clusters advancedsetting
+atlas clusters advanced-setting
+atlas clusters settings
+atlas cluster advancedSettings
+atlas cluster advancedsettings
+atlas cluster advanced-settings
+atlas cluster advancedSetting
+atlas cluster advancedsetting
+atlas cluster advanced-setting
+atlas cluster settings
+```
+
 
 
 ### Flags
@@ -22,7 +41,7 @@ Manage advanced configuration settings for your cluster.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

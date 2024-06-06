@@ -10,6 +10,13 @@ The serverless command provides access to your serverless instance configuration
 
 
 
+### Aliases
+```
+
+atlas serverless
+atlas sl
+```
+
 
 
 ### Flags
@@ -27,7 +34,7 @@ The serverless command provides access to your serverless instance configuration
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

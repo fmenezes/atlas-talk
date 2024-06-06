@@ -8,11 +8,16 @@ Remove the specified peering connection from your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas networking peering delete <peerId> [flags]
 ```
 
-atlas networking peering delete <peerId> [flags]
-atlas networking peering rm <peerId> [flags]
+### Aliases
+```
+
+atlas networking peering delete
+atlas networking peering rm
 ```
 
 ### Examples
@@ -40,7 +45,7 @@ atlas networking peering rm <peerId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas networking peering](atlas_networking_peering.md)	- Manage Network Peering connections.

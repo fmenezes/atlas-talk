@@ -8,25 +8,30 @@ Return all cloud backup export jobs for your project and cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas backups exports jobs list <clusterName> [flags]
 ```
 
-atlas backups exports jobs list <clusterName> [flags]
-atlas backups exports jobs ls <clusterName> [flags]
-atlas backups exports job list <clusterName> [flags]
-atlas backups exports job ls <clusterName> [flags]
-atlas backups export jobs list <clusterName> [flags]
-atlas backups export jobs ls <clusterName> [flags]
-atlas backups export job list <clusterName> [flags]
-atlas backups export job ls <clusterName> [flags]
-atlas backup exports jobs list <clusterName> [flags]
-atlas backup exports jobs ls <clusterName> [flags]
-atlas backup exports job list <clusterName> [flags]
-atlas backup exports job ls <clusterName> [flags]
-atlas backup export jobs list <clusterName> [flags]
-atlas backup export jobs ls <clusterName> [flags]
-atlas backup export job list <clusterName> [flags]
-atlas backup export job ls <clusterName> [flags]
+### Aliases
+```
+
+atlas backups exports jobs list
+atlas backups exports jobs ls
+atlas backups exports job list
+atlas backups exports job ls
+atlas backups export jobs list
+atlas backups export jobs ls
+atlas backups export job list
+atlas backups export job ls
+atlas backup exports jobs list
+atlas backup exports jobs ls
+atlas backup exports job list
+atlas backup exports job ls
+atlas backup export jobs list
+atlas backup export jobs ls
+atlas backup export job list
+atlas backup export job ls
 ```
 
 ### Examples
@@ -57,7 +62,7 @@ atlas backup export job ls <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups exports jobs](atlas_backups_exports_jobs.md)	- Manage cloud backup export jobs for your project.

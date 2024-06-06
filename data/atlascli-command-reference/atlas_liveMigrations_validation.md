@@ -5,6 +5,18 @@ Manage a Live Migration validation job for your project.
 
 
 
+### Aliases
+```
+
+atlas liveMigrations validation
+atlas livemigrations validation
+atlas live-migrations validation
+atlas liveMigration validation
+atlas livemigration validation
+atlas live-migration validation
+atlas lm validation
+```
+
 
 
 ### Flags
@@ -22,7 +34,7 @@ Manage a Live Migration validation job for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas liveMigrations](atlas_liveMigrations.md)	- Manage a Live Migration to Atlas for your organization.

@@ -8,17 +8,22 @@ Return all pending invitations to your project.
 To use this command, you must authenticate with a user account or an API key with the Project User Admin role.
 
 
-
+### Usage
+```
+atlas projects invitations list [flags]
 ```
 
-atlas projects invitations list [flags]
-atlas projects invitations ls [flags]
-atlas projects invitation list [flags]
-atlas projects invitation ls [flags]
-atlas project invitations list [flags]
-atlas project invitations ls [flags]
-atlas project invitation list [flags]
-atlas project invitation ls [flags]
+### Aliases
+```
+
+atlas projects invitations list
+atlas projects invitations ls
+atlas projects invitation list
+atlas projects invitation ls
+atlas project invitations list
+atlas project invitations ls
+atlas project invitation list
+atlas project invitation ls
 ```
 
 ### Examples
@@ -47,7 +52,7 @@ atlas project invitation ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects invitations](atlas_projects_invitations.md)	- Invitation operations.

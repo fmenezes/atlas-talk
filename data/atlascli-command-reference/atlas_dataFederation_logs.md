@@ -8,12 +8,17 @@ Returns logs of the specified data federation database for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas dataFederation logs <name> [flags]
 ```
 
-atlas dataFederation logs <name> [flags]
-atlas datafederation logs <name> [flags]
-atlas data-federation logs <name> [flags]
+### Aliases
+```
+
+atlas dataFederation logs
+atlas datafederation logs
+atlas data-federation logs
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas data-federation logs <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation](atlas_dataFederation.md)	- Data federation.

@@ -10,13 +10,18 @@ All members of the team share the same project access.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas projects teams add <teamId> [flags]
 ```
 
-atlas projects teams add <teamId> [flags]
-atlas projects team add <teamId> [flags]
-atlas project teams add <teamId> [flags]
-atlas project team add <teamId> [flags]
+### Aliases
+```
+
+atlas projects teams add
+atlas projects team add
+atlas project teams add
+atlas project team add
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas project team add <teamId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects teams](atlas_projects_teams.md)	- Manage your Atlas teams.

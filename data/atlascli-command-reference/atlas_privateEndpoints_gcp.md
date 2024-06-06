@@ -5,6 +5,17 @@ Manage GCP private endpoints.
 
 
 
+### Aliases
+```
+
+atlas privateEndpoints gcp
+atlas privateendpoints gcp
+atlas private-endpoints gcp
+atlas privateEndpoint gcp
+atlas privateendpoint gcp
+atlas private-endpoint gcp
+```
+
 
 
 ### Flags
@@ -22,7 +33,7 @@ Manage GCP private endpoints.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints](atlas_privateEndpoints.md)	- Manage Atlas private endpoints.

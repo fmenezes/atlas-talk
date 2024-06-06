@@ -11,25 +11,30 @@ $ atlas processes list
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas metrics disks list <hostname:port> [flags]
 ```
 
-atlas metrics disks list <hostname:port> [flags]
-atlas metrics disks ls <hostname:port> [flags]
-atlas metrics disk list <hostname:port> [flags]
-atlas metrics disk ls <hostname:port> [flags]
-atlas metric disks list <hostname:port> [flags]
-atlas metric disks ls <hostname:port> [flags]
-atlas metric disk list <hostname:port> [flags]
-atlas metric disk ls <hostname:port> [flags]
-atlas measurements disks list <hostname:port> [flags]
-atlas measurements disks ls <hostname:port> [flags]
-atlas measurements disk list <hostname:port> [flags]
-atlas measurements disk ls <hostname:port> [flags]
-atlas measurement disks list <hostname:port> [flags]
-atlas measurement disks ls <hostname:port> [flags]
-atlas measurement disk list <hostname:port> [flags]
-atlas measurement disk ls <hostname:port> [flags]
+### Aliases
+```
+
+atlas metrics disks list
+atlas metrics disks ls
+atlas metrics disk list
+atlas metrics disk ls
+atlas metric disks list
+atlas metric disks ls
+atlas metric disk list
+atlas metric disk ls
+atlas measurements disks list
+atlas measurements disks ls
+atlas measurements disk list
+atlas measurements disk ls
+atlas measurement disks list
+atlas measurement disks ls
+atlas measurement disk list
+atlas measurement disk ls
 ```
 
 ### Examples
@@ -60,7 +65,7 @@ atlas measurement disk ls <hostname:port> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas metrics disks](atlas_metrics_disks.md)	- List available disks or disk metrics for a given host.

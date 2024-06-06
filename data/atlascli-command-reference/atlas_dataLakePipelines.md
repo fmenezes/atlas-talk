@@ -5,6 +5,17 @@ Data Lake pipelines.
 
 
 
+### Aliases
+```
+
+atlas dataLakePipelines
+atlas datalakepipelines
+atlas data-lake-pipelines
+atlas dataLakePipeline
+atlas datalakepipeline
+atlas data-lake-pipeline
+```
+
 
 
 ### Flags
@@ -22,7 +33,7 @@ Data Lake pipelines.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

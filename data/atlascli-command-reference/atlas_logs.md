@@ -5,6 +5,13 @@ Download host logs for your project.
 
 
 
+### Aliases
+```
+
+atlas logs
+atlas log
+```
+
 
 
 ### Flags
@@ -22,7 +29,7 @@ Download host logs for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

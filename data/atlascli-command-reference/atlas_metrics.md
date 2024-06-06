@@ -5,6 +5,15 @@ Get metrics on the MongoDB process.
 
 
 
+### Aliases
+```
+
+atlas metrics
+atlas metric
+atlas measurements
+atlas measurement
+```
+
 
 
 ### Flags
@@ -22,7 +31,7 @@ Get metrics on the MongoDB process.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

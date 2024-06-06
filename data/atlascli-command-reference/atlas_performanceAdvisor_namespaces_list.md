@@ -12,21 +12,26 @@ If you don't set the duration option or the since option, this command returns d
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas performanceAdvisor namespaces list [flags]
 ```
 
-atlas performanceAdvisor namespaces list [flags]
-atlas performanceAdvisor namespaces ls [flags]
-atlas performanceAdvisor namespace list [flags]
-atlas performanceAdvisor namespace ls [flags]
-atlas performanceadvisor namespaces list [flags]
-atlas performanceadvisor namespaces ls [flags]
-atlas performanceadvisor namespace list [flags]
-atlas performanceadvisor namespace ls [flags]
-atlas performance-advisor namespaces list [flags]
-atlas performance-advisor namespaces ls [flags]
-atlas performance-advisor namespace list [flags]
-atlas performance-advisor namespace ls [flags]
+### Aliases
+```
+
+atlas performanceAdvisor namespaces list
+atlas performanceAdvisor namespaces ls
+atlas performanceAdvisor namespace list
+atlas performanceAdvisor namespace ls
+atlas performanceadvisor namespaces list
+atlas performanceadvisor namespaces ls
+atlas performanceadvisor namespace list
+atlas performanceadvisor namespace ls
+atlas performance-advisor namespaces list
+atlas performance-advisor namespaces ls
+atlas performance-advisor namespace list
+atlas performance-advisor namespace ls
 ```
 
 ### Examples
@@ -57,7 +62,7 @@ atlas performance-advisor namespace ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas performanceAdvisor namespaces](atlas_performanceAdvisor_namespaces.md)	- Retrieve namespaces for collections experiencing slow queries

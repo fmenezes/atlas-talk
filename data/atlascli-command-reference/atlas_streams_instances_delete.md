@@ -11,17 +11,22 @@ Before deleting an Atlas Streams Processing instance, you must first stop all pr
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas streams instances delete <name> [flags]
 ```
 
-atlas streams instances delete <name> [flags]
-atlas streams instances rm <name> [flags]
-atlas streams instance delete <name> [flags]
-atlas streams instance rm <name> [flags]
-atlas stream instances delete <name> [flags]
-atlas stream instances rm <name> [flags]
-atlas stream instance delete <name> [flags]
-atlas stream instance rm <name> [flags]
+### Aliases
+```
+
+atlas streams instances delete
+atlas streams instances rm
+atlas streams instance delete
+atlas streams instance rm
+atlas stream instances delete
+atlas stream instances rm
+atlas stream instance delete
+atlas stream instance rm
 ```
 
 ### Examples
@@ -52,7 +57,7 @@ atlas stream instance rm <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams instances](atlas_streams_instances.md)	- Manage Atlas Stream Processing instances.

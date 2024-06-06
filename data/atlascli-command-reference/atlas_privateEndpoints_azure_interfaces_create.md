@@ -10,33 +10,38 @@ To learn more about how to set up private endpoints with the Atlas CLI, see the 
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints azure interfaces create <endpointServiceId> [flags]
 ```
 
-atlas privateEndpoints azure interfaces create <endpointServiceId> [flags]
-atlas privateEndpoints azure interfaces add <endpointServiceId> [flags]
-atlas privateEndpoints azure interface create <endpointServiceId> [flags]
-atlas privateEndpoints azure interface add <endpointServiceId> [flags]
-atlas privateendpoints azure interfaces create <endpointServiceId> [flags]
-atlas privateendpoints azure interfaces add <endpointServiceId> [flags]
-atlas privateendpoints azure interface create <endpointServiceId> [flags]
-atlas privateendpoints azure interface add <endpointServiceId> [flags]
-atlas private-endpoints azure interfaces create <endpointServiceId> [flags]
-atlas private-endpoints azure interfaces add <endpointServiceId> [flags]
-atlas private-endpoints azure interface create <endpointServiceId> [flags]
-atlas private-endpoints azure interface add <endpointServiceId> [flags]
-atlas privateEndpoint azure interfaces create <endpointServiceId> [flags]
-atlas privateEndpoint azure interfaces add <endpointServiceId> [flags]
-atlas privateEndpoint azure interface create <endpointServiceId> [flags]
-atlas privateEndpoint azure interface add <endpointServiceId> [flags]
-atlas privateendpoint azure interfaces create <endpointServiceId> [flags]
-atlas privateendpoint azure interfaces add <endpointServiceId> [flags]
-atlas privateendpoint azure interface create <endpointServiceId> [flags]
-atlas privateendpoint azure interface add <endpointServiceId> [flags]
-atlas private-endpoint azure interfaces create <endpointServiceId> [flags]
-atlas private-endpoint azure interfaces add <endpointServiceId> [flags]
-atlas private-endpoint azure interface create <endpointServiceId> [flags]
-atlas private-endpoint azure interface add <endpointServiceId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints azure interfaces create
+atlas privateEndpoints azure interfaces add
+atlas privateEndpoints azure interface create
+atlas privateEndpoints azure interface add
+atlas privateendpoints azure interfaces create
+atlas privateendpoints azure interfaces add
+atlas privateendpoints azure interface create
+atlas privateendpoints azure interface add
+atlas private-endpoints azure interfaces create
+atlas private-endpoints azure interfaces add
+atlas private-endpoints azure interface create
+atlas private-endpoints azure interface add
+atlas privateEndpoint azure interfaces create
+atlas privateEndpoint azure interfaces add
+atlas privateEndpoint azure interface create
+atlas privateEndpoint azure interface add
+atlas privateendpoint azure interfaces create
+atlas privateendpoint azure interfaces add
+atlas privateendpoint azure interface create
+atlas privateendpoint azure interface add
+atlas private-endpoint azure interfaces create
+atlas private-endpoint azure interfaces add
+atlas private-endpoint azure interface create
+atlas private-endpoint azure interface add
 ```
 
 ### Examples
@@ -67,7 +72,7 @@ atlas private-endpoint azure interface add <endpointServiceId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints azure interfaces](atlas_privateEndpoints_azure_interfaces.md)	- Manage Atlas Azure private endpoint interfaces.

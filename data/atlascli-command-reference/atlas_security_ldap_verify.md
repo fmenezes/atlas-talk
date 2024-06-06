@@ -8,10 +8,15 @@ Request verification of an LDAP configuration for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas security ldap verify [flags]
 ```
 
-atlas security ldap verify [flags]
+### Aliases
+```
+
+atlas security ldap verify
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas security ldap verify [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas security ldap](atlas_security_ldap.md)	- LDAP operations.

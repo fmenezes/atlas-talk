@@ -5,6 +5,18 @@ Manage customer x509 certificates for your project.
 
 
 
+### Aliases
+```
+
+atlas security customerCerts
+atlas security customercerts
+atlas security customer-certs
+atlas security customerCert
+atlas security customercert
+atlas security customer-cert
+atlas security certs
+```
+
 
 
 ### Flags
@@ -22,7 +34,7 @@ Manage customer x509 certificates for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas security](atlas_security.md)	- Manage security configuration for your project.

@@ -5,6 +5,23 @@ Manage the scheduled policy items of the backup compliance policy for your proje
 
 
 
+### Aliases
+```
+
+atlas backups compliancePolicy policies scheduled
+atlas backups compliancePolicy policy scheduled
+atlas backups compliancepolicy policies scheduled
+atlas backups compliancepolicy policy scheduled
+atlas backups compliance-policy policies scheduled
+atlas backups compliance-policy policy scheduled
+atlas backup compliancePolicy policies scheduled
+atlas backup compliancePolicy policy scheduled
+atlas backup compliancepolicy policies scheduled
+atlas backup compliancepolicy policy scheduled
+atlas backup compliance-policy policies scheduled
+atlas backup compliance-policy policy scheduled
+```
+
 
 
 ### Flags
@@ -22,7 +39,7 @@ Manage the scheduled policy items of the backup compliance policy for your proje
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy policies](atlas_backups_compliancePolicy_policies.md)	- Manage the individual policy items of the backup compliance policy for your project.

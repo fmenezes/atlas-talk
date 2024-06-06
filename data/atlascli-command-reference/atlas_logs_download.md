@@ -12,11 +12,16 @@ To find the hostnames for an Atlas project, use the process list command.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Read/Write role.
 
 
-
+### Usage
+```
+atlas logs download <hostname> <mongodb.gz|mongos.gz|mongosqld.gz|mongodb-audit-log.gz|mongos-audit-log.gz> [flags]
 ```
 
-atlas logs download <hostname> <mongodb.gz|mongos.gz|mongosqld.gz|mongodb-audit-log.gz|mongos-audit-log.gz> [flags]
-atlas log download <hostname> <mongodb.gz|mongos.gz|mongosqld.gz|mongodb-audit-log.gz|mongos-audit-log.gz> [flags]
+### Aliases
+```
+
+atlas logs download
+atlas log download
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas log download <hostname> <mongodb.gz|mongos.gz|mongosqld.gz|mongodb-audit-l
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas logs](atlas_logs.md)	- Download host logs for your project.

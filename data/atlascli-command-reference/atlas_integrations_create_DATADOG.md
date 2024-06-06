@@ -14,17 +14,22 @@ Datadog integration is available only for M10+ clusters.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas integrations create DATADOG [flags]
 ```
 
-atlas integrations create DATADOG [flags]
-atlas integrations create datadog [flags]
-atlas integrations update DATADOG [flags]
-atlas integrations update datadog [flags]
-atlas integration create DATADOG [flags]
-atlas integration create datadog [flags]
-atlas integration update DATADOG [flags]
-atlas integration update datadog [flags]
+### Aliases
+```
+
+atlas integrations create DATADOG
+atlas integrations create datadog
+atlas integrations update DATADOG
+atlas integrations update datadog
+atlas integration create DATADOG
+atlas integration create datadog
+atlas integration update DATADOG
+atlas integration update datadog
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas integration update datadog [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas integrations create](atlas_integrations_create.md)	- Create operations.

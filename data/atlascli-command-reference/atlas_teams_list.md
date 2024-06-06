@@ -8,13 +8,18 @@ Return all teams for your organization.
 To use this command, you must authenticate with a user account or an API key with the Organization Member role.
 
 
-
+### Usage
+```
+atlas teams list [flags]
 ```
 
-atlas teams list [flags]
-atlas teams ls [flags]
-atlas team list [flags]
-atlas team ls [flags]
+### Aliases
+```
+
+atlas teams list
+atlas teams ls
+atlas team list
+atlas team ls
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas team ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas teams](atlas_teams.md)	- Manage your Atlas teams.

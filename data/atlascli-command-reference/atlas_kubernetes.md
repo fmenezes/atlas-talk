@@ -10,6 +10,12 @@ This command provides access to Kubernetes features within Atlas.
 
 
 
+### Aliases
+```
+
+atlas kubernetes
+```
+
 
 
 ### Flags
@@ -27,7 +33,7 @@ This command provides access to Kubernetes features within Atlas.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

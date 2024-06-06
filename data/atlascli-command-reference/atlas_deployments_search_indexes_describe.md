@@ -3,13 +3,18 @@
 Describe a search index for the specified deployment.
 
 
-
+### Usage
+```
+atlas deployments search indexes describe <indexId> [flags]
 ```
 
-atlas deployments search indexes describe <indexId> [flags]
-atlas deployments search index describe <indexId> [flags]
-atlas deployment search indexes describe <indexId> [flags]
-atlas deployment search index describe <indexId> [flags]
+### Aliases
+```
+
+atlas deployments search indexes describe
+atlas deployments search index describe
+atlas deployment search indexes describe
+atlas deployment search index describe
 ```
 
 
@@ -35,7 +40,7 @@ atlas deployment search index describe <indexId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments search indexes](atlas_deployments_search_indexes.md)	- Manage cloud and local search indexes.

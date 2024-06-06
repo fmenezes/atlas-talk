@@ -8,13 +8,18 @@ Remove a serverless instance from your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas serverless delete <instanceName> [flags]
 ```
 
-atlas serverless delete <instanceName> [flags]
-atlas serverless rm <instanceName> [flags]
-atlas sl delete <instanceName> [flags]
-atlas sl rm <instanceName> [flags]
+### Aliases
+```
+
+atlas serverless delete
+atlas serverless rm
+atlas sl delete
+atlas sl rm
 ```
 
 
@@ -36,7 +41,7 @@ atlas sl rm <instanceName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless](atlas_serverless.md)	- Manage serverless instances for your project.

@@ -10,23 +10,28 @@ Atlas supports this command only for M10+ clusters.
 
 
 
-
+### Usage
+```
+atlas clusters advancedSettings update <clusterName> [flags]
 ```
 
-atlas clusters advancedSettings update <clusterName> [flags]
-atlas clusters advancedsettings update <clusterName> [flags]
-atlas clusters advanced-settings update <clusterName> [flags]
-atlas clusters advancedSetting update <clusterName> [flags]
-atlas clusters advancedsetting update <clusterName> [flags]
-atlas clusters advanced-setting update <clusterName> [flags]
-atlas clusters settings update <clusterName> [flags]
-atlas cluster advancedSettings update <clusterName> [flags]
-atlas cluster advancedsettings update <clusterName> [flags]
-atlas cluster advanced-settings update <clusterName> [flags]
-atlas cluster advancedSetting update <clusterName> [flags]
-atlas cluster advancedsetting update <clusterName> [flags]
-atlas cluster advanced-setting update <clusterName> [flags]
-atlas cluster settings update <clusterName> [flags]
+### Aliases
+```
+
+atlas clusters advancedSettings update
+atlas clusters advancedsettings update
+atlas clusters advanced-settings update
+atlas clusters advancedSetting update
+atlas clusters advancedsetting update
+atlas clusters advanced-setting update
+atlas clusters settings update
+atlas cluster advancedSettings update
+atlas cluster advancedsettings update
+atlas cluster advanced-settings update
+atlas cluster advancedSetting update
+atlas cluster advancedsetting update
+atlas cluster advanced-setting update
+atlas cluster settings update
 ```
 
 ### Examples
@@ -70,7 +75,7 @@ atlas cluster settings update <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters advancedSettings](atlas_clusters_advancedSettings.md)	- Manage advanced configuration settings for your cluster.

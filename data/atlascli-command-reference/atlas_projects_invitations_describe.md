@@ -8,17 +8,22 @@ Return the details for the specified pending invitation to your project.
 To use this command, you must authenticate with a user account or an API key with the Project User Admin role.
 
 
-
+### Usage
+```
+atlas projects invitations describe <invitationId> [flags]
 ```
 
-atlas projects invitations describe <invitationId> [flags]
-atlas projects invitations get <invitationId> [flags]
-atlas projects invitation describe <invitationId> [flags]
-atlas projects invitation get <invitationId> [flags]
-atlas project invitations describe <invitationId> [flags]
-atlas project invitations get <invitationId> [flags]
-atlas project invitation describe <invitationId> [flags]
-atlas project invitation get <invitationId> [flags]
+### Aliases
+```
+
+atlas projects invitations describe
+atlas projects invitations get
+atlas projects invitation describe
+atlas projects invitation get
+atlas project invitations describe
+atlas project invitations get
+atlas project invitation describe
+atlas project invitation get
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas project invitation get <invitationId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects invitations](atlas_projects_invitations.md)	- Invitation operations.

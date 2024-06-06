@@ -8,21 +8,26 @@ Enable the custom DNS configuration of an Atlas cluster deployed to AWS in the s
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas customDns aws enable [flags]
 ```
 
-atlas customDns aws enable [flags]
-atlas customDns aw enable [flags]
-atlas customdns aws enable [flags]
-atlas customdns aw enable [flags]
-atlas custom-dns aws enable [flags]
-atlas custom-dns aw enable [flags]
-atlas customDn aws enable [flags]
-atlas customDn aw enable [flags]
-atlas customdn aws enable [flags]
-atlas customdn aw enable [flags]
-atlas custom-dn aws enable [flags]
-atlas custom-dn aw enable [flags]
+### Aliases
+```
+
+atlas customDns aws enable
+atlas customDns aw enable
+atlas customdns aws enable
+atlas customdns aw enable
+atlas custom-dns aws enable
+atlas custom-dns aw enable
+atlas customDn aws enable
+atlas customDn aw enable
+atlas customdn aws enable
+atlas customdn aw enable
+atlas custom-dn aws enable
+atlas custom-dn aw enable
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas custom-dn aw enable [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas customDns aws](atlas_customDns_aws.md)	- Manage DNS configuration of an Atlas project’s cluster deployed to AWS.

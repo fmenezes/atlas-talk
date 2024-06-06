@@ -8,33 +8,38 @@ Return the details for the specified Azure private endpoint interface for your p
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints azure interfaces describe <privateEndpointResourceId> [flags]
 ```
 
-atlas privateEndpoints azure interfaces describe <privateEndpointResourceId> [flags]
-atlas privateEndpoints azure interfaces get <privateEndpointResourceId> [flags]
-atlas privateEndpoints azure interface describe <privateEndpointResourceId> [flags]
-atlas privateEndpoints azure interface get <privateEndpointResourceId> [flags]
-atlas privateendpoints azure interfaces describe <privateEndpointResourceId> [flags]
-atlas privateendpoints azure interfaces get <privateEndpointResourceId> [flags]
-atlas privateendpoints azure interface describe <privateEndpointResourceId> [flags]
-atlas privateendpoints azure interface get <privateEndpointResourceId> [flags]
-atlas private-endpoints azure interfaces describe <privateEndpointResourceId> [flags]
-atlas private-endpoints azure interfaces get <privateEndpointResourceId> [flags]
-atlas private-endpoints azure interface describe <privateEndpointResourceId> [flags]
-atlas private-endpoints azure interface get <privateEndpointResourceId> [flags]
-atlas privateEndpoint azure interfaces describe <privateEndpointResourceId> [flags]
-atlas privateEndpoint azure interfaces get <privateEndpointResourceId> [flags]
-atlas privateEndpoint azure interface describe <privateEndpointResourceId> [flags]
-atlas privateEndpoint azure interface get <privateEndpointResourceId> [flags]
-atlas privateendpoint azure interfaces describe <privateEndpointResourceId> [flags]
-atlas privateendpoint azure interfaces get <privateEndpointResourceId> [flags]
-atlas privateendpoint azure interface describe <privateEndpointResourceId> [flags]
-atlas privateendpoint azure interface get <privateEndpointResourceId> [flags]
-atlas private-endpoint azure interfaces describe <privateEndpointResourceId> [flags]
-atlas private-endpoint azure interfaces get <privateEndpointResourceId> [flags]
-atlas private-endpoint azure interface describe <privateEndpointResourceId> [flags]
-atlas private-endpoint azure interface get <privateEndpointResourceId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints azure interfaces describe
+atlas privateEndpoints azure interfaces get
+atlas privateEndpoints azure interface describe
+atlas privateEndpoints azure interface get
+atlas privateendpoints azure interfaces describe
+atlas privateendpoints azure interfaces get
+atlas privateendpoints azure interface describe
+atlas privateendpoints azure interface get
+atlas private-endpoints azure interfaces describe
+atlas private-endpoints azure interfaces get
+atlas private-endpoints azure interface describe
+atlas private-endpoints azure interface get
+atlas privateEndpoint azure interfaces describe
+atlas privateEndpoint azure interfaces get
+atlas privateEndpoint azure interface describe
+atlas privateEndpoint azure interface get
+atlas privateendpoint azure interfaces describe
+atlas privateendpoint azure interfaces get
+atlas privateendpoint azure interface describe
+atlas privateendpoint azure interface get
+atlas private-endpoint azure interfaces describe
+atlas private-endpoint azure interfaces get
+atlas private-endpoint azure interface describe
+atlas private-endpoint azure interface get
 ```
 
 ### Examples
@@ -63,7 +68,7 @@ atlas private-endpoint azure interface get <privateEndpointResourceId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints azure interfaces](atlas_privateEndpoints_azure_interfaces.md)	- Manage Atlas Azure private endpoint interfaces.

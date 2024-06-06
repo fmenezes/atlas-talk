@@ -8,11 +8,16 @@ Return the details for all network peering connections for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas networking peering list [flags]
 ```
 
-atlas networking peering list [flags]
-atlas networking peering ls [flags]
+### Aliases
+```
+
+atlas networking peering list
+atlas networking peering ls
 ```
 
 ### Examples
@@ -44,7 +49,7 @@ atlas networking peering ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas networking peering](atlas_networking_peering.md)	- Manage Network Peering connections.

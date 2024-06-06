@@ -10,17 +10,22 @@ After you remove a user from your project, the user still exists in the organiza
 To use this command, you must authenticate with a user account or an API key with the Project User Admin role.
 
 
-
+### Usage
+```
+atlas projects users delete <ID> [flags]
 ```
 
-atlas projects users delete <ID> [flags]
-atlas projects users rm <ID> [flags]
-atlas projects user delete <ID> [flags]
-atlas projects user rm <ID> [flags]
-atlas project users delete <ID> [flags]
-atlas project users rm <ID> [flags]
-atlas project user delete <ID> [flags]
-atlas project user rm <ID> [flags]
+### Aliases
+```
+
+atlas projects users delete
+atlas projects users rm
+atlas projects user delete
+atlas projects user rm
+atlas project users delete
+atlas project users rm
+atlas project user delete
+atlas project user rm
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas project user rm <ID> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects users](atlas_projects_users.md)	- Manage users for a project.

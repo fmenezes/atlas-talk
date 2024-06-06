@@ -8,17 +8,22 @@ Remove the specified user from a team for your organization.
 To use this command, you must authenticate with a user account or an API key with the Organization User Admin role.
 
 
-
+### Usage
+```
+atlas teams users delete <userId> [flags]
 ```
 
-atlas teams users delete <userId> [flags]
-atlas teams users rm <userId> [flags]
-atlas teams user delete <userId> [flags]
-atlas teams user rm <userId> [flags]
-atlas team users delete <userId> [flags]
-atlas team users rm <userId> [flags]
-atlas team user delete <userId> [flags]
-atlas team user rm <userId> [flags]
+### Aliases
+```
+
+atlas teams users delete
+atlas teams users rm
+atlas teams user delete
+atlas teams user rm
+atlas team users delete
+atlas team users rm
+atlas team user delete
+atlas team user rm
 ```
 
 ### Examples
@@ -47,7 +52,7 @@ atlas team user rm <userId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas teams users](atlas_teams_users.md)	- Manage your Atlas users.

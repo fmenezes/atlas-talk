@@ -3,13 +3,18 @@
 Create a search index for the specified deployment.
 
 
-
+### Usage
+```
+atlas deployments search indexes create <indexName> [flags]
 ```
 
-atlas deployments search indexes create <indexName> [flags]
-atlas deployments search index create <indexName> [flags]
-atlas deployment search indexes create <indexName> [flags]
-atlas deployment search index create <indexName> [flags]
+### Aliases
+```
+
+atlas deployments search indexes create
+atlas deployments search index create
+atlas deployment search indexes create
+atlas deployment search index create
 ```
 
 
@@ -40,7 +45,7 @@ atlas deployment search index create <indexName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments search indexes](atlas_deployments_search_indexes.md)	- Manage cloud and local search indexes.

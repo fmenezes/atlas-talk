@@ -8,21 +8,26 @@ Return the details for the specified data lake pipeline run for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines runs describe <pipelineRunId> [flags]
 ```
 
-atlas dataLakePipelines runs describe <pipelineRunId> [flags]
-atlas dataLakePipelines run describe <pipelineRunId> [flags]
-atlas datalakepipelines runs describe <pipelineRunId> [flags]
-atlas datalakepipelines run describe <pipelineRunId> [flags]
-atlas data-lake-pipelines runs describe <pipelineRunId> [flags]
-atlas data-lake-pipelines run describe <pipelineRunId> [flags]
-atlas dataLakePipeline runs describe <pipelineRunId> [flags]
-atlas dataLakePipeline run describe <pipelineRunId> [flags]
-atlas datalakepipeline runs describe <pipelineRunId> [flags]
-atlas datalakepipeline run describe <pipelineRunId> [flags]
-atlas data-lake-pipeline runs describe <pipelineRunId> [flags]
-atlas data-lake-pipeline run describe <pipelineRunId> [flags]
+### Aliases
+```
+
+atlas dataLakePipelines runs describe
+atlas dataLakePipelines run describe
+atlas datalakepipelines runs describe
+atlas datalakepipelines run describe
+atlas data-lake-pipelines runs describe
+atlas data-lake-pipelines run describe
+atlas dataLakePipeline runs describe
+atlas dataLakePipeline run describe
+atlas datalakepipeline runs describe
+atlas datalakepipeline run describe
+atlas data-lake-pipeline runs describe
+atlas data-lake-pipeline run describe
 ```
 
 ### Examples
@@ -52,7 +57,7 @@ atlas data-lake-pipeline run describe <pipelineRunId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines runs](atlas_dataLakePipelines_runs.md)	- Data Lake pipelines runs.

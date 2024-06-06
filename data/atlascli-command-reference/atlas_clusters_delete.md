@@ -12,13 +12,18 @@ Deleting a cluster also deletes any backup snapshots for that cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas clusters delete <clusterName> [flags]
 ```
 
-atlas clusters delete <clusterName> [flags]
-atlas clusters rm <clusterName> [flags]
-atlas cluster delete <clusterName> [flags]
-atlas cluster rm <clusterName> [flags]
+### Aliases
+```
+
+atlas clusters delete
+atlas clusters rm
+atlas cluster delete
+atlas cluster rm
 ```
 
 ### Examples
@@ -51,7 +56,7 @@ atlas cluster rm <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

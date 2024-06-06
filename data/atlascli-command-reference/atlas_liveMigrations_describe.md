@@ -3,23 +3,28 @@
 Return a push live migration job.
 
 
-
+### Usage
+```
+atlas liveMigrations describe [flags]
 ```
 
-atlas liveMigrations describe [flags]
-atlas liveMigrations get [flags]
-atlas livemigrations describe [flags]
-atlas livemigrations get [flags]
-atlas live-migrations describe [flags]
-atlas live-migrations get [flags]
-atlas liveMigration describe [flags]
-atlas liveMigration get [flags]
-atlas livemigration describe [flags]
-atlas livemigration get [flags]
-atlas live-migration describe [flags]
-atlas live-migration get [flags]
-atlas lm describe [flags]
-atlas lm get [flags]
+### Aliases
+```
+
+atlas liveMigrations describe
+atlas liveMigrations get
+atlas livemigrations describe
+atlas livemigrations get
+atlas live-migrations describe
+atlas live-migrations get
+atlas liveMigration describe
+atlas liveMigration get
+atlas livemigration describe
+atlas livemigration get
+atlas live-migration describe
+atlas live-migration get
+atlas lm describe
+atlas lm get
 ```
 
 
@@ -40,7 +45,7 @@ atlas lm get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas liveMigrations](atlas_liveMigrations.md)	- Manage a Live Migration to Atlas for your organization.

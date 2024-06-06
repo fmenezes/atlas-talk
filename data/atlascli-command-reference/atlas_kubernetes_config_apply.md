@@ -8,10 +8,15 @@ Generate and apply Kubernetes configuration resources for use with Atlas Kuberne
 This command exports configurations for Atlas objects including projects, deployments, and users directly into Kubernetes, allowing you to manage these resources using the Atlas Kubernetes Operator. For more information, see https://www.mongodb.com/docs/atlas/atlas-operator/.
 
 
-
+### Usage
+```
+atlas kubernetes config apply [flags]
 ```
 
-atlas kubernetes config apply [flags]
+### Aliases
+```
+
+atlas kubernetes config apply
 ```
 
 ### Examples
@@ -53,7 +58,7 @@ atlas kubernetes config apply [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas kubernetes config](atlas_kubernetes_config.md)	- Manage Kubernetes configuration resources.

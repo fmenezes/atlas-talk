@@ -8,13 +8,18 @@ Return all alerts for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas alerts list [flags]
 ```
 
-atlas alerts list [flags]
-atlas alerts ls [flags]
-atlas alert list [flags]
-atlas alert ls [flags]
+### Aliases
+```
+
+atlas alerts list
+atlas alerts ls
+atlas alert list
+atlas alert ls
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas alert ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas alerts](atlas_alerts.md)	- Manage alerts for your project.

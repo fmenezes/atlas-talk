@@ -5,6 +5,19 @@ List available databases or database metrics for a given host.
 
 
 
+### Aliases
+```
+
+atlas metrics databases
+atlas metrics database
+atlas metric databases
+atlas metric database
+atlas measurements databases
+atlas measurements database
+atlas measurement databases
+atlas measurement database
+```
+
 
 
 ### Flags
@@ -22,7 +35,7 @@ List available databases or database metrics for a given host.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas metrics](atlas_metrics.md)	- Get metrics on the MongoDB process.

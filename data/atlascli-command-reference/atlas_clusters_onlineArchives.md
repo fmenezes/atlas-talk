@@ -5,6 +5,23 @@ Manage online archives for your cluster.
 
 
 
+### Aliases
+```
+
+atlas clusters onlineArchives
+atlas clusters onlinearchives
+atlas clusters online-archives
+atlas clusters onlineArchive
+atlas clusters onlinearchive
+atlas clusters online-archive
+atlas cluster onlineArchives
+atlas cluster onlinearchives
+atlas cluster online-archives
+atlas cluster onlineArchive
+atlas cluster onlinearchive
+atlas cluster online-archive
+```
+
 
 
 ### Flags
@@ -22,7 +39,7 @@ Manage online archives for your cluster.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

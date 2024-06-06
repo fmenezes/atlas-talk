@@ -8,12 +8,17 @@ Return the details for the specified data federation database for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataFederation describe <name> [flags]
 ```
 
-atlas dataFederation describe <name> [flags]
-atlas datafederation describe <name> [flags]
-atlas data-federation describe <name> [flags]
+### Aliases
+```
+
+atlas dataFederation describe
+atlas datafederation describe
+atlas data-federation describe
 ```
 
 ### Examples
@@ -42,7 +47,7 @@ atlas data-federation describe <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation](atlas_dataFederation.md)	- Data federation.

@@ -5,6 +5,18 @@ Manage custom database roles for your project.
 
 
 
+### Aliases
+```
+
+atlas customDbRoles
+atlas customdbroles
+atlas custom-db-roles
+atlas customDbRole
+atlas customdbrole
+atlas custom-db-role
+atlas customDBRoles
+```
+
 
 
 ### Flags
@@ -22,7 +34,7 @@ Manage custom database roles for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

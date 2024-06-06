@@ -8,25 +8,30 @@ Return one cloud backup export job for your project, cluster and job.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas backups exports jobs describe [flags]
 ```
 
-atlas backups exports jobs describe [flags]
-atlas backups exports jobs get [flags]
-atlas backups exports job describe [flags]
-atlas backups exports job get [flags]
-atlas backups export jobs describe [flags]
-atlas backups export jobs get [flags]
-atlas backups export job describe [flags]
-atlas backups export job get [flags]
-atlas backup exports jobs describe [flags]
-atlas backup exports jobs get [flags]
-atlas backup exports job describe [flags]
-atlas backup exports job get [flags]
-atlas backup export jobs describe [flags]
-atlas backup export jobs get [flags]
-atlas backup export job describe [flags]
-atlas backup export job get [flags]
+### Aliases
+```
+
+atlas backups exports jobs describe
+atlas backups exports jobs get
+atlas backups exports job describe
+atlas backups exports job get
+atlas backups export jobs describe
+atlas backups export jobs get
+atlas backups export job describe
+atlas backups export job get
+atlas backup exports jobs describe
+atlas backup exports jobs get
+atlas backup exports job describe
+atlas backup exports job get
+atlas backup export jobs describe
+atlas backup export jobs get
+atlas backup export job describe
+atlas backup export job get
 ```
 
 ### Examples
@@ -56,7 +61,7 @@ atlas backup export job get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups exports jobs](atlas_backups_exports_jobs.md)	- Manage cloud backup export jobs for your project.

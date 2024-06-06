@@ -10,6 +10,15 @@ Create, list and manage your MongoDB organizations.
 
 
 
+### Aliases
+```
+
+atlas organizations
+atlas organization
+atlas orgs
+atlas org
+```
+
 
 
 ### Flags
@@ -27,7 +36,7 @@ Create, list and manage your MongoDB organizations.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

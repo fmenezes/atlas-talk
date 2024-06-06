@@ -3,11 +3,16 @@
 Create a local deployment.
 
 
-
+### Usage
+```
+atlas deployments setup <deploymentName> [flags]
 ```
 
-atlas deployments setup <deploymentName> [flags]
-atlas deployment setup <deploymentName> [flags]
+### Aliases
+```
+
+atlas deployments setup
+atlas deployment setup
 ```
 
 
@@ -45,7 +50,7 @@ atlas deployment setup <deploymentName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments](atlas_deployments.md)	- Manage cloud and local deployments.

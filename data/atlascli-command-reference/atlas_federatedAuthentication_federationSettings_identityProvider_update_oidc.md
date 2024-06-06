@@ -3,63 +3,68 @@
 Update an OIDC identity provider.
 
 
-
+### Usage
+```
+atlas federatedAuthentication federationSettings identityProvider update oidc <identityProviderId> [flags]
 ```
 
-atlas federatedAuthentication federationSettings identityProvider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federationSettings identityprovider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federationSettings identity-provider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federationsettings identityProvider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federationsettings identityprovider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federationsettings identity-provider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federation-settings identityProvider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federation-settings identityprovider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federation-settings identity-provider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federationSetting identityProvider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federationSetting identityprovider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federationSetting identity-provider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federationsetting identityProvider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federationsetting identityprovider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federationsetting identity-provider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federation-setting identityProvider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federation-setting identityprovider update oidc <identityProviderId> [flags]
-atlas federatedAuthentication federation-setting identity-provider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationSettings identityProvider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationSettings identityprovider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationSettings identity-provider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationsettings identityProvider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationsettings identityprovider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationsettings identity-provider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federation-settings identityProvider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federation-settings identityprovider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federation-settings identity-provider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationSetting identityProvider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationSetting identityprovider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationSetting identity-provider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationsetting identityProvider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationsetting identityprovider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federationsetting identity-provider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federation-setting identityProvider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federation-setting identityprovider update oidc <identityProviderId> [flags]
-atlas federatedauthentication federation-setting identity-provider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationSettings identityProvider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationSettings identityprovider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationSettings identity-provider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationsettings identityProvider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationsettings identityprovider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationsettings identity-provider update oidc <identityProviderId> [flags]
-atlas federated-authentication federation-settings identityProvider update oidc <identityProviderId> [flags]
-atlas federated-authentication federation-settings identityprovider update oidc <identityProviderId> [flags]
-atlas federated-authentication federation-settings identity-provider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationSetting identityProvider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationSetting identityprovider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationSetting identity-provider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationsetting identityProvider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationsetting identityprovider update oidc <identityProviderId> [flags]
-atlas federated-authentication federationsetting identity-provider update oidc <identityProviderId> [flags]
-atlas federated-authentication federation-setting identityProvider update oidc <identityProviderId> [flags]
-atlas federated-authentication federation-setting identityprovider update oidc <identityProviderId> [flags]
-atlas federated-authentication federation-setting identity-provider update oidc <identityProviderId> [flags]
+### Aliases
+```
+
+atlas federatedAuthentication federationSettings identityProvider update oidc
+atlas federatedAuthentication federationSettings identityprovider update oidc
+atlas federatedAuthentication federationSettings identity-provider update oidc
+atlas federatedAuthentication federationsettings identityProvider update oidc
+atlas federatedAuthentication federationsettings identityprovider update oidc
+atlas federatedAuthentication federationsettings identity-provider update oidc
+atlas federatedAuthentication federation-settings identityProvider update oidc
+atlas federatedAuthentication federation-settings identityprovider update oidc
+atlas federatedAuthentication federation-settings identity-provider update oidc
+atlas federatedAuthentication federationSetting identityProvider update oidc
+atlas federatedAuthentication federationSetting identityprovider update oidc
+atlas federatedAuthentication federationSetting identity-provider update oidc
+atlas federatedAuthentication federationsetting identityProvider update oidc
+atlas federatedAuthentication federationsetting identityprovider update oidc
+atlas federatedAuthentication federationsetting identity-provider update oidc
+atlas federatedAuthentication federation-setting identityProvider update oidc
+atlas federatedAuthentication federation-setting identityprovider update oidc
+atlas federatedAuthentication federation-setting identity-provider update oidc
+atlas federatedauthentication federationSettings identityProvider update oidc
+atlas federatedauthentication federationSettings identityprovider update oidc
+atlas federatedauthentication federationSettings identity-provider update oidc
+atlas federatedauthentication federationsettings identityProvider update oidc
+atlas federatedauthentication federationsettings identityprovider update oidc
+atlas federatedauthentication federationsettings identity-provider update oidc
+atlas federatedauthentication federation-settings identityProvider update oidc
+atlas federatedauthentication federation-settings identityprovider update oidc
+atlas federatedauthentication federation-settings identity-provider update oidc
+atlas federatedauthentication federationSetting identityProvider update oidc
+atlas federatedauthentication federationSetting identityprovider update oidc
+atlas federatedauthentication federationSetting identity-provider update oidc
+atlas federatedauthentication federationsetting identityProvider update oidc
+atlas federatedauthentication federationsetting identityprovider update oidc
+atlas federatedauthentication federationsetting identity-provider update oidc
+atlas federatedauthentication federation-setting identityProvider update oidc
+atlas federatedauthentication federation-setting identityprovider update oidc
+atlas federatedauthentication federation-setting identity-provider update oidc
+atlas federated-authentication federationSettings identityProvider update oidc
+atlas federated-authentication federationSettings identityprovider update oidc
+atlas federated-authentication federationSettings identity-provider update oidc
+atlas federated-authentication federationsettings identityProvider update oidc
+atlas federated-authentication federationsettings identityprovider update oidc
+atlas federated-authentication federationsettings identity-provider update oidc
+atlas federated-authentication federation-settings identityProvider update oidc
+atlas federated-authentication federation-settings identityprovider update oidc
+atlas federated-authentication federation-settings identity-provider update oidc
+atlas federated-authentication federationSetting identityProvider update oidc
+atlas federated-authentication federationSetting identityprovider update oidc
+atlas federated-authentication federationSetting identity-provider update oidc
+atlas federated-authentication federationsetting identityProvider update oidc
+atlas federated-authentication federationsetting identityprovider update oidc
+atlas federated-authentication federationsetting identity-provider update oidc
+atlas federated-authentication federation-setting identityProvider update oidc
+atlas federated-authentication federation-setting identityprovider update oidc
+atlas federated-authentication federation-setting identity-provider update oidc
 ```
 
 ### Examples
@@ -98,7 +103,7 @@ atlas federated-authentication federation-setting identity-provider update oidc 
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas federatedAuthentication federationSettings identityProvider update](atlas_federatedAuthentication_federationSettings_identityProvider_update.md)	- Update Federated Authentication Identity Providers.

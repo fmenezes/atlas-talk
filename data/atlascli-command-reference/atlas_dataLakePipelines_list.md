@@ -8,21 +8,26 @@ Returns all data lake pipelines for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines list [flags]
 ```
 
-atlas dataLakePipelines list [flags]
-atlas dataLakePipelines ls [flags]
-atlas datalakepipelines list [flags]
-atlas datalakepipelines ls [flags]
-atlas data-lake-pipelines list [flags]
-atlas data-lake-pipelines ls [flags]
-atlas dataLakePipeline list [flags]
-atlas dataLakePipeline ls [flags]
-atlas datalakepipeline list [flags]
-atlas datalakepipeline ls [flags]
-atlas data-lake-pipeline list [flags]
-atlas data-lake-pipeline ls [flags]
+### Aliases
+```
+
+atlas dataLakePipelines list
+atlas dataLakePipelines ls
+atlas datalakepipelines list
+atlas datalakepipelines ls
+atlas data-lake-pipelines list
+atlas data-lake-pipelines ls
+atlas dataLakePipeline list
+atlas dataLakePipeline ls
+atlas datalakepipeline list
+atlas datalakepipeline ls
+atlas data-lake-pipeline list
+atlas data-lake-pipeline ls
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas data-lake-pipeline ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines](atlas_dataLakePipelines.md)	- Data Lake pipelines.

@@ -10,81 +10,86 @@ Use this command to check whether you can create multiple private resources per 
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints regionalModes describe [flags]
 ```
 
-atlas privateEndpoints regionalModes describe [flags]
-atlas privateEndpoints regionalModes get [flags]
-atlas privateEndpoints regionalmodes describe [flags]
-atlas privateEndpoints regionalmodes get [flags]
-atlas privateEndpoints regional-modes describe [flags]
-atlas privateEndpoints regional-modes get [flags]
-atlas privateEndpoints regionalMode describe [flags]
-atlas privateEndpoints regionalMode get [flags]
-atlas privateEndpoints regionalmode describe [flags]
-atlas privateEndpoints regionalmode get [flags]
-atlas privateEndpoints regional-mode describe [flags]
-atlas privateEndpoints regional-mode get [flags]
-atlas privateendpoints regionalModes describe [flags]
-atlas privateendpoints regionalModes get [flags]
-atlas privateendpoints regionalmodes describe [flags]
-atlas privateendpoints regionalmodes get [flags]
-atlas privateendpoints regional-modes describe [flags]
-atlas privateendpoints regional-modes get [flags]
-atlas privateendpoints regionalMode describe [flags]
-atlas privateendpoints regionalMode get [flags]
-atlas privateendpoints regionalmode describe [flags]
-atlas privateendpoints regionalmode get [flags]
-atlas privateendpoints regional-mode describe [flags]
-atlas privateendpoints regional-mode get [flags]
-atlas private-endpoints regionalModes describe [flags]
-atlas private-endpoints regionalModes get [flags]
-atlas private-endpoints regionalmodes describe [flags]
-atlas private-endpoints regionalmodes get [flags]
-atlas private-endpoints regional-modes describe [flags]
-atlas private-endpoints regional-modes get [flags]
-atlas private-endpoints regionalMode describe [flags]
-atlas private-endpoints regionalMode get [flags]
-atlas private-endpoints regionalmode describe [flags]
-atlas private-endpoints regionalmode get [flags]
-atlas private-endpoints regional-mode describe [flags]
-atlas private-endpoints regional-mode get [flags]
-atlas privateEndpoint regionalModes describe [flags]
-atlas privateEndpoint regionalModes get [flags]
-atlas privateEndpoint regionalmodes describe [flags]
-atlas privateEndpoint regionalmodes get [flags]
-atlas privateEndpoint regional-modes describe [flags]
-atlas privateEndpoint regional-modes get [flags]
-atlas privateEndpoint regionalMode describe [flags]
-atlas privateEndpoint regionalMode get [flags]
-atlas privateEndpoint regionalmode describe [flags]
-atlas privateEndpoint regionalmode get [flags]
-atlas privateEndpoint regional-mode describe [flags]
-atlas privateEndpoint regional-mode get [flags]
-atlas privateendpoint regionalModes describe [flags]
-atlas privateendpoint regionalModes get [flags]
-atlas privateendpoint regionalmodes describe [flags]
-atlas privateendpoint regionalmodes get [flags]
-atlas privateendpoint regional-modes describe [flags]
-atlas privateendpoint regional-modes get [flags]
-atlas privateendpoint regionalMode describe [flags]
-atlas privateendpoint regionalMode get [flags]
-atlas privateendpoint regionalmode describe [flags]
-atlas privateendpoint regionalmode get [flags]
-atlas privateendpoint regional-mode describe [flags]
-atlas privateendpoint regional-mode get [flags]
-atlas private-endpoint regionalModes describe [flags]
-atlas private-endpoint regionalModes get [flags]
-atlas private-endpoint regionalmodes describe [flags]
-atlas private-endpoint regionalmodes get [flags]
-atlas private-endpoint regional-modes describe [flags]
-atlas private-endpoint regional-modes get [flags]
-atlas private-endpoint regionalMode describe [flags]
-atlas private-endpoint regionalMode get [flags]
-atlas private-endpoint regionalmode describe [flags]
-atlas private-endpoint regionalmode get [flags]
-atlas private-endpoint regional-mode describe [flags]
-atlas private-endpoint regional-mode get [flags]
+### Aliases
+```
+
+atlas privateEndpoints regionalModes describe
+atlas privateEndpoints regionalModes get
+atlas privateEndpoints regionalmodes describe
+atlas privateEndpoints regionalmodes get
+atlas privateEndpoints regional-modes describe
+atlas privateEndpoints regional-modes get
+atlas privateEndpoints regionalMode describe
+atlas privateEndpoints regionalMode get
+atlas privateEndpoints regionalmode describe
+atlas privateEndpoints regionalmode get
+atlas privateEndpoints regional-mode describe
+atlas privateEndpoints regional-mode get
+atlas privateendpoints regionalModes describe
+atlas privateendpoints regionalModes get
+atlas privateendpoints regionalmodes describe
+atlas privateendpoints regionalmodes get
+atlas privateendpoints regional-modes describe
+atlas privateendpoints regional-modes get
+atlas privateendpoints regionalMode describe
+atlas privateendpoints regionalMode get
+atlas privateendpoints regionalmode describe
+atlas privateendpoints regionalmode get
+atlas privateendpoints regional-mode describe
+atlas privateendpoints regional-mode get
+atlas private-endpoints regionalModes describe
+atlas private-endpoints regionalModes get
+atlas private-endpoints regionalmodes describe
+atlas private-endpoints regionalmodes get
+atlas private-endpoints regional-modes describe
+atlas private-endpoints regional-modes get
+atlas private-endpoints regionalMode describe
+atlas private-endpoints regionalMode get
+atlas private-endpoints regionalmode describe
+atlas private-endpoints regionalmode get
+atlas private-endpoints regional-mode describe
+atlas private-endpoints regional-mode get
+atlas privateEndpoint regionalModes describe
+atlas privateEndpoint regionalModes get
+atlas privateEndpoint regionalmodes describe
+atlas privateEndpoint regionalmodes get
+atlas privateEndpoint regional-modes describe
+atlas privateEndpoint regional-modes get
+atlas privateEndpoint regionalMode describe
+atlas privateEndpoint regionalMode get
+atlas privateEndpoint regionalmode describe
+atlas privateEndpoint regionalmode get
+atlas privateEndpoint regional-mode describe
+atlas privateEndpoint regional-mode get
+atlas privateendpoint regionalModes describe
+atlas privateendpoint regionalModes get
+atlas privateendpoint regionalmodes describe
+atlas privateendpoint regionalmodes get
+atlas privateendpoint regional-modes describe
+atlas privateendpoint regional-modes get
+atlas privateendpoint regionalMode describe
+atlas privateendpoint regionalMode get
+atlas privateendpoint regionalmode describe
+atlas privateendpoint regionalmode get
+atlas privateendpoint regional-mode describe
+atlas privateendpoint regional-mode get
+atlas private-endpoint regionalModes describe
+atlas private-endpoint regionalModes get
+atlas private-endpoint regionalmodes describe
+atlas private-endpoint regionalmodes get
+atlas private-endpoint regional-modes describe
+atlas private-endpoint regional-modes get
+atlas private-endpoint regionalMode describe
+atlas private-endpoint regionalMode get
+atlas private-endpoint regionalmode describe
+atlas private-endpoint regionalmode get
+atlas private-endpoint regional-mode describe
+atlas private-endpoint regional-mode get
 ```
 
 ### Examples
@@ -112,7 +117,7 @@ atlas private-endpoint regional-mode get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints regionalModes](atlas_privateEndpoints_regionalModes.md)	- Manage regionalized private endpoint setting for your Atlas project.

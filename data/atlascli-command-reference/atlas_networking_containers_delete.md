@@ -8,13 +8,18 @@ Remove the specified network peering container from your project before creating
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas networking containers delete <containerId> [flags]
 ```
 
-atlas networking containers delete <containerId> [flags]
-atlas networking containers rm <containerId> [flags]
-atlas networking container delete <containerId> [flags]
-atlas networking container rm <containerId> [flags]
+### Aliases
+```
+
+atlas networking containers delete
+atlas networking containers rm
+atlas networking container delete
+atlas networking container rm
 ```
 
 ### Examples
@@ -42,7 +47,7 @@ atlas networking container rm <containerId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas networking containers](atlas_networking_containers.md)	- Manage Network Peering containers.

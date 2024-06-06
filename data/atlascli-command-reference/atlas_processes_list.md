@@ -8,13 +8,18 @@ Return all MongoDB processes for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas processes list [flags]
 ```
 
-atlas processes list [flags]
-atlas processes ls [flags]
-atlas process list [flags]
-atlas process ls [flags]
+### Aliases
+```
+
+atlas processes list
+atlas processes ls
+atlas process list
+atlas process ls
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas process ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas processes](atlas_processes.md)	- Manage MongoDB processes for your project.

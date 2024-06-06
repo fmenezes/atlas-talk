@@ -8,21 +8,26 @@ Remove the specified AWS private endpoint from your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints aws delete <privateEndpointId> [flags]
 ```
 
-atlas privateEndpoints aws delete <privateEndpointId> [flags]
-atlas privateEndpoints aws rm <privateEndpointId> [flags]
-atlas privateendpoints aws delete <privateEndpointId> [flags]
-atlas privateendpoints aws rm <privateEndpointId> [flags]
-atlas private-endpoints aws delete <privateEndpointId> [flags]
-atlas private-endpoints aws rm <privateEndpointId> [flags]
-atlas privateEndpoint aws delete <privateEndpointId> [flags]
-atlas privateEndpoint aws rm <privateEndpointId> [flags]
-atlas privateendpoint aws delete <privateEndpointId> [flags]
-atlas privateendpoint aws rm <privateEndpointId> [flags]
-atlas private-endpoint aws delete <privateEndpointId> [flags]
-atlas private-endpoint aws rm <privateEndpointId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints aws delete
+atlas privateEndpoints aws rm
+atlas privateendpoints aws delete
+atlas privateendpoints aws rm
+atlas private-endpoints aws delete
+atlas private-endpoints aws rm
+atlas privateEndpoint aws delete
+atlas privateEndpoint aws rm
+atlas privateendpoint aws delete
+atlas privateendpoint aws rm
+atlas private-endpoint aws delete
+atlas private-endpoint aws rm
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas private-endpoint aws rm <privateEndpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints aws](atlas_privateEndpoints_aws.md)	- Manage AWS Private Endpoints.

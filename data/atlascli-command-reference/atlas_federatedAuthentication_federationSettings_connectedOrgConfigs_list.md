@@ -3,117 +3,122 @@
 Describe a Connected Org Config.
 
 
-
+### Usage
+```
+atlas federatedAuthentication federationSettings connectedOrgConfigs list [flags]
 ```
 
-atlas federatedAuthentication federationSettings connectedOrgConfigs list [flags]
-atlas federatedAuthentication federationSettings connectedorgconfigs list [flags]
-atlas federatedAuthentication federationSettings connected-org-configs list [flags]
-atlas federatedAuthentication federationSettings connectedOrgConfig list [flags]
-atlas federatedAuthentication federationSettings connectedorgconfig list [flags]
-atlas federatedAuthentication federationSettings connected-org-config list [flags]
-atlas federatedAuthentication federationsettings connectedOrgConfigs list [flags]
-atlas federatedAuthentication federationsettings connectedorgconfigs list [flags]
-atlas federatedAuthentication federationsettings connected-org-configs list [flags]
-atlas federatedAuthentication federationsettings connectedOrgConfig list [flags]
-atlas federatedAuthentication federationsettings connectedorgconfig list [flags]
-atlas federatedAuthentication federationsettings connected-org-config list [flags]
-atlas federatedAuthentication federation-settings connectedOrgConfigs list [flags]
-atlas federatedAuthentication federation-settings connectedorgconfigs list [flags]
-atlas federatedAuthentication federation-settings connected-org-configs list [flags]
-atlas federatedAuthentication federation-settings connectedOrgConfig list [flags]
-atlas federatedAuthentication federation-settings connectedorgconfig list [flags]
-atlas federatedAuthentication federation-settings connected-org-config list [flags]
-atlas federatedAuthentication federationSetting connectedOrgConfigs list [flags]
-atlas federatedAuthentication federationSetting connectedorgconfigs list [flags]
-atlas federatedAuthentication federationSetting connected-org-configs list [flags]
-atlas federatedAuthentication federationSetting connectedOrgConfig list [flags]
-atlas federatedAuthentication federationSetting connectedorgconfig list [flags]
-atlas federatedAuthentication federationSetting connected-org-config list [flags]
-atlas federatedAuthentication federationsetting connectedOrgConfigs list [flags]
-atlas federatedAuthentication federationsetting connectedorgconfigs list [flags]
-atlas federatedAuthentication federationsetting connected-org-configs list [flags]
-atlas federatedAuthentication federationsetting connectedOrgConfig list [flags]
-atlas federatedAuthentication federationsetting connectedorgconfig list [flags]
-atlas federatedAuthentication federationsetting connected-org-config list [flags]
-atlas federatedAuthentication federation-setting connectedOrgConfigs list [flags]
-atlas federatedAuthentication federation-setting connectedorgconfigs list [flags]
-atlas federatedAuthentication federation-setting connected-org-configs list [flags]
-atlas federatedAuthentication federation-setting connectedOrgConfig list [flags]
-atlas federatedAuthentication federation-setting connectedorgconfig list [flags]
-atlas federatedAuthentication federation-setting connected-org-config list [flags]
-atlas federatedauthentication federationSettings connectedOrgConfigs list [flags]
-atlas federatedauthentication federationSettings connectedorgconfigs list [flags]
-atlas federatedauthentication federationSettings connected-org-configs list [flags]
-atlas federatedauthentication federationSettings connectedOrgConfig list [flags]
-atlas federatedauthentication federationSettings connectedorgconfig list [flags]
-atlas federatedauthentication federationSettings connected-org-config list [flags]
-atlas federatedauthentication federationsettings connectedOrgConfigs list [flags]
-atlas federatedauthentication federationsettings connectedorgconfigs list [flags]
-atlas federatedauthentication federationsettings connected-org-configs list [flags]
-atlas federatedauthentication federationsettings connectedOrgConfig list [flags]
-atlas federatedauthentication federationsettings connectedorgconfig list [flags]
-atlas federatedauthentication federationsettings connected-org-config list [flags]
-atlas federatedauthentication federation-settings connectedOrgConfigs list [flags]
-atlas federatedauthentication federation-settings connectedorgconfigs list [flags]
-atlas federatedauthentication federation-settings connected-org-configs list [flags]
-atlas federatedauthentication federation-settings connectedOrgConfig list [flags]
-atlas federatedauthentication federation-settings connectedorgconfig list [flags]
-atlas federatedauthentication federation-settings connected-org-config list [flags]
-atlas federatedauthentication federationSetting connectedOrgConfigs list [flags]
-atlas federatedauthentication federationSetting connectedorgconfigs list [flags]
-atlas federatedauthentication federationSetting connected-org-configs list [flags]
-atlas federatedauthentication federationSetting connectedOrgConfig list [flags]
-atlas federatedauthentication federationSetting connectedorgconfig list [flags]
-atlas federatedauthentication federationSetting connected-org-config list [flags]
-atlas federatedauthentication federationsetting connectedOrgConfigs list [flags]
-atlas federatedauthentication federationsetting connectedorgconfigs list [flags]
-atlas federatedauthentication federationsetting connected-org-configs list [flags]
-atlas federatedauthentication federationsetting connectedOrgConfig list [flags]
-atlas federatedauthentication federationsetting connectedorgconfig list [flags]
-atlas federatedauthentication federationsetting connected-org-config list [flags]
-atlas federatedauthentication federation-setting connectedOrgConfigs list [flags]
-atlas federatedauthentication federation-setting connectedorgconfigs list [flags]
-atlas federatedauthentication federation-setting connected-org-configs list [flags]
-atlas federatedauthentication federation-setting connectedOrgConfig list [flags]
-atlas federatedauthentication federation-setting connectedorgconfig list [flags]
-atlas federatedauthentication federation-setting connected-org-config list [flags]
-atlas federated-authentication federationSettings connectedOrgConfigs list [flags]
-atlas federated-authentication federationSettings connectedorgconfigs list [flags]
-atlas federated-authentication federationSettings connected-org-configs list [flags]
-atlas federated-authentication federationSettings connectedOrgConfig list [flags]
-atlas federated-authentication federationSettings connectedorgconfig list [flags]
-atlas federated-authentication federationSettings connected-org-config list [flags]
-atlas federated-authentication federationsettings connectedOrgConfigs list [flags]
-atlas federated-authentication federationsettings connectedorgconfigs list [flags]
-atlas federated-authentication federationsettings connected-org-configs list [flags]
-atlas federated-authentication federationsettings connectedOrgConfig list [flags]
-atlas federated-authentication federationsettings connectedorgconfig list [flags]
-atlas federated-authentication federationsettings connected-org-config list [flags]
-atlas federated-authentication federation-settings connectedOrgConfigs list [flags]
-atlas federated-authentication federation-settings connectedorgconfigs list [flags]
-atlas federated-authentication federation-settings connected-org-configs list [flags]
-atlas federated-authentication federation-settings connectedOrgConfig list [flags]
-atlas federated-authentication federation-settings connectedorgconfig list [flags]
-atlas federated-authentication federation-settings connected-org-config list [flags]
-atlas federated-authentication federationSetting connectedOrgConfigs list [flags]
-atlas federated-authentication federationSetting connectedorgconfigs list [flags]
-atlas federated-authentication federationSetting connected-org-configs list [flags]
-atlas federated-authentication federationSetting connectedOrgConfig list [flags]
-atlas federated-authentication federationSetting connectedorgconfig list [flags]
-atlas federated-authentication federationSetting connected-org-config list [flags]
-atlas federated-authentication federationsetting connectedOrgConfigs list [flags]
-atlas federated-authentication federationsetting connectedorgconfigs list [flags]
-atlas federated-authentication federationsetting connected-org-configs list [flags]
-atlas federated-authentication federationsetting connectedOrgConfig list [flags]
-atlas federated-authentication federationsetting connectedorgconfig list [flags]
-atlas federated-authentication federationsetting connected-org-config list [flags]
-atlas federated-authentication federation-setting connectedOrgConfigs list [flags]
-atlas federated-authentication federation-setting connectedorgconfigs list [flags]
-atlas federated-authentication federation-setting connected-org-configs list [flags]
-atlas federated-authentication federation-setting connectedOrgConfig list [flags]
-atlas federated-authentication federation-setting connectedorgconfig list [flags]
-atlas federated-authentication federation-setting connected-org-config list [flags]
+### Aliases
+```
+
+atlas federatedAuthentication federationSettings connectedOrgConfigs list
+atlas federatedAuthentication federationSettings connectedorgconfigs list
+atlas federatedAuthentication federationSettings connected-org-configs list
+atlas federatedAuthentication federationSettings connectedOrgConfig list
+atlas federatedAuthentication federationSettings connectedorgconfig list
+atlas federatedAuthentication federationSettings connected-org-config list
+atlas federatedAuthentication federationsettings connectedOrgConfigs list
+atlas federatedAuthentication federationsettings connectedorgconfigs list
+atlas federatedAuthentication federationsettings connected-org-configs list
+atlas federatedAuthentication federationsettings connectedOrgConfig list
+atlas federatedAuthentication federationsettings connectedorgconfig list
+atlas federatedAuthentication federationsettings connected-org-config list
+atlas federatedAuthentication federation-settings connectedOrgConfigs list
+atlas federatedAuthentication federation-settings connectedorgconfigs list
+atlas federatedAuthentication federation-settings connected-org-configs list
+atlas federatedAuthentication federation-settings connectedOrgConfig list
+atlas federatedAuthentication federation-settings connectedorgconfig list
+atlas federatedAuthentication federation-settings connected-org-config list
+atlas federatedAuthentication federationSetting connectedOrgConfigs list
+atlas federatedAuthentication federationSetting connectedorgconfigs list
+atlas federatedAuthentication federationSetting connected-org-configs list
+atlas federatedAuthentication federationSetting connectedOrgConfig list
+atlas federatedAuthentication federationSetting connectedorgconfig list
+atlas federatedAuthentication federationSetting connected-org-config list
+atlas federatedAuthentication federationsetting connectedOrgConfigs list
+atlas federatedAuthentication federationsetting connectedorgconfigs list
+atlas federatedAuthentication federationsetting connected-org-configs list
+atlas federatedAuthentication federationsetting connectedOrgConfig list
+atlas federatedAuthentication federationsetting connectedorgconfig list
+atlas federatedAuthentication federationsetting connected-org-config list
+atlas federatedAuthentication federation-setting connectedOrgConfigs list
+atlas federatedAuthentication federation-setting connectedorgconfigs list
+atlas federatedAuthentication federation-setting connected-org-configs list
+atlas federatedAuthentication federation-setting connectedOrgConfig list
+atlas federatedAuthentication federation-setting connectedorgconfig list
+atlas federatedAuthentication federation-setting connected-org-config list
+atlas federatedauthentication federationSettings connectedOrgConfigs list
+atlas federatedauthentication federationSettings connectedorgconfigs list
+atlas federatedauthentication federationSettings connected-org-configs list
+atlas federatedauthentication federationSettings connectedOrgConfig list
+atlas federatedauthentication federationSettings connectedorgconfig list
+atlas federatedauthentication federationSettings connected-org-config list
+atlas federatedauthentication federationsettings connectedOrgConfigs list
+atlas federatedauthentication federationsettings connectedorgconfigs list
+atlas federatedauthentication federationsettings connected-org-configs list
+atlas federatedauthentication federationsettings connectedOrgConfig list
+atlas federatedauthentication federationsettings connectedorgconfig list
+atlas federatedauthentication federationsettings connected-org-config list
+atlas federatedauthentication federation-settings connectedOrgConfigs list
+atlas federatedauthentication federation-settings connectedorgconfigs list
+atlas federatedauthentication federation-settings connected-org-configs list
+atlas federatedauthentication federation-settings connectedOrgConfig list
+atlas federatedauthentication federation-settings connectedorgconfig list
+atlas federatedauthentication federation-settings connected-org-config list
+atlas federatedauthentication federationSetting connectedOrgConfigs list
+atlas federatedauthentication federationSetting connectedorgconfigs list
+atlas federatedauthentication federationSetting connected-org-configs list
+atlas federatedauthentication federationSetting connectedOrgConfig list
+atlas federatedauthentication federationSetting connectedorgconfig list
+atlas federatedauthentication federationSetting connected-org-config list
+atlas federatedauthentication federationsetting connectedOrgConfigs list
+atlas federatedauthentication federationsetting connectedorgconfigs list
+atlas federatedauthentication federationsetting connected-org-configs list
+atlas federatedauthentication federationsetting connectedOrgConfig list
+atlas federatedauthentication federationsetting connectedorgconfig list
+atlas federatedauthentication federationsetting connected-org-config list
+atlas federatedauthentication federation-setting connectedOrgConfigs list
+atlas federatedauthentication federation-setting connectedorgconfigs list
+atlas federatedauthentication federation-setting connected-org-configs list
+atlas federatedauthentication federation-setting connectedOrgConfig list
+atlas federatedauthentication federation-setting connectedorgconfig list
+atlas federatedauthentication federation-setting connected-org-config list
+atlas federated-authentication federationSettings connectedOrgConfigs list
+atlas federated-authentication federationSettings connectedorgconfigs list
+atlas federated-authentication federationSettings connected-org-configs list
+atlas federated-authentication federationSettings connectedOrgConfig list
+atlas federated-authentication federationSettings connectedorgconfig list
+atlas federated-authentication federationSettings connected-org-config list
+atlas federated-authentication federationsettings connectedOrgConfigs list
+atlas federated-authentication federationsettings connectedorgconfigs list
+atlas federated-authentication federationsettings connected-org-configs list
+atlas federated-authentication federationsettings connectedOrgConfig list
+atlas federated-authentication federationsettings connectedorgconfig list
+atlas federated-authentication federationsettings connected-org-config list
+atlas federated-authentication federation-settings connectedOrgConfigs list
+atlas federated-authentication federation-settings connectedorgconfigs list
+atlas federated-authentication federation-settings connected-org-configs list
+atlas federated-authentication federation-settings connectedOrgConfig list
+atlas federated-authentication federation-settings connectedorgconfig list
+atlas federated-authentication federation-settings connected-org-config list
+atlas federated-authentication federationSetting connectedOrgConfigs list
+atlas federated-authentication federationSetting connectedorgconfigs list
+atlas federated-authentication federationSetting connected-org-configs list
+atlas federated-authentication federationSetting connectedOrgConfig list
+atlas federated-authentication federationSetting connectedorgconfig list
+atlas federated-authentication federationSetting connected-org-config list
+atlas federated-authentication federationsetting connectedOrgConfigs list
+atlas federated-authentication federationsetting connectedorgconfigs list
+atlas federated-authentication federationsetting connected-org-configs list
+atlas federated-authentication federationsetting connectedOrgConfig list
+atlas federated-authentication federationsetting connectedorgconfig list
+atlas federated-authentication federationsetting connected-org-config list
+atlas federated-authentication federation-setting connectedOrgConfigs list
+atlas federated-authentication federation-setting connectedorgconfigs list
+atlas federated-authentication federation-setting connected-org-configs list
+atlas federated-authentication federation-setting connectedOrgConfig list
+atlas federated-authentication federation-setting connectedorgconfig list
+atlas federated-authentication federation-setting connected-org-config list
 ```
 
 ### Examples
@@ -145,7 +150,7 @@ atlas federated-authentication federation-setting connected-org-config list [fla
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas federatedAuthentication federationSettings connectedOrgConfigs](atlas_federatedAuthentication_federationSettings_connectedOrgConfigs.md)	- Manage Atlas Federated Authentication Connected Orgs Config

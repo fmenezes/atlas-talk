@@ -12,17 +12,22 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas backups exports jobs watch <exportJobId> [flags]
 ```
 
-atlas backups exports jobs watch <exportJobId> [flags]
-atlas backups exports job watch <exportJobId> [flags]
-atlas backups export jobs watch <exportJobId> [flags]
-atlas backups export job watch <exportJobId> [flags]
-atlas backup exports jobs watch <exportJobId> [flags]
-atlas backup exports job watch <exportJobId> [flags]
-atlas backup export jobs watch <exportJobId> [flags]
-atlas backup export job watch <exportJobId> [flags]
+### Aliases
+```
+
+atlas backups exports jobs watch
+atlas backups exports job watch
+atlas backups export jobs watch
+atlas backups export job watch
+atlas backup exports jobs watch
+atlas backup exports job watch
+atlas backup export jobs watch
+atlas backup export job watch
 ```
 
 ### Examples
@@ -51,7 +56,7 @@ atlas backup export job watch <exportJobId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups exports jobs](atlas_backups_exports_jobs.md)	- Manage cloud backup export jobs for your project.

@@ -8,13 +8,18 @@ Create an organization.
 When authenticating using API keys, the organization to which the API keys belong must have cross-organization billing enabled. The resulting org will be linked to the paying org.
 
 
-
+### Usage
+```
+atlas organizations create <name> [flags]
 ```
 
-atlas organizations create <name> [flags]
-atlas organization create <name> [flags]
-atlas orgs create <name> [flags]
-atlas org create <name> [flags]
+### Aliases
+```
+
+atlas organizations create
+atlas organization create
+atlas orgs create
+atlas org create
 ```
 
 ### Examples
@@ -44,7 +49,7 @@ atlas org create <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations](atlas_organizations.md)	- Manage your Atlas organizations.

@@ -8,17 +8,22 @@ Return all cloud backup snapshots for your project and cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas backups snapshots list <clusterName> [flags]
 ```
 
-atlas backups snapshots list <clusterName> [flags]
-atlas backups snapshots ls <clusterName> [flags]
-atlas backups snapshot list <clusterName> [flags]
-atlas backups snapshot ls <clusterName> [flags]
-atlas backup snapshots list <clusterName> [flags]
-atlas backup snapshots ls <clusterName> [flags]
-atlas backup snapshot list <clusterName> [flags]
-atlas backup snapshot ls <clusterName> [flags]
+### Aliases
+```
+
+atlas backups snapshots list
+atlas backups snapshots ls
+atlas backups snapshot list
+atlas backups snapshot ls
+atlas backup snapshots list
+atlas backup snapshots ls
+atlas backup snapshot list
+atlas backup snapshot ls
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas backup snapshot ls <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups snapshots](atlas_backups_snapshots.md)	- Manage cloud backup snapshots for your project.

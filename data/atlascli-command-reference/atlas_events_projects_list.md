@@ -3,17 +3,22 @@
 Return all events for the specified project.
 
 
-
+### Usage
+```
+atlas events projects list [flags]
 ```
 
-atlas events projects list [flags]
-atlas events projects ls [flags]
-atlas events project list [flags]
-atlas events project ls [flags]
-atlas event projects list [flags]
-atlas event projects ls [flags]
-atlas event project list [flags]
-atlas event project ls [flags]
+### Aliases
+```
+
+atlas events projects list
+atlas events projects ls
+atlas events project list
+atlas events project ls
+atlas event projects list
+atlas event projects ls
+atlas event project list
+atlas event project ls
 ```
 
 ### Examples
@@ -47,7 +52,7 @@ atlas event project ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas events projects](atlas_events_projects.md)	- Project operations.

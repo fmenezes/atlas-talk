@@ -10,6 +10,19 @@ Create, list and manage your MongoDB organization invites.
 
 
 
+### Aliases
+```
+
+atlas organizations invitations
+atlas organizations invitation
+atlas organization invitations
+atlas organization invitation
+atlas orgs invitations
+atlas orgs invitation
+atlas org invitations
+atlas org invitation
+```
+
 
 
 ### Flags
@@ -27,7 +40,7 @@ Create, list and manage your MongoDB organization invites.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations](atlas_organizations.md)	- Manage your Atlas organizations.

@@ -8,21 +8,26 @@ Return all AWS private endpoints for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints aws list [flags]
 ```
 
-atlas privateEndpoints aws list [flags]
-atlas privateEndpoints aws ls [flags]
-atlas privateendpoints aws list [flags]
-atlas privateendpoints aws ls [flags]
-atlas private-endpoints aws list [flags]
-atlas private-endpoints aws ls [flags]
-atlas privateEndpoint aws list [flags]
-atlas privateEndpoint aws ls [flags]
-atlas privateendpoint aws list [flags]
-atlas privateendpoint aws ls [flags]
-atlas private-endpoint aws list [flags]
-atlas private-endpoint aws ls [flags]
+### Aliases
+```
+
+atlas privateEndpoints aws list
+atlas privateEndpoints aws ls
+atlas privateendpoints aws list
+atlas privateendpoints aws ls
+atlas private-endpoints aws list
+atlas private-endpoints aws ls
+atlas privateEndpoint aws list
+atlas privateEndpoint aws ls
+atlas privateendpoint aws list
+atlas privateendpoint aws ls
+atlas private-endpoint aws list
+atlas private-endpoint aws ls
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas private-endpoint aws ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints aws](atlas_privateEndpoints_aws.md)	- Manage AWS Private Endpoints.

@@ -8,17 +8,22 @@ Return all users for a project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas projects users list [flags]
 ```
 
-atlas projects users list [flags]
-atlas projects users ls [flags]
-atlas projects user list [flags]
-atlas projects user ls [flags]
-atlas project users list [flags]
-atlas project users ls [flags]
-atlas project user list [flags]
-atlas project user ls [flags]
+### Aliases
+```
+
+atlas projects users list
+atlas projects users ls
+atlas projects user list
+atlas projects user ls
+atlas project users list
+atlas project users ls
+atlas project user list
+atlas project user ls
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas project user ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects users](atlas_projects_users.md)	- Manage users for a project.

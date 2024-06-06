@@ -10,6 +10,15 @@ Create, list and manage your MongoDB project invites.
 
 
 
+### Aliases
+```
+
+atlas projects invitations
+atlas projects invitation
+atlas project invitations
+atlas project invitation
+```
+
 
 
 ### Flags
@@ -27,7 +36,7 @@ Create, list and manage your MongoDB project invites.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects](atlas_projects.md)	- Manage your Atlas projects.

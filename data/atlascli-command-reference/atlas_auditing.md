@@ -5,6 +5,12 @@ Returns database auditing settings for MongoDB Cloud projects.
 
 
 
+### Aliases
+```
+
+atlas auditing
+```
+
 
 
 ### Flags
@@ -22,7 +28,7 @@ Returns database auditing settings for MongoDB Cloud projects.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

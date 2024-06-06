@@ -8,45 +8,50 @@ Returns all data federation query limits for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas dataFederation queryLimits list [flags]
 ```
 
-atlas dataFederation queryLimits list [flags]
-atlas dataFederation queryLimits ls [flags]
-atlas dataFederation querylimits list [flags]
-atlas dataFederation querylimits ls [flags]
-atlas dataFederation query-limits list [flags]
-atlas dataFederation query-limits ls [flags]
-atlas dataFederation queryLimit list [flags]
-atlas dataFederation queryLimit ls [flags]
-atlas dataFederation querylimit list [flags]
-atlas dataFederation querylimit ls [flags]
-atlas dataFederation query-limit list [flags]
-atlas dataFederation query-limit ls [flags]
-atlas datafederation queryLimits list [flags]
-atlas datafederation queryLimits ls [flags]
-atlas datafederation querylimits list [flags]
-atlas datafederation querylimits ls [flags]
-atlas datafederation query-limits list [flags]
-atlas datafederation query-limits ls [flags]
-atlas datafederation queryLimit list [flags]
-atlas datafederation queryLimit ls [flags]
-atlas datafederation querylimit list [flags]
-atlas datafederation querylimit ls [flags]
-atlas datafederation query-limit list [flags]
-atlas datafederation query-limit ls [flags]
-atlas data-federation queryLimits list [flags]
-atlas data-federation queryLimits ls [flags]
-atlas data-federation querylimits list [flags]
-atlas data-federation querylimits ls [flags]
-atlas data-federation query-limits list [flags]
-atlas data-federation query-limits ls [flags]
-atlas data-federation queryLimit list [flags]
-atlas data-federation queryLimit ls [flags]
-atlas data-federation querylimit list [flags]
-atlas data-federation querylimit ls [flags]
-atlas data-federation query-limit list [flags]
-atlas data-federation query-limit ls [flags]
+### Aliases
+```
+
+atlas dataFederation queryLimits list
+atlas dataFederation queryLimits ls
+atlas dataFederation querylimits list
+atlas dataFederation querylimits ls
+atlas dataFederation query-limits list
+atlas dataFederation query-limits ls
+atlas dataFederation queryLimit list
+atlas dataFederation queryLimit ls
+atlas dataFederation querylimit list
+atlas dataFederation querylimit ls
+atlas dataFederation query-limit list
+atlas dataFederation query-limit ls
+atlas datafederation queryLimits list
+atlas datafederation queryLimits ls
+atlas datafederation querylimits list
+atlas datafederation querylimits ls
+atlas datafederation query-limits list
+atlas datafederation query-limits ls
+atlas datafederation queryLimit list
+atlas datafederation queryLimit ls
+atlas datafederation querylimit list
+atlas datafederation querylimit ls
+atlas datafederation query-limit list
+atlas datafederation query-limit ls
+atlas data-federation queryLimits list
+atlas data-federation queryLimits ls
+atlas data-federation querylimits list
+atlas data-federation querylimits ls
+atlas data-federation query-limits list
+atlas data-federation query-limits ls
+atlas data-federation queryLimit list
+atlas data-federation queryLimit ls
+atlas data-federation querylimit list
+atlas data-federation querylimit ls
+atlas data-federation query-limit list
+atlas data-federation query-limit ls
 ```
 
 ### Examples
@@ -76,7 +81,7 @@ atlas data-federation query-limit ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation queryLimits](atlas_dataFederation_queryLimits.md)	- Data federation query limits.

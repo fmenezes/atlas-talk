@@ -10,33 +10,38 @@ MongoDB returns the private API key only once. After you run this command, immed
 To use this command, you must authenticate with a user account or an API key with the Organization User Admin role.
 
 
-
+### Usage
+```
+atlas organizations apiKeys create [flags]
 ```
 
-atlas organizations apiKeys create [flags]
-atlas organizations apikeys create [flags]
-atlas organizations api-keys create [flags]
-atlas organizations apiKey create [flags]
-atlas organizations apikey create [flags]
-atlas organizations api-key create [flags]
-atlas organization apiKeys create [flags]
-atlas organization apikeys create [flags]
-atlas organization api-keys create [flags]
-atlas organization apiKey create [flags]
-atlas organization apikey create [flags]
-atlas organization api-key create [flags]
-atlas orgs apiKeys create [flags]
-atlas orgs apikeys create [flags]
-atlas orgs api-keys create [flags]
-atlas orgs apiKey create [flags]
-atlas orgs apikey create [flags]
-atlas orgs api-key create [flags]
-atlas org apiKeys create [flags]
-atlas org apikeys create [flags]
-atlas org api-keys create [flags]
-atlas org apiKey create [flags]
-atlas org apikey create [flags]
-atlas org api-key create [flags]
+### Aliases
+```
+
+atlas organizations apiKeys create
+atlas organizations apikeys create
+atlas organizations api-keys create
+atlas organizations apiKey create
+atlas organizations apikey create
+atlas organizations api-key create
+atlas organization apiKeys create
+atlas organization apikeys create
+atlas organization api-keys create
+atlas organization apiKey create
+atlas organization apikey create
+atlas organization api-key create
+atlas orgs apiKeys create
+atlas orgs apikeys create
+atlas orgs api-keys create
+atlas orgs apiKey create
+atlas orgs apikey create
+atlas orgs api-key create
+atlas org apiKeys create
+atlas org apikeys create
+atlas org api-keys create
+atlas org apiKey create
+atlas org apikey create
+atlas org api-key create
 ```
 
 ### Examples
@@ -66,7 +71,7 @@ atlas org api-key create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations apiKeys](atlas_organizations_apiKeys.md)	- Organization API Keys operations.

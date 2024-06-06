@@ -9,13 +9,18 @@ Before updating an Atlas Streams Processing instance, you must first stop all pr
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas streams instances update <name> [flags]
 ```
 
-atlas streams instances update <name> [flags]
-atlas streams instance update <name> [flags]
-atlas stream instances update <name> [flags]
-atlas stream instance update <name> [flags]
+### Aliases
+```
+
+atlas streams instances update
+atlas streams instance update
+atlas stream instances update
+atlas stream instance update
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas stream instance update <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams instances](atlas_streams_instances.md)	- Manage Atlas Stream Processing instances.

@@ -8,17 +8,22 @@ Return the details for the specified alert settings for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas alerts settings describe <alertConfigId> [flags]
 ```
 
-atlas alerts settings describe <alertConfigId> [flags]
-atlas alerts settings get <alertConfigId> [flags]
-atlas alerts config describe <alertConfigId> [flags]
-atlas alerts config get <alertConfigId> [flags]
-atlas alert settings describe <alertConfigId> [flags]
-atlas alert settings get <alertConfigId> [flags]
-atlas alert config describe <alertConfigId> [flags]
-atlas alert config get <alertConfigId> [flags]
+### Aliases
+```
+
+atlas alerts settings describe
+atlas alerts settings get
+atlas alerts config describe
+atlas alerts config get
+atlas alert settings describe
+atlas alert settings get
+atlas alert config describe
+atlas alert config get
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas alert config get <alertConfigId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas alerts settings](atlas_alerts_settings.md)	- Manages alerts configuration for your project.

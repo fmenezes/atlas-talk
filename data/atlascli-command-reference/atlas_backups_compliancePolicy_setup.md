@@ -3,15 +3,20 @@
 Setup the backup compliance policy for your project with a configuration file.
 
 
-
+### Usage
+```
+atlas backups compliancePolicy setup [flags]
 ```
 
-atlas backups compliancePolicy setup [flags]
-atlas backups compliancepolicy setup [flags]
-atlas backups compliance-policy setup [flags]
-atlas backup compliancePolicy setup [flags]
-atlas backup compliancepolicy setup [flags]
-atlas backup compliance-policy setup [flags]
+### Aliases
+```
+
+atlas backups compliancePolicy setup
+atlas backups compliancepolicy setup
+atlas backups compliance-policy setup
+atlas backup compliancePolicy setup
+atlas backup compliancepolicy setup
+atlas backup compliance-policy setup
 ```
 
 
@@ -36,7 +41,7 @@ atlas backup compliance-policy setup [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy](atlas_backups_compliancePolicy.md)	- Manage cloud backup compliance policy for your project. Use "atlas backups compliancepolicy setup" to enable backup compliance policy with a full configuration. Use "atlas backups compliancepolicy enable" to enable backup compliance policy without any configuration.

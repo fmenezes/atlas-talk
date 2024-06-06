@@ -8,11 +8,16 @@ Updates one serverless instance in the specified project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas serverless update <instanceName> [flags]
 ```
 
-atlas serverless update <instanceName> [flags]
-atlas sl update <instanceName> [flags]
+### Aliases
+```
+
+atlas serverless update
+atlas sl update
 ```
 
 
@@ -39,7 +44,7 @@ atlas sl update <instanceName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless](atlas_serverless.md)	- Manage serverless instances for your project.

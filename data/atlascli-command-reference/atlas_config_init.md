@@ -3,10 +3,15 @@
 Configure a profile to store access settings for your MongoDB deployment.
 
 
-
+### Usage
+```
+atlas config init [flags]
 ```
 
-atlas config init [flags]
+### Aliases
+```
+
+atlas config init
 ```
 
 ### Examples
@@ -36,7 +41,7 @@ atlas config init [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas config](atlas_config.md)	- Configure and manage your user profiles.

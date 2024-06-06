@@ -8,11 +8,16 @@ Returns the auditing configuration for the specified project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas auditing describe [flags]
 ```
 
-atlas auditing describe [flags]
-atlas auditing get [flags]
+### Aliases
+```
+
+atlas auditing describe
+atlas auditing get
 ```
 
 ### Examples
@@ -40,7 +45,7 @@ atlas auditing get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas auditing](atlas_auditing.md)	- Returns database auditing settings for MongoDB Cloud projects.

@@ -5,6 +5,19 @@ Manage the list of IP addresses that can access your Atlas project.
 
 
 
+### Aliases
+```
+
+atlas accessLists
+atlas accesslists
+atlas access-lists
+atlas accessList
+atlas accesslist
+atlas access-list
+atlas whitelists
+atlas whitelist
+```
+
 
 
 ### Flags
@@ -22,7 +35,7 @@ Manage the list of IP addresses that can access your Atlas project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

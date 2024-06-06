@@ -5,6 +5,19 @@ Manage cloud backup restore jobs for your project.
 
 
 
+### Aliases
+```
+
+atlas serverless backups restores
+atlas serverless backups restore
+atlas serverless backup restores
+atlas serverless backup restore
+atlas sl backups restores
+atlas sl backups restore
+atlas sl backup restores
+atlas sl backup restore
+```
+
 
 
 ### Flags
@@ -22,7 +35,7 @@ Manage cloud backup restore jobs for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless backups](atlas_serverless_backups.md)	- Manage cloud backups for your project.

@@ -8,13 +8,18 @@ Unacknowledge the specified alert for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas alerts unacknowledge <alertId> [flags]
 ```
 
-atlas alerts unacknowledge <alertId> [flags]
-atlas alerts unack <alertId> [flags]
-atlas alert unacknowledge <alertId> [flags]
-atlas alert unack <alertId> [flags]
+### Aliases
+```
+
+atlas alerts unacknowledge
+atlas alerts unack
+atlas alert unacknowledge
+atlas alert unack
 ```
 
 ### Examples
@@ -43,7 +48,7 @@ atlas alert unack <alertId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas alerts](atlas_alerts.md)	- Manage alerts for your project.

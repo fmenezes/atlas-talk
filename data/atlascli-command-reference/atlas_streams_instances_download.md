@@ -8,13 +8,18 @@ Download a compressed file that contains the logs for the specified Atlas Stream
 This command downloads a file with a .gz extension. To use this command, you must authenticate with a user account or an API key with the Project Data Access Read/Write role.
 
 
-
+### Usage
+```
+atlas streams instances download <tenantName> [flags]
 ```
 
-atlas streams instances download <tenantName> [flags]
-atlas streams instance download <tenantName> [flags]
-atlas stream instances download <tenantName> [flags]
-atlas stream instance download <tenantName> [flags]
+### Aliases
+```
+
+atlas streams instances download
+atlas streams instance download
+atlas stream instances download
+atlas stream instance download
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas stream instance download <tenantName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams instances](atlas_streams_instances.md)	- Manage Atlas Stream Processing instances.

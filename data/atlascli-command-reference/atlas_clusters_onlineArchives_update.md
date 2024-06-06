@@ -8,21 +8,26 @@ Modify the archiving rule for the specified online archive for a cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Admin role.
 
 
-
+### Usage
+```
+atlas clusters onlineArchives update <archiveId> [flags]
 ```
 
-atlas clusters onlineArchives update <archiveId> [flags]
-atlas clusters onlinearchives update <archiveId> [flags]
-atlas clusters online-archives update <archiveId> [flags]
-atlas clusters onlineArchive update <archiveId> [flags]
-atlas clusters onlinearchive update <archiveId> [flags]
-atlas clusters online-archive update <archiveId> [flags]
-atlas cluster onlineArchives update <archiveId> [flags]
-atlas cluster onlinearchives update <archiveId> [flags]
-atlas cluster online-archives update <archiveId> [flags]
-atlas cluster onlineArchive update <archiveId> [flags]
-atlas cluster onlinearchive update <archiveId> [flags]
-atlas cluster online-archive update <archiveId> [flags]
+### Aliases
+```
+
+atlas clusters onlineArchives update
+atlas clusters onlinearchives update
+atlas clusters online-archives update
+atlas clusters onlineArchive update
+atlas clusters onlinearchive update
+atlas clusters online-archive update
+atlas cluster onlineArchives update
+atlas cluster onlinearchives update
+atlas cluster online-archives update
+atlas cluster onlineArchive update
+atlas cluster onlinearchive update
+atlas cluster online-archive update
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas cluster online-archive update <archiveId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters onlineArchives](atlas_clusters_onlineArchives.md)	- Manage online archives for your cluster.

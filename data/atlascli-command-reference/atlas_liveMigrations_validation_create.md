@@ -8,16 +8,21 @@ Create a new validation request for a push live migration.
 To migrate using scripts, use mongomirror instead of the Atlas CLI. To learn more about mongomirror, see https://www.mongodb.com/docs/atlas/reference/mongomirror/.
 
 
-
+### Usage
+```
+atlas liveMigrations validation create [flags]
 ```
 
-atlas liveMigrations validation create [flags]
-atlas livemigrations validation create [flags]
-atlas live-migrations validation create [flags]
-atlas liveMigration validation create [flags]
-atlas livemigration validation create [flags]
-atlas live-migration validation create [flags]
-atlas lm validation create [flags]
+### Aliases
+```
+
+atlas liveMigrations validation create
+atlas livemigrations validation create
+atlas live-migrations validation create
+atlas liveMigration validation create
+atlas livemigration validation create
+atlas live-migration validation create
+atlas lm validation create
 ```
 
 
@@ -50,7 +55,7 @@ atlas lm validation create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas liveMigrations validation](atlas_liveMigrations_validation.md)	- Manage a Live Migration validation job for your project.

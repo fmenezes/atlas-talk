@@ -10,21 +10,26 @@ To learn more about maintenance windows, see https://www.mongodb.com/docs/atlas/
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas maintenanceWindows describe [flags]
 ```
 
-atlas maintenanceWindows describe [flags]
-atlas maintenanceWindows get [flags]
-atlas maintenancewindows describe [flags]
-atlas maintenancewindows get [flags]
-atlas maintenance-windows describe [flags]
-atlas maintenance-windows get [flags]
-atlas maintenanceWindow describe [flags]
-atlas maintenanceWindow get [flags]
-atlas maintenancewindow describe [flags]
-atlas maintenancewindow get [flags]
-atlas maintenance-window describe [flags]
-atlas maintenance-window get [flags]
+### Aliases
+```
+
+atlas maintenanceWindows describe
+atlas maintenanceWindows get
+atlas maintenancewindows describe
+atlas maintenancewindows get
+atlas maintenance-windows describe
+atlas maintenance-windows get
+atlas maintenanceWindow describe
+atlas maintenanceWindow get
+atlas maintenancewindow describe
+atlas maintenancewindow get
+atlas maintenance-window describe
+atlas maintenance-window get
 ```
 
 ### Examples
@@ -52,7 +57,7 @@ atlas maintenance-window get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas maintenanceWindows](atlas_maintenanceWindows.md)	- Manage Atlas maintenance windows.

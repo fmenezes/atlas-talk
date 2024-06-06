@@ -15,6 +15,12 @@ To find out more, see the documentation: https://dochub.mongodb.org/core/atlas-c
 
 
 
+### Aliases
+```
+
+atlas config
+```
+
 
 
 ### Flags
@@ -32,7 +38,7 @@ To find out more, see the documentation: https://dochub.mongodb.org/core/atlas-c
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

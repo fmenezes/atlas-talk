@@ -8,17 +8,22 @@ Export one backup snapshot for an M10 or higher Atlas cluster to an existing AWS
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas backups exports jobs create [flags]
 ```
 
-atlas backups exports jobs create [flags]
-atlas backups exports job create [flags]
-atlas backups export jobs create [flags]
-atlas backups export job create [flags]
-atlas backup exports jobs create [flags]
-atlas backup exports job create [flags]
-atlas backup export jobs create [flags]
-atlas backup export job create [flags]
+### Aliases
+```
+
+atlas backups exports jobs create
+atlas backups exports job create
+atlas backups export jobs create
+atlas backups export job create
+atlas backup exports jobs create
+atlas backup exports job create
+atlas backup export jobs create
+atlas backup export job create
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas backup export job create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups exports jobs](atlas_backups_exports_jobs.md)	- Manage cloud backup export jobs for your project.

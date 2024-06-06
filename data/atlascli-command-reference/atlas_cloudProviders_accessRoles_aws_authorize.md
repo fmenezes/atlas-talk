@@ -3,45 +3,50 @@
 Authorize an AWS IAM role.
 
 
-
+### Usage
+```
+atlas cloudProviders accessRoles aws authorize <roleId> [flags]
 ```
 
-atlas cloudProviders accessRoles aws authorize <roleId> [flags]
-atlas cloudProviders accessroles aws authorize <roleId> [flags]
-atlas cloudProviders access-roles aws authorize <roleId> [flags]
-atlas cloudProviders accessRole aws authorize <roleId> [flags]
-atlas cloudProviders accessrole aws authorize <roleId> [flags]
-atlas cloudProviders access-role aws authorize <roleId> [flags]
-atlas cloudproviders accessRoles aws authorize <roleId> [flags]
-atlas cloudproviders accessroles aws authorize <roleId> [flags]
-atlas cloudproviders access-roles aws authorize <roleId> [flags]
-atlas cloudproviders accessRole aws authorize <roleId> [flags]
-atlas cloudproviders accessrole aws authorize <roleId> [flags]
-atlas cloudproviders access-role aws authorize <roleId> [flags]
-atlas cloud-providers accessRoles aws authorize <roleId> [flags]
-atlas cloud-providers accessroles aws authorize <roleId> [flags]
-atlas cloud-providers access-roles aws authorize <roleId> [flags]
-atlas cloud-providers accessRole aws authorize <roleId> [flags]
-atlas cloud-providers accessrole aws authorize <roleId> [flags]
-atlas cloud-providers access-role aws authorize <roleId> [flags]
-atlas cloudProvider accessRoles aws authorize <roleId> [flags]
-atlas cloudProvider accessroles aws authorize <roleId> [flags]
-atlas cloudProvider access-roles aws authorize <roleId> [flags]
-atlas cloudProvider accessRole aws authorize <roleId> [flags]
-atlas cloudProvider accessrole aws authorize <roleId> [flags]
-atlas cloudProvider access-role aws authorize <roleId> [flags]
-atlas cloudprovider accessRoles aws authorize <roleId> [flags]
-atlas cloudprovider accessroles aws authorize <roleId> [flags]
-atlas cloudprovider access-roles aws authorize <roleId> [flags]
-atlas cloudprovider accessRole aws authorize <roleId> [flags]
-atlas cloudprovider accessrole aws authorize <roleId> [flags]
-atlas cloudprovider access-role aws authorize <roleId> [flags]
-atlas cloud-provider accessRoles aws authorize <roleId> [flags]
-atlas cloud-provider accessroles aws authorize <roleId> [flags]
-atlas cloud-provider access-roles aws authorize <roleId> [flags]
-atlas cloud-provider accessRole aws authorize <roleId> [flags]
-atlas cloud-provider accessrole aws authorize <roleId> [flags]
-atlas cloud-provider access-role aws authorize <roleId> [flags]
+### Aliases
+```
+
+atlas cloudProviders accessRoles aws authorize
+atlas cloudProviders accessroles aws authorize
+atlas cloudProviders access-roles aws authorize
+atlas cloudProviders accessRole aws authorize
+atlas cloudProviders accessrole aws authorize
+atlas cloudProviders access-role aws authorize
+atlas cloudproviders accessRoles aws authorize
+atlas cloudproviders accessroles aws authorize
+atlas cloudproviders access-roles aws authorize
+atlas cloudproviders accessRole aws authorize
+atlas cloudproviders accessrole aws authorize
+atlas cloudproviders access-role aws authorize
+atlas cloud-providers accessRoles aws authorize
+atlas cloud-providers accessroles aws authorize
+atlas cloud-providers access-roles aws authorize
+atlas cloud-providers accessRole aws authorize
+atlas cloud-providers accessrole aws authorize
+atlas cloud-providers access-role aws authorize
+atlas cloudProvider accessRoles aws authorize
+atlas cloudProvider accessroles aws authorize
+atlas cloudProvider access-roles aws authorize
+atlas cloudProvider accessRole aws authorize
+atlas cloudProvider accessrole aws authorize
+atlas cloudProvider access-role aws authorize
+atlas cloudprovider accessRoles aws authorize
+atlas cloudprovider accessroles aws authorize
+atlas cloudprovider access-roles aws authorize
+atlas cloudprovider accessRole aws authorize
+atlas cloudprovider accessrole aws authorize
+atlas cloudprovider access-role aws authorize
+atlas cloud-provider accessRoles aws authorize
+atlas cloud-provider accessroles aws authorize
+atlas cloud-provider access-roles aws authorize
+atlas cloud-provider accessRole aws authorize
+atlas cloud-provider accessrole aws authorize
+atlas cloud-provider access-role aws authorize
 ```
 
 
@@ -64,7 +69,7 @@ atlas cloud-provider access-role aws authorize <roleId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas cloudProviders accessRoles aws](atlas_cloudProviders_accessRoles_aws.md)	- Manage AWS IAM role access in Atlas.

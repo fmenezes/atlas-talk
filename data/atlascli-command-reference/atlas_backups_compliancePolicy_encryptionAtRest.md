@@ -5,6 +5,29 @@ Manage encryption-at-rest for the backup compliance policy for your project. Enc
 
 
 
+### Aliases
+```
+
+atlas backups compliancePolicy encryptionAtRest
+atlas backups compliancePolicy encryptionatrest
+atlas backups compliancePolicy encryption-at-rest
+atlas backups compliancepolicy encryptionAtRest
+atlas backups compliancepolicy encryptionatrest
+atlas backups compliancepolicy encryption-at-rest
+atlas backups compliance-policy encryptionAtRest
+atlas backups compliance-policy encryptionatrest
+atlas backups compliance-policy encryption-at-rest
+atlas backup compliancePolicy encryptionAtRest
+atlas backup compliancePolicy encryptionatrest
+atlas backup compliancePolicy encryption-at-rest
+atlas backup compliancepolicy encryptionAtRest
+atlas backup compliancepolicy encryptionatrest
+atlas backup compliancepolicy encryption-at-rest
+atlas backup compliance-policy encryptionAtRest
+atlas backup compliance-policy encryptionatrest
+atlas backup compliance-policy encryption-at-rest
+```
+
 
 
 ### Flags
@@ -22,7 +45,7 @@ Manage encryption-at-rest for the backup compliance policy for your project. Enc
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy](atlas_backups_compliancePolicy.md)	- Manage cloud backup compliance policy for your project. Use "atlas backups compliancepolicy setup" to enable backup compliance policy with a full configuration. Use "atlas backups compliancepolicy enable" to enable backup compliance policy without any configuration.

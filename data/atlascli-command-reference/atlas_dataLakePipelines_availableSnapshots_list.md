@@ -8,81 +8,86 @@ Return all available backup snapshots for the specified data lake pipeline.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines availableSnapshots list [flags]
 ```
 
-atlas dataLakePipelines availableSnapshots list [flags]
-atlas dataLakePipelines availableSnapshots ls [flags]
-atlas dataLakePipelines availablesnapshots list [flags]
-atlas dataLakePipelines availablesnapshots ls [flags]
-atlas dataLakePipelines available-snapshots list [flags]
-atlas dataLakePipelines available-snapshots ls [flags]
-atlas dataLakePipelines availableSnapshot list [flags]
-atlas dataLakePipelines availableSnapshot ls [flags]
-atlas dataLakePipelines availablesnapshot list [flags]
-atlas dataLakePipelines availablesnapshot ls [flags]
-atlas dataLakePipelines available-snapshot list [flags]
-atlas dataLakePipelines available-snapshot ls [flags]
-atlas datalakepipelines availableSnapshots list [flags]
-atlas datalakepipelines availableSnapshots ls [flags]
-atlas datalakepipelines availablesnapshots list [flags]
-atlas datalakepipelines availablesnapshots ls [flags]
-atlas datalakepipelines available-snapshots list [flags]
-atlas datalakepipelines available-snapshots ls [flags]
-atlas datalakepipelines availableSnapshot list [flags]
-atlas datalakepipelines availableSnapshot ls [flags]
-atlas datalakepipelines availablesnapshot list [flags]
-atlas datalakepipelines availablesnapshot ls [flags]
-atlas datalakepipelines available-snapshot list [flags]
-atlas datalakepipelines available-snapshot ls [flags]
-atlas data-lake-pipelines availableSnapshots list [flags]
-atlas data-lake-pipelines availableSnapshots ls [flags]
-atlas data-lake-pipelines availablesnapshots list [flags]
-atlas data-lake-pipelines availablesnapshots ls [flags]
-atlas data-lake-pipelines available-snapshots list [flags]
-atlas data-lake-pipelines available-snapshots ls [flags]
-atlas data-lake-pipelines availableSnapshot list [flags]
-atlas data-lake-pipelines availableSnapshot ls [flags]
-atlas data-lake-pipelines availablesnapshot list [flags]
-atlas data-lake-pipelines availablesnapshot ls [flags]
-atlas data-lake-pipelines available-snapshot list [flags]
-atlas data-lake-pipelines available-snapshot ls [flags]
-atlas dataLakePipeline availableSnapshots list [flags]
-atlas dataLakePipeline availableSnapshots ls [flags]
-atlas dataLakePipeline availablesnapshots list [flags]
-atlas dataLakePipeline availablesnapshots ls [flags]
-atlas dataLakePipeline available-snapshots list [flags]
-atlas dataLakePipeline available-snapshots ls [flags]
-atlas dataLakePipeline availableSnapshot list [flags]
-atlas dataLakePipeline availableSnapshot ls [flags]
-atlas dataLakePipeline availablesnapshot list [flags]
-atlas dataLakePipeline availablesnapshot ls [flags]
-atlas dataLakePipeline available-snapshot list [flags]
-atlas dataLakePipeline available-snapshot ls [flags]
-atlas datalakepipeline availableSnapshots list [flags]
-atlas datalakepipeline availableSnapshots ls [flags]
-atlas datalakepipeline availablesnapshots list [flags]
-atlas datalakepipeline availablesnapshots ls [flags]
-atlas datalakepipeline available-snapshots list [flags]
-atlas datalakepipeline available-snapshots ls [flags]
-atlas datalakepipeline availableSnapshot list [flags]
-atlas datalakepipeline availableSnapshot ls [flags]
-atlas datalakepipeline availablesnapshot list [flags]
-atlas datalakepipeline availablesnapshot ls [flags]
-atlas datalakepipeline available-snapshot list [flags]
-atlas datalakepipeline available-snapshot ls [flags]
-atlas data-lake-pipeline availableSnapshots list [flags]
-atlas data-lake-pipeline availableSnapshots ls [flags]
-atlas data-lake-pipeline availablesnapshots list [flags]
-atlas data-lake-pipeline availablesnapshots ls [flags]
-atlas data-lake-pipeline available-snapshots list [flags]
-atlas data-lake-pipeline available-snapshots ls [flags]
-atlas data-lake-pipeline availableSnapshot list [flags]
-atlas data-lake-pipeline availableSnapshot ls [flags]
-atlas data-lake-pipeline availablesnapshot list [flags]
-atlas data-lake-pipeline availablesnapshot ls [flags]
-atlas data-lake-pipeline available-snapshot list [flags]
-atlas data-lake-pipeline available-snapshot ls [flags]
+### Aliases
+```
+
+atlas dataLakePipelines availableSnapshots list
+atlas dataLakePipelines availableSnapshots ls
+atlas dataLakePipelines availablesnapshots list
+atlas dataLakePipelines availablesnapshots ls
+atlas dataLakePipelines available-snapshots list
+atlas dataLakePipelines available-snapshots ls
+atlas dataLakePipelines availableSnapshot list
+atlas dataLakePipelines availableSnapshot ls
+atlas dataLakePipelines availablesnapshot list
+atlas dataLakePipelines availablesnapshot ls
+atlas dataLakePipelines available-snapshot list
+atlas dataLakePipelines available-snapshot ls
+atlas datalakepipelines availableSnapshots list
+atlas datalakepipelines availableSnapshots ls
+atlas datalakepipelines availablesnapshots list
+atlas datalakepipelines availablesnapshots ls
+atlas datalakepipelines available-snapshots list
+atlas datalakepipelines available-snapshots ls
+atlas datalakepipelines availableSnapshot list
+atlas datalakepipelines availableSnapshot ls
+atlas datalakepipelines availablesnapshot list
+atlas datalakepipelines availablesnapshot ls
+atlas datalakepipelines available-snapshot list
+atlas datalakepipelines available-snapshot ls
+atlas data-lake-pipelines availableSnapshots list
+atlas data-lake-pipelines availableSnapshots ls
+atlas data-lake-pipelines availablesnapshots list
+atlas data-lake-pipelines availablesnapshots ls
+atlas data-lake-pipelines available-snapshots list
+atlas data-lake-pipelines available-snapshots ls
+atlas data-lake-pipelines availableSnapshot list
+atlas data-lake-pipelines availableSnapshot ls
+atlas data-lake-pipelines availablesnapshot list
+atlas data-lake-pipelines availablesnapshot ls
+atlas data-lake-pipelines available-snapshot list
+atlas data-lake-pipelines available-snapshot ls
+atlas dataLakePipeline availableSnapshots list
+atlas dataLakePipeline availableSnapshots ls
+atlas dataLakePipeline availablesnapshots list
+atlas dataLakePipeline availablesnapshots ls
+atlas dataLakePipeline available-snapshots list
+atlas dataLakePipeline available-snapshots ls
+atlas dataLakePipeline availableSnapshot list
+atlas dataLakePipeline availableSnapshot ls
+atlas dataLakePipeline availablesnapshot list
+atlas dataLakePipeline availablesnapshot ls
+atlas dataLakePipeline available-snapshot list
+atlas dataLakePipeline available-snapshot ls
+atlas datalakepipeline availableSnapshots list
+atlas datalakepipeline availableSnapshots ls
+atlas datalakepipeline availablesnapshots list
+atlas datalakepipeline availablesnapshots ls
+atlas datalakepipeline available-snapshots list
+atlas datalakepipeline available-snapshots ls
+atlas datalakepipeline availableSnapshot list
+atlas datalakepipeline availableSnapshot ls
+atlas datalakepipeline availablesnapshot list
+atlas datalakepipeline availablesnapshot ls
+atlas datalakepipeline available-snapshot list
+atlas datalakepipeline available-snapshot ls
+atlas data-lake-pipeline availableSnapshots list
+atlas data-lake-pipeline availableSnapshots ls
+atlas data-lake-pipeline availablesnapshots list
+atlas data-lake-pipeline availablesnapshots ls
+atlas data-lake-pipeline available-snapshots list
+atlas data-lake-pipeline available-snapshots ls
+atlas data-lake-pipeline availableSnapshot list
+atlas data-lake-pipeline availableSnapshot ls
+atlas data-lake-pipeline availablesnapshot list
+atlas data-lake-pipeline availablesnapshot ls
+atlas data-lake-pipeline available-snapshot list
+atlas data-lake-pipeline available-snapshot ls
 ```
 
 ### Examples
@@ -116,7 +121,7 @@ atlas data-lake-pipeline available-snapshot ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines availableSnapshots](atlas_dataLakePipelines_availableSnapshots.md)	- Manage available backup snapshots for data lake pipelines.

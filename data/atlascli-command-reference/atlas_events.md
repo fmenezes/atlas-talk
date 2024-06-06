@@ -5,6 +5,13 @@ Manage events for your organization or project.
 
 
 
+### Aliases
+```
+
+atlas events
+atlas event
+```
+
 
 
 ### Flags
@@ -22,7 +29,7 @@ Manage events for your organization or project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

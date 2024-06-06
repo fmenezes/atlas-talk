@@ -12,17 +12,22 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas serverless backups restores watch [flags]
 ```
 
-atlas serverless backups restores watch [flags]
-atlas serverless backups restore watch [flags]
-atlas serverless backup restores watch [flags]
-atlas serverless backup restore watch [flags]
-atlas sl backups restores watch [flags]
-atlas sl backups restore watch [flags]
-atlas sl backup restores watch [flags]
-atlas sl backup restore watch [flags]
+### Aliases
+```
+
+atlas serverless backups restores watch
+atlas serverless backups restore watch
+atlas serverless backup restores watch
+atlas serverless backup restore watch
+atlas sl backups restores watch
+atlas sl backups restore watch
+atlas sl backup restores watch
+atlas sl backup restore watch
 ```
 
 ### Examples
@@ -52,7 +57,7 @@ atlas sl backup restore watch [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless backups restores](atlas_serverless_backups_restores.md)	- Manage cloud backup restore jobs for your project.

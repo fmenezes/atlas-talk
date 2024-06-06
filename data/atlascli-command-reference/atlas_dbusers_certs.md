@@ -5,6 +5,15 @@ Manage Atlas x509 certificates for your database users.
 
 
 
+### Aliases
+```
+
+atlas dbusers certs
+atlas dbusers cert
+atlas dbuser certs
+atlas dbuser cert
+```
+
 
 
 ### Flags
@@ -22,7 +31,7 @@ Manage Atlas x509 certificates for your database users.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dbusers](atlas_dbusers.md)	- Manage database users for your project.

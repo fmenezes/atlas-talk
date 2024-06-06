@@ -8,15 +8,20 @@ Modify the details of the specified data lake pipeline for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines update <pipelineName> [flags]
 ```
 
-atlas dataLakePipelines update <pipelineName> [flags]
-atlas datalakepipelines update <pipelineName> [flags]
-atlas data-lake-pipelines update <pipelineName> [flags]
-atlas dataLakePipeline update <pipelineName> [flags]
-atlas datalakepipeline update <pipelineName> [flags]
-atlas data-lake-pipeline update <pipelineName> [flags]
+### Aliases
+```
+
+atlas dataLakePipelines update
+atlas datalakepipelines update
+atlas data-lake-pipelines update
+atlas dataLakePipeline update
+atlas datalakepipeline update
+atlas data-lake-pipeline update
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas data-lake-pipeline update <pipelineName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines](atlas_dataLakePipelines.md)	- Data Lake pipelines.

@@ -8,33 +8,38 @@ Describe the custom DNS configuration of an Atlas cluster deployed to AWS in the
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas customDns aws describe [flags]
 ```
 
-atlas customDns aws describe [flags]
-atlas customDns aws get [flags]
-atlas customDns aw describe [flags]
-atlas customDns aw get [flags]
-atlas customdns aws describe [flags]
-atlas customdns aws get [flags]
-atlas customdns aw describe [flags]
-atlas customdns aw get [flags]
-atlas custom-dns aws describe [flags]
-atlas custom-dns aws get [flags]
-atlas custom-dns aw describe [flags]
-atlas custom-dns aw get [flags]
-atlas customDn aws describe [flags]
-atlas customDn aws get [flags]
-atlas customDn aw describe [flags]
-atlas customDn aw get [flags]
-atlas customdn aws describe [flags]
-atlas customdn aws get [flags]
-atlas customdn aw describe [flags]
-atlas customdn aw get [flags]
-atlas custom-dn aws describe [flags]
-atlas custom-dn aws get [flags]
-atlas custom-dn aw describe [flags]
-atlas custom-dn aw get [flags]
+### Aliases
+```
+
+atlas customDns aws describe
+atlas customDns aws get
+atlas customDns aw describe
+atlas customDns aw get
+atlas customdns aws describe
+atlas customdns aws get
+atlas customdns aw describe
+atlas customdns aw get
+atlas custom-dns aws describe
+atlas custom-dns aws get
+atlas custom-dns aw describe
+atlas custom-dns aw get
+atlas customDn aws describe
+atlas customDn aws get
+atlas customDn aw describe
+atlas customDn aw get
+atlas customdn aws describe
+atlas customdn aws get
+atlas customdn aw describe
+atlas customdn aw get
+atlas custom-dn aws describe
+atlas custom-dn aws get
+atlas custom-dn aw describe
+atlas custom-dn aw get
 ```
 
 ### Examples
@@ -62,7 +67,7 @@ atlas custom-dn aw get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas customDns aws](atlas_customDns_aws.md)	- Manage DNS configuration of an Atlas project’s cluster deployed to AWS.

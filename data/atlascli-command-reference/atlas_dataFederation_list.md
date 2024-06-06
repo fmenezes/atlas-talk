@@ -8,15 +8,20 @@ Returns all data federation databases for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas dataFederation list [flags]
 ```
 
-atlas dataFederation list [flags]
-atlas dataFederation ls [flags]
-atlas datafederation list [flags]
-atlas datafederation ls [flags]
-atlas data-federation list [flags]
-atlas data-federation ls [flags]
+### Aliases
+```
+
+atlas dataFederation list
+atlas dataFederation ls
+atlas datafederation list
+atlas datafederation ls
+atlas data-federation list
+atlas data-federation ls
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas data-federation ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation](atlas_dataFederation.md)	- Data federation.

@@ -3,117 +3,122 @@
 Describe a Connected Org Config.
 
 
-
+### Usage
+```
+atlas federatedAuthentication federationSettings connectedOrgConfigs describe [flags]
 ```
 
-atlas federatedAuthentication federationSettings connectedOrgConfigs describe [flags]
-atlas federatedAuthentication federationSettings connectedorgconfigs describe [flags]
-atlas federatedAuthentication federationSettings connected-org-configs describe [flags]
-atlas federatedAuthentication federationSettings connectedOrgConfig describe [flags]
-atlas federatedAuthentication federationSettings connectedorgconfig describe [flags]
-atlas federatedAuthentication federationSettings connected-org-config describe [flags]
-atlas federatedAuthentication federationsettings connectedOrgConfigs describe [flags]
-atlas federatedAuthentication federationsettings connectedorgconfigs describe [flags]
-atlas federatedAuthentication federationsettings connected-org-configs describe [flags]
-atlas federatedAuthentication federationsettings connectedOrgConfig describe [flags]
-atlas federatedAuthentication federationsettings connectedorgconfig describe [flags]
-atlas federatedAuthentication federationsettings connected-org-config describe [flags]
-atlas federatedAuthentication federation-settings connectedOrgConfigs describe [flags]
-atlas federatedAuthentication federation-settings connectedorgconfigs describe [flags]
-atlas federatedAuthentication federation-settings connected-org-configs describe [flags]
-atlas federatedAuthentication federation-settings connectedOrgConfig describe [flags]
-atlas federatedAuthentication federation-settings connectedorgconfig describe [flags]
-atlas federatedAuthentication federation-settings connected-org-config describe [flags]
-atlas federatedAuthentication federationSetting connectedOrgConfigs describe [flags]
-atlas federatedAuthentication federationSetting connectedorgconfigs describe [flags]
-atlas federatedAuthentication federationSetting connected-org-configs describe [flags]
-atlas federatedAuthentication federationSetting connectedOrgConfig describe [flags]
-atlas federatedAuthentication federationSetting connectedorgconfig describe [flags]
-atlas federatedAuthentication federationSetting connected-org-config describe [flags]
-atlas federatedAuthentication federationsetting connectedOrgConfigs describe [flags]
-atlas federatedAuthentication federationsetting connectedorgconfigs describe [flags]
-atlas federatedAuthentication federationsetting connected-org-configs describe [flags]
-atlas federatedAuthentication federationsetting connectedOrgConfig describe [flags]
-atlas federatedAuthentication federationsetting connectedorgconfig describe [flags]
-atlas federatedAuthentication federationsetting connected-org-config describe [flags]
-atlas federatedAuthentication federation-setting connectedOrgConfigs describe [flags]
-atlas federatedAuthentication federation-setting connectedorgconfigs describe [flags]
-atlas federatedAuthentication federation-setting connected-org-configs describe [flags]
-atlas federatedAuthentication federation-setting connectedOrgConfig describe [flags]
-atlas federatedAuthentication federation-setting connectedorgconfig describe [flags]
-atlas federatedAuthentication federation-setting connected-org-config describe [flags]
-atlas federatedauthentication federationSettings connectedOrgConfigs describe [flags]
-atlas federatedauthentication federationSettings connectedorgconfigs describe [flags]
-atlas federatedauthentication federationSettings connected-org-configs describe [flags]
-atlas federatedauthentication federationSettings connectedOrgConfig describe [flags]
-atlas federatedauthentication federationSettings connectedorgconfig describe [flags]
-atlas federatedauthentication federationSettings connected-org-config describe [flags]
-atlas federatedauthentication federationsettings connectedOrgConfigs describe [flags]
-atlas federatedauthentication federationsettings connectedorgconfigs describe [flags]
-atlas federatedauthentication federationsettings connected-org-configs describe [flags]
-atlas federatedauthentication federationsettings connectedOrgConfig describe [flags]
-atlas federatedauthentication federationsettings connectedorgconfig describe [flags]
-atlas federatedauthentication federationsettings connected-org-config describe [flags]
-atlas federatedauthentication federation-settings connectedOrgConfigs describe [flags]
-atlas federatedauthentication federation-settings connectedorgconfigs describe [flags]
-atlas federatedauthentication federation-settings connected-org-configs describe [flags]
-atlas federatedauthentication federation-settings connectedOrgConfig describe [flags]
-atlas federatedauthentication federation-settings connectedorgconfig describe [flags]
-atlas federatedauthentication federation-settings connected-org-config describe [flags]
-atlas federatedauthentication federationSetting connectedOrgConfigs describe [flags]
-atlas federatedauthentication federationSetting connectedorgconfigs describe [flags]
-atlas federatedauthentication federationSetting connected-org-configs describe [flags]
-atlas federatedauthentication federationSetting connectedOrgConfig describe [flags]
-atlas federatedauthentication federationSetting connectedorgconfig describe [flags]
-atlas federatedauthentication federationSetting connected-org-config describe [flags]
-atlas federatedauthentication federationsetting connectedOrgConfigs describe [flags]
-atlas federatedauthentication federationsetting connectedorgconfigs describe [flags]
-atlas federatedauthentication federationsetting connected-org-configs describe [flags]
-atlas federatedauthentication federationsetting connectedOrgConfig describe [flags]
-atlas federatedauthentication federationsetting connectedorgconfig describe [flags]
-atlas federatedauthentication federationsetting connected-org-config describe [flags]
-atlas federatedauthentication federation-setting connectedOrgConfigs describe [flags]
-atlas federatedauthentication federation-setting connectedorgconfigs describe [flags]
-atlas federatedauthentication federation-setting connected-org-configs describe [flags]
-atlas federatedauthentication federation-setting connectedOrgConfig describe [flags]
-atlas federatedauthentication federation-setting connectedorgconfig describe [flags]
-atlas federatedauthentication federation-setting connected-org-config describe [flags]
-atlas federated-authentication federationSettings connectedOrgConfigs describe [flags]
-atlas federated-authentication federationSettings connectedorgconfigs describe [flags]
-atlas federated-authentication federationSettings connected-org-configs describe [flags]
-atlas federated-authentication federationSettings connectedOrgConfig describe [flags]
-atlas federated-authentication federationSettings connectedorgconfig describe [flags]
-atlas federated-authentication federationSettings connected-org-config describe [flags]
-atlas federated-authentication federationsettings connectedOrgConfigs describe [flags]
-atlas federated-authentication federationsettings connectedorgconfigs describe [flags]
-atlas federated-authentication federationsettings connected-org-configs describe [flags]
-atlas federated-authentication federationsettings connectedOrgConfig describe [flags]
-atlas federated-authentication federationsettings connectedorgconfig describe [flags]
-atlas federated-authentication federationsettings connected-org-config describe [flags]
-atlas federated-authentication federation-settings connectedOrgConfigs describe [flags]
-atlas federated-authentication federation-settings connectedorgconfigs describe [flags]
-atlas federated-authentication federation-settings connected-org-configs describe [flags]
-atlas federated-authentication federation-settings connectedOrgConfig describe [flags]
-atlas federated-authentication federation-settings connectedorgconfig describe [flags]
-atlas federated-authentication federation-settings connected-org-config describe [flags]
-atlas federated-authentication federationSetting connectedOrgConfigs describe [flags]
-atlas federated-authentication federationSetting connectedorgconfigs describe [flags]
-atlas federated-authentication federationSetting connected-org-configs describe [flags]
-atlas federated-authentication federationSetting connectedOrgConfig describe [flags]
-atlas federated-authentication federationSetting connectedorgconfig describe [flags]
-atlas federated-authentication federationSetting connected-org-config describe [flags]
-atlas federated-authentication federationsetting connectedOrgConfigs describe [flags]
-atlas federated-authentication federationsetting connectedorgconfigs describe [flags]
-atlas federated-authentication federationsetting connected-org-configs describe [flags]
-atlas federated-authentication federationsetting connectedOrgConfig describe [flags]
-atlas federated-authentication federationsetting connectedorgconfig describe [flags]
-atlas federated-authentication federationsetting connected-org-config describe [flags]
-atlas federated-authentication federation-setting connectedOrgConfigs describe [flags]
-atlas federated-authentication federation-setting connectedorgconfigs describe [flags]
-atlas federated-authentication federation-setting connected-org-configs describe [flags]
-atlas federated-authentication federation-setting connectedOrgConfig describe [flags]
-atlas federated-authentication federation-setting connectedorgconfig describe [flags]
-atlas federated-authentication federation-setting connected-org-config describe [flags]
+### Aliases
+```
+
+atlas federatedAuthentication federationSettings connectedOrgConfigs describe
+atlas federatedAuthentication federationSettings connectedorgconfigs describe
+atlas federatedAuthentication federationSettings connected-org-configs describe
+atlas federatedAuthentication federationSettings connectedOrgConfig describe
+atlas federatedAuthentication federationSettings connectedorgconfig describe
+atlas federatedAuthentication federationSettings connected-org-config describe
+atlas federatedAuthentication federationsettings connectedOrgConfigs describe
+atlas federatedAuthentication federationsettings connectedorgconfigs describe
+atlas federatedAuthentication federationsettings connected-org-configs describe
+atlas federatedAuthentication federationsettings connectedOrgConfig describe
+atlas federatedAuthentication federationsettings connectedorgconfig describe
+atlas federatedAuthentication federationsettings connected-org-config describe
+atlas federatedAuthentication federation-settings connectedOrgConfigs describe
+atlas federatedAuthentication federation-settings connectedorgconfigs describe
+atlas federatedAuthentication federation-settings connected-org-configs describe
+atlas federatedAuthentication federation-settings connectedOrgConfig describe
+atlas federatedAuthentication federation-settings connectedorgconfig describe
+atlas federatedAuthentication federation-settings connected-org-config describe
+atlas federatedAuthentication federationSetting connectedOrgConfigs describe
+atlas federatedAuthentication federationSetting connectedorgconfigs describe
+atlas federatedAuthentication federationSetting connected-org-configs describe
+atlas federatedAuthentication federationSetting connectedOrgConfig describe
+atlas federatedAuthentication federationSetting connectedorgconfig describe
+atlas federatedAuthentication federationSetting connected-org-config describe
+atlas federatedAuthentication federationsetting connectedOrgConfigs describe
+atlas federatedAuthentication federationsetting connectedorgconfigs describe
+atlas federatedAuthentication federationsetting connected-org-configs describe
+atlas federatedAuthentication federationsetting connectedOrgConfig describe
+atlas federatedAuthentication federationsetting connectedorgconfig describe
+atlas federatedAuthentication federationsetting connected-org-config describe
+atlas federatedAuthentication federation-setting connectedOrgConfigs describe
+atlas federatedAuthentication federation-setting connectedorgconfigs describe
+atlas federatedAuthentication federation-setting connected-org-configs describe
+atlas federatedAuthentication federation-setting connectedOrgConfig describe
+atlas federatedAuthentication federation-setting connectedorgconfig describe
+atlas federatedAuthentication federation-setting connected-org-config describe
+atlas federatedauthentication federationSettings connectedOrgConfigs describe
+atlas federatedauthentication federationSettings connectedorgconfigs describe
+atlas federatedauthentication federationSettings connected-org-configs describe
+atlas federatedauthentication federationSettings connectedOrgConfig describe
+atlas federatedauthentication federationSettings connectedorgconfig describe
+atlas federatedauthentication federationSettings connected-org-config describe
+atlas federatedauthentication federationsettings connectedOrgConfigs describe
+atlas federatedauthentication federationsettings connectedorgconfigs describe
+atlas federatedauthentication federationsettings connected-org-configs describe
+atlas federatedauthentication federationsettings connectedOrgConfig describe
+atlas federatedauthentication federationsettings connectedorgconfig describe
+atlas federatedauthentication federationsettings connected-org-config describe
+atlas federatedauthentication federation-settings connectedOrgConfigs describe
+atlas federatedauthentication federation-settings connectedorgconfigs describe
+atlas federatedauthentication federation-settings connected-org-configs describe
+atlas federatedauthentication federation-settings connectedOrgConfig describe
+atlas federatedauthentication federation-settings connectedorgconfig describe
+atlas federatedauthentication federation-settings connected-org-config describe
+atlas federatedauthentication federationSetting connectedOrgConfigs describe
+atlas federatedauthentication federationSetting connectedorgconfigs describe
+atlas federatedauthentication federationSetting connected-org-configs describe
+atlas federatedauthentication federationSetting connectedOrgConfig describe
+atlas federatedauthentication federationSetting connectedorgconfig describe
+atlas federatedauthentication federationSetting connected-org-config describe
+atlas federatedauthentication federationsetting connectedOrgConfigs describe
+atlas federatedauthentication federationsetting connectedorgconfigs describe
+atlas federatedauthentication federationsetting connected-org-configs describe
+atlas federatedauthentication federationsetting connectedOrgConfig describe
+atlas federatedauthentication federationsetting connectedorgconfig describe
+atlas federatedauthentication federationsetting connected-org-config describe
+atlas federatedauthentication federation-setting connectedOrgConfigs describe
+atlas federatedauthentication federation-setting connectedorgconfigs describe
+atlas federatedauthentication federation-setting connected-org-configs describe
+atlas federatedauthentication federation-setting connectedOrgConfig describe
+atlas federatedauthentication federation-setting connectedorgconfig describe
+atlas federatedauthentication federation-setting connected-org-config describe
+atlas federated-authentication federationSettings connectedOrgConfigs describe
+atlas federated-authentication federationSettings connectedorgconfigs describe
+atlas federated-authentication federationSettings connected-org-configs describe
+atlas federated-authentication federationSettings connectedOrgConfig describe
+atlas federated-authentication federationSettings connectedorgconfig describe
+atlas federated-authentication federationSettings connected-org-config describe
+atlas federated-authentication federationsettings connectedOrgConfigs describe
+atlas federated-authentication federationsettings connectedorgconfigs describe
+atlas federated-authentication federationsettings connected-org-configs describe
+atlas federated-authentication federationsettings connectedOrgConfig describe
+atlas federated-authentication federationsettings connectedorgconfig describe
+atlas federated-authentication federationsettings connected-org-config describe
+atlas federated-authentication federation-settings connectedOrgConfigs describe
+atlas federated-authentication federation-settings connectedorgconfigs describe
+atlas federated-authentication federation-settings connected-org-configs describe
+atlas federated-authentication federation-settings connectedOrgConfig describe
+atlas federated-authentication federation-settings connectedorgconfig describe
+atlas federated-authentication federation-settings connected-org-config describe
+atlas federated-authentication federationSetting connectedOrgConfigs describe
+atlas federated-authentication federationSetting connectedorgconfigs describe
+atlas federated-authentication federationSetting connected-org-configs describe
+atlas federated-authentication federationSetting connectedOrgConfig describe
+atlas federated-authentication federationSetting connectedorgconfig describe
+atlas federated-authentication federationSetting connected-org-config describe
+atlas federated-authentication federationsetting connectedOrgConfigs describe
+atlas federated-authentication federationsetting connectedorgconfigs describe
+atlas federated-authentication federationsetting connected-org-configs describe
+atlas federated-authentication federationsetting connectedOrgConfig describe
+atlas federated-authentication federationsetting connectedorgconfig describe
+atlas federated-authentication federationsetting connected-org-config describe
+atlas federated-authentication federation-setting connectedOrgConfigs describe
+atlas federated-authentication federation-setting connectedorgconfigs describe
+atlas federated-authentication federation-setting connected-org-configs describe
+atlas federated-authentication federation-setting connectedOrgConfig describe
+atlas federated-authentication federation-setting connectedorgconfig describe
+atlas federated-authentication federation-setting connected-org-config describe
 ```
 
 ### Examples
@@ -145,7 +150,7 @@ atlas federated-authentication federation-setting connected-org-config describe 
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas federatedAuthentication federationSettings connectedOrgConfigs](atlas_federatedAuthentication_federationSettings_connectedOrgConfigs.md)	- Manage Atlas Federated Authentication Connected Orgs Config

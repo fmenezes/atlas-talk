@@ -10,6 +10,15 @@ Create, list, update and delete your Atlas Stream Processing connections
 
 
 
+### Aliases
+```
+
+atlas streams connections
+atlas streams connection
+atlas stream connections
+atlas stream connection
+```
+
 
 
 ### Flags
@@ -27,7 +36,7 @@ Create, list, update and delete your Atlas Stream Processing connections
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams](atlas_streams.md)	- Manage your Atlas Stream Processing deployments.

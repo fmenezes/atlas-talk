@@ -8,45 +8,50 @@ Return the Federation Settings details for the specified organization.
 To use this command, you must authenticate with a user account or an API key with the Organization Owner role.
 
 
-
+### Usage
+```
+atlas federatedAuthentication federationSettings describe [flags]
 ```
 
-atlas federatedAuthentication federationSettings describe [flags]
-atlas federatedAuthentication federationSettings get [flags]
-atlas federatedAuthentication federationsettings describe [flags]
-atlas federatedAuthentication federationsettings get [flags]
-atlas federatedAuthentication federation-settings describe [flags]
-atlas federatedAuthentication federation-settings get [flags]
-atlas federatedAuthentication federationSetting describe [flags]
-atlas federatedAuthentication federationSetting get [flags]
-atlas federatedAuthentication federationsetting describe [flags]
-atlas federatedAuthentication federationsetting get [flags]
-atlas federatedAuthentication federation-setting describe [flags]
-atlas federatedAuthentication federation-setting get [flags]
-atlas federatedauthentication federationSettings describe [flags]
-atlas federatedauthentication federationSettings get [flags]
-atlas federatedauthentication federationsettings describe [flags]
-atlas federatedauthentication federationsettings get [flags]
-atlas federatedauthentication federation-settings describe [flags]
-atlas federatedauthentication federation-settings get [flags]
-atlas federatedauthentication federationSetting describe [flags]
-atlas federatedauthentication federationSetting get [flags]
-atlas federatedauthentication federationsetting describe [flags]
-atlas federatedauthentication federationsetting get [flags]
-atlas federatedauthentication federation-setting describe [flags]
-atlas federatedauthentication federation-setting get [flags]
-atlas federated-authentication federationSettings describe [flags]
-atlas federated-authentication federationSettings get [flags]
-atlas federated-authentication federationsettings describe [flags]
-atlas federated-authentication federationsettings get [flags]
-atlas federated-authentication federation-settings describe [flags]
-atlas federated-authentication federation-settings get [flags]
-atlas federated-authentication federationSetting describe [flags]
-atlas federated-authentication federationSetting get [flags]
-atlas federated-authentication federationsetting describe [flags]
-atlas federated-authentication federationsetting get [flags]
-atlas federated-authentication federation-setting describe [flags]
-atlas federated-authentication federation-setting get [flags]
+### Aliases
+```
+
+atlas federatedAuthentication federationSettings describe
+atlas federatedAuthentication federationSettings get
+atlas federatedAuthentication federationsettings describe
+atlas federatedAuthentication federationsettings get
+atlas federatedAuthentication federation-settings describe
+atlas federatedAuthentication federation-settings get
+atlas federatedAuthentication federationSetting describe
+atlas federatedAuthentication federationSetting get
+atlas federatedAuthentication federationsetting describe
+atlas federatedAuthentication federationsetting get
+atlas federatedAuthentication federation-setting describe
+atlas federatedAuthentication federation-setting get
+atlas federatedauthentication federationSettings describe
+atlas federatedauthentication federationSettings get
+atlas federatedauthentication federationsettings describe
+atlas federatedauthentication federationsettings get
+atlas federatedauthentication federation-settings describe
+atlas federatedauthentication federation-settings get
+atlas federatedauthentication federationSetting describe
+atlas federatedauthentication federationSetting get
+atlas federatedauthentication federationsetting describe
+atlas federatedauthentication federationsetting get
+atlas federatedauthentication federation-setting describe
+atlas federatedauthentication federation-setting get
+atlas federated-authentication federationSettings describe
+atlas federated-authentication federationSettings get
+atlas federated-authentication federationsettings describe
+atlas federated-authentication federationsettings get
+atlas federated-authentication federation-settings describe
+atlas federated-authentication federation-settings get
+atlas federated-authentication federationSetting describe
+atlas federated-authentication federationSetting get
+atlas federated-authentication federationsetting describe
+atlas federated-authentication federationsetting get
+atlas federated-authentication federation-setting describe
+atlas federated-authentication federation-setting get
 ```
 
 ### Examples
@@ -74,7 +79,7 @@ atlas federated-authentication federation-setting get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas federatedAuthentication federationSettings](atlas_federatedAuthentication_federationSettings.md)	- Manage Atlas Federated Authentication Federation Settings

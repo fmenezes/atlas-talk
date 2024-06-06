@@ -5,6 +5,19 @@ Manage your Atlas users.
 
 
 
+### Aliases
+```
+
+atlas organizations users
+atlas organizations user
+atlas organization users
+atlas organization user
+atlas orgs users
+atlas orgs user
+atlas org users
+atlas org user
+```
+
 
 
 ### Flags
@@ -22,7 +35,7 @@ Manage your Atlas users.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations](atlas_organizations.md)	- Manage your Atlas organizations.

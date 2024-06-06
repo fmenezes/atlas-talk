@@ -8,12 +8,17 @@ Remove the specified data federation database from your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataFederation delete <name> [flags]
 ```
 
-atlas dataFederation delete <name> [flags]
-atlas datafederation delete <name> [flags]
-atlas data-federation delete <name> [flags]
+### Aliases
+```
+
+atlas dataFederation delete
+atlas datafederation delete
+atlas data-federation delete
 ```
 
 ### Examples
@@ -42,7 +47,7 @@ atlas data-federation delete <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation](atlas_dataFederation.md)	- Data federation.

@@ -8,25 +8,30 @@ Remove the specified pending invitation to your organization.
 To use this command, you must authenticate with a user account or an API key with the Organization User Admin role.
 
 
-
+### Usage
+```
+atlas organizations invitations delete <invitationId> [flags]
 ```
 
-atlas organizations invitations delete <invitationId> [flags]
-atlas organizations invitations rm <invitationId> [flags]
-atlas organizations invitation delete <invitationId> [flags]
-atlas organizations invitation rm <invitationId> [flags]
-atlas organization invitations delete <invitationId> [flags]
-atlas organization invitations rm <invitationId> [flags]
-atlas organization invitation delete <invitationId> [flags]
-atlas organization invitation rm <invitationId> [flags]
-atlas orgs invitations delete <invitationId> [flags]
-atlas orgs invitations rm <invitationId> [flags]
-atlas orgs invitation delete <invitationId> [flags]
-atlas orgs invitation rm <invitationId> [flags]
-atlas org invitations delete <invitationId> [flags]
-atlas org invitations rm <invitationId> [flags]
-atlas org invitation delete <invitationId> [flags]
-atlas org invitation rm <invitationId> [flags]
+### Aliases
+```
+
+atlas organizations invitations delete
+atlas organizations invitations rm
+atlas organizations invitation delete
+atlas organizations invitation rm
+atlas organization invitations delete
+atlas organization invitations rm
+atlas organization invitation delete
+atlas organization invitation rm
+atlas orgs invitations delete
+atlas orgs invitations rm
+atlas orgs invitation delete
+atlas orgs invitation rm
+atlas org invitations delete
+atlas org invitations rm
+atlas org invitation delete
+atlas org invitation rm
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas org invitation rm <invitationId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations invitations](atlas_organizations_invitations.md)	- Invitation operations.

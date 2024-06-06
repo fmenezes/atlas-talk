@@ -10,13 +10,18 @@ Users must be current members of your organization before you can add them to a 
 To use this command, you must authenticate with a user account or an API key with the Organization User Admin role.
 
 
-
+### Usage
+```
+atlas teams users add <userId>... [flags]
 ```
 
-atlas teams users add <userId>... [flags]
-atlas teams user add <userId>... [flags]
-atlas team users add <userId>... [flags]
-atlas team user add <userId>... [flags]
+### Aliases
+```
+
+atlas teams users add
+atlas teams user add
+atlas team users add
+atlas team user add
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas team user add <userId>... [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas teams users](atlas_teams_users.md)	- Manage your Atlas users.

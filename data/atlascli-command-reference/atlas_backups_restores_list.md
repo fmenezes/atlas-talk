@@ -8,17 +8,22 @@ Return all cloud backup restore jobs for your project and cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas backups restores list <clusterName> [flags]
 ```
 
-atlas backups restores list <clusterName> [flags]
-atlas backups restores ls <clusterName> [flags]
-atlas backups restore list <clusterName> [flags]
-atlas backups restore ls <clusterName> [flags]
-atlas backup restores list <clusterName> [flags]
-atlas backup restores ls <clusterName> [flags]
-atlas backup restore list <clusterName> [flags]
-atlas backup restore ls <clusterName> [flags]
+### Aliases
+```
+
+atlas backups restores list
+atlas backups restores ls
+atlas backups restore list
+atlas backups restore ls
+atlas backup restores list
+atlas backup restores ls
+atlas backup restore list
+atlas backup restore ls
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas backup restore ls <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups restores](atlas_backups_restores.md)	- Manage cloud backup restore jobs for your project.

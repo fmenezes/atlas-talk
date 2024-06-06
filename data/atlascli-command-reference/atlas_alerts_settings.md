@@ -10,6 +10,15 @@ Use this command to list, create, edit, delete, enable and disable alert configu
 
 
 
+### Aliases
+```
+
+atlas alerts settings
+atlas alerts config
+atlas alert settings
+atlas alert config
+```
+
 
 
 ### Flags
@@ -27,7 +36,7 @@ Use this command to list, create, edit, delete, enable and disable alert configu
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas alerts](atlas_alerts.md)	- Manage alerts for your project.

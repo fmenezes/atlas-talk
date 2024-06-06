@@ -8,25 +8,30 @@ Delete a snapshot export bucket.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas backups exports buckets delete [flags]
 ```
 
-atlas backups exports buckets delete [flags]
-atlas backups exports buckets rm [flags]
-atlas backups exports bucket delete [flags]
-atlas backups exports bucket rm [flags]
-atlas backups export buckets delete [flags]
-atlas backups export buckets rm [flags]
-atlas backups export bucket delete [flags]
-atlas backups export bucket rm [flags]
-atlas backup exports buckets delete [flags]
-atlas backup exports buckets rm [flags]
-atlas backup exports bucket delete [flags]
-atlas backup exports bucket rm [flags]
-atlas backup export buckets delete [flags]
-atlas backup export buckets rm [flags]
-atlas backup export bucket delete [flags]
-atlas backup export bucket rm [flags]
+### Aliases
+```
+
+atlas backups exports buckets delete
+atlas backups exports buckets rm
+atlas backups exports bucket delete
+atlas backups exports bucket rm
+atlas backups export buckets delete
+atlas backups export buckets rm
+atlas backups export bucket delete
+atlas backups export bucket rm
+atlas backup exports buckets delete
+atlas backup exports buckets rm
+atlas backup exports bucket delete
+atlas backup exports bucket rm
+atlas backup export buckets delete
+atlas backup export buckets rm
+atlas backup export bucket delete
+atlas backup export bucket rm
 ```
 
 ### Examples
@@ -55,7 +60,7 @@ atlas backup export bucket rm [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups exports buckets](atlas_backups_exports_buckets.md)	- Manage cloud backup export buckets for your project.

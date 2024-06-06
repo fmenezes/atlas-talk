@@ -5,6 +5,12 @@ Create a connection with AWS, Azure and Google Cloud.
 
 
 
+### Aliases
+```
+
+atlas networking peering create
+```
+
 
 
 ### Flags
@@ -22,7 +28,7 @@ Create a connection with AWS, Azure and Google Cloud.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas networking peering](atlas_networking_peering.md)	- Manage Network Peering connections.

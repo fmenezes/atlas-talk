@@ -8,16 +8,21 @@ Create a new link-token for a push live migration.
 To migrate using scripts, use mongomirror instead of the Atlas CLI. To learn more about mongomirror, see https://www.mongodb.com/docs/atlas/reference/mongomirror/.
 
 
-
+### Usage
+```
+atlas liveMigrations link create [flags]
 ```
 
-atlas liveMigrations link create [flags]
-atlas livemigrations link create [flags]
-atlas live-migrations link create [flags]
-atlas liveMigration link create [flags]
-atlas livemigration link create [flags]
-atlas live-migration link create [flags]
-atlas lm link create [flags]
+### Aliases
+```
+
+atlas liveMigrations link create
+atlas livemigrations link create
+atlas live-migrations link create
+atlas liveMigration link create
+atlas livemigration link create
+atlas live-migration link create
+atlas lm link create
 ```
 
 
@@ -40,7 +45,7 @@ atlas lm link create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas liveMigrations link](atlas_liveMigrations_link.md)	- Manage the link-token for your organization.

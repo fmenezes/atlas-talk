@@ -5,6 +5,29 @@ Get suggested indexes for collections experiencing slow queries
 
 
 
+### Aliases
+```
+
+atlas performanceAdvisor suggestedIndexes
+atlas performanceAdvisor suggestedindexes
+atlas performanceAdvisor suggested-indexes
+atlas performanceAdvisor suggestedIndex
+atlas performanceAdvisor suggestedindex
+atlas performanceAdvisor suggested-index
+atlas performanceadvisor suggestedIndexes
+atlas performanceadvisor suggestedindexes
+atlas performanceadvisor suggested-indexes
+atlas performanceadvisor suggestedIndex
+atlas performanceadvisor suggestedindex
+atlas performanceadvisor suggested-index
+atlas performance-advisor suggestedIndexes
+atlas performance-advisor suggestedindexes
+atlas performance-advisor suggested-indexes
+atlas performance-advisor suggestedIndex
+atlas performance-advisor suggestedindex
+atlas performance-advisor suggested-index
+```
+
 
 
 ### Flags
@@ -22,7 +45,7 @@ Get suggested indexes for collections experiencing slow queries
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas performanceAdvisor](atlas_performanceAdvisor.md)	- Learn more about slow queries and get suggestions to improve database performance.

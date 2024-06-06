@@ -8,21 +8,26 @@ Return the details for the specified Azure private endpoint for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints azure describe <privateEndpointId> [flags]
 ```
 
-atlas privateEndpoints azure describe <privateEndpointId> [flags]
-atlas privateEndpoints azure get <privateEndpointId> [flags]
-atlas privateendpoints azure describe <privateEndpointId> [flags]
-atlas privateendpoints azure get <privateEndpointId> [flags]
-atlas private-endpoints azure describe <privateEndpointId> [flags]
-atlas private-endpoints azure get <privateEndpointId> [flags]
-atlas privateEndpoint azure describe <privateEndpointId> [flags]
-atlas privateEndpoint azure get <privateEndpointId> [flags]
-atlas privateendpoint azure describe <privateEndpointId> [flags]
-atlas privateendpoint azure get <privateEndpointId> [flags]
-atlas private-endpoint azure describe <privateEndpointId> [flags]
-atlas private-endpoint azure get <privateEndpointId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints azure describe
+atlas privateEndpoints azure get
+atlas privateendpoints azure describe
+atlas privateendpoints azure get
+atlas private-endpoints azure describe
+atlas private-endpoints azure get
+atlas privateEndpoint azure describe
+atlas privateEndpoint azure get
+atlas privateendpoint azure describe
+atlas privateendpoint azure get
+atlas private-endpoint azure describe
+atlas private-endpoint azure get
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas private-endpoint azure get <privateEndpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints azure](atlas_privateEndpoints_azure.md)	- Manage Azure Private Endpoints.

@@ -3,25 +3,30 @@
 Return all events for the specified organization.
 
 
-
+### Usage
+```
+atlas events organizations list [flags]
 ```
 
-atlas events organizations list [flags]
-atlas events organizations ls [flags]
-atlas events organization list [flags]
-atlas events organization ls [flags]
-atlas events orgs list [flags]
-atlas events orgs ls [flags]
-atlas events org list [flags]
-atlas events org ls [flags]
-atlas event organizations list [flags]
-atlas event organizations ls [flags]
-atlas event organization list [flags]
-atlas event organization ls [flags]
-atlas event orgs list [flags]
-atlas event orgs ls [flags]
-atlas event org list [flags]
-atlas event org ls [flags]
+### Aliases
+```
+
+atlas events organizations list
+atlas events organizations ls
+atlas events organization list
+atlas events organization ls
+atlas events orgs list
+atlas events orgs ls
+atlas events org list
+atlas events org ls
+atlas event organizations list
+atlas event organizations ls
+atlas event organization list
+atlas event organization ls
+atlas event orgs list
+atlas event orgs ls
+atlas event org list
+atlas event org ls
 ```
 
 ### Examples
@@ -55,7 +60,7 @@ atlas event org ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas events organizations](atlas_events_organizations.md)	- Organization operations.

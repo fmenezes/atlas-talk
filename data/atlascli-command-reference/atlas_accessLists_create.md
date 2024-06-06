@@ -12,17 +12,22 @@ The command doesn't overwrite existing entries in the access list. Instead, it a
 To use this command, you must authenticate with a user account or an API key with the Read Write role.
 
 
-
+### Usage
+```
+atlas accessLists create <entry> [flags]
 ```
 
-atlas accessLists create <entry> [flags]
-atlas accesslists create <entry> [flags]
-atlas access-lists create <entry> [flags]
-atlas accessList create <entry> [flags]
-atlas accesslist create <entry> [flags]
-atlas access-list create <entry> [flags]
-atlas whitelists create <entry> [flags]
-atlas whitelist create <entry> [flags]
+### Aliases
+```
+
+atlas accessLists create
+atlas accesslists create
+atlas access-lists create
+atlas accessList create
+atlas accesslist create
+atlas access-list create
+atlas whitelists create
+atlas whitelist create
 ```
 
 ### Examples
@@ -64,7 +69,7 @@ atlas whitelist create <entry> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas accessLists](atlas_accessLists.md)	- Manage the list of IP addresses that can access your Atlas project.

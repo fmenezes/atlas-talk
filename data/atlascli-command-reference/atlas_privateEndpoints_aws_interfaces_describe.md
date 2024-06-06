@@ -8,33 +8,38 @@ Return the details for the specified AWS private endpoint interface for your pro
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints aws interfaces describe <interfaceEndpointId> [flags]
 ```
 
-atlas privateEndpoints aws interfaces describe <interfaceEndpointId> [flags]
-atlas privateEndpoints aws interfaces get <interfaceEndpointId> [flags]
-atlas privateEndpoints aws interface describe <interfaceEndpointId> [flags]
-atlas privateEndpoints aws interface get <interfaceEndpointId> [flags]
-atlas privateendpoints aws interfaces describe <interfaceEndpointId> [flags]
-atlas privateendpoints aws interfaces get <interfaceEndpointId> [flags]
-atlas privateendpoints aws interface describe <interfaceEndpointId> [flags]
-atlas privateendpoints aws interface get <interfaceEndpointId> [flags]
-atlas private-endpoints aws interfaces describe <interfaceEndpointId> [flags]
-atlas private-endpoints aws interfaces get <interfaceEndpointId> [flags]
-atlas private-endpoints aws interface describe <interfaceEndpointId> [flags]
-atlas private-endpoints aws interface get <interfaceEndpointId> [flags]
-atlas privateEndpoint aws interfaces describe <interfaceEndpointId> [flags]
-atlas privateEndpoint aws interfaces get <interfaceEndpointId> [flags]
-atlas privateEndpoint aws interface describe <interfaceEndpointId> [flags]
-atlas privateEndpoint aws interface get <interfaceEndpointId> [flags]
-atlas privateendpoint aws interfaces describe <interfaceEndpointId> [flags]
-atlas privateendpoint aws interfaces get <interfaceEndpointId> [flags]
-atlas privateendpoint aws interface describe <interfaceEndpointId> [flags]
-atlas privateendpoint aws interface get <interfaceEndpointId> [flags]
-atlas private-endpoint aws interfaces describe <interfaceEndpointId> [flags]
-atlas private-endpoint aws interfaces get <interfaceEndpointId> [flags]
-atlas private-endpoint aws interface describe <interfaceEndpointId> [flags]
-atlas private-endpoint aws interface get <interfaceEndpointId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints aws interfaces describe
+atlas privateEndpoints aws interfaces get
+atlas privateEndpoints aws interface describe
+atlas privateEndpoints aws interface get
+atlas privateendpoints aws interfaces describe
+atlas privateendpoints aws interfaces get
+atlas privateendpoints aws interface describe
+atlas privateendpoints aws interface get
+atlas private-endpoints aws interfaces describe
+atlas private-endpoints aws interfaces get
+atlas private-endpoints aws interface describe
+atlas private-endpoints aws interface get
+atlas privateEndpoint aws interfaces describe
+atlas privateEndpoint aws interfaces get
+atlas privateEndpoint aws interface describe
+atlas privateEndpoint aws interface get
+atlas privateendpoint aws interfaces describe
+atlas privateendpoint aws interfaces get
+atlas privateendpoint aws interface describe
+atlas privateendpoint aws interface get
+atlas private-endpoint aws interfaces describe
+atlas private-endpoint aws interfaces get
+atlas private-endpoint aws interface describe
+atlas private-endpoint aws interface get
 ```
 
 ### Examples
@@ -65,7 +70,7 @@ atlas private-endpoint aws interface get <interfaceEndpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints aws interfaces](atlas_privateEndpoints_aws_interfaces.md)	- Manage Atlas AWS private endpoint interfaces.

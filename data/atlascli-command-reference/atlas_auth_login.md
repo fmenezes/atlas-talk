@@ -3,10 +3,15 @@
 Authenticate with MongoDB Atlas.
 
 
-
+### Usage
+```
+atlas auth login [flags]
 ```
 
-atlas auth login [flags]
+### Aliases
+```
+
+atlas auth login
 ```
 
 ### Examples
@@ -35,7 +40,7 @@ atlas auth login [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas auth](atlas_auth.md)	- Manage the CLI's authentication state.

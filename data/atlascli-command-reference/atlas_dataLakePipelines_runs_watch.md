@@ -8,21 +8,26 @@ Watch for the specified data lake pipeline run to complete.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines runs watch <pipelineName> [flags]
 ```
 
-atlas dataLakePipelines runs watch <pipelineName> [flags]
-atlas dataLakePipelines run watch <pipelineName> [flags]
-atlas datalakepipelines runs watch <pipelineName> [flags]
-atlas datalakepipelines run watch <pipelineName> [flags]
-atlas data-lake-pipelines runs watch <pipelineName> [flags]
-atlas data-lake-pipelines run watch <pipelineName> [flags]
-atlas dataLakePipeline runs watch <pipelineName> [flags]
-atlas dataLakePipeline run watch <pipelineName> [flags]
-atlas datalakepipeline runs watch <pipelineName> [flags]
-atlas datalakepipeline run watch <pipelineName> [flags]
-atlas data-lake-pipeline runs watch <pipelineName> [flags]
-atlas data-lake-pipeline run watch <pipelineName> [flags]
+### Aliases
+```
+
+atlas dataLakePipelines runs watch
+atlas dataLakePipelines run watch
+atlas datalakepipelines runs watch
+atlas datalakepipelines run watch
+atlas data-lake-pipelines runs watch
+atlas data-lake-pipelines run watch
+atlas dataLakePipeline runs watch
+atlas dataLakePipeline run watch
+atlas datalakepipeline runs watch
+atlas datalakepipeline run watch
+atlas data-lake-pipeline runs watch
+atlas data-lake-pipeline run watch
 ```
 
 ### Examples
@@ -52,7 +57,7 @@ atlas data-lake-pipeline run watch <pipelineName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines runs](atlas_dataLakePipelines_runs.md)	- Data Lake pipelines runs.

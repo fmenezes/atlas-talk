@@ -10,6 +10,19 @@ List organization events.
 
 
 
+### Aliases
+```
+
+atlas events organizations
+atlas events organization
+atlas events orgs
+atlas events org
+atlas event organizations
+atlas event organization
+atlas event orgs
+atlas event org
+```
+
 
 
 ### Flags
@@ -27,7 +40,7 @@ List organization events.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas events](atlas_events.md)	- Manage events for your organization or project.

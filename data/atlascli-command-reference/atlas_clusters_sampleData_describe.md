@@ -8,33 +8,38 @@ Return the details for the specified sample data load job.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas clusters sampleData describe <id> [flags]
 ```
 
-atlas clusters sampleData describe <id> [flags]
-atlas clusters sampleData get <id> [flags]
-atlas clusters sampledata describe <id> [flags]
-atlas clusters sampledata get <id> [flags]
-atlas clusters sample-data describe <id> [flags]
-atlas clusters sample-data get <id> [flags]
-atlas clusters sampleDatum describe <id> [flags]
-atlas clusters sampleDatum get <id> [flags]
-atlas clusters sampledatum describe <id> [flags]
-atlas clusters sampledatum get <id> [flags]
-atlas clusters sample-datum describe <id> [flags]
-atlas clusters sample-datum get <id> [flags]
-atlas cluster sampleData describe <id> [flags]
-atlas cluster sampleData get <id> [flags]
-atlas cluster sampledata describe <id> [flags]
-atlas cluster sampledata get <id> [flags]
-atlas cluster sample-data describe <id> [flags]
-atlas cluster sample-data get <id> [flags]
-atlas cluster sampleDatum describe <id> [flags]
-atlas cluster sampleDatum get <id> [flags]
-atlas cluster sampledatum describe <id> [flags]
-atlas cluster sampledatum get <id> [flags]
-atlas cluster sample-datum describe <id> [flags]
-atlas cluster sample-datum get <id> [flags]
+### Aliases
+```
+
+atlas clusters sampleData describe
+atlas clusters sampleData get
+atlas clusters sampledata describe
+atlas clusters sampledata get
+atlas clusters sample-data describe
+atlas clusters sample-data get
+atlas clusters sampleDatum describe
+atlas clusters sampleDatum get
+atlas clusters sampledatum describe
+atlas clusters sampledatum get
+atlas clusters sample-datum describe
+atlas clusters sample-datum get
+atlas cluster sampleData describe
+atlas cluster sampleData get
+atlas cluster sampledata describe
+atlas cluster sampledata get
+atlas cluster sample-data describe
+atlas cluster sample-data get
+atlas cluster sampleDatum describe
+atlas cluster sampleDatum get
+atlas cluster sampledatum describe
+atlas cluster sampledatum get
+atlas cluster sample-datum describe
+atlas cluster sample-datum get
 ```
 
 ### Examples
@@ -62,7 +67,7 @@ atlas cluster sample-datum get <id> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters sampleData](atlas_clusters_sampleData.md)	- Manage sample data for your cluster.

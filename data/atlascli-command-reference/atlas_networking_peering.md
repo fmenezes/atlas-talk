@@ -5,6 +5,12 @@ Manage Network Peering connections.
 
 
 
+### Aliases
+```
+
+atlas networking peering
+```
+
 
 
 ### Flags
@@ -22,7 +28,7 @@ Manage Network Peering connections.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas networking](atlas_networking.md)	- Manage or configure network peering for your Atlas project.

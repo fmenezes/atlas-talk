@@ -3,27 +3,32 @@
 Enable copy protection of the backup compliance policy for your project.
 
 
-
+### Usage
+```
+atlas backups compliancePolicy copyProtection enable [flags]
 ```
 
-atlas backups compliancePolicy copyProtection enable [flags]
-atlas backups compliancePolicy copyprotection enable [flags]
-atlas backups compliancePolicy copy-protection enable [flags]
-atlas backups compliancepolicy copyProtection enable [flags]
-atlas backups compliancepolicy copyprotection enable [flags]
-atlas backups compliancepolicy copy-protection enable [flags]
-atlas backups compliance-policy copyProtection enable [flags]
-atlas backups compliance-policy copyprotection enable [flags]
-atlas backups compliance-policy copy-protection enable [flags]
-atlas backup compliancePolicy copyProtection enable [flags]
-atlas backup compliancePolicy copyprotection enable [flags]
-atlas backup compliancePolicy copy-protection enable [flags]
-atlas backup compliancepolicy copyProtection enable [flags]
-atlas backup compliancepolicy copyprotection enable [flags]
-atlas backup compliancepolicy copy-protection enable [flags]
-atlas backup compliance-policy copyProtection enable [flags]
-atlas backup compliance-policy copyprotection enable [flags]
-atlas backup compliance-policy copy-protection enable [flags]
+### Aliases
+```
+
+atlas backups compliancePolicy copyProtection enable
+atlas backups compliancePolicy copyprotection enable
+atlas backups compliancePolicy copy-protection enable
+atlas backups compliancepolicy copyProtection enable
+atlas backups compliancepolicy copyprotection enable
+atlas backups compliancepolicy copy-protection enable
+atlas backups compliance-policy copyProtection enable
+atlas backups compliance-policy copyprotection enable
+atlas backups compliance-policy copy-protection enable
+atlas backup compliancePolicy copyProtection enable
+atlas backup compliancePolicy copyprotection enable
+atlas backup compliancePolicy copy-protection enable
+atlas backup compliancepolicy copyProtection enable
+atlas backup compliancepolicy copyprotection enable
+atlas backup compliancepolicy copy-protection enable
+atlas backup compliance-policy copyProtection enable
+atlas backup compliance-policy copyprotection enable
+atlas backup compliance-policy copy-protection enable
 ```
 
 
@@ -46,7 +51,7 @@ atlas backup compliance-policy copy-protection enable [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy copyProtection](atlas_backups_compliancePolicy_copyProtection.md)	- Manage copy protection of the backup compliance policy for your project. Learn more: https://www.mongodb.com/docs/atlas/backup/cloud-backup/backup-compliance-policy/#-optional--keep-all-snapshots-when-removing-additional-snapshot-regions.

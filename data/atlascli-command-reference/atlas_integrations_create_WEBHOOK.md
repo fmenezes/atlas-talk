@@ -10,17 +10,22 @@ The requesting API key must have the Organization Owner or Project Owner role to
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas integrations create WEBHOOK [flags]
 ```
 
-atlas integrations create WEBHOOK [flags]
-atlas integrations create webhook [flags]
-atlas integrations update WEBHOOK [flags]
-atlas integrations update webhook [flags]
-atlas integration create WEBHOOK [flags]
-atlas integration create webhook [flags]
-atlas integration update WEBHOOK [flags]
-atlas integration update webhook [flags]
+### Aliases
+```
+
+atlas integrations create WEBHOOK
+atlas integrations create webhook
+atlas integrations update WEBHOOK
+atlas integrations update webhook
+atlas integration create WEBHOOK
+atlas integration create webhook
+atlas integration update WEBHOOK
+atlas integration update webhook
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas integration update webhook [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas integrations create](atlas_integrations_create.md)	- Create operations.

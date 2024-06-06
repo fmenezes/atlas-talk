@@ -12,6 +12,13 @@ A user’s roles apply to all the clusters in the project.
 
 
 
+### Aliases
+```
+
+atlas dbusers
+atlas dbuser
+```
+
 
 
 ### Flags
@@ -29,7 +36,7 @@ A user’s roles apply to all the clusters in the project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

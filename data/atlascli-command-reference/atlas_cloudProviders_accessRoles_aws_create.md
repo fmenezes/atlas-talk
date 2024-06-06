@@ -8,45 +8,50 @@ Create an AWS IAM role.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas cloudProviders accessRoles aws create [flags]
 ```
 
-atlas cloudProviders accessRoles aws create [flags]
-atlas cloudProviders accessroles aws create [flags]
-atlas cloudProviders access-roles aws create [flags]
-atlas cloudProviders accessRole aws create [flags]
-atlas cloudProviders accessrole aws create [flags]
-atlas cloudProviders access-role aws create [flags]
-atlas cloudproviders accessRoles aws create [flags]
-atlas cloudproviders accessroles aws create [flags]
-atlas cloudproviders access-roles aws create [flags]
-atlas cloudproviders accessRole aws create [flags]
-atlas cloudproviders accessrole aws create [flags]
-atlas cloudproviders access-role aws create [flags]
-atlas cloud-providers accessRoles aws create [flags]
-atlas cloud-providers accessroles aws create [flags]
-atlas cloud-providers access-roles aws create [flags]
-atlas cloud-providers accessRole aws create [flags]
-atlas cloud-providers accessrole aws create [flags]
-atlas cloud-providers access-role aws create [flags]
-atlas cloudProvider accessRoles aws create [flags]
-atlas cloudProvider accessroles aws create [flags]
-atlas cloudProvider access-roles aws create [flags]
-atlas cloudProvider accessRole aws create [flags]
-atlas cloudProvider accessrole aws create [flags]
-atlas cloudProvider access-role aws create [flags]
-atlas cloudprovider accessRoles aws create [flags]
-atlas cloudprovider accessroles aws create [flags]
-atlas cloudprovider access-roles aws create [flags]
-atlas cloudprovider accessRole aws create [flags]
-atlas cloudprovider accessrole aws create [flags]
-atlas cloudprovider access-role aws create [flags]
-atlas cloud-provider accessRoles aws create [flags]
-atlas cloud-provider accessroles aws create [flags]
-atlas cloud-provider access-roles aws create [flags]
-atlas cloud-provider accessRole aws create [flags]
-atlas cloud-provider accessrole aws create [flags]
-atlas cloud-provider access-role aws create [flags]
+### Aliases
+```
+
+atlas cloudProviders accessRoles aws create
+atlas cloudProviders accessroles aws create
+atlas cloudProviders access-roles aws create
+atlas cloudProviders accessRole aws create
+atlas cloudProviders accessrole aws create
+atlas cloudProviders access-role aws create
+atlas cloudproviders accessRoles aws create
+atlas cloudproviders accessroles aws create
+atlas cloudproviders access-roles aws create
+atlas cloudproviders accessRole aws create
+atlas cloudproviders accessrole aws create
+atlas cloudproviders access-role aws create
+atlas cloud-providers accessRoles aws create
+atlas cloud-providers accessroles aws create
+atlas cloud-providers access-roles aws create
+atlas cloud-providers accessRole aws create
+atlas cloud-providers accessrole aws create
+atlas cloud-providers access-role aws create
+atlas cloudProvider accessRoles aws create
+atlas cloudProvider accessroles aws create
+atlas cloudProvider access-roles aws create
+atlas cloudProvider accessRole aws create
+atlas cloudProvider accessrole aws create
+atlas cloudProvider access-role aws create
+atlas cloudprovider accessRoles aws create
+atlas cloudprovider accessroles aws create
+atlas cloudprovider access-roles aws create
+atlas cloudprovider accessRole aws create
+atlas cloudprovider accessrole aws create
+atlas cloudprovider access-role aws create
+atlas cloud-provider accessRoles aws create
+atlas cloud-provider accessroles aws create
+atlas cloud-provider access-roles aws create
+atlas cloud-provider accessRole aws create
+atlas cloud-provider accessrole aws create
+atlas cloud-provider access-role aws create
 ```
 
 
@@ -68,7 +73,7 @@ atlas cloud-provider access-role aws create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas cloudProviders accessRoles aws](atlas_cloudProviders_accessRoles_aws.md)	- Manage AWS IAM role access in Atlas.

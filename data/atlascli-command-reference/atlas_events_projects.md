@@ -10,6 +10,15 @@ List projects events.
 
 
 
+### Aliases
+```
+
+atlas events projects
+atlas events project
+atlas event projects
+atlas event project
+```
+
 
 
 ### Flags
@@ -27,7 +36,7 @@ List projects events.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas events](atlas_events.md)	- Manage events for your organization or project.

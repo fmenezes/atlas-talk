@@ -11,17 +11,22 @@ To use this command, you must authenticate with a user account or an API key wit
 Atlas supports this command only for M10+ clusters.
 
 
-
+### Usage
+```
+atlas backups snapshots create <clusterName> [flags]
 ```
 
-atlas backups snapshots create <clusterName> [flags]
-atlas backups snapshots take <clusterName> [flags]
-atlas backups snapshot create <clusterName> [flags]
-atlas backups snapshot take <clusterName> [flags]
-atlas backup snapshots create <clusterName> [flags]
-atlas backup snapshots take <clusterName> [flags]
-atlas backup snapshot create <clusterName> [flags]
-atlas backup snapshot take <clusterName> [flags]
+### Aliases
+```
+
+atlas backups snapshots create
+atlas backups snapshots take
+atlas backups snapshot create
+atlas backups snapshot take
+atlas backup snapshots create
+atlas backup snapshots take
+atlas backup snapshot create
+atlas backup snapshot take
 ```
 
 ### Examples
@@ -51,7 +56,7 @@ atlas backup snapshot take <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups snapshots](atlas_backups_snapshots.md)	- Manage cloud backup snapshots for your project.

@@ -5,6 +5,23 @@ Manage datasets for the specified data lake pipeline.
 
 
 
+### Aliases
+```
+
+atlas dataLakePipelines datasets
+atlas dataLakePipelines dataset
+atlas datalakepipelines datasets
+atlas datalakepipelines dataset
+atlas data-lake-pipelines datasets
+atlas data-lake-pipelines dataset
+atlas dataLakePipeline datasets
+atlas dataLakePipeline dataset
+atlas datalakepipeline datasets
+atlas datalakepipeline dataset
+atlas data-lake-pipeline datasets
+atlas data-lake-pipeline dataset
+```
+
 
 
 ### Flags
@@ -22,7 +39,7 @@ Manage datasets for the specified data lake pipeline.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines](atlas_dataLakePipelines.md)	- Data Lake pipelines.

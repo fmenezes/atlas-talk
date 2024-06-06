@@ -12,57 +12,62 @@ To view possible values for the apiKeyId argument, run atlas organizations apiKe
 To use this command, you must authenticate with a user account or an API key with the Organization User Admin role.
 
 
-
+### Usage
+```
+atlas organizations apiKeys assign <apiKeyId> [flags]
 ```
 
-atlas organizations apiKeys assign <apiKeyId> [flags]
-atlas organizations apiKeys updates <apiKeyId> [flags]
-atlas organizations apikeys assign <apiKeyId> [flags]
-atlas organizations apikeys updates <apiKeyId> [flags]
-atlas organizations api-keys assign <apiKeyId> [flags]
-atlas organizations api-keys updates <apiKeyId> [flags]
-atlas organizations apiKey assign <apiKeyId> [flags]
-atlas organizations apiKey updates <apiKeyId> [flags]
-atlas organizations apikey assign <apiKeyId> [flags]
-atlas organizations apikey updates <apiKeyId> [flags]
-atlas organizations api-key assign <apiKeyId> [flags]
-atlas organizations api-key updates <apiKeyId> [flags]
-atlas organization apiKeys assign <apiKeyId> [flags]
-atlas organization apiKeys updates <apiKeyId> [flags]
-atlas organization apikeys assign <apiKeyId> [flags]
-atlas organization apikeys updates <apiKeyId> [flags]
-atlas organization api-keys assign <apiKeyId> [flags]
-atlas organization api-keys updates <apiKeyId> [flags]
-atlas organization apiKey assign <apiKeyId> [flags]
-atlas organization apiKey updates <apiKeyId> [flags]
-atlas organization apikey assign <apiKeyId> [flags]
-atlas organization apikey updates <apiKeyId> [flags]
-atlas organization api-key assign <apiKeyId> [flags]
-atlas organization api-key updates <apiKeyId> [flags]
-atlas orgs apiKeys assign <apiKeyId> [flags]
-atlas orgs apiKeys updates <apiKeyId> [flags]
-atlas orgs apikeys assign <apiKeyId> [flags]
-atlas orgs apikeys updates <apiKeyId> [flags]
-atlas orgs api-keys assign <apiKeyId> [flags]
-atlas orgs api-keys updates <apiKeyId> [flags]
-atlas orgs apiKey assign <apiKeyId> [flags]
-atlas orgs apiKey updates <apiKeyId> [flags]
-atlas orgs apikey assign <apiKeyId> [flags]
-atlas orgs apikey updates <apiKeyId> [flags]
-atlas orgs api-key assign <apiKeyId> [flags]
-atlas orgs api-key updates <apiKeyId> [flags]
-atlas org apiKeys assign <apiKeyId> [flags]
-atlas org apiKeys updates <apiKeyId> [flags]
-atlas org apikeys assign <apiKeyId> [flags]
-atlas org apikeys updates <apiKeyId> [flags]
-atlas org api-keys assign <apiKeyId> [flags]
-atlas org api-keys updates <apiKeyId> [flags]
-atlas org apiKey assign <apiKeyId> [flags]
-atlas org apiKey updates <apiKeyId> [flags]
-atlas org apikey assign <apiKeyId> [flags]
-atlas org apikey updates <apiKeyId> [flags]
-atlas org api-key assign <apiKeyId> [flags]
-atlas org api-key updates <apiKeyId> [flags]
+### Aliases
+```
+
+atlas organizations apiKeys assign
+atlas organizations apiKeys updates
+atlas organizations apikeys assign
+atlas organizations apikeys updates
+atlas organizations api-keys assign
+atlas organizations api-keys updates
+atlas organizations apiKey assign
+atlas organizations apiKey updates
+atlas organizations apikey assign
+atlas organizations apikey updates
+atlas organizations api-key assign
+atlas organizations api-key updates
+atlas organization apiKeys assign
+atlas organization apiKeys updates
+atlas organization apikeys assign
+atlas organization apikeys updates
+atlas organization api-keys assign
+atlas organization api-keys updates
+atlas organization apiKey assign
+atlas organization apiKey updates
+atlas organization apikey assign
+atlas organization apikey updates
+atlas organization api-key assign
+atlas organization api-key updates
+atlas orgs apiKeys assign
+atlas orgs apiKeys updates
+atlas orgs apikeys assign
+atlas orgs apikeys updates
+atlas orgs api-keys assign
+atlas orgs api-keys updates
+atlas orgs apiKey assign
+atlas orgs apiKey updates
+atlas orgs apikey assign
+atlas orgs apikey updates
+atlas orgs api-key assign
+atlas orgs api-key updates
+atlas org apiKeys assign
+atlas org apiKeys updates
+atlas org apikeys assign
+atlas org apikeys updates
+atlas org api-keys assign
+atlas org api-keys updates
+atlas org apiKey assign
+atlas org apiKey updates
+atlas org apikey assign
+atlas org apikey updates
+atlas org api-key assign
+atlas org api-key updates
 ```
 
 ### Examples
@@ -92,7 +97,7 @@ atlas org api-key updates <apiKeyId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations apiKeys](atlas_organizations_apiKeys.md)	- Organization API Keys operations.

@@ -3,17 +3,22 @@
 Retrieve details for settings to the specified project.
 
 
-
+### Usage
+```
+atlas projects settings describe [flags]
 ```
 
-atlas projects settings describe [flags]
-atlas projects settings get [flags]
-atlas projects setting describe [flags]
-atlas projects setting get [flags]
-atlas project settings describe [flags]
-atlas project settings get [flags]
-atlas project setting describe [flags]
-atlas project setting get [flags]
+### Aliases
+```
+
+atlas projects settings describe
+atlas projects settings get
+atlas projects setting describe
+atlas projects setting get
+atlas project settings describe
+atlas project settings get
+atlas project setting describe
+atlas project setting get
 ```
 
 ### Examples
@@ -41,7 +46,7 @@ atlas project setting get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects settings](atlas_projects_settings.md)	- Settings operations.

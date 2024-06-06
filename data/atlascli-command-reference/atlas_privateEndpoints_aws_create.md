@@ -10,15 +10,20 @@ To learn more about how to set up private endpoints with the Atlas CLI, see the 
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints aws create [flags]
 ```
 
-atlas privateEndpoints aws create [flags]
-atlas privateendpoints aws create [flags]
-atlas private-endpoints aws create [flags]
-atlas privateEndpoint aws create [flags]
-atlas privateendpoint aws create [flags]
-atlas private-endpoint aws create [flags]
+### Aliases
+```
+
+atlas privateEndpoints aws create
+atlas privateendpoints aws create
+atlas private-endpoints aws create
+atlas privateEndpoint aws create
+atlas privateendpoint aws create
+atlas private-endpoint aws create
 ```
 
 ### Examples
@@ -47,7 +52,7 @@ atlas private-endpoint aws create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints aws](atlas_privateEndpoints_aws.md)	- Manage AWS Private Endpoints.

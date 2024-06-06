@@ -3,11 +3,16 @@
 Connect to a deployment that is running locally or in Atlas. If the deployment is paused, make sure to run atlas deployments start first.
 
 
-
+### Usage
+```
+atlas deployments connect <deploymentName> [flags]
 ```
 
-atlas deployments connect <deploymentName> [flags]
-atlas deployment connect <deploymentName> [flags]
+### Aliases
+```
+
+atlas deployments connect
+atlas deployment connect
 ```
 
 
@@ -33,7 +38,7 @@ atlas deployment connect <deploymentName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments](atlas_deployments.md)	- Manage cloud and local deployments.

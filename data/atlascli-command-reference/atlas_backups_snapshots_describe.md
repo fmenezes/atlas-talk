@@ -8,13 +8,18 @@ Return the details for the specified snapshot for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas backups snapshots describe <snapshotId> [flags]
 ```
 
-atlas backups snapshots describe <snapshotId> [flags]
-atlas backups snapshot describe <snapshotId> [flags]
-atlas backup snapshots describe <snapshotId> [flags]
-atlas backup snapshot describe <snapshotId> [flags]
+### Aliases
+```
+
+atlas backups snapshots describe
+atlas backups snapshot describe
+atlas backup snapshots describe
+atlas backup snapshot describe
 ```
 
 ### Examples
@@ -43,7 +48,7 @@ atlas backup snapshot describe <snapshotId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups snapshots](atlas_backups_snapshots.md)	- Manage cloud backup snapshots for your project.

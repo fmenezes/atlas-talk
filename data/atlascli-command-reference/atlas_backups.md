@@ -5,6 +5,13 @@ Manage cloud backups for your project.
 
 
 
+### Aliases
+```
+
+atlas backups
+atlas backup
+```
+
 
 
 ### Flags
@@ -22,7 +29,7 @@ Manage cloud backups for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

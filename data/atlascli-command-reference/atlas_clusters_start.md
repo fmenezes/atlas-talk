@@ -9,11 +9,16 @@ To use this command, you must authenticate with a user account or an API key wit
 Atlas supports this command only for M10+ clusters.
 
 
-
+### Usage
+```
+atlas clusters start <clusterName> [flags]
 ```
 
-atlas clusters start <clusterName> [flags]
-atlas cluster start <clusterName> [flags]
+### Aliases
+```
+
+atlas clusters start
+atlas cluster start
 ```
 
 ### Examples
@@ -41,7 +46,7 @@ atlas cluster start <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

@@ -8,13 +8,18 @@ Remove the specified project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas projects delete <ID> [flags]
 ```
 
-atlas projects delete <ID> [flags]
-atlas projects rm <ID> [flags]
-atlas project delete <ID> [flags]
-atlas project rm <ID> [flags]
+### Aliases
+```
+
+atlas projects delete
+atlas projects rm
+atlas project delete
+atlas project rm
 ```
 
 ### Examples
@@ -41,7 +46,7 @@ atlas project rm <ID> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects](atlas_projects.md)	- Manage your Atlas projects.

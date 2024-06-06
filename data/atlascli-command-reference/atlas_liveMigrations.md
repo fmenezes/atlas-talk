@@ -5,6 +5,18 @@ Manage a Live Migration to Atlas for your organization.
 
 
 
+### Aliases
+```
+
+atlas liveMigrations
+atlas livemigrations
+atlas live-migrations
+atlas liveMigration
+atlas livemigration
+atlas live-migration
+atlas lm
+```
+
 
 
 ### Flags
@@ -22,7 +34,7 @@ Manage a Live Migration to Atlas for your organization.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

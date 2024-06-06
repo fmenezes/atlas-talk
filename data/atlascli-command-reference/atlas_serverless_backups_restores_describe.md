@@ -8,17 +8,22 @@ Describe a cloud backup restore job.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas serverless backups restores describe [flags]
 ```
 
-atlas serverless backups restores describe [flags]
-atlas serverless backups restore describe [flags]
-atlas serverless backup restores describe [flags]
-atlas serverless backup restore describe [flags]
-atlas sl backups restores describe [flags]
-atlas sl backups restore describe [flags]
-atlas sl backup restores describe [flags]
-atlas sl backup restore describe [flags]
+### Aliases
+```
+
+atlas serverless backups restores describe
+atlas serverless backups restore describe
+atlas serverless backup restores describe
+atlas serverless backup restore describe
+atlas sl backups restores describe
+atlas sl backups restore describe
+atlas sl backup restores describe
+atlas sl backup restore describe
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas sl backup restore describe [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless backups restores](atlas_serverless_backups_restores.md)	- Manage cloud backup restore jobs for your project.

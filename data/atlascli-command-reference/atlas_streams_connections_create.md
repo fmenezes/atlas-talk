@@ -8,13 +8,18 @@ Creates a connection for an Atlas Stream Processing instance.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas streams connections create <connectionName> [flags]
 ```
 
-atlas streams connections create <connectionName> [flags]
-atlas streams connection create <connectionName> [flags]
-atlas stream connections create <connectionName> [flags]
-atlas stream connection create <connectionName> [flags]
+### Aliases
+```
+
+atlas streams connections create
+atlas streams connection create
+atlas stream connections create
+atlas stream connection create
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas stream connection create <connectionName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams connections](atlas_streams_connections.md)	- Manage Atlas Stream Processing connections.

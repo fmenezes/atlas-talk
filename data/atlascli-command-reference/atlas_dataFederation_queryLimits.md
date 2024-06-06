@@ -5,6 +5,29 @@ Data federation query limits.
 
 
 
+### Aliases
+```
+
+atlas dataFederation queryLimits
+atlas dataFederation querylimits
+atlas dataFederation query-limits
+atlas dataFederation queryLimit
+atlas dataFederation querylimit
+atlas dataFederation query-limit
+atlas datafederation queryLimits
+atlas datafederation querylimits
+atlas datafederation query-limits
+atlas datafederation queryLimit
+atlas datafederation querylimit
+atlas datafederation query-limit
+atlas data-federation queryLimits
+atlas data-federation querylimits
+atlas data-federation query-limits
+atlas data-federation queryLimit
+atlas data-federation querylimit
+atlas data-federation query-limit
+```
+
 
 
 ### Flags
@@ -22,7 +45,7 @@ Data federation query limits.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation](atlas_dataFederation.md)	- Data federation.

@@ -10,13 +10,18 @@ You can return the details for a team using the team's ID or the team's name. Yo
 To use this command, you must authenticate with a user account or an API key with the Organization Member role.
 
 
-
+### Usage
+```
+atlas teams describe [flags]
 ```
 
-atlas teams describe [flags]
-atlas teams get [flags]
-atlas team describe [flags]
-atlas team get [flags]
+### Aliases
+```
+
+atlas teams describe
+atlas teams get
+atlas team describe
+atlas team get
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas team get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas teams](atlas_teams.md)	- Manage your Atlas teams.

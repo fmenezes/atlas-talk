@@ -8,11 +8,16 @@ Remove the current LDAP configuration captured in the userToDNMapping document f
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas security ldap delete [flags]
 ```
 
-atlas security ldap delete [flags]
-atlas security ldap rm [flags]
+### Aliases
+```
+
+atlas security ldap delete
+atlas security ldap rm
 ```
 
 ### Examples
@@ -40,7 +45,7 @@ atlas security ldap rm [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas security ldap](atlas_security_ldap.md)	- LDAP operations.

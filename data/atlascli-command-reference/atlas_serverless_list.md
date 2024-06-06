@@ -8,13 +8,18 @@ Return all serverless instances in the specified project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas serverless list [flags]
 ```
 
-atlas serverless list [flags]
-atlas serverless ls [flags]
-atlas sl list [flags]
-atlas sl ls [flags]
+### Aliases
+```
+
+atlas serverless list
+atlas serverless ls
+atlas sl list
+atlas sl ls
 ```
 
 
@@ -39,7 +44,7 @@ atlas sl ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless](atlas_serverless.md)	- Manage serverless instances for your project.

@@ -10,33 +10,38 @@ To learn more about how to set up private endpoints with the Atlas CLI, see the 
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints aws interfaces create <endpointServiceId> [flags]
 ```
 
-atlas privateEndpoints aws interfaces create <endpointServiceId> [flags]
-atlas privateEndpoints aws interfaces add <endpointServiceId> [flags]
-atlas privateEndpoints aws interface create <endpointServiceId> [flags]
-atlas privateEndpoints aws interface add <endpointServiceId> [flags]
-atlas privateendpoints aws interfaces create <endpointServiceId> [flags]
-atlas privateendpoints aws interfaces add <endpointServiceId> [flags]
-atlas privateendpoints aws interface create <endpointServiceId> [flags]
-atlas privateendpoints aws interface add <endpointServiceId> [flags]
-atlas private-endpoints aws interfaces create <endpointServiceId> [flags]
-atlas private-endpoints aws interfaces add <endpointServiceId> [flags]
-atlas private-endpoints aws interface create <endpointServiceId> [flags]
-atlas private-endpoints aws interface add <endpointServiceId> [flags]
-atlas privateEndpoint aws interfaces create <endpointServiceId> [flags]
-atlas privateEndpoint aws interfaces add <endpointServiceId> [flags]
-atlas privateEndpoint aws interface create <endpointServiceId> [flags]
-atlas privateEndpoint aws interface add <endpointServiceId> [flags]
-atlas privateendpoint aws interfaces create <endpointServiceId> [flags]
-atlas privateendpoint aws interfaces add <endpointServiceId> [flags]
-atlas privateendpoint aws interface create <endpointServiceId> [flags]
-atlas privateendpoint aws interface add <endpointServiceId> [flags]
-atlas private-endpoint aws interfaces create <endpointServiceId> [flags]
-atlas private-endpoint aws interfaces add <endpointServiceId> [flags]
-atlas private-endpoint aws interface create <endpointServiceId> [flags]
-atlas private-endpoint aws interface add <endpointServiceId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints aws interfaces create
+atlas privateEndpoints aws interfaces add
+atlas privateEndpoints aws interface create
+atlas privateEndpoints aws interface add
+atlas privateendpoints aws interfaces create
+atlas privateendpoints aws interfaces add
+atlas privateendpoints aws interface create
+atlas privateendpoints aws interface add
+atlas private-endpoints aws interfaces create
+atlas private-endpoints aws interfaces add
+atlas private-endpoints aws interface create
+atlas private-endpoints aws interface add
+atlas privateEndpoint aws interfaces create
+atlas privateEndpoint aws interfaces add
+atlas privateEndpoint aws interface create
+atlas privateEndpoint aws interface add
+atlas privateendpoint aws interfaces create
+atlas privateendpoint aws interfaces add
+atlas privateendpoint aws interface create
+atlas privateendpoint aws interface add
+atlas private-endpoint aws interfaces create
+atlas private-endpoint aws interfaces add
+atlas private-endpoint aws interface create
+atlas private-endpoint aws interface add
 ```
 
 ### Examples
@@ -65,7 +70,7 @@ atlas private-endpoint aws interface add <endpointServiceId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints aws interfaces](atlas_privateEndpoints_aws_interfaces.md)	- Manage Atlas AWS private endpoint interfaces.

@@ -10,13 +10,18 @@ Deleting an integration from a project removes that integration configuration on
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas integrations delete <integrationType> [flags]
 ```
 
-atlas integrations delete <integrationType> [flags]
-atlas integrations rm <integrationType> [flags]
-atlas integration delete <integrationType> [flags]
-atlas integration rm <integrationType> [flags]
+### Aliases
+```
+
+atlas integrations delete
+atlas integrations rm
+atlas integration delete
+atlas integration rm
 ```
 
 ### Examples
@@ -44,7 +49,7 @@ atlas integration rm <integrationType> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas integrations](atlas_integrations.md)	- Configure third-party integrations for your Atlas project.

@@ -8,17 +8,22 @@ Invite the specified MongoDB user to your project.
 To use this command, you must authenticate with a user account or an API key with the Project User Admin role.
 
 
-
+### Usage
+```
+atlas projects invitations invite <email> [flags]
 ```
 
-atlas projects invitations invite <email> [flags]
-atlas projects invitations create <email> [flags]
-atlas projects invitation invite <email> [flags]
-atlas projects invitation create <email> [flags]
-atlas project invitations invite <email> [flags]
-atlas project invitations create <email> [flags]
-atlas project invitation invite <email> [flags]
-atlas project invitation create <email> [flags]
+### Aliases
+```
+
+atlas projects invitations invite
+atlas projects invitations create
+atlas projects invitation invite
+atlas projects invitation create
+atlas project invitations invite
+atlas project invitations create
+atlas project invitation invite
+atlas project invitation create
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas project invitation create <email> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects invitations](atlas_projects_invitations.md)	- Invitation operations.

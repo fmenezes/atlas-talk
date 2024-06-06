@@ -8,12 +8,17 @@ Creates a new Data Federation database.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataFederation create <name> [flags]
 ```
 
-atlas dataFederation create <name> [flags]
-atlas datafederation create <name> [flags]
-atlas data-federation create <name> [flags]
+### Aliases
+```
+
+atlas dataFederation create
+atlas datafederation create
+atlas data-federation create
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas data-federation create <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation](atlas_dataFederation.md)	- Data federation.

@@ -10,15 +10,20 @@ To learn more about maintenance windows, see https://www.mongodb.com/docs/atlas/
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas maintenanceWindows update [flags]
 ```
 
-atlas maintenanceWindows update [flags]
-atlas maintenancewindows update [flags]
-atlas maintenance-windows update [flags]
-atlas maintenanceWindow update [flags]
-atlas maintenancewindow update [flags]
-atlas maintenance-window update [flags]
+### Aliases
+```
+
+atlas maintenanceWindows update
+atlas maintenancewindows update
+atlas maintenance-windows update
+atlas maintenanceWindow update
+atlas maintenancewindow update
+atlas maintenance-window update
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas maintenance-window update [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas maintenanceWindows](atlas_maintenanceWindows.md)	- Manage Atlas maintenance windows.

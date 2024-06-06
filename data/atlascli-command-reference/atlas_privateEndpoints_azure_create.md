@@ -10,15 +10,20 @@ To learn more about how to set up private endpoints with the Atlas CLI, see the 
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints azure create [flags]
 ```
 
-atlas privateEndpoints azure create [flags]
-atlas privateendpoints azure create [flags]
-atlas private-endpoints azure create [flags]
-atlas privateEndpoint azure create [flags]
-atlas privateendpoint azure create [flags]
-atlas private-endpoint azure create [flags]
+### Aliases
+```
+
+atlas privateEndpoints azure create
+atlas privateendpoints azure create
+atlas private-endpoints azure create
+atlas privateEndpoint azure create
+atlas privateendpoint azure create
+atlas private-endpoint azure create
 ```
 
 ### Examples
@@ -47,7 +52,7 @@ atlas private-endpoint azure create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints azure](atlas_privateEndpoints_azure.md)	- Manage Azure Private Endpoints.

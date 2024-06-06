@@ -8,15 +8,20 @@ Start the specified data lake pipeline for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines start <pipelineName> [flags]
 ```
 
-atlas dataLakePipelines start <pipelineName> [flags]
-atlas datalakepipelines start <pipelineName> [flags]
-atlas data-lake-pipelines start <pipelineName> [flags]
-atlas dataLakePipeline start <pipelineName> [flags]
-atlas datalakepipeline start <pipelineName> [flags]
-atlas data-lake-pipeline start <pipelineName> [flags]
+### Aliases
+```
+
+atlas dataLakePipelines start
+atlas datalakepipelines start
+atlas data-lake-pipelines start
+atlas dataLakePipeline start
+atlas datalakepipeline start
+atlas data-lake-pipeline start
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas data-lake-pipeline start <pipelineName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines](atlas_dataLakePipelines.md)	- Data Lake pipelines.

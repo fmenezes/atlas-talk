@@ -8,17 +8,22 @@ Create an export destination for Atlas backups using an existing AWS S3 bucket.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas backups exports buckets create <bucketName> [flags]
 ```
 
-atlas backups exports buckets create <bucketName> [flags]
-atlas backups exports bucket create <bucketName> [flags]
-atlas backups export buckets create <bucketName> [flags]
-atlas backups export bucket create <bucketName> [flags]
-atlas backup exports buckets create <bucketName> [flags]
-atlas backup exports bucket create <bucketName> [flags]
-atlas backup export buckets create <bucketName> [flags]
-atlas backup export bucket create <bucketName> [flags]
+### Aliases
+```
+
+atlas backups exports buckets create
+atlas backups exports bucket create
+atlas backups export buckets create
+atlas backups export bucket create
+atlas backup exports buckets create
+atlas backup exports bucket create
+atlas backup export buckets create
+atlas backup export bucket create
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas backup export bucket create <bucketName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups exports buckets](atlas_backups_exports_buckets.md)	- Manage cloud backup export buckets for your project.

@@ -9,17 +9,22 @@ To return the hostname and port needed for this command, run
 atlas process list
 
 
-
+### Usage
+```
+atlas metrics databases describe <hostname:port> <databaseName> [flags]
 ```
 
-atlas metrics databases describe <hostname:port> <databaseName> [flags]
-atlas metrics database describe <hostname:port> <databaseName> [flags]
-atlas metric databases describe <hostname:port> <databaseName> [flags]
-atlas metric database describe <hostname:port> <databaseName> [flags]
-atlas measurements databases describe <hostname:port> <databaseName> [flags]
-atlas measurements database describe <hostname:port> <databaseName> [flags]
-atlas measurement databases describe <hostname:port> <databaseName> [flags]
-atlas measurement database describe <hostname:port> <databaseName> [flags]
+### Aliases
+```
+
+atlas metrics databases describe
+atlas metrics database describe
+atlas metric databases describe
+atlas metric database describe
+atlas measurements databases describe
+atlas measurements database describe
+atlas measurement databases describe
+atlas measurement database describe
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas measurement database describe <hostname:port> <databaseName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas metrics databases](atlas_metrics_databases.md)	- List available databases or database metrics for a given host.

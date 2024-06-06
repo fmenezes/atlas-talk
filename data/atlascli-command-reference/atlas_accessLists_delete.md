@@ -10,25 +10,30 @@ The command, when run without the force option, prompts you to confirm the opera
 To use this command, you must authenticate with a user account or an API key with the Read Write role.
 
 
-
+### Usage
+```
+atlas accessLists delete <entry> [flags]
 ```
 
-atlas accessLists delete <entry> [flags]
-atlas accessLists rm <entry> [flags]
-atlas accesslists delete <entry> [flags]
-atlas accesslists rm <entry> [flags]
-atlas access-lists delete <entry> [flags]
-atlas access-lists rm <entry> [flags]
-atlas accessList delete <entry> [flags]
-atlas accessList rm <entry> [flags]
-atlas accesslist delete <entry> [flags]
-atlas accesslist rm <entry> [flags]
-atlas access-list delete <entry> [flags]
-atlas access-list rm <entry> [flags]
-atlas whitelists delete <entry> [flags]
-atlas whitelists rm <entry> [flags]
-atlas whitelist delete <entry> [flags]
-atlas whitelist rm <entry> [flags]
+### Aliases
+```
+
+atlas accessLists delete
+atlas accessLists rm
+atlas accesslists delete
+atlas accesslists rm
+atlas access-lists delete
+atlas access-lists rm
+atlas accessList delete
+atlas accessList rm
+atlas accesslist delete
+atlas accesslist rm
+atlas access-list delete
+atlas access-list rm
+atlas whitelists delete
+atlas whitelists rm
+atlas whitelist delete
+atlas whitelist rm
 ```
 
 ### Examples
@@ -58,7 +63,7 @@ atlas whitelist rm <entry> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas accessLists](atlas_accessLists.md)	- Manage the list of IP addresses that can access your Atlas project.

@@ -3,17 +3,22 @@
 Updates settings for a project.
 
 
-
+### Usage
+```
+atlas projects settings update [flags]
 ```
 
-atlas projects settings update [flags]
-atlas projects settings updates [flags]
-atlas projects setting update [flags]
-atlas projects setting updates [flags]
-atlas project settings update [flags]
-atlas project settings updates [flags]
-atlas project setting update [flags]
-atlas project setting updates [flags]
+### Aliases
+```
+
+atlas projects settings update
+atlas projects settings updates
+atlas projects setting update
+atlas projects setting updates
+atlas project settings update
+atlas project settings updates
+atlas project setting update
+atlas project setting updates
 ```
 
 ### Examples
@@ -51,7 +56,7 @@ atlas project setting updates [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects settings](atlas_projects_settings.md)	- Settings operations.

@@ -5,6 +5,23 @@ Manage API Keys for your project.
 
 
 
+### Aliases
+```
+
+atlas projects apiKeys
+atlas projects apikeys
+atlas projects api-keys
+atlas projects apiKey
+atlas projects apikey
+atlas projects api-key
+atlas project apiKeys
+atlas project apikeys
+atlas project api-keys
+atlas project apiKey
+atlas project apikey
+atlas project api-key
+```
+
 
 
 ### Flags
@@ -22,7 +39,7 @@ Manage API Keys for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects](atlas_projects.md)	- Manage your Atlas projects.

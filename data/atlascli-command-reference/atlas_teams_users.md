@@ -10,6 +10,15 @@ Create, list and manage your users.
 
 
 
+### Aliases
+```
+
+atlas teams users
+atlas teams user
+atlas team users
+atlas team user
+```
+
 
 
 ### Flags
@@ -27,7 +36,7 @@ Create, list and manage your users.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas teams](atlas_teams.md)	- Manage your Atlas teams.

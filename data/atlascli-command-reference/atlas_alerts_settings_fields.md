@@ -5,6 +5,19 @@ Manages alert configuration fields for your project.
 
 
 
+### Aliases
+```
+
+atlas alerts settings fields
+atlas alerts settings field
+atlas alerts config fields
+atlas alerts config field
+atlas alert settings fields
+atlas alert settings field
+atlas alert config fields
+atlas alert config field
+```
+
 
 
 ### Flags
@@ -22,7 +35,7 @@ Manages alert configuration fields for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas alerts settings](atlas_alerts_settings.md)	- Manages alerts configuration for your project.

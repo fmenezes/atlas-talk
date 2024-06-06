@@ -8,10 +8,15 @@ Return the current LDAP configuration details for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas security ldap get [flags]
 ```
 
-atlas security ldap get [flags]
+### Aliases
+```
+
+atlas security ldap get
 ```
 
 ### Examples
@@ -39,7 +44,7 @@ atlas security ldap get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas security ldap](atlas_security_ldap.md)	- LDAP operations.

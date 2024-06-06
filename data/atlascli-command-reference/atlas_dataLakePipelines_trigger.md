@@ -8,15 +8,20 @@ Trigger the specified data lake pipeline for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataLakePipelines trigger <pipelineName> [flags]
 ```
 
-atlas dataLakePipelines trigger <pipelineName> [flags]
-atlas datalakepipelines trigger <pipelineName> [flags]
-atlas data-lake-pipelines trigger <pipelineName> [flags]
-atlas dataLakePipeline trigger <pipelineName> [flags]
-atlas datalakepipeline trigger <pipelineName> [flags]
-atlas data-lake-pipeline trigger <pipelineName> [flags]
+### Aliases
+```
+
+atlas dataLakePipelines trigger
+atlas datalakepipelines trigger
+atlas data-lake-pipelines trigger
+atlas dataLakePipeline trigger
+atlas datalakepipeline trigger
+atlas data-lake-pipeline trigger
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas data-lake-pipeline trigger <pipelineName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataLakePipelines](atlas_dataLakePipelines.md)	- Data Lake pipelines.

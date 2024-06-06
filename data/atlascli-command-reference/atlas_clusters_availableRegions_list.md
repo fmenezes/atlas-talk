@@ -3,33 +3,38 @@
 List available regions that Atlas supports for new deployments.
 
 
-
+### Usage
+```
+atlas clusters availableRegions list [flags]
 ```
 
-atlas clusters availableRegions list [flags]
-atlas clusters availableRegions ls [flags]
-atlas clusters availableregions list [flags]
-atlas clusters availableregions ls [flags]
-atlas clusters available-regions list [flags]
-atlas clusters available-regions ls [flags]
-atlas clusters availableRegion list [flags]
-atlas clusters availableRegion ls [flags]
-atlas clusters availableregion list [flags]
-atlas clusters availableregion ls [flags]
-atlas clusters available-region list [flags]
-atlas clusters available-region ls [flags]
-atlas cluster availableRegions list [flags]
-atlas cluster availableRegions ls [flags]
-atlas cluster availableregions list [flags]
-atlas cluster availableregions ls [flags]
-atlas cluster available-regions list [flags]
-atlas cluster available-regions ls [flags]
-atlas cluster availableRegion list [flags]
-atlas cluster availableRegion ls [flags]
-atlas cluster availableregion list [flags]
-atlas cluster availableregion ls [flags]
-atlas cluster available-region list [flags]
-atlas cluster available-region ls [flags]
+### Aliases
+```
+
+atlas clusters availableRegions list
+atlas clusters availableRegions ls
+atlas clusters availableregions list
+atlas clusters availableregions ls
+atlas clusters available-regions list
+atlas clusters available-regions ls
+atlas clusters availableRegion list
+atlas clusters availableRegion ls
+atlas clusters availableregion list
+atlas clusters availableregion ls
+atlas clusters available-region list
+atlas clusters available-region ls
+atlas cluster availableRegions list
+atlas cluster availableRegions ls
+atlas cluster availableregions list
+atlas cluster availableregions ls
+atlas cluster available-regions list
+atlas cluster available-regions ls
+atlas cluster availableRegion list
+atlas cluster availableRegion ls
+atlas cluster availableregion list
+atlas cluster availableregion ls
+atlas cluster available-region list
+atlas cluster available-region ls
 ```
 
 ### Examples
@@ -62,7 +67,7 @@ atlas cluster available-region ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters availableRegions](atlas_clusters_availableRegions.md)	- Manage available regions for your project.

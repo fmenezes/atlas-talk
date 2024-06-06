@@ -8,33 +8,38 @@ Remove the specified Azure private endpoint interface and related service from y
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints azure interfaces delete <privateEndpointResourceId> [flags]
 ```
 
-atlas privateEndpoints azure interfaces delete <privateEndpointResourceId> [flags]
-atlas privateEndpoints azure interfaces rm <privateEndpointResourceId> [flags]
-atlas privateEndpoints azure interface delete <privateEndpointResourceId> [flags]
-atlas privateEndpoints azure interface rm <privateEndpointResourceId> [flags]
-atlas privateendpoints azure interfaces delete <privateEndpointResourceId> [flags]
-atlas privateendpoints azure interfaces rm <privateEndpointResourceId> [flags]
-atlas privateendpoints azure interface delete <privateEndpointResourceId> [flags]
-atlas privateendpoints azure interface rm <privateEndpointResourceId> [flags]
-atlas private-endpoints azure interfaces delete <privateEndpointResourceId> [flags]
-atlas private-endpoints azure interfaces rm <privateEndpointResourceId> [flags]
-atlas private-endpoints azure interface delete <privateEndpointResourceId> [flags]
-atlas private-endpoints azure interface rm <privateEndpointResourceId> [flags]
-atlas privateEndpoint azure interfaces delete <privateEndpointResourceId> [flags]
-atlas privateEndpoint azure interfaces rm <privateEndpointResourceId> [flags]
-atlas privateEndpoint azure interface delete <privateEndpointResourceId> [flags]
-atlas privateEndpoint azure interface rm <privateEndpointResourceId> [flags]
-atlas privateendpoint azure interfaces delete <privateEndpointResourceId> [flags]
-atlas privateendpoint azure interfaces rm <privateEndpointResourceId> [flags]
-atlas privateendpoint azure interface delete <privateEndpointResourceId> [flags]
-atlas privateendpoint azure interface rm <privateEndpointResourceId> [flags]
-atlas private-endpoint azure interfaces delete <privateEndpointResourceId> [flags]
-atlas private-endpoint azure interfaces rm <privateEndpointResourceId> [flags]
-atlas private-endpoint azure interface delete <privateEndpointResourceId> [flags]
-atlas private-endpoint azure interface rm <privateEndpointResourceId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints azure interfaces delete
+atlas privateEndpoints azure interfaces rm
+atlas privateEndpoints azure interface delete
+atlas privateEndpoints azure interface rm
+atlas privateendpoints azure interfaces delete
+atlas privateendpoints azure interfaces rm
+atlas privateendpoints azure interface delete
+atlas privateendpoints azure interface rm
+atlas private-endpoints azure interfaces delete
+atlas private-endpoints azure interfaces rm
+atlas private-endpoints azure interface delete
+atlas private-endpoints azure interface rm
+atlas privateEndpoint azure interfaces delete
+atlas privateEndpoint azure interfaces rm
+atlas privateEndpoint azure interface delete
+atlas privateEndpoint azure interface rm
+atlas privateendpoint azure interfaces delete
+atlas privateendpoint azure interfaces rm
+atlas privateendpoint azure interface delete
+atlas privateendpoint azure interface rm
+atlas private-endpoint azure interfaces delete
+atlas private-endpoint azure interfaces rm
+atlas private-endpoint azure interface delete
+atlas private-endpoint azure interface rm
 ```
 
 ### Examples
@@ -63,7 +68,7 @@ atlas private-endpoint azure interface rm <privateEndpointResourceId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints azure interfaces](atlas_privateEndpoints_azure_interfaces.md)	- Manage Atlas Azure private endpoint interfaces.

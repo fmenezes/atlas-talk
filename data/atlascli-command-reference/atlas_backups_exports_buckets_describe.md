@@ -8,25 +8,30 @@ Return one snapshot export bucket.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas backups exports buckets describe [flags]
 ```
 
-atlas backups exports buckets describe [flags]
-atlas backups exports buckets get [flags]
-atlas backups exports bucket describe [flags]
-atlas backups exports bucket get [flags]
-atlas backups export buckets describe [flags]
-atlas backups export buckets get [flags]
-atlas backups export bucket describe [flags]
-atlas backups export bucket get [flags]
-atlas backup exports buckets describe [flags]
-atlas backup exports buckets get [flags]
-atlas backup exports bucket describe [flags]
-atlas backup exports bucket get [flags]
-atlas backup export buckets describe [flags]
-atlas backup export buckets get [flags]
-atlas backup export bucket describe [flags]
-atlas backup export bucket get [flags]
+### Aliases
+```
+
+atlas backups exports buckets describe
+atlas backups exports buckets get
+atlas backups exports bucket describe
+atlas backups exports bucket get
+atlas backups export buckets describe
+atlas backups export buckets get
+atlas backups export bucket describe
+atlas backups export bucket get
+atlas backup exports buckets describe
+atlas backup exports buckets get
+atlas backup exports bucket describe
+atlas backup exports bucket get
+atlas backup export buckets describe
+atlas backup export buckets get
+atlas backup export bucket describe
+atlas backup export bucket get
 ```
 
 ### Examples
@@ -55,7 +60,7 @@ atlas backup export bucket get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups exports buckets](atlas_backups_exports_buckets.md)	- Manage cloud backup export buckets for your project.

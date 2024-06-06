@@ -11,10 +11,15 @@ This command creates an API key for the Operator and adds it to Kubernetes as a 
 The key is scoped to the project when you specify the --projectName option and to the organization when you omit the --projectName option.
 
 
-
+### Usage
+```
+atlas kubernetes operator install [flags]
 ```
 
-atlas kubernetes operator install [flags]
+### Aliases
+```
+
+atlas kubernetes operator install
 ```
 
 ### Examples
@@ -72,7 +77,7 @@ atlas kubernetes operator install [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas kubernetes operator](atlas_kubernetes_operator.md)	- Manage Atlas Kubernetes Operator.

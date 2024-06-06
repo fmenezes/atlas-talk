@@ -14,10 +14,15 @@ To learn more about network peering connections, see https://www.mongodb.com/doc
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas networking peering create azure [flags]
 ```
 
-atlas networking peering create azure [flags]
+### Aliases
+```
+
+atlas networking peering create azure
 ```
 
 ### Examples
@@ -51,7 +56,7 @@ atlas networking peering create azure [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas networking peering create](atlas_networking_peering_create.md)	- Create a connection with AWS, Azure and Google Cloud.

@@ -10,16 +10,21 @@ Disabling customer-managed X.509 triggers a rolling restart.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas security customerCerts disable [flags]
 ```
 
-atlas security customerCerts disable [flags]
-atlas security customercerts disable [flags]
-atlas security customer-certs disable [flags]
-atlas security customerCert disable [flags]
-atlas security customercert disable [flags]
-atlas security customer-cert disable [flags]
-atlas security certs disable [flags]
+### Aliases
+```
+
+atlas security customerCerts disable
+atlas security customercerts disable
+atlas security customer-certs disable
+atlas security customerCert disable
+atlas security customercert disable
+atlas security customer-cert disable
+atlas security certs disable
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas security certs disable [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas security customerCerts](atlas_security_customerCerts.md)	- Manage customer x509 certificates for your project.

@@ -8,27 +8,32 @@ Creates a new Data Federation private endpoint.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataFederation privateEndpoints create <endpointId> [flags]
 ```
 
-atlas dataFederation privateEndpoints create <endpointId> [flags]
-atlas dataFederation privateendpoints create <endpointId> [flags]
-atlas dataFederation private-endpoints create <endpointId> [flags]
-atlas dataFederation privateEndpoint create <endpointId> [flags]
-atlas dataFederation privateendpoint create <endpointId> [flags]
-atlas dataFederation private-endpoint create <endpointId> [flags]
-atlas datafederation privateEndpoints create <endpointId> [flags]
-atlas datafederation privateendpoints create <endpointId> [flags]
-atlas datafederation private-endpoints create <endpointId> [flags]
-atlas datafederation privateEndpoint create <endpointId> [flags]
-atlas datafederation privateendpoint create <endpointId> [flags]
-atlas datafederation private-endpoint create <endpointId> [flags]
-atlas data-federation privateEndpoints create <endpointId> [flags]
-atlas data-federation privateendpoints create <endpointId> [flags]
-atlas data-federation private-endpoints create <endpointId> [flags]
-atlas data-federation privateEndpoint create <endpointId> [flags]
-atlas data-federation privateendpoint create <endpointId> [flags]
-atlas data-federation private-endpoint create <endpointId> [flags]
+### Aliases
+```
+
+atlas dataFederation privateEndpoints create
+atlas dataFederation privateendpoints create
+atlas dataFederation private-endpoints create
+atlas dataFederation privateEndpoint create
+atlas dataFederation privateendpoint create
+atlas dataFederation private-endpoint create
+atlas datafederation privateEndpoints create
+atlas datafederation privateendpoints create
+atlas datafederation private-endpoints create
+atlas datafederation privateEndpoint create
+atlas datafederation privateendpoint create
+atlas datafederation private-endpoint create
+atlas data-federation privateEndpoints create
+atlas data-federation privateendpoints create
+atlas data-federation private-endpoints create
+atlas data-federation privateEndpoint create
+atlas data-federation privateendpoint create
+atlas data-federation private-endpoint create
 ```
 
 ### Examples
@@ -58,7 +63,7 @@ atlas data-federation private-endpoint create <endpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation privateEndpoints](atlas_dataFederation_privateEndpoints.md)	- Data federation private endpoints.

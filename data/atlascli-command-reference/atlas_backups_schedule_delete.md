@@ -8,13 +8,18 @@ Delete all backup schedules of a cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas backups schedule delete <clusterName> [flags]
 ```
 
-atlas backups schedule delete <clusterName> [flags]
-atlas backups schedule rm <clusterName> [flags]
-atlas backup schedule delete <clusterName> [flags]
-atlas backup schedule rm <clusterName> [flags]
+### Aliases
+```
+
+atlas backups schedule delete
+atlas backups schedule rm
+atlas backup schedule delete
+atlas backup schedule rm
 ```
 
 ### Examples
@@ -42,7 +47,7 @@ atlas backup schedule rm <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups schedule](atlas_backups_schedule.md)	- Return a cloud backup schedule for the cluster you specify.

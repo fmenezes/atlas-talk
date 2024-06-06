@@ -3,10 +3,15 @@
 Configure specific properties of a profile.
 
 
-
+### Usage
+```
+atlas config set <propertyName> <value> [flags]
 ```
 
-atlas config set <propertyName> <value> [flags]
+### Aliases
+```
+
+atlas config set
 ```
 
 ### Examples
@@ -33,7 +38,7 @@ atlas config set <propertyName> <value> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas config](atlas_config.md)	- Configure and manage your user profiles.

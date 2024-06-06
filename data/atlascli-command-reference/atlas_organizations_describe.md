@@ -8,17 +8,22 @@ Return the details for the specified organizations.
 To use this command, you must authenticate with a user account or an API key with the Organization Member role.
 
 
-
+### Usage
+```
+atlas organizations describe <ID> [flags]
 ```
 
-atlas organizations describe <ID> [flags]
-atlas organizations show <ID> [flags]
-atlas organization describe <ID> [flags]
-atlas organization show <ID> [flags]
-atlas orgs describe <ID> [flags]
-atlas orgs show <ID> [flags]
-atlas org describe <ID> [flags]
-atlas org show <ID> [flags]
+### Aliases
+```
+
+atlas organizations describe
+atlas organizations show
+atlas organization describe
+atlas organization show
+atlas orgs describe
+atlas orgs show
+atlas org describe
+atlas org show
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas org show <ID> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations](atlas_organizations.md)	- Manage your Atlas organizations.

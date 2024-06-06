@@ -12,33 +12,38 @@ To view possible values for the ID argument, run atlas organizations apiKeys lis
 To use this command, you must authenticate with a user account or an API key with the Project User Admin role.
 
 
-
+### Usage
+```
+atlas projects apiKeys delete <ID> [flags]
 ```
 
-atlas projects apiKeys delete <ID> [flags]
-atlas projects apiKeys rm <ID> [flags]
-atlas projects apikeys delete <ID> [flags]
-atlas projects apikeys rm <ID> [flags]
-atlas projects api-keys delete <ID> [flags]
-atlas projects api-keys rm <ID> [flags]
-atlas projects apiKey delete <ID> [flags]
-atlas projects apiKey rm <ID> [flags]
-atlas projects apikey delete <ID> [flags]
-atlas projects apikey rm <ID> [flags]
-atlas projects api-key delete <ID> [flags]
-atlas projects api-key rm <ID> [flags]
-atlas project apiKeys delete <ID> [flags]
-atlas project apiKeys rm <ID> [flags]
-atlas project apikeys delete <ID> [flags]
-atlas project apikeys rm <ID> [flags]
-atlas project api-keys delete <ID> [flags]
-atlas project api-keys rm <ID> [flags]
-atlas project apiKey delete <ID> [flags]
-atlas project apiKey rm <ID> [flags]
-atlas project apikey delete <ID> [flags]
-atlas project apikey rm <ID> [flags]
-atlas project api-key delete <ID> [flags]
-atlas project api-key rm <ID> [flags]
+### Aliases
+```
+
+atlas projects apiKeys delete
+atlas projects apiKeys rm
+atlas projects apikeys delete
+atlas projects apikeys rm
+atlas projects api-keys delete
+atlas projects api-keys rm
+atlas projects apiKey delete
+atlas projects apiKey rm
+atlas projects apikey delete
+atlas projects apikey rm
+atlas projects api-key delete
+atlas projects api-key rm
+atlas project apiKeys delete
+atlas project apiKeys rm
+atlas project apikeys delete
+atlas project apikeys rm
+atlas project api-keys delete
+atlas project api-keys rm
+atlas project apiKey delete
+atlas project apiKey rm
+atlas project apikey delete
+atlas project apikey rm
+atlas project api-key delete
+atlas project api-key rm
 ```
 
 ### Examples
@@ -66,7 +71,7 @@ atlas project api-key rm <ID> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects apiKeys](atlas_projects_apiKeys.md)	- Manage API Keys for your project.

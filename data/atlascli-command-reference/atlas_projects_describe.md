@@ -8,15 +8,20 @@ Return the details for the specified project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas projects describe <ID> [flags]
 ```
 
-atlas projects describe <ID> [flags]
-atlas projects show <ID> [flags]
-atlas projects get <ID> [flags]
-atlas project describe <ID> [flags]
-atlas project show <ID> [flags]
-atlas project get <ID> [flags]
+### Aliases
+```
+
+atlas projects describe
+atlas projects show
+atlas projects get
+atlas project describe
+atlas project show
+atlas project get
 ```
 
 ### Examples
@@ -43,7 +48,7 @@ atlas project get <ID> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects](atlas_projects.md)	- Manage your Atlas projects.

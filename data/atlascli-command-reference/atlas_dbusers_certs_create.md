@@ -8,13 +8,18 @@ Create a new Atlas-managed X.509 certificate for the specified database user.
 The user you specify must authenticate using X.509 certificates. You can't use this command to create certificates if you are managing your own Certificate Authority (CA) in self-managed X.509 mode.
 
 
-
+### Usage
+```
+atlas dbusers certs create [flags]
 ```
 
-atlas dbusers certs create [flags]
-atlas dbusers cert create [flags]
-atlas dbuser certs create [flags]
-atlas dbuser cert create [flags]
+### Aliases
+```
+
+atlas dbusers certs create
+atlas dbusers cert create
+atlas dbuser certs create
+atlas dbuser cert create
 ```
 
 ### Examples
@@ -44,7 +49,7 @@ atlas dbuser cert create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dbusers certs](atlas_dbusers_certs.md)	- Manage Atlas x509 certificates for your database users.

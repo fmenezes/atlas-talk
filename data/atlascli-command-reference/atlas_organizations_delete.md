@@ -10,17 +10,22 @@ Organizations with active projects can't be removed.
 To use this command, you must authenticate with a user account or an API key with the Organization Owner role.
 
 
-
+### Usage
+```
+atlas organizations delete <ID> [flags]
 ```
 
-atlas organizations delete <ID> [flags]
-atlas organizations rm <ID> [flags]
-atlas organization delete <ID> [flags]
-atlas organization rm <ID> [flags]
-atlas orgs delete <ID> [flags]
-atlas orgs rm <ID> [flags]
-atlas org delete <ID> [flags]
-atlas org rm <ID> [flags]
+### Aliases
+```
+
+atlas organizations delete
+atlas organizations rm
+atlas organization delete
+atlas organization rm
+atlas orgs delete
+atlas orgs rm
+atlas org delete
+atlas org rm
 ```
 
 ### Examples
@@ -47,7 +52,7 @@ atlas org rm <ID> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations](atlas_organizations.md)	- Manage your Atlas organizations.

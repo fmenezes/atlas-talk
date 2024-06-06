@@ -3,11 +3,16 @@
 Rename a profile.
 
 
-
+### Usage
+```
+atlas config rename <oldProfileName> <newProfileName> [flags]
 ```
 
-atlas config rename <oldProfileName> <newProfileName> [flags]
-atlas config mv <oldProfileName> <newProfileName> [flags]
+### Aliases
+```
+
+atlas config rename
+atlas config mv
 ```
 
 ### Examples
@@ -33,7 +38,7 @@ atlas config mv <oldProfileName> <newProfileName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas config](atlas_config.md)	- Configure and manage your user profiles.

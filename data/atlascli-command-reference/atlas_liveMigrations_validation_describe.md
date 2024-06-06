@@ -3,23 +3,28 @@
 Return one validation job.
 
 
-
+### Usage
+```
+atlas liveMigrations validation describe [flags]
 ```
 
-atlas liveMigrations validation describe [flags]
-atlas liveMigrations validation get [flags]
-atlas livemigrations validation describe [flags]
-atlas livemigrations validation get [flags]
-atlas live-migrations validation describe [flags]
-atlas live-migrations validation get [flags]
-atlas liveMigration validation describe [flags]
-atlas liveMigration validation get [flags]
-atlas livemigration validation describe [flags]
-atlas livemigration validation get [flags]
-atlas live-migration validation describe [flags]
-atlas live-migration validation get [flags]
-atlas lm validation describe [flags]
-atlas lm validation get [flags]
+### Aliases
+```
+
+atlas liveMigrations validation describe
+atlas liveMigrations validation get
+atlas livemigrations validation describe
+atlas livemigrations validation get
+atlas live-migrations validation describe
+atlas live-migrations validation get
+atlas liveMigration validation describe
+atlas liveMigration validation get
+atlas livemigration validation describe
+atlas livemigration validation get
+atlas live-migration validation describe
+atlas live-migration validation get
+atlas lm validation describe
+atlas lm validation get
 ```
 
 
@@ -42,7 +47,7 @@ atlas lm validation get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas liveMigrations validation](atlas_liveMigrations_validation.md)	- Manage a Live Migration validation job for your project.

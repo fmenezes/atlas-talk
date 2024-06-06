@@ -8,25 +8,30 @@ List all Atlas Search nodes for a cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas clusters search nodes list [flags]
 ```
 
-atlas clusters search nodes list [flags]
-atlas clusters search nodes ls [flags]
-atlas clusters search node list [flags]
-atlas clusters search node ls [flags]
-atlas clusters fts nodes list [flags]
-atlas clusters fts nodes ls [flags]
-atlas clusters fts node list [flags]
-atlas clusters fts node ls [flags]
-atlas cluster search nodes list [flags]
-atlas cluster search nodes ls [flags]
-atlas cluster search node list [flags]
-atlas cluster search node ls [flags]
-atlas cluster fts nodes list [flags]
-atlas cluster fts nodes ls [flags]
-atlas cluster fts node list [flags]
-atlas cluster fts node ls [flags]
+### Aliases
+```
+
+atlas clusters search nodes list
+atlas clusters search nodes ls
+atlas clusters search node list
+atlas clusters search node ls
+atlas clusters fts nodes list
+atlas clusters fts nodes ls
+atlas clusters fts node list
+atlas clusters fts node ls
+atlas cluster search nodes list
+atlas cluster search nodes ls
+atlas cluster search node list
+atlas cluster search node ls
+atlas cluster fts nodes list
+atlas cluster fts nodes ls
+atlas cluster fts node list
+atlas cluster fts node ls
 ```
 
 ### Examples
@@ -55,7 +60,7 @@ atlas cluster fts node ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters search nodes](atlas_clusters_search_nodes.md)	- Manage Atlas Search nodes for your cluster.

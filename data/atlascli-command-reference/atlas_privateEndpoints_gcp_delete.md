@@ -8,21 +8,26 @@ Delete a GCP private endpoint for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas privateEndpoints gcp delete <privateEndpointId> [flags]
 ```
 
-atlas privateEndpoints gcp delete <privateEndpointId> [flags]
-atlas privateEndpoints gcp rm <privateEndpointId> [flags]
-atlas privateendpoints gcp delete <privateEndpointId> [flags]
-atlas privateendpoints gcp rm <privateEndpointId> [flags]
-atlas private-endpoints gcp delete <privateEndpointId> [flags]
-atlas private-endpoints gcp rm <privateEndpointId> [flags]
-atlas privateEndpoint gcp delete <privateEndpointId> [flags]
-atlas privateEndpoint gcp rm <privateEndpointId> [flags]
-atlas privateendpoint gcp delete <privateEndpointId> [flags]
-atlas privateendpoint gcp rm <privateEndpointId> [flags]
-atlas private-endpoint gcp delete <privateEndpointId> [flags]
-atlas private-endpoint gcp rm <privateEndpointId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints gcp delete
+atlas privateEndpoints gcp rm
+atlas privateendpoints gcp delete
+atlas privateendpoints gcp rm
+atlas private-endpoints gcp delete
+atlas private-endpoints gcp rm
+atlas privateEndpoint gcp delete
+atlas privateEndpoint gcp rm
+atlas privateendpoint gcp delete
+atlas privateendpoint gcp rm
+atlas private-endpoint gcp delete
+atlas private-endpoint gcp rm
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas private-endpoint gcp rm <privateEndpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints gcp](atlas_privateEndpoints_gcp.md)	- Manage GCP private endpoints.

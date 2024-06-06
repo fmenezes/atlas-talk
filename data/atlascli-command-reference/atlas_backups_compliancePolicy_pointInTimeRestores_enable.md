@@ -3,45 +3,50 @@
 Enable Point-in-Time restores of the backup compliance policy for your project.
 
 
-
+### Usage
+```
+atlas backups compliancePolicy pointInTimeRestores enable [flags]
 ```
 
-atlas backups compliancePolicy pointInTimeRestores enable [flags]
-atlas backups compliancePolicy pointintimerestores enable [flags]
-atlas backups compliancePolicy point-in-time-restores enable [flags]
-atlas backups compliancePolicy pointInTimeRestore enable [flags]
-atlas backups compliancePolicy pointintimerestore enable [flags]
-atlas backups compliancePolicy point-in-time-restore enable [flags]
-atlas backups compliancepolicy pointInTimeRestores enable [flags]
-atlas backups compliancepolicy pointintimerestores enable [flags]
-atlas backups compliancepolicy point-in-time-restores enable [flags]
-atlas backups compliancepolicy pointInTimeRestore enable [flags]
-atlas backups compliancepolicy pointintimerestore enable [flags]
-atlas backups compliancepolicy point-in-time-restore enable [flags]
-atlas backups compliance-policy pointInTimeRestores enable [flags]
-atlas backups compliance-policy pointintimerestores enable [flags]
-atlas backups compliance-policy point-in-time-restores enable [flags]
-atlas backups compliance-policy pointInTimeRestore enable [flags]
-atlas backups compliance-policy pointintimerestore enable [flags]
-atlas backups compliance-policy point-in-time-restore enable [flags]
-atlas backup compliancePolicy pointInTimeRestores enable [flags]
-atlas backup compliancePolicy pointintimerestores enable [flags]
-atlas backup compliancePolicy point-in-time-restores enable [flags]
-atlas backup compliancePolicy pointInTimeRestore enable [flags]
-atlas backup compliancePolicy pointintimerestore enable [flags]
-atlas backup compliancePolicy point-in-time-restore enable [flags]
-atlas backup compliancepolicy pointInTimeRestores enable [flags]
-atlas backup compliancepolicy pointintimerestores enable [flags]
-atlas backup compliancepolicy point-in-time-restores enable [flags]
-atlas backup compliancepolicy pointInTimeRestore enable [flags]
-atlas backup compliancepolicy pointintimerestore enable [flags]
-atlas backup compliancepolicy point-in-time-restore enable [flags]
-atlas backup compliance-policy pointInTimeRestores enable [flags]
-atlas backup compliance-policy pointintimerestores enable [flags]
-atlas backup compliance-policy point-in-time-restores enable [flags]
-atlas backup compliance-policy pointInTimeRestore enable [flags]
-atlas backup compliance-policy pointintimerestore enable [flags]
-atlas backup compliance-policy point-in-time-restore enable [flags]
+### Aliases
+```
+
+atlas backups compliancePolicy pointInTimeRestores enable
+atlas backups compliancePolicy pointintimerestores enable
+atlas backups compliancePolicy point-in-time-restores enable
+atlas backups compliancePolicy pointInTimeRestore enable
+atlas backups compliancePolicy pointintimerestore enable
+atlas backups compliancePolicy point-in-time-restore enable
+atlas backups compliancepolicy pointInTimeRestores enable
+atlas backups compliancepolicy pointintimerestores enable
+atlas backups compliancepolicy point-in-time-restores enable
+atlas backups compliancepolicy pointInTimeRestore enable
+atlas backups compliancepolicy pointintimerestore enable
+atlas backups compliancepolicy point-in-time-restore enable
+atlas backups compliance-policy pointInTimeRestores enable
+atlas backups compliance-policy pointintimerestores enable
+atlas backups compliance-policy point-in-time-restores enable
+atlas backups compliance-policy pointInTimeRestore enable
+atlas backups compliance-policy pointintimerestore enable
+atlas backups compliance-policy point-in-time-restore enable
+atlas backup compliancePolicy pointInTimeRestores enable
+atlas backup compliancePolicy pointintimerestores enable
+atlas backup compliancePolicy point-in-time-restores enable
+atlas backup compliancePolicy pointInTimeRestore enable
+atlas backup compliancePolicy pointintimerestore enable
+atlas backup compliancePolicy point-in-time-restore enable
+atlas backup compliancepolicy pointInTimeRestores enable
+atlas backup compliancepolicy pointintimerestores enable
+atlas backup compliancepolicy point-in-time-restores enable
+atlas backup compliancepolicy pointInTimeRestore enable
+atlas backup compliancepolicy pointintimerestore enable
+atlas backup compliancepolicy point-in-time-restore enable
+atlas backup compliance-policy pointInTimeRestores enable
+atlas backup compliance-policy pointintimerestores enable
+atlas backup compliance-policy point-in-time-restores enable
+atlas backup compliance-policy pointInTimeRestore enable
+atlas backup compliance-policy pointintimerestore enable
+atlas backup compliance-policy point-in-time-restore enable
 ```
 
 
@@ -65,7 +70,7 @@ atlas backup compliance-policy point-in-time-restore enable [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy pointInTimeRestores](atlas_backups_compliancePolicy_pointInTimeRestores.md)	- Manage whether the project uses Continuous Cloud Backups with a Backup Compliance Policy. Read more in the documentation: https://www.mongodb.com/docs/atlas/backup/cloud-backup/configure-backup-policy/#configure-the-restore-window.

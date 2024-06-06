@@ -10,11 +10,16 @@ Projects group clusters into logical collections that support an application env
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Read/Write role.
 
 
-
+### Usage
+```
+atlas projects create <projectName> [flags]
 ```
 
-atlas projects create <projectName> [flags]
-atlas project create <projectName> [flags]
+### Aliases
+```
+
+atlas projects create
+atlas project create
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas project create <projectName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects](atlas_projects.md)	- Manage your Atlas projects.

@@ -8,21 +8,26 @@ Return the details for the specified AWS private endpoints for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints aws describe <privateEndpointId> [flags]
 ```
 
-atlas privateEndpoints aws describe <privateEndpointId> [flags]
-atlas privateEndpoints aws get <privateEndpointId> [flags]
-atlas privateendpoints aws describe <privateEndpointId> [flags]
-atlas privateendpoints aws get <privateEndpointId> [flags]
-atlas private-endpoints aws describe <privateEndpointId> [flags]
-atlas private-endpoints aws get <privateEndpointId> [flags]
-atlas privateEndpoint aws describe <privateEndpointId> [flags]
-atlas privateEndpoint aws get <privateEndpointId> [flags]
-atlas privateendpoint aws describe <privateEndpointId> [flags]
-atlas privateendpoint aws get <privateEndpointId> [flags]
-atlas private-endpoint aws describe <privateEndpointId> [flags]
-atlas private-endpoint aws get <privateEndpointId> [flags]
+### Aliases
+```
+
+atlas privateEndpoints aws describe
+atlas privateEndpoints aws get
+atlas privateendpoints aws describe
+atlas privateendpoints aws get
+atlas private-endpoints aws describe
+atlas private-endpoints aws get
+atlas privateEndpoint aws describe
+atlas privateEndpoint aws get
+atlas privateendpoint aws describe
+atlas privateendpoint aws get
+atlas private-endpoint aws describe
+atlas private-endpoint aws get
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas private-endpoint aws get <privateEndpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints aws](atlas_privateEndpoints_aws.md)	- Manage AWS Private Endpoints.

@@ -8,17 +8,22 @@ Return all teams for a project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas projects teams list [flags]
 ```
 
-atlas projects teams list [flags]
-atlas projects teams ls [flags]
-atlas projects team list [flags]
-atlas projects team ls [flags]
-atlas project teams list [flags]
-atlas project teams ls [flags]
-atlas project team list [flags]
-atlas project team ls [flags]
+### Aliases
+```
+
+atlas projects teams list
+atlas projects teams ls
+atlas projects team list
+atlas projects team ls
+atlas project teams list
+atlas project teams ls
+atlas project team list
+atlas project team ls
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas project team ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas projects teams](atlas_projects_teams.md)	- Manage your Atlas teams.

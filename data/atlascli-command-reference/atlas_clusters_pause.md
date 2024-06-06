@@ -9,11 +9,16 @@ To use this command, you must authenticate with a user account or an API key wit
 Atlas supports this command only for M10+ clusters.
 
 
-
+### Usage
+```
+atlas clusters pause <clusterName> [flags]
 ```
 
-atlas clusters pause <clusterName> [flags]
-atlas cluster pause <clusterName> [flags]
+### Aliases
+```
+
+atlas clusters pause
+atlas cluster pause
 ```
 
 ### Examples
@@ -41,7 +46,7 @@ atlas cluster pause <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

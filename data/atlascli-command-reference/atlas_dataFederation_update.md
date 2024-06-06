@@ -8,12 +8,17 @@ Modify the details of the specified data federation database for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataFederation update <name> [flags]
 ```
 
-atlas dataFederation update <name> [flags]
-atlas datafederation update <name> [flags]
-atlas data-federation update <name> [flags]
+### Aliases
+```
+
+atlas dataFederation update
+atlas datafederation update
+atlas data-federation update
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas data-federation update <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation](atlas_dataFederation.md)	- Data federation.

@@ -5,6 +5,18 @@ Manage the link-token for your organization.
 
 
 
+### Aliases
+```
+
+atlas liveMigrations link
+atlas livemigrations link
+atlas live-migrations link
+atlas liveMigration link
+atlas livemigration link
+atlas live-migration link
+atlas lm link
+```
+
 
 
 ### Flags
@@ -22,7 +34,7 @@ Manage the link-token for your organization.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas liveMigrations](atlas_liveMigrations.md)	- Manage a Live Migration to Atlas for your organization.

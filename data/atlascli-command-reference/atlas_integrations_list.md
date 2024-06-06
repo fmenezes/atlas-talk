@@ -8,13 +8,18 @@ Return all active third-party integrations for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas integrations list [flags]
 ```
 
-atlas integrations list [flags]
-atlas integrations ls [flags]
-atlas integration list [flags]
-atlas integration ls [flags]
+### Aliases
+```
+
+atlas integrations list
+atlas integrations ls
+atlas integration list
+atlas integration ls
 ```
 
 ### Examples
@@ -42,7 +47,7 @@ atlas integration ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas integrations](atlas_integrations.md)	- Configure third-party integrations for your Atlas project.

@@ -12,6 +12,12 @@ Use the --help flag with any command for more info on that command.
 
 
 
+### Aliases
+```
+
+atlas
+```
+
 ### Examples
 
 ```
@@ -31,7 +37,7 @@ Use the --help flag with any command for more info on that command.
 
 
 
-### SEE ALSO
+### See Also
 
 
 * [atlas accessLists](atlas_accessLists.md)	- Manage the list of IP addresses that can access your Atlas project.
@@ -101,6 +107,8 @@ Use the --help flag with any command for more info on that command.
 * [atlas setup](atlas_setup.md)	- Register, authenticate, create, and access an Atlas cluster.
 
 * [atlas streams](atlas_streams.md)	- Manage your Atlas Stream Processing deployments.
+
+* [atlas talk](atlas_talk.md)	- Interactive help.
 
 * [atlas teams](atlas_teams.md)	- Manage your Atlas teams.
 

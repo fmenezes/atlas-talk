@@ -13,11 +13,16 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas clusters watch <clusterName> [flags]
 ```
 
-atlas clusters watch <clusterName> [flags]
-atlas cluster watch <clusterName> [flags]
+### Aliases
+```
+
+atlas clusters watch
+atlas cluster watch
 ```
 
 ### Examples
@@ -44,7 +49,7 @@ atlas cluster watch <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

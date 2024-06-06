@@ -8,63 +8,68 @@ List the identity providers from your federation settings.
 To use this command, you must authenticate with a user account or an API key with the Org Owner role.
 
 
-
+### Usage
+```
+atlas federatedAuthentication federationSettings identityProvider list [flags]
 ```
 
-atlas federatedAuthentication federationSettings identityProvider list [flags]
-atlas federatedAuthentication federationSettings identityprovider list [flags]
-atlas federatedAuthentication federationSettings identity-provider list [flags]
-atlas federatedAuthentication federationsettings identityProvider list [flags]
-atlas federatedAuthentication federationsettings identityprovider list [flags]
-atlas federatedAuthentication federationsettings identity-provider list [flags]
-atlas federatedAuthentication federation-settings identityProvider list [flags]
-atlas federatedAuthentication federation-settings identityprovider list [flags]
-atlas federatedAuthentication federation-settings identity-provider list [flags]
-atlas federatedAuthentication federationSetting identityProvider list [flags]
-atlas federatedAuthentication federationSetting identityprovider list [flags]
-atlas federatedAuthentication federationSetting identity-provider list [flags]
-atlas federatedAuthentication federationsetting identityProvider list [flags]
-atlas federatedAuthentication federationsetting identityprovider list [flags]
-atlas federatedAuthentication federationsetting identity-provider list [flags]
-atlas federatedAuthentication federation-setting identityProvider list [flags]
-atlas federatedAuthentication federation-setting identityprovider list [flags]
-atlas federatedAuthentication federation-setting identity-provider list [flags]
-atlas federatedauthentication federationSettings identityProvider list [flags]
-atlas federatedauthentication federationSettings identityprovider list [flags]
-atlas federatedauthentication federationSettings identity-provider list [flags]
-atlas federatedauthentication federationsettings identityProvider list [flags]
-atlas federatedauthentication federationsettings identityprovider list [flags]
-atlas federatedauthentication federationsettings identity-provider list [flags]
-atlas federatedauthentication federation-settings identityProvider list [flags]
-atlas federatedauthentication federation-settings identityprovider list [flags]
-atlas federatedauthentication federation-settings identity-provider list [flags]
-atlas federatedauthentication federationSetting identityProvider list [flags]
-atlas federatedauthentication federationSetting identityprovider list [flags]
-atlas federatedauthentication federationSetting identity-provider list [flags]
-atlas federatedauthentication federationsetting identityProvider list [flags]
-atlas federatedauthentication federationsetting identityprovider list [flags]
-atlas federatedauthentication federationsetting identity-provider list [flags]
-atlas federatedauthentication federation-setting identityProvider list [flags]
-atlas federatedauthentication federation-setting identityprovider list [flags]
-atlas federatedauthentication federation-setting identity-provider list [flags]
-atlas federated-authentication federationSettings identityProvider list [flags]
-atlas federated-authentication federationSettings identityprovider list [flags]
-atlas federated-authentication federationSettings identity-provider list [flags]
-atlas federated-authentication federationsettings identityProvider list [flags]
-atlas federated-authentication federationsettings identityprovider list [flags]
-atlas federated-authentication federationsettings identity-provider list [flags]
-atlas federated-authentication federation-settings identityProvider list [flags]
-atlas federated-authentication federation-settings identityprovider list [flags]
-atlas federated-authentication federation-settings identity-provider list [flags]
-atlas federated-authentication federationSetting identityProvider list [flags]
-atlas federated-authentication federationSetting identityprovider list [flags]
-atlas federated-authentication federationSetting identity-provider list [flags]
-atlas federated-authentication federationsetting identityProvider list [flags]
-atlas federated-authentication federationsetting identityprovider list [flags]
-atlas federated-authentication federationsetting identity-provider list [flags]
-atlas federated-authentication federation-setting identityProvider list [flags]
-atlas federated-authentication federation-setting identityprovider list [flags]
-atlas federated-authentication federation-setting identity-provider list [flags]
+### Aliases
+```
+
+atlas federatedAuthentication federationSettings identityProvider list
+atlas federatedAuthentication federationSettings identityprovider list
+atlas federatedAuthentication federationSettings identity-provider list
+atlas federatedAuthentication federationsettings identityProvider list
+atlas federatedAuthentication federationsettings identityprovider list
+atlas federatedAuthentication federationsettings identity-provider list
+atlas federatedAuthentication federation-settings identityProvider list
+atlas federatedAuthentication federation-settings identityprovider list
+atlas federatedAuthentication federation-settings identity-provider list
+atlas federatedAuthentication federationSetting identityProvider list
+atlas federatedAuthentication federationSetting identityprovider list
+atlas federatedAuthentication federationSetting identity-provider list
+atlas federatedAuthentication federationsetting identityProvider list
+atlas federatedAuthentication federationsetting identityprovider list
+atlas federatedAuthentication federationsetting identity-provider list
+atlas federatedAuthentication federation-setting identityProvider list
+atlas federatedAuthentication federation-setting identityprovider list
+atlas federatedAuthentication federation-setting identity-provider list
+atlas federatedauthentication federationSettings identityProvider list
+atlas federatedauthentication federationSettings identityprovider list
+atlas federatedauthentication federationSettings identity-provider list
+atlas federatedauthentication federationsettings identityProvider list
+atlas federatedauthentication federationsettings identityprovider list
+atlas federatedauthentication federationsettings identity-provider list
+atlas federatedauthentication federation-settings identityProvider list
+atlas federatedauthentication federation-settings identityprovider list
+atlas federatedauthentication federation-settings identity-provider list
+atlas federatedauthentication federationSetting identityProvider list
+atlas federatedauthentication federationSetting identityprovider list
+atlas federatedauthentication federationSetting identity-provider list
+atlas federatedauthentication federationsetting identityProvider list
+atlas federatedauthentication federationsetting identityprovider list
+atlas federatedauthentication federationsetting identity-provider list
+atlas federatedauthentication federation-setting identityProvider list
+atlas federatedauthentication federation-setting identityprovider list
+atlas federatedauthentication federation-setting identity-provider list
+atlas federated-authentication federationSettings identityProvider list
+atlas federated-authentication federationSettings identityprovider list
+atlas federated-authentication federationSettings identity-provider list
+atlas federated-authentication federationsettings identityProvider list
+atlas federated-authentication federationsettings identityprovider list
+atlas federated-authentication federationsettings identity-provider list
+atlas federated-authentication federation-settings identityProvider list
+atlas federated-authentication federation-settings identityprovider list
+atlas federated-authentication federation-settings identity-provider list
+atlas federated-authentication federationSetting identityProvider list
+atlas federated-authentication federationSetting identityprovider list
+atlas federated-authentication federationSetting identity-provider list
+atlas federated-authentication federationsetting identityProvider list
+atlas federated-authentication federationsetting identityprovider list
+atlas federated-authentication federationsetting identity-provider list
+atlas federated-authentication federation-setting identityProvider list
+atlas federated-authentication federation-setting identityprovider list
+atlas federated-authentication federation-setting identity-provider list
 ```
 
 ### Examples
@@ -97,7 +102,7 @@ atlas federated-authentication federation-setting identity-provider list [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas federatedAuthentication federationSettings identityProvider](atlas_federatedAuthentication_federationSettings_identityProvider.md)	- Manage Federated Authentication Identity Providers.

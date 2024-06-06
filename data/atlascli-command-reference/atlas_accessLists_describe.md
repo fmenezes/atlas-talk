@@ -8,25 +8,30 @@ Return the details for the specified IP access list entry.
 To use this command, you must authenticate with a user account or an API key with the Organization Member role.
 
 
-
+### Usage
+```
+atlas accessLists describe <entry> [flags]
 ```
 
-atlas accessLists describe <entry> [flags]
-atlas accessLists get <entry> [flags]
-atlas accesslists describe <entry> [flags]
-atlas accesslists get <entry> [flags]
-atlas access-lists describe <entry> [flags]
-atlas access-lists get <entry> [flags]
-atlas accessList describe <entry> [flags]
-atlas accessList get <entry> [flags]
-atlas accesslist describe <entry> [flags]
-atlas accesslist get <entry> [flags]
-atlas access-list describe <entry> [flags]
-atlas access-list get <entry> [flags]
-atlas whitelists describe <entry> [flags]
-atlas whitelists get <entry> [flags]
-atlas whitelist describe <entry> [flags]
-atlas whitelist get <entry> [flags]
+### Aliases
+```
+
+atlas accessLists describe
+atlas accessLists get
+atlas accesslists describe
+atlas accesslists get
+atlas access-lists describe
+atlas access-lists get
+atlas accessList describe
+atlas accessList get
+atlas accesslist describe
+atlas accesslist get
+atlas access-list describe
+atlas access-list get
+atlas whitelists describe
+atlas whitelists get
+atlas whitelist describe
+atlas whitelist get
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas whitelist get <entry> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas accessLists](atlas_accessLists.md)	- Manage the list of IP addresses that can access your Atlas project.

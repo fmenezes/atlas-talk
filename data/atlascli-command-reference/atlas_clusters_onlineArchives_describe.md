@@ -8,21 +8,26 @@ Return the details for the specified online archive for your cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas clusters onlineArchives describe <archiveId> [flags]
 ```
 
-atlas clusters onlineArchives describe <archiveId> [flags]
-atlas clusters onlinearchives describe <archiveId> [flags]
-atlas clusters online-archives describe <archiveId> [flags]
-atlas clusters onlineArchive describe <archiveId> [flags]
-atlas clusters onlinearchive describe <archiveId> [flags]
-atlas clusters online-archive describe <archiveId> [flags]
-atlas cluster onlineArchives describe <archiveId> [flags]
-atlas cluster onlinearchives describe <archiveId> [flags]
-atlas cluster online-archives describe <archiveId> [flags]
-atlas cluster onlineArchive describe <archiveId> [flags]
-atlas cluster onlinearchive describe <archiveId> [flags]
-atlas cluster online-archive describe <archiveId> [flags]
+### Aliases
+```
+
+atlas clusters onlineArchives describe
+atlas clusters onlinearchives describe
+atlas clusters online-archives describe
+atlas clusters onlineArchive describe
+atlas clusters onlinearchive describe
+atlas clusters online-archive describe
+atlas cluster onlineArchives describe
+atlas cluster onlinearchives describe
+atlas cluster online-archives describe
+atlas cluster onlineArchive describe
+atlas cluster onlinearchive describe
+atlas cluster online-archive describe
 ```
 
 ### Examples
@@ -51,7 +56,7 @@ atlas cluster online-archive describe <archiveId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters onlineArchives](atlas_clusters_onlineArchives.md)	- Manage online archives for your cluster.

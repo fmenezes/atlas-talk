@@ -8,17 +8,22 @@ Update a search node for a cluster.
 To use this command, you must authenticate with a user account or an API key with the Organization Owner or Project Owner role.
 
 
-
+### Usage
+```
+atlas clusters search nodes update [flags]
 ```
 
-atlas clusters search nodes update [flags]
-atlas clusters search node update [flags]
-atlas clusters fts nodes update [flags]
-atlas clusters fts node update [flags]
-atlas cluster search nodes update [flags]
-atlas cluster search node update [flags]
-atlas cluster fts nodes update [flags]
-atlas cluster fts node update [flags]
+### Aliases
+```
+
+atlas clusters search nodes update
+atlas clusters search node update
+atlas clusters fts nodes update
+atlas clusters fts node update
+atlas cluster search nodes update
+atlas cluster search node update
+atlas cluster fts nodes update
+atlas cluster fts node update
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas cluster fts node update [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters search nodes](atlas_clusters_search_nodes.md)	- Manage Atlas Search nodes for your cluster.

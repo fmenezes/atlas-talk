@@ -10,11 +10,16 @@ If you set --ldapType, --x509Type, --oidcType and --awsIAMType to NONE, Atlas au
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dbusers create <builtInRole>... [flags]
 ```
 
-atlas dbusers create <builtInRole>... [flags]
-atlas dbuser create <builtInRole>... [flags]
+### Aliases
+```
+
+atlas dbusers create
+atlas dbuser create
 ```
 
 ### Examples
@@ -63,7 +68,7 @@ atlas dbuser create <builtInRole>... [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dbusers](atlas_dbusers.md)	- Manage database users for your project.

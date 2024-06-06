@@ -8,25 +8,30 @@ Return all pending invitations to your organization.
 To use this command, you must authenticate with a user account or an API key with the Organization User Admin role.
 
 
-
+### Usage
+```
+atlas organizations invitations list [flags]
 ```
 
-atlas organizations invitations list [flags]
-atlas organizations invitations ls [flags]
-atlas organizations invitation list [flags]
-atlas organizations invitation ls [flags]
-atlas organization invitations list [flags]
-atlas organization invitations ls [flags]
-atlas organization invitation list [flags]
-atlas organization invitation ls [flags]
-atlas orgs invitations list [flags]
-atlas orgs invitations ls [flags]
-atlas orgs invitation list [flags]
-atlas orgs invitation ls [flags]
-atlas org invitations list [flags]
-atlas org invitations ls [flags]
-atlas org invitation list [flags]
-atlas org invitation ls [flags]
+### Aliases
+```
+
+atlas organizations invitations list
+atlas organizations invitations ls
+atlas organizations invitation list
+atlas organizations invitation ls
+atlas organization invitations list
+atlas organization invitations ls
+atlas organization invitation list
+atlas organization invitation ls
+atlas orgs invitations list
+atlas orgs invitations ls
+atlas orgs invitation list
+atlas orgs invitation ls
+atlas org invitations list
+atlas org invitations ls
+atlas org invitation list
+atlas org invitation ls
 ```
 
 ### Examples
@@ -55,7 +60,7 @@ atlas org invitation ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas organizations invitations](atlas_organizations_invitations.md)	- Invitation operations.

@@ -8,11 +8,16 @@ Create an Atlas user for your MongoDB Atlas application and invite the Atlas use
 An Atlas user account grants access only to the the MongoDB Atlas application. To grant database access, create a database user with atlas dbusers create.
 
 
-
+### Usage
+```
+atlas users invite [flags]
 ```
 
-atlas users invite [flags]
-atlas user invite [flags]
+### Aliases
+```
+
+atlas users invite
+atlas user invite
 ```
 
 ### Examples
@@ -51,7 +56,7 @@ atlas user invite [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas users](atlas_users.md)	- Manage your Atlas users.

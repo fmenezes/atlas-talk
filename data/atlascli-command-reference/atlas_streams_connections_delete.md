@@ -10,13 +10,18 @@ The command prompts you to confirm the operation when you run the command withou
 Before deleting an Atlas Streams Processing connection, you must first stop all processes associated with it. To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas streams connections delete <connectionName> [flags]
 ```
 
-atlas streams connections delete <connectionName> [flags]
-atlas streams connection delete <connectionName> [flags]
-atlas stream connections delete <connectionName> [flags]
-atlas stream connection delete <connectionName> [flags]
+### Aliases
+```
+
+atlas streams connections delete
+atlas streams connection delete
+atlas stream connections delete
+atlas stream connection delete
 ```
 
 ### Examples
@@ -49,7 +54,7 @@ atlas stream connection delete <connectionName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams connections](atlas_streams_connections.md)	- Manage Atlas Stream Processing connections.

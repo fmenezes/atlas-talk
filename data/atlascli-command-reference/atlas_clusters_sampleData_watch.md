@@ -12,21 +12,26 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas clusters sampleData watch <id> [flags]
 ```
 
-atlas clusters sampleData watch <id> [flags]
-atlas clusters sampledata watch <id> [flags]
-atlas clusters sample-data watch <id> [flags]
-atlas clusters sampleDatum watch <id> [flags]
-atlas clusters sampledatum watch <id> [flags]
-atlas clusters sample-datum watch <id> [flags]
-atlas cluster sampleData watch <id> [flags]
-atlas cluster sampledata watch <id> [flags]
-atlas cluster sample-data watch <id> [flags]
-atlas cluster sampleDatum watch <id> [flags]
-atlas cluster sampledatum watch <id> [flags]
-atlas cluster sample-datum watch <id> [flags]
+### Aliases
+```
+
+atlas clusters sampleData watch
+atlas clusters sampledata watch
+atlas clusters sample-data watch
+atlas clusters sampleDatum watch
+atlas clusters sampledatum watch
+atlas clusters sample-datum watch
+atlas cluster sampleData watch
+atlas cluster sampledata watch
+atlas cluster sample-data watch
+atlas cluster sampleDatum watch
+atlas cluster sampledatum watch
+atlas cluster sample-datum watch
 ```
 
 ### Examples
@@ -53,7 +58,7 @@ atlas cluster sample-datum watch <id> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters sampleData](atlas_clusters_sampleData.md)	- Manage sample data for your cluster.

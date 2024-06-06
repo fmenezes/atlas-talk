@@ -10,45 +10,50 @@ The Performance Advisor monitors queries that MongoDB considers slow and suggest
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas performanceAdvisor suggestedIndexes list [flags]
 ```
 
-atlas performanceAdvisor suggestedIndexes list [flags]
-atlas performanceAdvisor suggestedIndexes ls [flags]
-atlas performanceAdvisor suggestedindexes list [flags]
-atlas performanceAdvisor suggestedindexes ls [flags]
-atlas performanceAdvisor suggested-indexes list [flags]
-atlas performanceAdvisor suggested-indexes ls [flags]
-atlas performanceAdvisor suggestedIndex list [flags]
-atlas performanceAdvisor suggestedIndex ls [flags]
-atlas performanceAdvisor suggestedindex list [flags]
-atlas performanceAdvisor suggestedindex ls [flags]
-atlas performanceAdvisor suggested-index list [flags]
-atlas performanceAdvisor suggested-index ls [flags]
-atlas performanceadvisor suggestedIndexes list [flags]
-atlas performanceadvisor suggestedIndexes ls [flags]
-atlas performanceadvisor suggestedindexes list [flags]
-atlas performanceadvisor suggestedindexes ls [flags]
-atlas performanceadvisor suggested-indexes list [flags]
-atlas performanceadvisor suggested-indexes ls [flags]
-atlas performanceadvisor suggestedIndex list [flags]
-atlas performanceadvisor suggestedIndex ls [flags]
-atlas performanceadvisor suggestedindex list [flags]
-atlas performanceadvisor suggestedindex ls [flags]
-atlas performanceadvisor suggested-index list [flags]
-atlas performanceadvisor suggested-index ls [flags]
-atlas performance-advisor suggestedIndexes list [flags]
-atlas performance-advisor suggestedIndexes ls [flags]
-atlas performance-advisor suggestedindexes list [flags]
-atlas performance-advisor suggestedindexes ls [flags]
-atlas performance-advisor suggested-indexes list [flags]
-atlas performance-advisor suggested-indexes ls [flags]
-atlas performance-advisor suggestedIndex list [flags]
-atlas performance-advisor suggestedIndex ls [flags]
-atlas performance-advisor suggestedindex list [flags]
-atlas performance-advisor suggestedindex ls [flags]
-atlas performance-advisor suggested-index list [flags]
-atlas performance-advisor suggested-index ls [flags]
+### Aliases
+```
+
+atlas performanceAdvisor suggestedIndexes list
+atlas performanceAdvisor suggestedIndexes ls
+atlas performanceAdvisor suggestedindexes list
+atlas performanceAdvisor suggestedindexes ls
+atlas performanceAdvisor suggested-indexes list
+atlas performanceAdvisor suggested-indexes ls
+atlas performanceAdvisor suggestedIndex list
+atlas performanceAdvisor suggestedIndex ls
+atlas performanceAdvisor suggestedindex list
+atlas performanceAdvisor suggestedindex ls
+atlas performanceAdvisor suggested-index list
+atlas performanceAdvisor suggested-index ls
+atlas performanceadvisor suggestedIndexes list
+atlas performanceadvisor suggestedIndexes ls
+atlas performanceadvisor suggestedindexes list
+atlas performanceadvisor suggestedindexes ls
+atlas performanceadvisor suggested-indexes list
+atlas performanceadvisor suggested-indexes ls
+atlas performanceadvisor suggestedIndex list
+atlas performanceadvisor suggestedIndex ls
+atlas performanceadvisor suggestedindex list
+atlas performanceadvisor suggestedindex ls
+atlas performanceadvisor suggested-index list
+atlas performanceadvisor suggested-index ls
+atlas performance-advisor suggestedIndexes list
+atlas performance-advisor suggestedIndexes ls
+atlas performance-advisor suggestedindexes list
+atlas performance-advisor suggestedindexes ls
+atlas performance-advisor suggested-indexes list
+atlas performance-advisor suggested-indexes ls
+atlas performance-advisor suggestedIndex list
+atlas performance-advisor suggestedIndex ls
+atlas performance-advisor suggestedindex list
+atlas performance-advisor suggestedindex ls
+atlas performance-advisor suggested-index list
+atlas performance-advisor suggested-index ls
 ```
 
 ### Examples
@@ -82,7 +87,7 @@ atlas performance-advisor suggested-index ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas performanceAdvisor suggestedIndexes](atlas_performanceAdvisor_suggestedIndexes.md)	- Get suggested indexes for collections experiencing slow queries

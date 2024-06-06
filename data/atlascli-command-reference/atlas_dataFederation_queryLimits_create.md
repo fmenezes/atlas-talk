@@ -8,27 +8,32 @@ Creates a new Data Federation query limit.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataFederation queryLimits create <name> [flags]
 ```
 
-atlas dataFederation queryLimits create <name> [flags]
-atlas dataFederation querylimits create <name> [flags]
-atlas dataFederation query-limits create <name> [flags]
-atlas dataFederation queryLimit create <name> [flags]
-atlas dataFederation querylimit create <name> [flags]
-atlas dataFederation query-limit create <name> [flags]
-atlas datafederation queryLimits create <name> [flags]
-atlas datafederation querylimits create <name> [flags]
-atlas datafederation query-limits create <name> [flags]
-atlas datafederation queryLimit create <name> [flags]
-atlas datafederation querylimit create <name> [flags]
-atlas datafederation query-limit create <name> [flags]
-atlas data-federation queryLimits create <name> [flags]
-atlas data-federation querylimits create <name> [flags]
-atlas data-federation query-limits create <name> [flags]
-atlas data-federation queryLimit create <name> [flags]
-atlas data-federation querylimit create <name> [flags]
-atlas data-federation query-limit create <name> [flags]
+### Aliases
+```
+
+atlas dataFederation queryLimits create
+atlas dataFederation querylimits create
+atlas dataFederation query-limits create
+atlas dataFederation queryLimit create
+atlas dataFederation querylimit create
+atlas dataFederation query-limit create
+atlas datafederation queryLimits create
+atlas datafederation querylimits create
+atlas datafederation query-limits create
+atlas datafederation queryLimit create
+atlas datafederation querylimit create
+atlas datafederation query-limit create
+atlas data-federation queryLimits create
+atlas data-federation querylimits create
+atlas data-federation query-limits create
+atlas data-federation queryLimit create
+atlas data-federation querylimit create
+atlas data-federation query-limit create
 ```
 
 ### Examples
@@ -60,7 +65,7 @@ atlas data-federation query-limit create <name> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation queryLimits](atlas_dataFederation_queryLimits.md)	- Data federation query limits.

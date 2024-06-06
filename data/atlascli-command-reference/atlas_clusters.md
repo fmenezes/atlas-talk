@@ -10,6 +10,13 @@ The clusters command provides access to your cluster configurations. You can cre
 
 
 
+### Aliases
+```
+
+atlas clusters
+atlas cluster
+```
+
 
 
 ### Flags
@@ -27,7 +34,7 @@ The clusters command provides access to your cluster configurations. You can cre
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

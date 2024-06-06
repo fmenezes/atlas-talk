@@ -3,23 +3,28 @@
 Delete one link-token.
 
 
-
+### Usage
+```
+atlas liveMigrations link delete [flags]
 ```
 
-atlas liveMigrations link delete [flags]
-atlas liveMigrations link rm [flags]
-atlas livemigrations link delete [flags]
-atlas livemigrations link rm [flags]
-atlas live-migrations link delete [flags]
-atlas live-migrations link rm [flags]
-atlas liveMigration link delete [flags]
-atlas liveMigration link rm [flags]
-atlas livemigration link delete [flags]
-atlas livemigration link rm [flags]
-atlas live-migration link delete [flags]
-atlas live-migration link rm [flags]
-atlas lm link delete [flags]
-atlas lm link rm [flags]
+### Aliases
+```
+
+atlas liveMigrations link delete
+atlas liveMigrations link rm
+atlas livemigrations link delete
+atlas livemigrations link rm
+atlas live-migrations link delete
+atlas live-migrations link rm
+atlas liveMigration link delete
+atlas liveMigration link rm
+atlas livemigration link delete
+atlas livemigration link rm
+atlas live-migration link delete
+atlas live-migration link rm
+atlas lm link delete
+atlas lm link rm
 ```
 
 
@@ -41,7 +46,7 @@ atlas lm link rm [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas liveMigrations link](atlas_liveMigrations_link.md)	- Manage the link-token for your organization.

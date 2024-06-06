@@ -13,21 +13,26 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas clusters onlineArchives watch <archiveId> [flags]
 ```
 
-atlas clusters onlineArchives watch <archiveId> [flags]
-atlas clusters onlinearchives watch <archiveId> [flags]
-atlas clusters online-archives watch <archiveId> [flags]
-atlas clusters onlineArchive watch <archiveId> [flags]
-atlas clusters onlinearchive watch <archiveId> [flags]
-atlas clusters online-archive watch <archiveId> [flags]
-atlas cluster onlineArchives watch <archiveId> [flags]
-atlas cluster onlinearchives watch <archiveId> [flags]
-atlas cluster online-archives watch <archiveId> [flags]
-atlas cluster onlineArchive watch <archiveId> [flags]
-atlas cluster onlinearchive watch <archiveId> [flags]
-atlas cluster online-archive watch <archiveId> [flags]
+### Aliases
+```
+
+atlas clusters onlineArchives watch
+atlas clusters onlinearchives watch
+atlas clusters online-archives watch
+atlas clusters onlineArchive watch
+atlas clusters onlinearchive watch
+atlas clusters online-archive watch
+atlas cluster onlineArchives watch
+atlas cluster onlinearchives watch
+atlas cluster online-archives watch
+atlas cluster onlineArchive watch
+atlas cluster onlinearchive watch
+atlas cluster online-archive watch
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas cluster online-archive watch <archiveId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters onlineArchives](atlas_clusters_onlineArchives.md)	- Manage online archives for your cluster.

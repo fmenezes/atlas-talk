@@ -12,21 +12,26 @@ To learn more about online archives, see https://www.mongodb.com/docs/atlas/onli
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Admin role.
 
 
-
+### Usage
+```
+atlas clusters onlineArchives create [flags]
 ```
 
-atlas clusters onlineArchives create [flags]
-atlas clusters onlinearchives create [flags]
-atlas clusters online-archives create [flags]
-atlas clusters onlineArchive create [flags]
-atlas clusters onlinearchive create [flags]
-atlas clusters online-archive create [flags]
-atlas cluster onlineArchives create [flags]
-atlas cluster onlinearchives create [flags]
-atlas cluster online-archives create [flags]
-atlas cluster onlineArchive create [flags]
-atlas cluster onlinearchive create [flags]
-atlas cluster online-archive create [flags]
+### Aliases
+```
+
+atlas clusters onlineArchives create
+atlas clusters onlinearchives create
+atlas clusters online-archives create
+atlas clusters onlineArchive create
+atlas clusters onlinearchive create
+atlas clusters online-archive create
+atlas cluster onlineArchives create
+atlas cluster onlinearchives create
+atlas cluster online-archives create
+atlas cluster onlineArchive create
+atlas cluster onlinearchive create
+atlas cluster online-archive create
 ```
 
 ### Examples
@@ -66,7 +71,7 @@ atlas cluster online-archive create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters onlineArchives](atlas_clusters_onlineArchives.md)	- Manage online archives for your cluster.

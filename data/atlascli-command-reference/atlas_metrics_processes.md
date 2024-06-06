@@ -11,17 +11,22 @@ atlas processes list
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas metrics processes <hostname:port> [flags]
 ```
 
-atlas metrics processes <hostname:port> [flags]
-atlas metrics process <hostname:port> [flags]
-atlas metric processes <hostname:port> [flags]
-atlas metric process <hostname:port> [flags]
-atlas measurements processes <hostname:port> [flags]
-atlas measurements process <hostname:port> [flags]
-atlas measurement processes <hostname:port> [flags]
-atlas measurement process <hostname:port> [flags]
+### Aliases
+```
+
+atlas metrics processes
+atlas metrics process
+atlas metric processes
+atlas metric process
+atlas measurements processes
+atlas measurements process
+atlas measurement processes
+atlas measurement process
 ```
 
 ### Examples
@@ -56,7 +61,7 @@ atlas measurement process <hostname:port> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas metrics](atlas_metrics.md)	- Get metrics on the MongoDB process.

@@ -8,13 +8,18 @@ Rename a team in your organization.
 To use this command, you must authenticate with a user account or an API key with the Organization Owner role.
 
 
-
+### Usage
+```
+atlas teams rename <newName> [flags]
 ```
 
-atlas teams rename <newName> [flags]
-atlas teams update <newName> [flags]
-atlas team rename <newName> [flags]
-atlas team update <newName> [flags]
+### Aliases
+```
+
+atlas teams rename
+atlas teams update
+atlas team rename
+atlas team update
 ```
 
 ### Examples
@@ -43,7 +48,7 @@ atlas team update <newName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas teams](atlas_teams.md)	- Manage your Atlas teams.

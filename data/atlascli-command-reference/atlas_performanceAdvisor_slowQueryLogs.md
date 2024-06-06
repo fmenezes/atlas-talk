@@ -5,6 +5,29 @@ Get log lines for slow queries for a specified host
 
 
 
+### Aliases
+```
+
+atlas performanceAdvisor slowQueryLogs
+atlas performanceAdvisor slowquerylogs
+atlas performanceAdvisor slow-query-logs
+atlas performanceAdvisor slowQueryLog
+atlas performanceAdvisor slowquerylog
+atlas performanceAdvisor slow-query-log
+atlas performanceadvisor slowQueryLogs
+atlas performanceadvisor slowquerylogs
+atlas performanceadvisor slow-query-logs
+atlas performanceadvisor slowQueryLog
+atlas performanceadvisor slowquerylog
+atlas performanceadvisor slow-query-log
+atlas performance-advisor slowQueryLogs
+atlas performance-advisor slowquerylogs
+atlas performance-advisor slow-query-logs
+atlas performance-advisor slowQueryLog
+atlas performance-advisor slowquerylog
+atlas performance-advisor slow-query-log
+```
+
 
 
 ### Flags
@@ -22,7 +45,7 @@ Get log lines for slow queries for a specified host
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas performanceAdvisor](atlas_performanceAdvisor.md)	- Learn more about slow queries and get suggestions to improve database performance.

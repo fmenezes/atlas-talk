@@ -10,25 +10,22 @@ from llama_index.core.chat_engine.types import BaseChatEngine
 from atlas_talk import set_settings, vector_store
 from atlas_talk.config import Config
 
-SYSTEM_PROMPT = "You are MongoDB Atlas CLI Help Assistant, you know atlas cli command reference. You should assume atlas cli is properly installed. When you don't know the answer try looking up the information first and if you still can't find it say you don't know it, do not try to make up an answer. Format your answers in Markdown."
-SYSTEM_PROMPT_NO_RAG = "You are MongoDB Atlas CLI Help Assistant, you know atlas cli command reference. You should assume atlas cli is properly installed. When you don't know the answer say you don't know it, do not try to make up an answer. Format your answers in Markdown."
-
 def index(vs: VectorStore) -> VectorStoreIndex:
     return VectorStoreIndex.from_vector_store(vs)
 
 
-def setup(skip_rag: bool = False) -> BaseChatEngine:
+def setup() -> BaseChatEngine:
     set_settings()
 
-    if skip_rag:
-        return EmptyIndex().as_chat_engine(system_prompt=SYSTEM_PROMPT_NO_RAG)
+    if Config.SKIP_RAG:
+        return EmptyIndex().as_chat_engine(system_prompt=Config.SYSTEM_PROMPT)
 
     if not os.path.exists(Config.INDEX_PATH):
         raise RuntimeError(f'index "{Config.INDEX_PATH}" not found, perhaps run "make prepare"')
 
     cli_commands_index = index(vector_store())
 
-    return cli_commands_index.as_chat_engine(system_prompt=SYSTEM_PROMPT)
+    return cli_commands_index.as_chat_engine(system_prompt=Config.SYSTEM_PROMPT)
 
 
 def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
@@ -55,8 +52,8 @@ Note: type '/bye' anytime to end the chat""")
             exit(130)
 
 
-def execute(prompt: str = None, skip_rag: bool = False) -> None:
-    chat_engine = setup(skip_rag)
+def execute(prompt: str = None) -> None:
+    chat_engine = setup()
 
     if prompt is not None:
         output = invoke(chat_engine, prompt)

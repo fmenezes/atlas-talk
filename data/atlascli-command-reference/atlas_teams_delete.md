@@ -8,13 +8,18 @@ Remove the specified team from your organization.
 To use this command, you must authenticate with a user account or an API key with the Organization User Admin role.
 
 
-
+### Usage
+```
+atlas teams delete <teamId> [flags]
 ```
 
-atlas teams delete <teamId> [flags]
-atlas teams rm <teamId> [flags]
-atlas team delete <teamId> [flags]
-atlas team rm <teamId> [flags]
+### Aliases
+```
+
+atlas teams delete
+atlas teams rm
+atlas team delete
+atlas team rm
 ```
 
 ### Examples
@@ -42,7 +47,7 @@ atlas team rm <teamId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas teams](atlas_teams.md)	- Manage your Atlas teams.

@@ -8,13 +8,18 @@ Return one serverless instance in the specified project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas serverless describe <instanceName> [flags]
 ```
 
-atlas serverless describe <instanceName> [flags]
-atlas serverless get <instanceName> [flags]
-atlas sl describe <instanceName> [flags]
-atlas sl get <instanceName> [flags]
+### Aliases
+```
+
+atlas serverless describe
+atlas serverless get
+atlas sl describe
+atlas sl get
 ```
 
 
@@ -36,7 +41,7 @@ atlas sl get <instanceName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas serverless](atlas_serverless.md)	- Manage serverless instances for your project.

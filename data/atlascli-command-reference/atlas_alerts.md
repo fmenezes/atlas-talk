@@ -5,6 +5,13 @@ Manage alerts for your project.
 
 
 
+### Aliases
+```
+
+atlas alerts
+atlas alert
+```
+
 
 
 ### Flags
@@ -22,7 +29,7 @@ Manage alerts for your project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

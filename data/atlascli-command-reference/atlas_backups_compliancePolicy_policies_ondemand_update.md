@@ -3,21 +3,26 @@
 Update the on-demand policy of the backup compliance for your project.
 
 
-
+### Usage
+```
+atlas backups compliancePolicy policies ondemand update [flags]
 ```
 
-atlas backups compliancePolicy policies ondemand update [flags]
-atlas backups compliancePolicy policy ondemand update [flags]
-atlas backups compliancepolicy policies ondemand update [flags]
-atlas backups compliancepolicy policy ondemand update [flags]
-atlas backups compliance-policy policies ondemand update [flags]
-atlas backups compliance-policy policy ondemand update [flags]
-atlas backup compliancePolicy policies ondemand update [flags]
-atlas backup compliancePolicy policy ondemand update [flags]
-atlas backup compliancepolicy policies ondemand update [flags]
-atlas backup compliancepolicy policy ondemand update [flags]
-atlas backup compliance-policy policies ondemand update [flags]
-atlas backup compliance-policy policy ondemand update [flags]
+### Aliases
+```
+
+atlas backups compliancePolicy policies ondemand update
+atlas backups compliancePolicy policy ondemand update
+atlas backups compliancepolicy policies ondemand update
+atlas backups compliancepolicy policy ondemand update
+atlas backups compliance-policy policies ondemand update
+atlas backups compliance-policy policy ondemand update
+atlas backup compliancePolicy policies ondemand update
+atlas backup compliancePolicy policy ondemand update
+atlas backup compliancepolicy policies ondemand update
+atlas backup compliancepolicy policy ondemand update
+atlas backup compliance-policy policies ondemand update
+atlas backup compliance-policy policy ondemand update
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas backup compliance-policy policy ondemand update [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy policies ondemand](atlas_backups_compliancePolicy_policies_ondemand.md)	- Manage the on-demand policy item of the backup compliance policy for your project.

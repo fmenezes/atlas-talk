@@ -8,17 +8,22 @@ Return the details for the search index for a cluster.
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Read/Write role.
 
 
-
+### Usage
+```
+atlas clusters search indexes describe <indexId> [flags]
 ```
 
-atlas clusters search indexes describe <indexId> [flags]
-atlas clusters search index describe <indexId> [flags]
-atlas clusters fts indexes describe <indexId> [flags]
-atlas clusters fts index describe <indexId> [flags]
-atlas cluster search indexes describe <indexId> [flags]
-atlas cluster search index describe <indexId> [flags]
-atlas cluster fts indexes describe <indexId> [flags]
-atlas cluster fts index describe <indexId> [flags]
+### Aliases
+```
+
+atlas clusters search indexes describe
+atlas clusters search index describe
+atlas clusters fts indexes describe
+atlas clusters fts index describe
+atlas cluster search indexes describe
+atlas cluster search index describe
+atlas cluster fts indexes describe
+atlas cluster fts index describe
 ```
 
 ### Examples
@@ -47,7 +52,7 @@ atlas cluster fts index describe <indexId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters search indexes](atlas_clusters_search_indexes.md)	- Manage Atlas Search indexes for your cluster.

@@ -5,6 +5,19 @@ Manage Atlas Search indexes for your cluster.
 
 
 
+### Aliases
+```
+
+atlas clusters search indexes
+atlas clusters search index
+atlas clusters fts indexes
+atlas clusters fts index
+atlas cluster search indexes
+atlas cluster search index
+atlas cluster fts indexes
+atlas cluster fts index
+```
+
 
 
 ### Flags
@@ -22,7 +35,7 @@ Manage Atlas Search indexes for your cluster.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters search](atlas_clusters_search.md)	- Manage Atlas Search for your cluster.

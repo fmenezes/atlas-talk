@@ -5,6 +5,29 @@ Data federation private endpoints.
 
 
 
+### Aliases
+```
+
+atlas dataFederation privateEndpoints
+atlas dataFederation privateendpoints
+atlas dataFederation private-endpoints
+atlas dataFederation privateEndpoint
+atlas dataFederation privateendpoint
+atlas dataFederation private-endpoint
+atlas datafederation privateEndpoints
+atlas datafederation privateendpoints
+atlas datafederation private-endpoints
+atlas datafederation privateEndpoint
+atlas datafederation privateendpoint
+atlas datafederation private-endpoint
+atlas data-federation privateEndpoints
+atlas data-federation privateendpoints
+atlas data-federation private-endpoints
+atlas data-federation privateEndpoint
+atlas data-federation privateendpoint
+atlas data-federation private-endpoint
+```
+
 
 
 ### Flags
@@ -22,7 +45,7 @@ Data federation private endpoints.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation](atlas_dataFederation.md)	- Data federation.

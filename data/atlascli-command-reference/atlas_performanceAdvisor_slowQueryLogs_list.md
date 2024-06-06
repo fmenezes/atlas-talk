@@ -12,45 +12,50 @@ If you don't set the duration option or the since option, this command returns d
 To use this command, you must authenticate with a user account or an API key with the Project Data Access Read/Write role.
 
 
-
+### Usage
+```
+atlas performanceAdvisor slowQueryLogs list [flags]
 ```
 
-atlas performanceAdvisor slowQueryLogs list [flags]
-atlas performanceAdvisor slowQueryLogs ls [flags]
-atlas performanceAdvisor slowquerylogs list [flags]
-atlas performanceAdvisor slowquerylogs ls [flags]
-atlas performanceAdvisor slow-query-logs list [flags]
-atlas performanceAdvisor slow-query-logs ls [flags]
-atlas performanceAdvisor slowQueryLog list [flags]
-atlas performanceAdvisor slowQueryLog ls [flags]
-atlas performanceAdvisor slowquerylog list [flags]
-atlas performanceAdvisor slowquerylog ls [flags]
-atlas performanceAdvisor slow-query-log list [flags]
-atlas performanceAdvisor slow-query-log ls [flags]
-atlas performanceadvisor slowQueryLogs list [flags]
-atlas performanceadvisor slowQueryLogs ls [flags]
-atlas performanceadvisor slowquerylogs list [flags]
-atlas performanceadvisor slowquerylogs ls [flags]
-atlas performanceadvisor slow-query-logs list [flags]
-atlas performanceadvisor slow-query-logs ls [flags]
-atlas performanceadvisor slowQueryLog list [flags]
-atlas performanceadvisor slowQueryLog ls [flags]
-atlas performanceadvisor slowquerylog list [flags]
-atlas performanceadvisor slowquerylog ls [flags]
-atlas performanceadvisor slow-query-log list [flags]
-atlas performanceadvisor slow-query-log ls [flags]
-atlas performance-advisor slowQueryLogs list [flags]
-atlas performance-advisor slowQueryLogs ls [flags]
-atlas performance-advisor slowquerylogs list [flags]
-atlas performance-advisor slowquerylogs ls [flags]
-atlas performance-advisor slow-query-logs list [flags]
-atlas performance-advisor slow-query-logs ls [flags]
-atlas performance-advisor slowQueryLog list [flags]
-atlas performance-advisor slowQueryLog ls [flags]
-atlas performance-advisor slowquerylog list [flags]
-atlas performance-advisor slowquerylog ls [flags]
-atlas performance-advisor slow-query-log list [flags]
-atlas performance-advisor slow-query-log ls [flags]
+### Aliases
+```
+
+atlas performanceAdvisor slowQueryLogs list
+atlas performanceAdvisor slowQueryLogs ls
+atlas performanceAdvisor slowquerylogs list
+atlas performanceAdvisor slowquerylogs ls
+atlas performanceAdvisor slow-query-logs list
+atlas performanceAdvisor slow-query-logs ls
+atlas performanceAdvisor slowQueryLog list
+atlas performanceAdvisor slowQueryLog ls
+atlas performanceAdvisor slowquerylog list
+atlas performanceAdvisor slowquerylog ls
+atlas performanceAdvisor slow-query-log list
+atlas performanceAdvisor slow-query-log ls
+atlas performanceadvisor slowQueryLogs list
+atlas performanceadvisor slowQueryLogs ls
+atlas performanceadvisor slowquerylogs list
+atlas performanceadvisor slowquerylogs ls
+atlas performanceadvisor slow-query-logs list
+atlas performanceadvisor slow-query-logs ls
+atlas performanceadvisor slowQueryLog list
+atlas performanceadvisor slowQueryLog ls
+atlas performanceadvisor slowquerylog list
+atlas performanceadvisor slowquerylog ls
+atlas performanceadvisor slow-query-log list
+atlas performanceadvisor slow-query-log ls
+atlas performance-advisor slowQueryLogs list
+atlas performance-advisor slowQueryLogs ls
+atlas performance-advisor slowquerylogs list
+atlas performance-advisor slowquerylogs ls
+atlas performance-advisor slow-query-logs list
+atlas performance-advisor slow-query-logs ls
+atlas performance-advisor slowQueryLog list
+atlas performance-advisor slowQueryLog ls
+atlas performance-advisor slowquerylog list
+atlas performance-advisor slowquerylog ls
+atlas performance-advisor slow-query-log list
+atlas performance-advisor slow-query-log ls
 ```
 
 ### Examples
@@ -83,7 +88,7 @@ atlas performance-advisor slow-query-log ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas performanceAdvisor slowQueryLogs](atlas_performanceAdvisor_slowQueryLogs.md)	- Get log lines for slow queries for a specified host

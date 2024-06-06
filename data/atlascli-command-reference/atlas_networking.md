@@ -5,6 +5,12 @@ Manage or configure network peering for your Atlas project.
 
 
 
+### Aliases
+```
+
+atlas networking
+```
+
 
 
 ### Flags
@@ -22,7 +28,7 @@ Manage or configure network peering for your Atlas project.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

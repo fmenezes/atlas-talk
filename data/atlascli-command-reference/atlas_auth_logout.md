@@ -3,10 +3,15 @@
 Log out of the CLI.
 
 
-
+### Usage
+```
+atlas auth logout [flags]
 ```
 
-atlas auth logout [flags]
+### Aliases
+```
+
+atlas auth logout
 ```
 
 ### Examples
@@ -34,7 +39,7 @@ atlas auth logout [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas auth](atlas_auth.md)	- Manage the CLI's authentication state.

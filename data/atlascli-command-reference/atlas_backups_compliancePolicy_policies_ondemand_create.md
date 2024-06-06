@@ -3,21 +3,26 @@
 Create the on-demand policy item of the backup compliance policy for your project.
 
 
-
+### Usage
+```
+atlas backups compliancePolicy policies ondemand create [flags]
 ```
 
-atlas backups compliancePolicy policies ondemand create [flags]
-atlas backups compliancePolicy policy ondemand create [flags]
-atlas backups compliancepolicy policies ondemand create [flags]
-atlas backups compliancepolicy policy ondemand create [flags]
-atlas backups compliance-policy policies ondemand create [flags]
-atlas backups compliance-policy policy ondemand create [flags]
-atlas backup compliancePolicy policies ondemand create [flags]
-atlas backup compliancePolicy policy ondemand create [flags]
-atlas backup compliancepolicy policies ondemand create [flags]
-atlas backup compliancepolicy policy ondemand create [flags]
-atlas backup compliance-policy policies ondemand create [flags]
-atlas backup compliance-policy policy ondemand create [flags]
+### Aliases
+```
+
+atlas backups compliancePolicy policies ondemand create
+atlas backups compliancePolicy policy ondemand create
+atlas backups compliancepolicy policies ondemand create
+atlas backups compliancepolicy policy ondemand create
+atlas backups compliance-policy policies ondemand create
+atlas backups compliance-policy policy ondemand create
+atlas backup compliancePolicy policies ondemand create
+atlas backup compliancePolicy policy ondemand create
+atlas backup compliancepolicy policies ondemand create
+atlas backup compliancepolicy policy ondemand create
+atlas backup compliance-policy policies ondemand create
+atlas backup compliance-policy policy ondemand create
 ```
 
 ### Examples
@@ -48,7 +53,7 @@ atlas backup compliance-policy policy ondemand create [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy policies ondemand](atlas_backups_compliancePolicy_policies_ondemand.md)	- Manage the on-demand policy item of the backup compliance policy for your project.

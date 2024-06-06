@@ -3,13 +3,18 @@
 Return all deployments.
 
 
-
+### Usage
+```
+atlas deployments list [flags]
 ```
 
-atlas deployments list [flags]
-atlas deployments ls [flags]
-atlas deployment list [flags]
-atlas deployment ls [flags]
+### Aliases
+```
+
+atlas deployments list
+atlas deployments ls
+atlas deployment list
+atlas deployment ls
 ```
 
 
@@ -30,7 +35,7 @@ atlas deployment ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments](atlas_deployments.md)	- Manage cloud and local deployments.

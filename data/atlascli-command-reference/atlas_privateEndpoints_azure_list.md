@@ -8,21 +8,26 @@ Return all Azure private endpoints for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas privateEndpoints azure list [flags]
 ```
 
-atlas privateEndpoints azure list [flags]
-atlas privateEndpoints azure ls [flags]
-atlas privateendpoints azure list [flags]
-atlas privateendpoints azure ls [flags]
-atlas private-endpoints azure list [flags]
-atlas private-endpoints azure ls [flags]
-atlas privateEndpoint azure list [flags]
-atlas privateEndpoint azure ls [flags]
-atlas privateendpoint azure list [flags]
-atlas privateendpoint azure ls [flags]
-atlas private-endpoint azure list [flags]
-atlas private-endpoint azure ls [flags]
+### Aliases
+```
+
+atlas privateEndpoints azure list
+atlas privateEndpoints azure ls
+atlas privateendpoints azure list
+atlas privateendpoints azure ls
+atlas private-endpoints azure list
+atlas private-endpoints azure ls
+atlas privateEndpoint azure list
+atlas privateEndpoint azure ls
+atlas privateendpoint azure list
+atlas privateendpoint azure ls
+atlas private-endpoint azure list
+atlas private-endpoint azure ls
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas private-endpoint azure ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas privateEndpoints azure](atlas_privateEndpoints_azure.md)	- Manage Azure Private Endpoints.

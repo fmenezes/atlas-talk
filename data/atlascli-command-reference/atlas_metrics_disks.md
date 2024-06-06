@@ -5,6 +5,19 @@ List available disks or disk metrics for a given host.
 
 
 
+### Aliases
+```
+
+atlas metrics disks
+atlas metrics disk
+atlas metric disks
+atlas metric disk
+atlas measurements disks
+atlas measurements disk
+atlas measurement disks
+atlas measurement disk
+```
+
 
 
 ### Flags
@@ -22,7 +35,7 @@ List available disks or disk metrics for a given host.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas metrics](atlas_metrics.md)	- Get metrics on the MongoDB process.

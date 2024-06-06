@@ -8,45 +8,50 @@ Returns all data federation private endpoints for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas dataFederation privateEndpoints list [flags]
 ```
 
-atlas dataFederation privateEndpoints list [flags]
-atlas dataFederation privateEndpoints ls [flags]
-atlas dataFederation privateendpoints list [flags]
-atlas dataFederation privateendpoints ls [flags]
-atlas dataFederation private-endpoints list [flags]
-atlas dataFederation private-endpoints ls [flags]
-atlas dataFederation privateEndpoint list [flags]
-atlas dataFederation privateEndpoint ls [flags]
-atlas dataFederation privateendpoint list [flags]
-atlas dataFederation privateendpoint ls [flags]
-atlas dataFederation private-endpoint list [flags]
-atlas dataFederation private-endpoint ls [flags]
-atlas datafederation privateEndpoints list [flags]
-atlas datafederation privateEndpoints ls [flags]
-atlas datafederation privateendpoints list [flags]
-atlas datafederation privateendpoints ls [flags]
-atlas datafederation private-endpoints list [flags]
-atlas datafederation private-endpoints ls [flags]
-atlas datafederation privateEndpoint list [flags]
-atlas datafederation privateEndpoint ls [flags]
-atlas datafederation privateendpoint list [flags]
-atlas datafederation privateendpoint ls [flags]
-atlas datafederation private-endpoint list [flags]
-atlas datafederation private-endpoint ls [flags]
-atlas data-federation privateEndpoints list [flags]
-atlas data-federation privateEndpoints ls [flags]
-atlas data-federation privateendpoints list [flags]
-atlas data-federation privateendpoints ls [flags]
-atlas data-federation private-endpoints list [flags]
-atlas data-federation private-endpoints ls [flags]
-atlas data-federation privateEndpoint list [flags]
-atlas data-federation privateEndpoint ls [flags]
-atlas data-federation privateendpoint list [flags]
-atlas data-federation privateendpoint ls [flags]
-atlas data-federation private-endpoint list [flags]
-atlas data-federation private-endpoint ls [flags]
+### Aliases
+```
+
+atlas dataFederation privateEndpoints list
+atlas dataFederation privateEndpoints ls
+atlas dataFederation privateendpoints list
+atlas dataFederation privateendpoints ls
+atlas dataFederation private-endpoints list
+atlas dataFederation private-endpoints ls
+atlas dataFederation privateEndpoint list
+atlas dataFederation privateEndpoint ls
+atlas dataFederation privateendpoint list
+atlas dataFederation privateendpoint ls
+atlas dataFederation private-endpoint list
+atlas dataFederation private-endpoint ls
+atlas datafederation privateEndpoints list
+atlas datafederation privateEndpoints ls
+atlas datafederation privateendpoints list
+atlas datafederation privateendpoints ls
+atlas datafederation private-endpoints list
+atlas datafederation private-endpoints ls
+atlas datafederation privateEndpoint list
+atlas datafederation privateEndpoint ls
+atlas datafederation privateendpoint list
+atlas datafederation privateendpoint ls
+atlas datafederation private-endpoint list
+atlas datafederation private-endpoint ls
+atlas data-federation privateEndpoints list
+atlas data-federation privateEndpoints ls
+atlas data-federation privateendpoints list
+atlas data-federation privateendpoints ls
+atlas data-federation private-endpoints list
+atlas data-federation private-endpoints ls
+atlas data-federation privateEndpoint list
+atlas data-federation privateEndpoint ls
+atlas data-federation privateendpoint list
+atlas data-federation privateendpoint ls
+atlas data-federation private-endpoint list
+atlas data-federation private-endpoint ls
 ```
 
 ### Examples
@@ -75,7 +80,7 @@ atlas data-federation private-endpoint ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation privateEndpoints](atlas_dataFederation_privateEndpoints.md)	- Data federation private endpoints.

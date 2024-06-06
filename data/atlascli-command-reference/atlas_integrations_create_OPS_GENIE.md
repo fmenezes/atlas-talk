@@ -10,21 +10,26 @@ The requesting API key must have the Organization Owner or Project Owner role to
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas integrations create OPS_GENIE [flags]
 ```
 
-atlas integrations create OPS_GENIE [flags]
-atlas integrations create ops_genie [flags]
-atlas integrations create opsGenie [flags]
-atlas integrations update OPS_GENIE [flags]
-atlas integrations update ops_genie [flags]
-atlas integrations update opsGenie [flags]
-atlas integration create OPS_GENIE [flags]
-atlas integration create ops_genie [flags]
-atlas integration create opsGenie [flags]
-atlas integration update OPS_GENIE [flags]
-atlas integration update ops_genie [flags]
-atlas integration update opsGenie [flags]
+### Aliases
+```
+
+atlas integrations create OPS_GENIE
+atlas integrations create ops_genie
+atlas integrations create opsGenie
+atlas integrations update OPS_GENIE
+atlas integrations update ops_genie
+atlas integrations update opsGenie
+atlas integration create OPS_GENIE
+atlas integration create ops_genie
+atlas integration create opsGenie
+atlas integration update OPS_GENIE
+atlas integration update ops_genie
+atlas integration update opsGenie
 ```
 
 ### Examples
@@ -54,7 +59,7 @@ atlas integration update opsGenie [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas integrations create](atlas_integrations_create.md)	- Create operations.

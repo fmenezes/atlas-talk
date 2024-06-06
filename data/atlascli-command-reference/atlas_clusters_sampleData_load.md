@@ -8,21 +8,26 @@ Load sample data into the specified cluster for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas clusters sampleData load <clusterName> [flags]
 ```
 
-atlas clusters sampleData load <clusterName> [flags]
-atlas clusters sampledata load <clusterName> [flags]
-atlas clusters sample-data load <clusterName> [flags]
-atlas clusters sampleDatum load <clusterName> [flags]
-atlas clusters sampledatum load <clusterName> [flags]
-atlas clusters sample-datum load <clusterName> [flags]
-atlas cluster sampleData load <clusterName> [flags]
-atlas cluster sampledata load <clusterName> [flags]
-atlas cluster sample-data load <clusterName> [flags]
-atlas cluster sampleDatum load <clusterName> [flags]
-atlas cluster sampledatum load <clusterName> [flags]
-atlas cluster sample-datum load <clusterName> [flags]
+### Aliases
+```
+
+atlas clusters sampleData load
+atlas clusters sampledata load
+atlas clusters sample-data load
+atlas clusters sampleDatum load
+atlas clusters sampledatum load
+atlas clusters sample-datum load
+atlas cluster sampleData load
+atlas cluster sampledata load
+atlas cluster sample-data load
+atlas cluster sampleDatum load
+atlas cluster sampledatum load
+atlas cluster sample-datum load
 ```
 
 ### Examples
@@ -50,7 +55,7 @@ atlas cluster sample-datum load <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters sampleData](atlas_clusters_sampleData.md)	- Manage sample data for your cluster.

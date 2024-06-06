@@ -5,6 +5,12 @@ Manage the CLI's authentication state.
 
 
 
+### Aliases
+```
+
+atlas auth
+```
+
 
 
 ### Flags
@@ -22,7 +28,7 @@ Manage the CLI's authentication state.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas](atlas.md)	- CLI tool to manage MongoDB Atlas.

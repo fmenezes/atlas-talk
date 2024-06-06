@@ -8,27 +8,32 @@ Remove the specified data federation private endpoint from your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas dataFederation privateEndpoints delete <endpointId> [flags]
 ```
 
-atlas dataFederation privateEndpoints delete <endpointId> [flags]
-atlas dataFederation privateendpoints delete <endpointId> [flags]
-atlas dataFederation private-endpoints delete <endpointId> [flags]
-atlas dataFederation privateEndpoint delete <endpointId> [flags]
-atlas dataFederation privateendpoint delete <endpointId> [flags]
-atlas dataFederation private-endpoint delete <endpointId> [flags]
-atlas datafederation privateEndpoints delete <endpointId> [flags]
-atlas datafederation privateendpoints delete <endpointId> [flags]
-atlas datafederation private-endpoints delete <endpointId> [flags]
-atlas datafederation privateEndpoint delete <endpointId> [flags]
-atlas datafederation privateendpoint delete <endpointId> [flags]
-atlas datafederation private-endpoint delete <endpointId> [flags]
-atlas data-federation privateEndpoints delete <endpointId> [flags]
-atlas data-federation privateendpoints delete <endpointId> [flags]
-atlas data-federation private-endpoints delete <endpointId> [flags]
-atlas data-federation privateEndpoint delete <endpointId> [flags]
-atlas data-federation privateendpoint delete <endpointId> [flags]
-atlas data-federation private-endpoint delete <endpointId> [flags]
+### Aliases
+```
+
+atlas dataFederation privateEndpoints delete
+atlas dataFederation privateendpoints delete
+atlas dataFederation private-endpoints delete
+atlas dataFederation privateEndpoint delete
+atlas dataFederation privateendpoint delete
+atlas dataFederation private-endpoint delete
+atlas datafederation privateEndpoints delete
+atlas datafederation privateendpoints delete
+atlas datafederation private-endpoints delete
+atlas datafederation privateEndpoint delete
+atlas datafederation privateendpoint delete
+atlas datafederation private-endpoint delete
+atlas data-federation privateEndpoints delete
+atlas data-federation privateendpoints delete
+atlas data-federation private-endpoints delete
+atlas data-federation privateEndpoint delete
+atlas data-federation privateendpoint delete
+atlas data-federation private-endpoint delete
 ```
 
 ### Examples
@@ -57,7 +62,7 @@ atlas data-federation private-endpoint delete <endpointId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas dataFederation privateEndpoints](atlas_dataFederation_privateEndpoints.md)	- Data federation private endpoints.

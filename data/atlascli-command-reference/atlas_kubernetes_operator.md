@@ -10,6 +10,12 @@ This command manages the Atlas Kubernetes Operator.
 
 
 
+### Aliases
+```
+
+atlas kubernetes operator
+```
+
 
 
 ### Flags
@@ -27,7 +33,7 @@ This command manages the Atlas Kubernetes Operator.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas kubernetes](atlas_kubernetes.md)	- Manage Kubernetes resources.

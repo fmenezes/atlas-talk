@@ -5,6 +5,17 @@ Manage cloud backup compliance policy for your project. Use "atlas backups compl
 
 
 
+### Aliases
+```
+
+atlas backups compliancePolicy
+atlas backups compliancepolicy
+atlas backups compliance-policy
+atlas backup compliancePolicy
+atlas backup compliancepolicy
+atlas backup compliance-policy
+```
+
 
 
 ### Flags
@@ -22,7 +33,7 @@ Manage cloud backup compliance policy for your project. Use "atlas backups compl
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups](atlas_backups.md)	- Manage cloud backups for your project.

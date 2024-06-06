@@ -13,10 +13,15 @@ You can interrupt the command's polling at any time with CTRL-C.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas security ldap verify status watch <requestId> [flags]
 ```
 
-atlas security ldap verify status watch <requestId> [flags]
+### Aliases
+```
+
+atlas security ldap verify status watch
 ```
 
 ### Examples
@@ -42,7 +47,7 @@ atlas security ldap verify status watch <requestId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas security ldap verify status](atlas_security_ldap_verify_status.md)	- Get the status of an LDAP configuration request.

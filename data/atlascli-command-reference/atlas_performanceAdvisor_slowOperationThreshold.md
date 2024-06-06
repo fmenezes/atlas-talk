@@ -5,6 +5,29 @@ Enable or disable management of the slow operation threshold for your cluster.
 
 
 
+### Aliases
+```
+
+atlas performanceAdvisor slowOperationThreshold
+atlas performanceAdvisor slowoperationthreshold
+atlas performanceAdvisor slow-operation-threshold
+atlas performanceAdvisor slowOT
+atlas performanceAdvisor sot
+atlas performanceAdvisor slowMS
+atlas performanceadvisor slowOperationThreshold
+atlas performanceadvisor slowoperationthreshold
+atlas performanceadvisor slow-operation-threshold
+atlas performanceadvisor slowOT
+atlas performanceadvisor sot
+atlas performanceadvisor slowMS
+atlas performance-advisor slowOperationThreshold
+atlas performance-advisor slowoperationthreshold
+atlas performance-advisor slow-operation-threshold
+atlas performance-advisor slowOT
+atlas performance-advisor sot
+atlas performance-advisor slowMS
+```
+
 
 
 ### Flags
@@ -22,7 +45,7 @@ Enable or disable management of the slow operation threshold for your cluster.
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas performanceAdvisor](atlas_performanceAdvisor.md)	- Learn more about slow queries and get suggestions to improve database performance.

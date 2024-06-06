@@ -8,17 +8,22 @@ Remove the specified alert configuration for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas alerts settings delete <alertConfigId> [flags]
 ```
 
-atlas alerts settings delete <alertConfigId> [flags]
-atlas alerts settings rm <alertConfigId> [flags]
-atlas alerts config delete <alertConfigId> [flags]
-atlas alerts config rm <alertConfigId> [flags]
-atlas alert settings delete <alertConfigId> [flags]
-atlas alert settings rm <alertConfigId> [flags]
-atlas alert config delete <alertConfigId> [flags]
-atlas alert config rm <alertConfigId> [flags]
+### Aliases
+```
+
+atlas alerts settings delete
+atlas alerts settings rm
+atlas alerts config delete
+atlas alerts config rm
+atlas alert settings delete
+atlas alert settings rm
+atlas alert config delete
+atlas alert config rm
 ```
 
 ### Examples
@@ -46,7 +51,7 @@ atlas alert config rm <alertConfigId> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas alerts settings](atlas_alerts_settings.md)	- Manages alerts configuration for your project.

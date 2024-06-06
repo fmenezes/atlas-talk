@@ -8,37 +8,42 @@ Return the SRV connection string for the cluster you specify.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas clusters connectionStrings describe <clusterName> [flags]
 ```
 
-atlas clusters connectionStrings describe <clusterName> [flags]
-atlas clusters connectionStrings get <clusterName> [flags]
-atlas clusters connectionstrings describe <clusterName> [flags]
-atlas clusters connectionstrings get <clusterName> [flags]
-atlas clusters connection-strings describe <clusterName> [flags]
-atlas clusters connection-strings get <clusterName> [flags]
-atlas clusters connectionString describe <clusterName> [flags]
-atlas clusters connectionString get <clusterName> [flags]
-atlas clusters connectionstring describe <clusterName> [flags]
-atlas clusters connectionstring get <clusterName> [flags]
-atlas clusters connection-string describe <clusterName> [flags]
-atlas clusters connection-string get <clusterName> [flags]
-atlas clusters cs describe <clusterName> [flags]
-atlas clusters cs get <clusterName> [flags]
-atlas cluster connectionStrings describe <clusterName> [flags]
-atlas cluster connectionStrings get <clusterName> [flags]
-atlas cluster connectionstrings describe <clusterName> [flags]
-atlas cluster connectionstrings get <clusterName> [flags]
-atlas cluster connection-strings describe <clusterName> [flags]
-atlas cluster connection-strings get <clusterName> [flags]
-atlas cluster connectionString describe <clusterName> [flags]
-atlas cluster connectionString get <clusterName> [flags]
-atlas cluster connectionstring describe <clusterName> [flags]
-atlas cluster connectionstring get <clusterName> [flags]
-atlas cluster connection-string describe <clusterName> [flags]
-atlas cluster connection-string get <clusterName> [flags]
-atlas cluster cs describe <clusterName> [flags]
-atlas cluster cs get <clusterName> [flags]
+### Aliases
+```
+
+atlas clusters connectionStrings describe
+atlas clusters connectionStrings get
+atlas clusters connectionstrings describe
+atlas clusters connectionstrings get
+atlas clusters connection-strings describe
+atlas clusters connection-strings get
+atlas clusters connectionString describe
+atlas clusters connectionString get
+atlas clusters connectionstring describe
+atlas clusters connectionstring get
+atlas clusters connection-string describe
+atlas clusters connection-string get
+atlas clusters cs describe
+atlas clusters cs get
+atlas cluster connectionStrings describe
+atlas cluster connectionStrings get
+atlas cluster connectionstrings describe
+atlas cluster connectionstrings get
+atlas cluster connection-strings describe
+atlas cluster connection-strings get
+atlas cluster connectionString describe
+atlas cluster connectionString get
+atlas cluster connectionstring describe
+atlas cluster connectionstring get
+atlas cluster connection-string describe
+atlas cluster connection-string get
+atlas cluster cs describe
+atlas cluster cs get
 ```
 
 ### Examples
@@ -67,7 +72,7 @@ atlas cluster cs get <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters connectionStrings](atlas_clusters_connectionStrings.md)	- Manage MongoDB cluster connection string.

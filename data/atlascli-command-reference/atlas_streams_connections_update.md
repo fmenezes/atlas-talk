@@ -8,13 +8,18 @@ Modify the details of the specified connection within your Atlas Stream Processi
 To use this command, you must authenticate with a user account or an API key with the Project Owner role.
 
 
-
+### Usage
+```
+atlas streams connections update <connectionName> [flags]
 ```
 
-atlas streams connections update <connectionName> [flags]
-atlas streams connection update <connectionName> [flags]
-atlas stream connections update <connectionName> [flags]
-atlas stream connection update <connectionName> [flags]
+### Aliases
+```
+
+atlas streams connections update
+atlas streams connection update
+atlas stream connections update
+atlas stream connection update
 ```
 
 ### Examples
@@ -45,7 +50,7 @@ atlas stream connection update <connectionName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas streams connections](atlas_streams_connections.md)	- Manage Atlas Stream Processing connections.

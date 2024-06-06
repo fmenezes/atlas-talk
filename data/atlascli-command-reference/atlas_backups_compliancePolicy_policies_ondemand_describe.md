@@ -3,33 +3,38 @@
 Return the on-demand policy item of the backup compliance policy for your project.
 
 
-
+### Usage
+```
+atlas backups compliancePolicy policies ondemand describe [flags]
 ```
 
-atlas backups compliancePolicy policies ondemand describe [flags]
-atlas backups compliancePolicy policies ondemand get [flags]
-atlas backups compliancePolicy policy ondemand describe [flags]
-atlas backups compliancePolicy policy ondemand get [flags]
-atlas backups compliancepolicy policies ondemand describe [flags]
-atlas backups compliancepolicy policies ondemand get [flags]
-atlas backups compliancepolicy policy ondemand describe [flags]
-atlas backups compliancepolicy policy ondemand get [flags]
-atlas backups compliance-policy policies ondemand describe [flags]
-atlas backups compliance-policy policies ondemand get [flags]
-atlas backups compliance-policy policy ondemand describe [flags]
-atlas backups compliance-policy policy ondemand get [flags]
-atlas backup compliancePolicy policies ondemand describe [flags]
-atlas backup compliancePolicy policies ondemand get [flags]
-atlas backup compliancePolicy policy ondemand describe [flags]
-atlas backup compliancePolicy policy ondemand get [flags]
-atlas backup compliancepolicy policies ondemand describe [flags]
-atlas backup compliancepolicy policies ondemand get [flags]
-atlas backup compliancepolicy policy ondemand describe [flags]
-atlas backup compliancepolicy policy ondemand get [flags]
-atlas backup compliance-policy policies ondemand describe [flags]
-atlas backup compliance-policy policies ondemand get [flags]
-atlas backup compliance-policy policy ondemand describe [flags]
-atlas backup compliance-policy policy ondemand get [flags]
+### Aliases
+```
+
+atlas backups compliancePolicy policies ondemand describe
+atlas backups compliancePolicy policies ondemand get
+atlas backups compliancePolicy policy ondemand describe
+atlas backups compliancePolicy policy ondemand get
+atlas backups compliancepolicy policies ondemand describe
+atlas backups compliancepolicy policies ondemand get
+atlas backups compliancepolicy policy ondemand describe
+atlas backups compliancepolicy policy ondemand get
+atlas backups compliance-policy policies ondemand describe
+atlas backups compliance-policy policies ondemand get
+atlas backups compliance-policy policy ondemand describe
+atlas backups compliance-policy policy ondemand get
+atlas backup compliancePolicy policies ondemand describe
+atlas backup compliancePolicy policies ondemand get
+atlas backup compliancePolicy policy ondemand describe
+atlas backup compliancePolicy policy ondemand get
+atlas backup compliancepolicy policies ondemand describe
+atlas backup compliancepolicy policies ondemand get
+atlas backup compliancepolicy policy ondemand describe
+atlas backup compliancepolicy policy ondemand get
+atlas backup compliance-policy policies ondemand describe
+atlas backup compliance-policy policies ondemand get
+atlas backup compliance-policy policy ondemand describe
+atlas backup compliance-policy policy ondemand get
 ```
 
 
@@ -51,7 +56,7 @@ atlas backup compliance-policy policy ondemand get [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups compliancePolicy policies ondemand](atlas_backups_compliancePolicy_policies_ondemand.md)	- Manage the on-demand policy item of the backup compliance policy for your project.

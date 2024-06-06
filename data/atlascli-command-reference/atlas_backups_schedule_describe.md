@@ -8,13 +8,18 @@ Describe a cloud backup schedule for the cluster you specify.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas backups schedule describe <clusterName> [flags]
 ```
 
-atlas backups schedule describe <clusterName> [flags]
-atlas backups schedule get <clusterName> [flags]
-atlas backup schedule describe <clusterName> [flags]
-atlas backup schedule get <clusterName> [flags]
+### Aliases
+```
+
+atlas backups schedule describe
+atlas backups schedule get
+atlas backup schedule describe
+atlas backup schedule get
 ```
 
 ### Examples
@@ -42,7 +47,7 @@ atlas backup schedule get <clusterName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas backups schedule](atlas_backups_schedule.md)	- Return a cloud backup schedule for the cluster you specify.

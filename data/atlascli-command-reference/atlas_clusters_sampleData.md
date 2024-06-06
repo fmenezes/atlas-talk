@@ -10,6 +10,23 @@ The sampleData command provides access to sample data to be loaded onto your clu
 
 
 
+### Aliases
+```
+
+atlas clusters sampleData
+atlas clusters sampledata
+atlas clusters sample-data
+atlas clusters sampleDatum
+atlas clusters sampledatum
+atlas clusters sample-datum
+atlas cluster sampleData
+atlas cluster sampledata
+atlas cluster sample-data
+atlas cluster sampleDatum
+atlas cluster sampledatum
+atlas cluster sample-datum
+```
+
 
 
 ### Flags
@@ -27,7 +44,7 @@ The sampleData command provides access to sample data to be loaded onto your clu
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas clusters](atlas_clusters.md)	- Manage clusters for your project.

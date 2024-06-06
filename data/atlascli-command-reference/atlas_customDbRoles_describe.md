@@ -8,23 +8,28 @@ Return a single custom database role for your project.
 To use this command, you must authenticate with a user account or an API key with the Project Read Only role.
 
 
-
+### Usage
+```
+atlas customDbRoles describe <roleName> [flags]
 ```
 
-atlas customDbRoles describe <roleName> [flags]
-atlas customDbRoles get <roleName> [flags]
-atlas customdbroles describe <roleName> [flags]
-atlas customdbroles get <roleName> [flags]
-atlas custom-db-roles describe <roleName> [flags]
-atlas custom-db-roles get <roleName> [flags]
-atlas customDbRole describe <roleName> [flags]
-atlas customDbRole get <roleName> [flags]
-atlas customdbrole describe <roleName> [flags]
-atlas customdbrole get <roleName> [flags]
-atlas custom-db-role describe <roleName> [flags]
-atlas custom-db-role get <roleName> [flags]
-atlas customDBRoles describe <roleName> [flags]
-atlas customDBRoles get <roleName> [flags]
+### Aliases
+```
+
+atlas customDbRoles describe
+atlas customDbRoles get
+atlas customdbroles describe
+atlas customdbroles get
+atlas custom-db-roles describe
+atlas custom-db-roles get
+atlas customDbRole describe
+atlas customDbRole get
+atlas customdbrole describe
+atlas customdbrole get
+atlas custom-db-role describe
+atlas custom-db-role get
+atlas customDBRoles describe
+atlas customDBRoles get
 ```
 
 
@@ -46,7 +51,7 @@ atlas customDBRoles get <roleName> [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas customDbRoles](atlas_customDbRoles.md)	- Manage custom database roles for your project.

@@ -3,17 +3,22 @@
 List all Atlas Search indexes for a deployment.
 
 
-
+### Usage
+```
+atlas deployments search indexes list [flags]
 ```
 
-atlas deployments search indexes list [flags]
-atlas deployments search indexes ls [flags]
-atlas deployments search index list [flags]
-atlas deployments search index ls [flags]
-atlas deployment search indexes list [flags]
-atlas deployment search indexes ls [flags]
-atlas deployment search index list [flags]
-atlas deployment search index ls [flags]
+### Aliases
+```
+
+atlas deployments search indexes list
+atlas deployments search indexes ls
+atlas deployments search index list
+atlas deployments search index ls
+atlas deployment search indexes list
+atlas deployment search indexes ls
+atlas deployment search index list
+atlas deployment search index ls
 ```
 
 
@@ -41,7 +46,7 @@ atlas deployment search index ls [flags]
 
 ```
 
-### SEE ALSO
+### See Also
 
 
 * [atlas deployments search indexes](atlas_deployments_search_indexes.md)	- Manage cloud and local search indexes.
