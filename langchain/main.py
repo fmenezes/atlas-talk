@@ -1,5 +1,6 @@
 from typing import Any, List
 import uuid
+import os
 
 from rich.console import Console
 from rich.markdown import Markdown
@@ -18,7 +19,8 @@ from langchain_core.documents import Document
 from langchain_community.document_transformers import Html2TextTransformer
 from langchain_text_splitters import MarkdownTextSplitter
 from langchain_core.vectorstores import VectorStore
-from langchain_community.document_loaders import DirectoryLoader
+from langchain_community.document_loaders import BSHTMLLoader
+from langchain_core.embeddings import Embeddings
 
 EMBEDDING_MODEL = "mxbai-embed-large"
 CHAT_MODEL = "llama3"
@@ -32,27 +34,15 @@ def get_session_history(session_id: str) -> BaseChatMessageHistory:
     return store[session_id]
 
 
-def load_docs() -> List[Document]:
-    loader = DirectoryLoader('./data/old', glob="**/*.html")
-    return loader.load()
-
-
-def html_to_markdown(docs: List[Document]) -> List[Document]:
-    html2text = Html2TextTransformer()
-    return html2text.transform_documents(docs)
-
-
-def split_docs(docs: List[Document]) -> List[Document]:
-    text_splitter = MarkdownTextSplitter()
-    return text_splitter.split_documents(docs)
-
-
-def embeddings():
+def embeddings() -> Embeddings:
     return OllamaEmbeddings(model=EMBEDDING_MODEL)
 
 
-def vector_store(docs: List[Document]) -> VectorStore:
-    return FAISS.from_documents(docs, embeddings())
+def vector_store() -> VectorStore:
+    if not os.path.exists('./data/langchain_index'):
+        raise RuntimeError('index "./data/langchain_index" not found')
+    
+    return FAISS.load_local('./data/langchain_index', embeddings(), allow_dangerous_deserialization=True)
 
 
 def prompt() -> ChatPromptTemplate:
@@ -70,7 +60,7 @@ def model() -> BaseChatModel:
     return ChatOllama(model=CHAT_MODEL, temperature=1)
 
 
-def pull_models():
+def pull_models() -> None:
     ollama.pull(CHAT_MODEL)
     ollama.pull(EMBEDDING_MODEL)
 
@@ -78,8 +68,8 @@ def pull_models():
 def setup() -> RunnableWithMessageHistory:
     pull_models()
 
-    ret = vector_store(split_docs(html_to_markdown(load_docs()))
-                       ).as_retriever()
+    vs = vector_store()
+    ret = vs.as_retriever()
 
     rag_chain = RunnableParallel({
         "context": ret,
@@ -102,7 +92,7 @@ def setup() -> RunnableWithMessageHistory:
 
 
 def convert_output(input: Any) -> str:
-    out = input['answer'] + '\n\n### Context'
+    out = input['answer'] + '\n\nSources:'
     for doc in input['context']:
         out += f'\n- {doc.metadata['source']}\n>{doc.page_content}'
     return out
@@ -112,7 +102,7 @@ def invoke(chain: RunnableWithMessageHistory, session_id: str, prompt: str) -> s
     return convert_output(chain.invoke({"input": prompt}, config={"configurable": {"session_id": session_id}}))
 
 
-def main():
+def main() -> None:
     session_id = str(uuid.uuid1())
     console = Console()
     c = setup()

@@ -1,8 +1,4 @@
-from typing import Sequence, List
-import os
-import uuid
-from urllib.parse import urlparse
-from urllib.request import urlretrieve
+from typing import Sequence, Dict
 import json
 
 from rich.console import Console
@@ -14,14 +10,14 @@ from llama_index.core.schema import Document
 from llama_index.core.llms import ChatMessage, MessageRole
 from llama_index.llms.ollama import Ollama
 from llama_index.embeddings.ollama import OllamaEmbedding
-from llama_index.readers.web import BeautifulSoupWebReader
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.core.extractors import TitleExtractor
 from llama_index.core.ingestion import IngestionPipeline
 from llama_index.core.vector_stores.types import VectorStore
 from llama_index.vector_stores.chroma import ChromaVectorStore
 import chromadb
-from bs4 import BeautifulSoup
+
+from llamaindex.html_loader import HTMLReader
 
 embed_model = OllamaEmbedding(
     model_name="nomic-embed-text"
@@ -36,69 +32,16 @@ def vector_store():
     return ChromaVectorStore(chroma_collection=chroma_collection)
 
 
-def extract_links(url: str, file_path: str) -> List[str]:
-    parsed_url = urlparse(url)
-    prefix = f"{parsed_url.scheme}://{parsed_url.netloc}"
-
-    with open(file_path) as f:
-        soup = BeautifulSoup(f.read(), "html.parser")
-        raw_links = [
-            a['href'] for a in soup.find_all('a', href=True)
-        ]
-        all_links = [
-            f"{prefix}{link}" if link.startswith('/') else f"{url}{link}" if link.startswith('#') else link for link in raw_links
-        ]
-        links_without_anchors = [
-            link.split('#')[0] for link in all_links]
-        links = list(set(links_without_anchors))
-        return links
+def load_metadata(p: str) -> Dict:
+    mp = p.removesuffix('.html') + '_metadata.json'
+    with open(mp, "r") as f:
+        return json.load(f)
 
 
-def process_docs(url: str, filter: tuple[str, ...]) -> None:
-    data = {
-        'by_ids': {},
-        'by_urls': {},
-        'failed': [],
-    }
-
-    data_path = os.path.abspath(f"./data/map.json")
-    if os.path.exists(data_path):
-        with open(data_path, "r") as f:
-            data = json.load(f)
-
-    to_visit = [url]
-    filter = tuple([url]) + filter
-    already_visited = []
-    while len(to_visit) > 0:
-        url = to_visit.pop()
-        print(f'processing {url}')
-        already_visited += [url]
-        id = data['by_urls'].get(url) or str(uuid.uuid4())
-        p = os.path.abspath(f"./data/{id}.html")
-        failed = False
-        if not os.path.exists(p):
-            d = os.path.dirname(p)
-            os.makedirs(d, exist_ok=True)
-            data['by_urls'][url] = id
-            data['by_ids'][id] = url
-            try:
-                urlretrieve(url, p)
-            except:
-                data['failed'] += url
-                failed = True
-            with open(data_path, "w") as f:
-                json.dump(data, f, indent=2)
-        if failed:
-            continue
-        new_links = extract_links(url, p)
-        new_links = [link for link in new_links if link.startswith(filter)]
-        new_links = [link for link in new_links if link not in already_visited]
-        to_visit += new_links
-
-
-def load_docs(urls: List[str]) -> Sequence[Document]:
-    loader = SimpleDirectoryReader()
-    return loader.load_data(urls=urls)
+def load_docs() -> Sequence[Document]:
+    loader = SimpleDirectoryReader(input_dir="./data/old", recursive=True, required_exts=[
+                                   '.html'], file_metadata=load_metadata, file_extractor={'.html': HTMLReader})
+    return loader.load_data()
 
 
 def ingest(vector_store: VectorStore):
@@ -110,19 +53,7 @@ def ingest(vector_store: VectorStore):
         ],
         vector_store=vector_store,
     )
-    local_path = './llamaindex/pipeline_storage'
-    if (os.path.exists(local_path)):
-        pipeline.load(local_path)
-    else:
-        process_docs("https://www.mongodb.com/docs/", (
-            "http://www.mongodb.com/docs/",
-            "https://mongodb.com/docs/",
-            "http://mongodb.com/docs/",
-            "https://docs.mongodb.com/",
-            "http://docs.mongodb.com/",
-        ))
-        pipeline.run(documents=load_docs())
-        pipeline.persist(local_path)
+    pipeline.run(documents=load_docs())
 
 
 def index(vs: VectorStore) -> VectorStoreIndex:

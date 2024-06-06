@@ -37,7 +37,7 @@ def link_allowed(url: str) -> bool:
                            "https://mongodb.com/docs/",
                            "http://mongodb.com/docs/",
                            "https://docs.mongodb.com/",
-                           "http://docs.mongodb.com/")) and not url.endswith(('.tar', '.tar.gz', '.tgz', '.gz', '.7zip', '.zip', '.rar', '.json', '.csv'))
+                           "http://docs.mongodb.com/")) and not url.endswith(('.tar', '.tar.gz', '.tgz', '.gz', '.7zip', '.zip', '.rar', '.json', '.csv', '.asc'))
 
 
 def extract_links(url: str, file_path: str) -> List[str]:

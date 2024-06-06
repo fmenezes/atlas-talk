@@ -19,6 +19,11 @@ collect: $(VENV)/bin/activate
 	. $(VENV)/bin/activate
 	$(PYTHON) collect/main.py
 
+.PHONY: index
+index: $(VENV)/bin/activate
+	. $(VENV)/bin/activate
+	$(PYTHON) langchain-index/main.py
+
 $(VENV): $(VENV)/bin/activate
 
 $(VENV)/bin/activate: requirements.txt
