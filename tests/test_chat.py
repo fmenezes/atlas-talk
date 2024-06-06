@@ -1,5 +1,5 @@
 import re
-from src.atlas_talk.commands.chat import invoke, setup
+from atlas_talk.chat import invoke, setup
 
 def test_rag():
     engine = setup()
@@ -14,9 +14,3 @@ def test_memory():
     got = invoke(engine, "do you remmeber my name?")
     expect = 'John'
     assert re.search(expect, got), 'expected: ' + expect + ' got: ' + got
-
-
-if __name__ == "__main__":
-    test_rag()
-    test_memory()
-    print("Everything passed")

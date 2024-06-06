@@ -7,19 +7,30 @@ PIP = $(VENV)/bin/pip
 .PHONY: chat
 chat: $(VENV)/bin/activate
 	@. $(VENV)/bin/activate
-	@$(PYTHON) src/main.py chat
+	@$(PYTHON) src/main.py
 
 .PHONY: prepare
 prepare: $(VENV)/bin/activate
 	@. $(VENV)/bin/activate
-	@$(PYTHON) src/main.py prepare
+	@$(PYTHON) src/atlas_talk/scripts/prepare.py
+
+.PHONY: jsonl
+jsonl: $(VENV)/bin/activate
+	@. $(VENV)/bin/activate
+	@$(PYTHON) src/atlas_talk/scripts/jsonl.py
+
+
+.PHONY: test
+test: $(VENV)/bin/activate
+	@. $(VENV)/bin/activate
+	pytest
 
 $(VENV): $(VENV)/bin/activate
 
 $(VENV)/bin/activate: requirements.txt
 	@python3 -m venv $(VENV)
 	@. $(VENV)/bin/activate
-	@$(PIP) install -r requirements.txt
+	@$(PIP) install -e '.[dev]'
 
 .PHONY: clean
 clean:

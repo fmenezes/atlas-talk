@@ -9,7 +9,7 @@ from llama_index.core.node_parser.file import MarkdownNodeParser
 from llama_index.core.ingestion import IngestionPipeline
 from llama_index.core.vector_stores.types import VectorStore
 
-from . import set_settings, vector_store
+from atlas_talk import set_settings, vector_store
 from atlas_talk.config import Config
 
 def load_metadata(p: str) -> Dict:
@@ -49,17 +49,20 @@ def ingest(vector_store: VectorStore, docs: Iterable[Document]):
     pipeline.run(documents=docs, show_progress=True)
 
 
-def execute(args):
+def main() -> None:
     set_settings()
 
     if os.path.exists(Config.INDEX_PATH):
         print(f'index already found in {Config.INDEX_PATH}')
-        exit(0)
+        return
 
     if not os.path.exists("./data/atlascli-command-reference"):
-        print('docs not captured from atlas cli code')
-        exit(1)
+        raise RuntimeError('docs not captured from atlas cli code')
 
     vs = vector_store()
     md_docs = load_docs(srcs=('./data/atlascli-command-reference', './data/extra'), required_exts=['.md'])
     ingest(vs, md_docs)
+
+
+if __name__ == '__main__':
+    main()
