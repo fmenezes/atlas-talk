@@ -1,3 +1,4 @@
+import argparse
 from typing import Iterable, Dict, List, Optional
 import os
 
@@ -12,11 +13,14 @@ from llama_index.core.vector_stores.types import VectorStore
 from atlas_talk import set_settings, vector_store
 from atlas_talk.config import Config
 
+
 def load_metadata(p: str) -> Dict:
     metadata = default_file_metadata_func(p)
 
     if "atlascli-command-reference" in p:
-        metadata['URL'] = f"https://www.mongodb.com/docs/atlas/cli/stable/command/{os.path.basename(p).replace("_", "-").removesuffix(".md")}/"
+        metadata["URL"] = (
+            f"https://www.mongodb.com/docs/atlas/cli/stable/command/{os.path.basename(p).replace("_", "-").removesuffix(".md")}/"
+        )
 
     return metadata
 
@@ -29,10 +33,19 @@ def walk_srcs(srcs: str | Iterable[str]) -> Iterable[str]:
             yield src
 
 
-def load_docs(srcs: str | List[str], required_exts: Optional[List[str]] = None, exclude: Optional[List] = None) -> Iterable[Document]:
+def load_docs(
+    srcs: str | List[str],
+    required_exts: Optional[List[str]] = None,
+    exclude: Optional[List] = None,
+) -> Iterable[Document]:
     for src in walk_srcs(srcs):
         loader = SimpleDirectoryReader(
-            input_dir=src, recursive=True, exclude=exclude, required_exts=required_exts, file_metadata=load_metadata)
+            input_dir=src,
+            recursive=True,
+            exclude=exclude,
+            required_exts=required_exts,
+            file_metadata=load_metadata,
+        )
         for doc in loader.load_data():
             yield doc
 
@@ -49,20 +62,33 @@ def ingest(vector_store: VectorStore, docs: Iterable[Document]):
     pipeline.run(documents=docs, show_progress=True)
 
 
-def main() -> None:
-    set_settings()
+def run(env: str) -> None:
+    config = Config(env)
 
-    if os.path.exists(Config.INDEX_PATH):
-        print(f'index already found in {Config.INDEX_PATH}')
+    set_settings(config)
+
+    if os.path.exists(config.index_path):
+        print(f"index already found in {config.index_path}")
         return
 
-    if not os.path.exists("./data/atlascli-command-reference"):
-        raise RuntimeError('docs not captured from atlas cli code')
-
     vs = vector_store()
-    md_docs = load_docs(srcs=('./data/atlascli-command-reference', './data/extra'), required_exts=['.md'])
+    md_docs = load_docs(
+        srcs=("./data/atlascli-command-reference", "./data/extra"),
+        required_exts=[".md"],
+    )
     ingest(vs, md_docs)
 
 
-if __name__ == '__main__':
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        prog="prepare", description="prepare data for atlas-talk"
+    )
+
+    parser.add_argument("--env", type=str, help="env to use", default="default")
+
+    args = parser.parse_args()
+    run(env=args.env)
+
+
+if __name__ == "__main__":
     main()

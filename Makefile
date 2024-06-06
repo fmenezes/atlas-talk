@@ -39,11 +39,11 @@ test:
 
 .PHONY: lint
 lint:
-	$(POETRY) run flake8 atlas-talk
+	$(POETRY) run flake8 src
 
 .PHONY: format
 format:
-	$(POETRY) run black atlas-talk
+	$(POETRY) run black src
 
 .PHONY: build
 build:

@@ -1,3 +1,4 @@
+from typing import Optional
 import os
 
 from rich.console import Console
@@ -13,38 +14,41 @@ from yaspin.spinners import Spinners
 from atlas_talk import set_settings, vector_store
 from atlas_talk.config import Config
 
+
 def index(vs: VectorStore) -> VectorStoreIndex:
     return VectorStoreIndex.from_vector_store(vs)
 
 
-def setup_index() -> BaseIndex:
-    if Config.SKIP_RAG:
+def setup_index(config: Config) -> BaseIndex:
+    if config.skip_rag:
         return EmptyIndex()
 
-    if not os.path.exists(Config.INDEX_PATH):
+    if not os.path.exists(config.index_path):
         raise RuntimeError(
-            f'index "{Config.INDEX_PATH}" not found, perhaps run "make prepare"')
+            f'index "{config.index_path}" not found, perhaps run "make prepare"'
+        )
 
-    return index(vector_store())
+    return index(vector_store(config))
 
 
-def setup() -> BaseChatEngine:
-    set_settings()
+def setup(config: Config) -> BaseChatEngine:
+    set_settings(config)
 
-    return setup_index().as_chat_engine(system_prompt=Config.SYSTEM_PROMPT)
+    return setup_index(config).as_chat_engine(system_prompt=config.system_prompt)
 
 
 def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
-    with yaspin(Spinners.line, color='cyan'):
-        resp = chat_engine.chat(prompt)
-        return resp.response
+    resp = chat_engine.chat(prompt)
+    return resp.response
 
 
 def repl(chat_engine: BaseChatEngine) -> None:
     console = Console()
-    console.print("""Hello! How can I assist you today?
+    console.print(
+        """Hello! How can I assist you today?
 
-Note: type '/bye' anytime to end the chat""")
+Note: type '/bye' anytime to end the chat"""
+    )
     final_msg = """Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"""
     while True:
         try:
@@ -52,21 +56,23 @@ Note: type '/bye' anytime to end the chat""")
             if prompt == "/bye":
                 console.print(Markdown(final_msg))
                 break
-            output = invoke(chat_engine, prompt)
+            with yaspin(Spinners.line, color="cyan"):
+                output = invoke(chat_engine, prompt)
             console.print(Markdown(output))
         except KeyboardInterrupt:
             console.print(Markdown(final_msg))
             exit(130)
 
 
-def execute(prompt: str = None) -> None:
-    chat_engine = setup()
+def run(env: str, prompt: Optional[str]) -> None:
+    config = Config(env)
 
-    if prompt is not None and prompt.strip() != '':
+    chat_engine = setup(config)
+
+    if prompt is not None and prompt.strip() != "":
         output = invoke(chat_engine, prompt)
         console = Console()
         console.print(Markdown(output))
         return
 
     repl(chat_engine)
-
