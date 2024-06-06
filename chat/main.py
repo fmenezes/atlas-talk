@@ -1,4 +1,5 @@
 import os
+import argparse
 
 from rich.console import Console
 from rich.markdown import Markdown
@@ -70,25 +71,44 @@ See also:
 """
 
 
-def main():
+def repl(chat_engine: BaseChatEngine) -> None:
     console = Console()
-    chat_engine = setup()
-    prompt = os.environ.get('INIT_PROMPT')
-    if prompt is not None:
-        output = invoke(chat_engine, prompt)
-        console.print(Markdown(output))
-    else:
-        console.print("Hello, how can I help?")
-        console.print("")
-    console.print("Note: type '/bye' anytime to end the chat")
+    console.print("""Hello! How can I assist you today?
+
+Note: type '/bye' anytime to end the chat""")
+
     while True:
-        prompt = input("> ")
-        if prompt == "/bye":
-            console.print(Markdown("""Goodbye!
-Note: to check more about this project go to http://github.com/fmenezes/atlas-talk"""))
-            break
+        try:
+            prompt = input("> ")
+            if prompt == "/bye":
+                console.print(Markdown(
+                    """Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"""))
+                break
+            output = invoke(chat_engine, prompt)
+            console.print(Markdown(output))
+        except KeyboardInterrupt:
+            console.print(Markdown(
+                """Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"""))
+            exit(130)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        prog='atlas-talk',
+        description='interactive help of atlascli')
+    parser.add_argument('--ask', type=str)
+    args = parser.parse_args()
+
+    chat_engine = setup()
+
+    if args.ask:
+        prompt = args.ask
         output = invoke(chat_engine, prompt)
+        console = Console()
         console.print(Markdown(output))
+        return
+
+    repl(chat_engine)
 
 
 if __name__ == "__main__":
