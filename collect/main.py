@@ -59,7 +59,10 @@ def process_docs(data: Dict, url: str) -> None:
 
     to_visit = [url]
     already_visited = []
-    while len(to_visit) > 0 and not stop:
+    while len(to_visit) > 0:
+        if stop:
+            print('exiting')
+            exit(0)
         url = to_visit.pop()
         print(f'processing {url}')
         already_visited += [url]
