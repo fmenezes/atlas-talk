@@ -4,28 +4,15 @@ VENV = venv
 PYTHON = $(VENV)/bin/python3
 PIP = $(VENV)/bin/pip
 
-langchain/index: langchain/index/touchfile
-
-langchain/index/touchfile: $(VENV)
-	. $(VENV)/bin/activate
-	$(PYTHON) langchain/main.py save-index
-	touch langchain/index/touchfile
-
-langchain/memory: langchain/memory/touchfile
-
-langchain/memory/touchfile:
-	mkdir -p memory
-	touch langchain/memory/touchfile
-
 .PHONY: langchain-run
-langchain-run: $(VENV)/bin/activate langchain/index langchain/memory
+langchain-run: $(VENV)/bin/activate
 	. $(VENV)/bin/activate
-	$(PYTHON) langchain/main.py chat
+	$(PYTHON) langchain/main.py
 
 .PHONY: llamaindex-run
 llamaindex-run: $(VENV)/bin/activate
 	. $(VENV)/bin/activate
-	$(PYTHON) llamaindex/main.py chat
+	$(PYTHON) llamaindex/main.py
 
 .PHONY: collect
 collect: $(VENV)/bin/activate
@@ -40,9 +27,6 @@ $(VENV)/bin/activate: requirements.txt
 	$(PIP) install -r requirements.txt
 	$(PYTHON) -m playwright install
 
-.PHONY: langchain-clean
-langchain-clean:
-	rm -rf __pycache__ $(VENV) langchain/memory langchain/index
-
 .PHONY: clean
-clean: langchain-clean
+clean:
+	rm -rf __pycache__ $(VENV)

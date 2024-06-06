@@ -1,5 +1,5 @@
 import re
-from src.chat import invoke, setup
+from llamaindex.main import invoke, setup
 
 def test_rag():
     engine = setup()

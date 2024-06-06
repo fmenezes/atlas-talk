@@ -1,18 +1,20 @@
 import re
-from src.chain import chain, invoke
+from langchain.main import setup, invoke
 
 
 def test_rag():
-    c = chain()
-    got = invoke(c, "foo", "how do I create a cluster?")
+    c = setup()
+    session_id = "test_rag"
+    got = invoke(c, session_id, "how do I create a cluster?")
     expect = 'atlas clusters create'
     assert re.search(expect, got), 'expected: ' + expect + ' got: ' + got
 
 
 def test_memory():
-    c = chain()
-    invoke(c, "foo", "hi I'm John, how are you?")
-    got = invoke(c, "foo", "do you remmeber my name?")
+    c = setup()
+    session_id = "test_memory"
+    invoke(c, session_id, "hi I'm John, how are you?")
+    got = invoke(c, session_id, "do you remmeber my name?")
     expect = 'John'
     assert re.search(expect, got), 'expected: ' + expect + ' got: ' + got
 

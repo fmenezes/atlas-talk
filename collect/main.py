@@ -41,7 +41,7 @@ def link_allowed(url: str) -> bool:
 
 
 def extract_links(url: str, file_path: str) -> List[str]:
-    with open(file_path) as f:
+    with open(file_path, "r") as f:
         soup = BeautifulSoup(f.read(), "html.parser")
         raw_links = [
             a['href'] for a in soup.find_all('a', href=True)
@@ -87,6 +87,8 @@ def load_metadata(url: str) -> Dict:
 
 def save_metadata(data: Dict) -> None:
     mp = metadata_path(data['local_path'])
+    d = os.path.dirname(mp)
+    os.makedirs(d, exist_ok=True)
     with open(mp, "w") as f:
         return json.dump(data, f, indent=2)
 
@@ -163,6 +165,9 @@ def load_state() -> Dict:
 
 def save_state(state: Dict) -> None:
     state_path = path_state()
+    d = os.path.dirname(state_path)
+    os.makedirs(d, exist_ok=True)
+
     with open(state_path, "w") as f:
         json.dump(state, f, indent=2)
 
