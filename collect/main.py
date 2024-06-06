@@ -1,7 +1,6 @@
 from typing import List, Dict
 import os
-from urllib.parse import urlparse
-from urllib.parse import urljoin
+from urllib.parse import urlparse, urljoin
 from urllib.request import urlretrieve, urlcleanup
 import json
 import requests
@@ -116,7 +115,7 @@ def process_docs(url: str) -> None:
             save_state(state)
             continue
         metadata = load_metadata(url)
-        p = metadata.get('local_path')
+        p = metadata['local_path']
         if os.path.exists(p) and url not in state['failed']:
             save_state(state)
             continue
