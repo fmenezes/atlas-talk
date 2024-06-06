@@ -4,18 +4,21 @@ VENV = venv
 PYTHON = $(VENV)/bin/python3
 PIP = $(VENV)/bin/pip
 
-index: index/index.faiss
+index: index/touchfile
 
-index/index.faiss: $(VENV)/bin/activate
+index/touchfile: $(VENV)
 	. $(VENV)/bin/activate
 	$(PYTHON) main.py save-index
+	touch index/touchfile
+
+memory: memory/touchfile
 
 memory/touchfile:
 	mkdir -p memory
 	touch memory/touchfile
 
 .PHONY: run
-run: $(VENV)/bin/activate index/index.faiss memory/touchfile
+run: $(VENV) index memory
 	. $(VENV)/bin/activate
 	$(PYTHON) main.py chat
 

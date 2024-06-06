@@ -10,7 +10,7 @@ from langchain_core.vectorstores import VectorStore
 from langchain_core.documents import Document
 from langchain_community.document_loaders import AsyncChromiumLoader
 from langchain_community.document_transformers import Html2TextTransformer
-from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_text_splitters import MarkdownTextSplitter
 from bs4 import BeautifulSoup
 
 from src import EMBEDDING_MODEL
@@ -81,7 +81,7 @@ def html_to_markdown(docs: List[Document]) -> List[Document]:
 
 
 def split_docs(docs: List[Document]) -> List[Document]:
-    text_splitter = RecursiveCharacterTextSplitter()
+    text_splitter = MarkdownTextSplitter()
     return text_splitter.split_documents(docs)
 
 

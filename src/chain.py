@@ -1,3 +1,5 @@
+from typing import Any
+
 import ollama
 from langchain_community.chat_models import ChatOllama
 from langchain_community.vectorstores import FAISS
@@ -33,17 +35,17 @@ def load_and_retrieve_docs(retriever: VectorStoreRetriever) -> RunnableParallel:
 
 def prompt() -> ChatPromptTemplate:
     return ChatPromptTemplate.from_messages([
-        ("system", """You are an assistant helping the user on how to use MongoDB Atlas CLI. If you don't know the answer make sure to say you don't know do not make up an answer. Answer any use questions based solely on the context below:
-        <context>
-        {context}
-        </context>"""),
+        ("system", """You are an assistant helping the user on how to use MongoDB Atlas CLI. If you don't know the answer make sure to say you don't know do not make up an answer. Answer any use questions based on the context below:
+<context>
+{context}
+</context>"""),
         ("placeholder", "{chat_history}"),
         ("human", "{input}"),
     ])
 
 
 def model() -> BaseChatModel:
-    return ChatOllama(model=CHAT_MODEL, temperature=0.3)
+    return ChatOllama(model=CHAT_MODEL, temperature=1)
 
 
 def pull_models():
@@ -53,12 +55,35 @@ def pull_models():
 
 def chain() -> RunnableWithMessageHistory:
     pull_models()
-    rag_chain = load_and_retrieve_docs(
-        retriever(INDEX_PATH)) | prompt() | model() | StrOutputParser()
 
-    return RunnableWithMessageHistory(
-        rag_chain,
+    ret = retriever(INDEX_PATH)
+
+    rag_chain = RunnableParallel({
+        "context": ret,
+        "input": RunnablePassthrough()
+    }) | prompt() | model() | StrOutputParser()
+
+    rag_chain_with_source = RunnableParallel({
+        "context": ret,
+        "input": RunnablePassthrough()
+    }).assign(answer=rag_chain)
+
+    mem_chain = RunnableWithMessageHistory(
+        rag_chain_with_source,
         get_session_history,
         input_messages_key="input",
         history_messages_key="chat_history",
     )
+
+    return mem_chain
+
+
+def convert_output(input: Any) -> str:
+    out = input['answer'] + '\n\n### Context'
+    for doc in input['context']:
+        out += f'\n- {doc.metadata['source']}\n>{doc.page_content}'
+    return out
+
+def invoke(chain: RunnableWithMessageHistory, session_id: str, prompt: str) -> str:
+    return convert_output(chain.invoke({"input": prompt}, config={"configurable": {"session_id": session_id}}))
+
