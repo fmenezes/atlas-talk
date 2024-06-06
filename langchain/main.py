@@ -35,9 +35,6 @@ def embeddings() -> Embeddings:
 
 
 def vector_store() -> VectorStore:
-    if not os.path.exists('./data/langchain_index'):
-        raise RuntimeError('index "./data/langchain_index" not found')
-    
     return FAISS.load_local('./data/langchain_index', embeddings(), allow_dangerous_deserialization=True)
 
 
@@ -62,6 +59,9 @@ def pull_models() -> None:
 
 
 def setup() -> RunnableWithMessageHistory:
+    if not os.path.exists('./data/langchain_index'):
+        raise RuntimeError('index "./data/langchain_index" not found')
+
     pull_models()
 
     vs = vector_store()
