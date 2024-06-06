@@ -29,17 +29,7 @@ def setup() -> BaseChatEngine:
 
 def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
     resp = chat_engine.chat(prompt)
-
-    sources = list(set([f"- {node.metadata['URL']}"
-                        for node in resp.source_nodes if node.metadata.get('URL')]))
-    if not sources:
-        return resp.response
-    else:
-        return f"""{resp.response}
-
-See also:
-{'\n'.join(sources)}
-"""
+    return resp.response
 
 
 def repl(chat_engine: BaseChatEngine) -> None:
