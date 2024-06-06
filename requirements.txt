@@ -1,0 +1,8 @@
+ollama
+langchain
+langchain-text-splitters
+faiss-cpu
+unstructured
+markdown
+langchain-community
+rich

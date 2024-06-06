@@ -1,0 +1,3 @@
+[submodule "third-party/mongodb-atlas-cli"]
+	path = third-party/mongodb-atlas-cli
+	url = https://github.com/mongodb/mongodb-atlas-cli.git
