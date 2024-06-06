@@ -4,42 +4,28 @@ VENV = venv
 PYTHON = $(VENV)/bin/python3
 PIP = $(VENV)/bin/pip
 
-.PHONY: langchain-run
-langchain-run: $(VENV)/bin/activate
-	. $(VENV)/bin/activate
-	$(PYTHON) langchain/main.py
-
-.PHONY: llamaindex-run
-llamaindex-run: $(VENV)/bin/activate
-	. $(VENV)/bin/activate
-	$(PYTHON) llamaindex/main.py
+.PHONY: chat
+chat: $(VENV)/bin/activate
+	@. $(VENV)/bin/activate
+	@$(PYTHON) chat/main.py
 
 .PHONY: collect
 collect: $(VENV)/bin/activate
-	. $(VENV)/bin/activate
-	$(PYTHON) collect/main.py
-
-.PHONY: langchain-prepare
-langchain-prepare: $(VENV)/bin/activate
-	. $(VENV)/bin/activate
-	$(PYTHON) langchain-prepare/main.py
-
-.PHONY: llamaindex-prepare
-llamaindex-prepare: $(VENV)/bin/activate
-	. $(VENV)/bin/activate
-	$(PYTHON) llamaindex-prepare/main.py
+	@. $(VENV)/bin/activate
+	@$(PYTHON) collect/main.py
 
 .PHONY: prepare
-prepare: langchain-prepare llamaindex-prepare
+prepare: $(VENV)/bin/activate
+	@. $(VENV)/bin/activate
+	@$(PYTHON) prepare/main.py
 
 $(VENV): $(VENV)/bin/activate
 
 $(VENV)/bin/activate: requirements.txt
-	python3 -m venv $(VENV)
-	. $(VENV)/bin/activate
-	$(PIP) install -r requirements.txt
-	$(PYTHON) -m playwright install
+	@python3 -m venv $(VENV)
+	@. $(VENV)/bin/activate
+	@$(PIP) install -r requirements.txt
 
 .PHONY: clean
 clean:
-	rm -rf __pycache__ $(VENV)
+	@rm -rf __pycache__ $(VENV)

@@ -2,5 +2,4 @@
 
 
 cd "$( dirname "${BASH_SOURCE[0]}" )" || exit 1
-source venv/bin/activate
-venv/bin/python3 langchain/main.py
+make chat
