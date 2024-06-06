@@ -39,11 +39,12 @@ test:
 
 .PHONY: lint
 lint:
-	$(POETRY) run flake8 src
+	$(POETRY) run pylint src
 
 .PHONY: format
 format:
 	$(POETRY) run black src
+	$(POETRY) run isort src
 
 .PHONY: build
 build:

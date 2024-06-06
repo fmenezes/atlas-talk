@@ -1,13 +1,14 @@
-from typing import Optional
 import os
+import sys
+from typing import Optional
 
+from llama_index.core import VectorStoreIndex
+from llama_index.core.chat_engine.types import BaseChatEngine
+from llama_index.core.indices import EmptyIndex
+from llama_index.core.indices.base import BaseIndex
+from llama_index.core.vector_stores.types import VectorStore
 from rich.console import Console
 from rich.markdown import Markdown
-from llama_index.core import VectorStoreIndex
-from llama_index.core.indices import EmptyIndex
-from llama_index.core.vector_stores.types import VectorStore
-from llama_index.core.chat_engine.types import BaseChatEngine
-from llama_index.core.indices.base import BaseIndex
 from yaspin import yaspin
 from yaspin.spinners import Spinners
 
@@ -15,26 +16,24 @@ from atlas_talk import set_settings, vector_store
 from atlas_talk.config import Config
 
 
-def index(vs: VectorStore) -> VectorStoreIndex:
+def _index(vs: VectorStore) -> VectorStoreIndex:
     return VectorStoreIndex.from_vector_store(vs)
 
 
-def setup_index(config: Config) -> BaseIndex:
+def _setup_index(config: Config) -> BaseIndex:
     if config.skip_rag:
         return EmptyIndex()
 
     if not os.path.exists(config.index_path):
-        raise RuntimeError(
-            f'index "{config.index_path}" not found, perhaps run "make prepare"'
-        )
+        raise RuntimeError(f'index "{config.index_path}" not found, perhaps run "make prepare"')
 
-    return index(vector_store(config))
+    return _index(vector_store(config))
 
 
 def setup(config: Config) -> BaseChatEngine:
     set_settings(config)
 
-    return setup_index(config).as_chat_engine(system_prompt=config.system_prompt)
+    return _setup_index(config).as_chat_engine(system_prompt=config.system_prompt)
 
 
 def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
@@ -42,7 +41,7 @@ def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
     return resp.response
 
 
-def repl(chat_engine: BaseChatEngine) -> None:
+def _repl(chat_engine: BaseChatEngine) -> None:
     console = Console()
     console.print(
         """Hello! How can I assist you today?
@@ -61,7 +60,7 @@ Note: type '/bye' anytime to end the chat"""
             console.print(Markdown(output))
         except KeyboardInterrupt:
             console.print(Markdown(final_msg))
-            exit(130)
+            sys.exit(130)
 
 
 def run(env: str, prompt: Optional[str]) -> None:
@@ -75,4 +74,4 @@ def run(env: str, prompt: Optional[str]) -> None:
         console.print(Markdown(output))
         return
 
-    repl(chat_engine)
+    _repl(chat_engine)

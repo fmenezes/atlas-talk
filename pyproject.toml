@@ -23,6 +23,14 @@ yaspin = "^3.0.2"
 prepare = "atlas_talk.scripts.prepare:main"
 chat = "atlas_talk.__main__:main"
 
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.2.2"
+black = "^24.4.2"
+isort = "^5.13.2"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100

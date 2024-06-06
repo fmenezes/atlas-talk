@@ -1,11 +1,10 @@
 import argparse
+
 from atlas_talk.chat import run
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        prog="atlas-talk", description="interactive help of atlascli"
-    )
+    parser = argparse.ArgumentParser(prog="atlas-talk", description="interactive help of atlascli")
 
     parser.add_argument("--env", type=str, help="env to use", default="default")
 
