@@ -36,4 +36,7 @@ build:
 clean:
 	rm -rf dist
 	rm -rf build
-	rm -rf *.egg-info
+	rm -rf .venv
+	rm -rf .pytest_cache
+	find src -type d -name *.egg-info -exec rm -rf {} +
+	find src -type d -name __pycache__ -exec rm -rf {} +
