@@ -1,4 +1,3 @@
-from typing import List
 import os
 
 from rich.console import Console
@@ -13,6 +12,7 @@ from llama_index.core.vector_stores.types import VectorStore
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.core.chat_engine.types import BaseChatEngine
 import chromadb
+from dotenv import load_dotenv
 
 def set_settings() -> None:
     AI_PLATFORM = os.environ.get('AI_PLATFORM', 'OPENAI')
@@ -40,12 +40,17 @@ def index(vs: VectorStore) -> VectorStoreIndex:
 
 
 def setup() -> BaseChatEngine:
-    if not os.path.exists("./data/index"):
-        print('index "./data/index" not found, perhaps run "make prepare"')
+    load_dotenv()
+
+    INDEX_PATH = os.environ.get('INDEX_PATH', './data/index')
+    COLLECTION_NAME = os.environ.get('COLLECTION_NAME', 'atlascli-commands')
+
+    if not os.path.exists(INDEX_PATH):
+        print(f'index "{INDEX_PATH}" not found, perhaps run "make prepare"')
         exit(1)
 
     set_settings()
-    cli_commands_index = index(vector_store("./data/index", "atlascli-commands"))
+    cli_commands_index = index(vector_store(INDEX_PATH, COLLECTION_NAME))
 
     return cli_commands_index.as_chat_engine(system_prompt="You are MongoDB Atlas CLI Help Assistant, you know atlas cli command reference. You should assume atlas cli is properly installed. When you don't know the answer say you don't know it do not try to make up an answer.")
 
@@ -68,18 +73,20 @@ See also:
 def main():
     console = Console()
     chat_engine = setup()
-    output = invoke(chat_engine, 'Hi')
-    console.print(Markdown(output))
-    prompt = None
-    while prompt != "/bye":
+    prompt = os.environ.get('INIT_PROMPT')
+    if prompt is not None:
+        output = invoke(chat_engine, prompt)
+        console.print(Markdown(output))
+    else:
+        console.print("Hello, how can I help?")
+        console.print("")
+    console.print("Note: type '/bye' anytime to end the chat")
+    while True:
         prompt = input("> ")
-        if prompt == "?":
-            print("Options:")
-            print("  /bye    to close the chat")
-            print("  ?       to display this help")
-            print("")
-            print("  Type any question for this assistant to help you")
-            continue
+        if prompt == "/bye":
+            console.print(Markdown("""Goodbye!
+Note: to check more about this project go to http://github.com/fmenezes/atlas-talk"""))
+            break
         output = invoke(chat_engine, prompt)
         console.print(Markdown(output))
 

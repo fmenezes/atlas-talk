@@ -15,6 +15,7 @@ from llama_index.llms.openai import OpenAI
 from llama_index.llms.openai.base import DEFAULT_OPENAI_MODEL
 from llama_index.llms.ollama import Ollama
 import chromadb
+from dotenv import load_dotenv
 
 def set_settings() -> None:
     AI_PLATFORM = os.environ.get('AI_PLATFORM', 'OPENAI')
@@ -75,15 +76,21 @@ def ingest(vector_store: VectorStore, docs: Iterable[Document]):
 
 
 def main():
-    if os.path.exists("./data/index"):
-        print('already done')
+    load_dotenv()
+
+    INDEX_PATH = os.environ.get('INDEX_PATH', './data/index')
+    COLLECTION_NAME = os.environ.get('COLLECTION_NAME', 'atlascli-commands')
+
+    if os.path.exists(INDEX_PATH):
+        print(f'index already found in {INDEX_PATH}')
         exit(0)
+
     if not os.path.exists("./data/atlascli-command-reference"):
         print('docs not captured from atlas cli code')
         exit(1)
 
     set_settings()
-    vs = vector_store("./data/index", "atlascli-commands")
+    vs = vector_store(INDEX_PATH, COLLECTION_NAME)
     md_docs = load_docs(srcs=('./data/atlascli-command-reference', './data/extra'), required_exts=['.md'])
     ingest(vs, md_docs)
 
