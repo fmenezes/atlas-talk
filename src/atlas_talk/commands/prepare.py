@@ -9,7 +9,8 @@ from llama_index.core.node_parser.file import MarkdownNodeParser
 from llama_index.core.ingestion import IngestionPipeline
 from llama_index.core.vector_stores.types import VectorStore
 
-from . import set_settings, index_path, vector_store
+from . import set_settings, vector_store
+from atlas_talk.config import Config
 
 def load_metadata(p: str) -> Dict:
     metadata = default_file_metadata_func(p)
@@ -51,8 +52,8 @@ def ingest(vector_store: VectorStore, docs: Iterable[Document]):
 def execute(args):
     set_settings()
 
-    if os.path.exists(index_path()):
-        print(f'index already found in {index_path()}')
+    if os.path.exists(Config.INDEX_PATH):
+        print(f'index already found in {Config.INDEX_PATH}')
         exit(0)
 
     if not os.path.exists("./data/atlascli-command-reference"):

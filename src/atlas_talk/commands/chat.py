@@ -8,7 +8,8 @@ from llama_index.core.vector_stores.types import VectorStore
 from llama_index.core.chat_engine.types import BaseChatEngine
 from dotenv import load_dotenv
 
-from . import set_settings, vector_store, index_path
+from . import set_settings, vector_store
+from atlas_talk.config import Config
 
 def index(vs: VectorStore) -> VectorStoreIndex:
     return VectorStoreIndex.from_vector_store(vs)
@@ -17,13 +18,13 @@ def index(vs: VectorStore) -> VectorStoreIndex:
 def setup() -> BaseChatEngine:
     set_settings()
 
-    if not os.path.exists(index_path()):
-        print(f'index "{index_path()}" not found, perhaps run "make prepare"')
+    if not os.path.exists(Config.INDEX_PATH):
+        print(f'index "{Config.INDEX_PATH}" not found, perhaps run "make prepare"')
         exit(1)
 
     cli_commands_index = index(vector_store())
 
-    return cli_commands_index.as_chat_engine(system_prompt="You are MongoDB Atlas CLI Help Assistant, you know atlas cli command reference. You should assume atlas cli is properly installed. When you don't know the answer try looking up the information first and if you still can't find it say you don't know it, do not try to make up an answer. Format your answers in Markdown.")
+    return cli_commands_index.as_chat_engine(verbose=True, system_prompt="You are MongoDB Atlas CLI Help Assistant, you know atlas cli command reference. You should assume atlas cli is properly installed. When you don't know the answer try looking up the information first and if you still can't find it say you don't know it, do not try to make up an answer. Format your answers in Markdown.")
 
 
 def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
