@@ -20,9 +20,8 @@ llama-index-embeddings-huggingface = "^0.2.1"
 yaspin = "^3.0.2"
 
 [tool.poetry.scripts]
-jsonl = "atlas_talk.scripts.jsonl:main"
 prepare = "atlas_talk.scripts.prepare:main"
-chat = "atlas_talk:main"
+chat = "atlas_talk.__main__:main"
 
 [build-system]
 requires = ["poetry-core"]
