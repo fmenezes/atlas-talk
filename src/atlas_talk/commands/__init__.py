@@ -9,6 +9,7 @@ from llama_index.embeddings.openai import OpenAIEmbedding, OpenAIEmbeddingModeMo
 from llama_index.vector_stores.chroma import ChromaVectorStore
 import chromadb
 
+
 def index_path():
     return os.environ.get('INDEX_PATH', './data/index')
 
@@ -38,4 +39,3 @@ def set_settings() -> None:
                 'OPENAI_MODEL', DEFAULT_OPENAI_MODEL))
         case _:
             raise RuntimeError(f"invalid platform: {AI_PLATFORM}")
-

@@ -1,5 +1,5 @@
 import re
-from main import invoke, setup
+from src.atlas_talk.commands.chat import invoke, setup
 
 def test_rag():
     engine = setup()

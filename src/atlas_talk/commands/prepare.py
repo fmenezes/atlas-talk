@@ -9,7 +9,7 @@ from llama_index.core.node_parser.file import MarkdownNodeParser
 from llama_index.core.ingestion import IngestionPipeline
 from llama_index.core.vector_stores.types import VectorStore
 
-from common import set_settings, index_path, vector_store
+from . import set_settings, index_path, vector_store
 
 def load_metadata(p: str) -> Dict:
     metadata = default_file_metadata_func(p)
@@ -48,7 +48,7 @@ def ingest(vector_store: VectorStore, docs: Iterable[Document]):
     pipeline.run(documents=docs, show_progress=True)
 
 
-def main():
+def execute(args):
     set_settings()
 
     if os.path.exists(index_path()):
@@ -62,7 +62,3 @@ def main():
     vs = vector_store()
     md_docs = load_docs(srcs=('./data/atlascli-command-reference', './data/extra'), required_exts=['.md'])
     ingest(vs, md_docs)
-
-
-if __name__ == "__main__":
-    main()

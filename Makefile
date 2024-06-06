@@ -7,12 +7,12 @@ PIP = $(VENV)/bin/pip
 .PHONY: chat
 chat: $(VENV)/bin/activate
 	@. $(VENV)/bin/activate
-	@$(PYTHON) chat/main.py
+	@$(PYTHON) src/main.py chat
 
 .PHONY: prepare
 prepare: $(VENV)/bin/activate
 	@. $(VENV)/bin/activate
-	@$(PYTHON) prepare/main.py
+	@$(PYTHON) src/main.py prepare
 
 $(VENV): $(VENV)/bin/activate
 

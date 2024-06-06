@@ -8,7 +8,7 @@ from llama_index.core.vector_stores.types import VectorStore
 from llama_index.core.chat_engine.types import BaseChatEngine
 from dotenv import load_dotenv
 
-from common import set_settings, vector_store, index_path
+from . import set_settings, vector_store, index_path
 
 def index(vs: VectorStore) -> VectorStoreIndex:
     return VectorStoreIndex.from_vector_store(vs)
@@ -62,13 +62,7 @@ Note: type '/bye' anytime to end the chat""")
             exit(130)
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(
-        prog='atlas-talk',
-        description='interactive help of atlascli')
-    parser.add_argument('--ask', type=str)
-    args = parser.parse_args()
-
+def execute(args) -> None:
     load_dotenv()
 
     chat_engine = setup()
@@ -82,6 +76,3 @@ def main() -> None:
 
     repl(chat_engine)
 
-
-if __name__ == "__main__":
-    main()
