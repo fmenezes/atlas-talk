@@ -7,6 +7,6 @@ MongoDB Atlas CLI interactive help
 
 ## running
 
-1. setup a `env/default.env` file based on examples on `env` folder
+1. setup a `.env` file based on examples on `env` folder
 2. run `make prepare` to prepare data
 3. run `make chat` to start
