@@ -1,37 +1,56 @@
-DEFAULT_GOAL := run
+POETRY = poetry
 
-VENV = venv
-PYTHON = $(VENV)/bin/python3
-PIP = $(VENV)/bin/pip
+CMAKE_ARGS = ""
+FORCE_CMAKE = 0
 
-.PHONY: chat
-chat: $(VENV)/bin/activate
-	@. $(VENV)/bin/activate
-	@$(PYTHON) src/main.py
+ifneq ($(OS),Windows_NT)
+	UNAME_S := $(shell uname -s)
+	UNAME_P := $(shell uname -p)
+	ifeq ($(UNAME_S),Darwin)
+		ifneq ($(filter arm%,$(UNAME_P)),)
+			CMAKE_ARGS = "-DLLAMA_METAL=on"
+			FORCE_CMAKE = 1
+		endif
+	endif
+endif
+
+.PHONY: all
+all: install
+
+.PHONY: install
+install:
+	CMAKE_ARGS=$(CMAKE_ARGS) FORCE_CMAKE=$(FORCE_CMAKE) $(POETRY) install
 
 .PHONY: prepare
-prepare: $(VENV)/bin/activate
-	@. $(VENV)/bin/activate
-	@$(PYTHON) src/atlas_talk/scripts/prepare.py
+prepare:
+	$(POETRY) run prepare
 
 .PHONY: jsonl
-jsonl: $(VENV)/bin/activate
-	@. $(VENV)/bin/activate
-	@$(PYTHON) src/atlas_talk/scripts/jsonl.py
+jsonl:
+	$(POETRY) run jsonl
 
+.PHONY: chat
+chat:
+	$(POETRY) run chat
 
 .PHONY: test
-test: $(VENV)/bin/activate
-	@. $(VENV)/bin/activate
-	pytest
+test:
+	$(POETRY) run pytest
 
-$(VENV): $(VENV)/bin/activate
+.PHONY: lint
+lint:
+	$(POETRY) run flake8 atlas-talk
 
-$(VENV)/bin/activate: requirements.txt
-	@python3 -m venv $(VENV)
-	@. $(VENV)/bin/activate
-	@$(PIP) install -e '.[dev]'
+.PHONY: format
+format:
+	$(POETRY) run black atlas-talk
+
+.PHONY: build
+build:
+	$(POETRY) build
 
 .PHONY: clean
 clean:
-	@rm -rf __pycache__ $(VENV)
+	rm -rf dist
+	rm -rf build
+	rm -rf *.egg-info

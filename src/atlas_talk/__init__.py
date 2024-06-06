@@ -1,5 +1,31 @@
+from typing import Sequence
+
 from atlas_talk.config import Config
 from llama_index.core import Settings
+from llama_index.core.base.llms.types import ChatMessage
+
+def _messages_to_prompt(messages: Sequence[ChatMessage]) -> str:
+    prompt = ""
+    for message in messages:
+        if message.role == 'system':
+            prompt += f"<|system|>\n{message.content}</s>\n"
+        elif message.role == 'user':
+            prompt += f"<|user|>\n{message.content}</s>\n"
+        elif message.role == 'assistant':
+            prompt += f"<|assistant|>\n{message.content}</s>\n"
+
+    # ensure we start with a system prompt, insert blank if needed
+    if not prompt.startswith("<|system|>\n"):
+        prompt = "<|system|>\n</s>\n" + prompt
+
+    # add final assistant prompt
+    prompt = prompt + "<|assistant|>\n"
+
+    return prompt
+
+
+def _completion_to_prompt(completion: str) -> str:
+    return f"<|system|>\n</s>\n<|user|>\n{completion}</s>\n<|assistant|>\n"
 
 
 def vector_store():
@@ -33,10 +59,6 @@ def _set_ollama() -> None:
 
 def _set_llama_cpp() -> None:
     from llama_index.llms.llama_cpp import LlamaCPP
-    from llama_index.llms.llama_cpp.llama_utils import (
-        messages_to_prompt,
-        completion_to_prompt,
-    )
     from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
     Settings.embed_model = HuggingFaceEmbedding(
@@ -46,8 +68,8 @@ def _set_llama_cpp() -> None:
         model_url=Config.LLAMA_CPP_MODEL_URL,
         verbose=False,
         model_kwargs={'n_gpu_layers':-1},
-        messages_to_prompt=messages_to_prompt,
-        completion_to_prompt=completion_to_prompt
+        messages_to_prompt=_messages_to_prompt,
+        completion_to_prompt=_completion_to_prompt
     )
 
 

@@ -2,9 +2,11 @@
 MongoDB Atlas CLI interactive help
 
 ## prerequisites
-- ollama or openai api key
 - python 3
+- poetry
 
 ## running
 
-first run `make prepare` and later `make chat`
+1. setup a `env/default.env` file based on examples on `env` folder
+2. run `make prepare` to prepare data
+3. run `make chat` to start

@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "atlas-talk"
+version = "0.0.1"
+description = "Interactive help for atlascli"
+authors = ["Filipe C Menezes <fcmenezes87@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rich = "^13.7.1"
+chromadb = "^0.5.0"
+llama-index = "^0.10.41"
+llama-index-vector-stores-chroma = "^0.1.8"
+llama-index-readers-web = "^0.1.17"
+llama-index-llms-ollama = "^0.1.5"
+llama-index-embeddings-ollama = "^0.1.2"
+llama-index-llms-llama-cpp = "^0.1.3"
+llama-index-embeddings-huggingface = "^0.2.1"
+yaspin = "^3.0.2"
+
+[tool.poetry.scripts]
+jsonl = "atlas_talk.scripts.jsonl:main"
+prepare = "atlas_talk.scripts.prepare:main"
+chat = "atlas_talk:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
