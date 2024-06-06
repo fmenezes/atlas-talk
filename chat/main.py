@@ -47,7 +47,7 @@ def setup() -> BaseChatEngine:
     set_settings()
     cli_commands_index = index(vector_store("./data/index", "atlascli-commands"))
 
-    return cli_commands_index.as_chat_engine(system_prompt="You are MongoDB Atlas CLI Help Assistant, you know atlas cli command reference. You should assume atlas cli is properly installed. When giving answers make sure to include examples of how to call commands, be mindful of the difference between flags and arguments on the examples.")
+    return cli_commands_index.as_chat_engine(system_prompt="You are MongoDB Atlas CLI Help Assistant, you know atlas cli command reference. You should assume atlas cli is properly installed. When you don't know the answer say you don't know it do not try to make up an answer.")
 
 
 def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
@@ -70,7 +70,8 @@ def main():
     chat_engine = setup()
     output = invoke(chat_engine, 'Hi')
     console.print(Markdown(output))
-    while True:
+    prompt = None
+    while prompt != "/bye":
         prompt = input("> ")
         if prompt == "?":
             print("Options:")
@@ -79,8 +80,6 @@ def main():
             print("")
             print("  Type any question for this assistant to help you")
             continue
-        elif prompt == "/bye":
-            exit()
         output = invoke(chat_engine, prompt)
         console.print(Markdown(output))
 

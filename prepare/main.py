@@ -40,8 +40,8 @@ def vector_store(path: str, collection_name: str) -> VectorStore:
 def load_metadata(p: str) -> Dict:
     metadata = default_file_metadata_func(p)
 
-    metadata['URL'] = f"https://www.mongodb.com/docs/atlas/cli/stable/command/{
-        os.path.basename(p).replace("_", "-").removesuffix(".md")}/"
+    if "atlascli-command-reference" in p:
+        metadata['URL'] = f"https://www.mongodb.com/docs/atlas/cli/stable/command/{os.path.basename(p).replace("_", "-").removesuffix(".md")}/"
 
     return metadata
 
