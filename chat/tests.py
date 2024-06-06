@@ -1,10 +1,10 @@
 import re
-from llamaindex.main import invoke, setup
+from main import invoke, setup
 
 def test_rag():
     engine = setup()
-    got = invoke(engine, "Do you know what MongoDB Atlas is?")
-    expect = 'MongoDB Atlas'
+    got = invoke(engine, "How do I create a cluster?")
+    expect = 'atlas clusters create'
     assert re.search(expect, got), 'expected: ' + expect + ' got: ' + got
 
 

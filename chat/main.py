@@ -47,22 +47,39 @@ def setup() -> BaseChatEngine:
     set_settings()
     cli_commands_index = index(vector_store("./data/index", "atlascli-commands"))
 
-    return cli_commands_index.as_chat_engine()
+    return cli_commands_index.as_chat_engine(system_prompt="You are MongoDB Atlas CLI Help Assistant, you know atlas cli command reference. You should assume atlas cli is properly installed. When giving answers make sure to include examples of how to call commands, be mindful of the difference between flags and arguments on the examples.")
 
 
 def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
     resp = chat_engine.chat(prompt)
 
-    return f"""{resp.response}
+    sources = list(set([f"- {node.metadata['URL']}"
+                        for node in resp.source_nodes if node.metadata.get('URL')]))
+    if not sources:
+        return resp.response
+    else:
+        return f"""{resp.response}
+
+See also:
+{'\n'.join(sources)}
 """
 
 
 def main():
     console = Console()
     chat_engine = setup()
+    output = invoke(chat_engine, 'Hi')
+    console.print(Markdown(output))
     while True:
         prompt = input("> ")
-        if prompt == "/bye":
+        if prompt == "?":
+            print("Options:")
+            print("  /bye    to close the chat")
+            print("  ?       to display this help")
+            print("")
+            print("  Type any question for this assistant to help you")
+            continue
+        elif prompt == "/bye":
             exit()
         output = invoke(chat_engine, prompt)
         console.print(Markdown(output))
