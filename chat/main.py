@@ -17,17 +17,20 @@ from dotenv import load_dotenv
 
 def set_settings() -> None:
     AI_PLATFORM = os.environ.get('AI_PLATFORM', 'OPENAI')
-    if AI_PLATFORM == 'OLLAMA':
-        Settings.embed_model = OllamaEmbedding(
-            model_name=os.environ.get('OLLAMA_EMBED_MODEL', 'nomic-embed-text')
-        )
-        Settings.llm = Ollama(model=os.environ.get(
-            'OLLAMA_MODEL', 'mistral'), temperature=0.5)
-    elif AI_PLATFORM == 'OPENAI':
-        Settings.embed_model = OpenAIEmbedding(model=os.environ.get(
-            'OPENAI_EMBED_MODEL', OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002))
-        Settings.llm = OpenAI(model=os.environ.get(
-            'OPENAI_MODEL', DEFAULT_OPENAI_MODEL))
+    match AI_PLATFORM:
+        case 'OLLAMA':
+            Settings.embed_model = OllamaEmbedding(
+                model_name=os.environ.get('OLLAMA_EMBED_MODEL', 'nomic-embed-text')
+            )
+            Settings.llm = Ollama(model=os.environ.get(
+                'OLLAMA_MODEL', 'mistral'), temperature=0.5)
+        case 'OPENAI':
+            Settings.embed_model = OpenAIEmbedding(model=os.environ.get(
+                'OPENAI_EMBED_MODEL', OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002))
+            Settings.llm = OpenAI(model=os.environ.get(
+                'OPENAI_MODEL', DEFAULT_OPENAI_MODEL))
+        case _:
+            raise RuntimeError(f"invalid platform: {AI_PLATFORM}")
 
 
 def vector_store(src: str, collection_name: str):
