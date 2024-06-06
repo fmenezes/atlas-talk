@@ -10,7 +10,6 @@ from llama_index.llms.openai.base import DEFAULT_OPENAI_MODEL
 
 class Config:
     def __init__(self, env: str = "default"):
-        # loads openai.env, ollama.env, etc
         self.env: str = env
         self.env_file: str = f"./env/{env}.env"
 
@@ -19,7 +18,7 @@ class Config:
                 f"configuration {env} not found, file {self.env_file} must be created"
             )
 
-        values = dotenv.dotenv_values(self.env_file)
+        values = dotenv.dotenv_values(self.env_file)  # loads openai.env, ollama.env, etc
 
         self.system_prompt: Optional[str] = values.get("SYSTEM_PROMPT")
         self.index_path: str = values.get("INDEX_PATH", "./data/index")
@@ -36,6 +35,16 @@ class Config:
             "LLAMA_CPP_MODEL_URL",
             "https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q4_0.gguf",
         )
+        try:
+            n_gpu_layers = int(
+                values.get(
+                    "N_GPU_LAYERS",
+                    "-1",
+                )
+            )
+        except ValueError:
+            n_gpu_layers = -1
+        self.n_gpu_layers: int = n_gpu_layers
         self.llama_cpp_embed_model: str = values.get(
             "LLAMA_CPP_EMBED_MODEL", DEFAULT_HUGGINGFACE_EMBEDDING_MODEL
         )

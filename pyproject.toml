@@ -27,6 +27,7 @@ chat = "atlas_talk.__main__:main"
 pylint = "^3.2.2"
 black = "^24.4.2"
 isort = "^5.13.2"
+pytest = "^8.2.1"
 
 [build-system]
 requires = ["poetry-core"]

@@ -1,25 +1,11 @@
 POETRY = poetry
 
-CMAKE_ARGS = ""
-FORCE_CMAKE = 0
-
-ifneq ($(OS),Windows_NT)
-	UNAME_S := $(shell uname -s)
-	UNAME_P := $(shell uname -p)
-	ifeq ($(UNAME_S),Darwin)
-		ifneq ($(filter arm%,$(UNAME_P)),)
-			CMAKE_ARGS = "-DLLAMA_METAL=on"
-			FORCE_CMAKE = 1
-		endif
-	endif
-endif
-
 .PHONY: all
 all: install
 
 .PHONY: install
 install:
-	CMAKE_ARGS=$(CMAKE_ARGS) FORCE_CMAKE=$(FORCE_CMAKE) $(POETRY) install
+	$(POETRY) install
 
 .PHONY: prepare
 prepare:

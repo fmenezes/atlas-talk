@@ -59,7 +59,7 @@ def _set_llama_cpp(config: Config) -> None:
     Settings.llm = LlamaCPP(
         model_url=config.llama_cpp_model_url,
         verbose=False,
-        model_kwargs={"n_gpu_layers": -1},
+        model_kwargs={"n_gpu_layers": config.n_gpu_layers},
         messages_to_prompt=_messages_to_prompt,
         completion_to_prompt=_completion_to_prompt,
     )

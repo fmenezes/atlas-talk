@@ -51,7 +51,7 @@ Note: type '/bye' anytime to end the chat"""
     final_msg = """Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"""
     while True:
         try:
-            prompt = input("> ")
+            prompt = console.input("> ")
             if prompt == "/bye":
                 console.print(Markdown(final_msg))
                 break
