@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 
 stop = False
 
+
 def normalize_link(base_url: str, link: str) -> str:
     parsed_url = urlparse(base_url)
     prefix = f"{parsed_url.scheme}://{parsed_url.netloc}"
@@ -32,11 +33,11 @@ def follow_redirects(url: str) -> str:
 
 def link_allowed(url: str) -> bool:
     return url.startswith(("https://www.mongodb.com/docs/",
-        "http://www.mongodb.com/docs/",
-        "https://mongodb.com/docs/",
-        "http://mongodb.com/docs/",
-        "https://docs.mongodb.com/",
-        "http://docs.mongodb.com/")) and not url.endswith(('.tar', '.tar.gz', '.tgz', '.gz', '.7zip', '.zip', '.rar', '.json', '.csv'))
+                           "http://www.mongodb.com/docs/",
+                           "https://mongodb.com/docs/",
+                           "http://mongodb.com/docs/",
+                           "https://docs.mongodb.com/",
+                           "http://docs.mongodb.com/")) and not url.endswith(('.tar', '.tar.gz', '.tgz', '.gz', '.7zip', '.zip', '.rar', '.json', '.csv'))
 
 
 def extract_links(url: str, file_path: str) -> List[str]:
@@ -111,7 +112,8 @@ def process_docs(url: str) -> None:
         state['already_visited'] += [url]
         new_url = follow_redirects(url)
         if new_url != url:
-            state['to_visit'] += [new_url]
+            if link_allowed(new_url):
+                state['to_visit'] += [new_url]
             save_state(state)
             continue
         metadata = load_metadata(url)
