@@ -6,3 +6,7 @@ unstructured
 markdown
 langchain-community
 rich
+playwright
+html2text
+beautifulsoup4
+tldextract

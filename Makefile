@@ -4,13 +4,10 @@ VENV = venv
 PYTHON = $(VENV)/bin/python3
 PIP = $(VENV)/bin/pip
 
+index: index/index.faiss
 
-docs/touchfile:
-	cd ./scripts/gendocs && go run .
-	touch docs/touchfile
-
-index/index.faiss: docs/touchfile venv
-	. venv/bin/activate; python main.py save-index
+index/index.faiss: $(VENV)/bin/activate
+	python3 -m venv $(VENV); $(PYTHON) main.py save-index
 
 memory/touchfile:
 	mkdir -p memory
@@ -18,12 +15,12 @@ memory/touchfile:
 
 .PHONY: run
 run: $(VENV)/bin/activate index/index.faiss memory/touchfile
-	$(PYTHON) main.py chat
+	python3 -m venv $(VENV); $(PYTHON) main.py chat
+
+$(VENV): $(VENV)/bin/activate
 
 $(VENV)/bin/activate: requirements.txt
-	python3 -m venv $(VENV)
-	$(PIP) install -r requirements.txt
-
+	python3 -m venv $(VENV); $(PIP) install -r requirements.txt; $(PYTHON) -m playwright install
 
 .PHONY: clean
 clean:
