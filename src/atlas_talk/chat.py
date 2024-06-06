@@ -41,7 +41,9 @@ def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
     return resp.response
 
 
-def _repl(chat_engine: BaseChatEngine, console: Console = Console(), prompt: Optional[str] = None) -> None:
+def _repl(
+    chat_engine: BaseChatEngine, console: Console = Console(), prompt: Optional[str] = None
+) -> None:
     console.print(
         """Hello! How can I assist you today?
 
@@ -67,7 +69,7 @@ Note: type '/bye' anytime to end the chat"""
         sys.exit(130)
 
 
-def run(env: str, prompt: Optional[str], skip_repl: bool = False) -> None:
+def run(env: Optional[str], prompt: Optional[str], skip_repl: bool = False) -> None:
     config = Config(env)
 
     chat_engine = setup(config)
