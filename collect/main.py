@@ -1,13 +1,11 @@
 from typing import List, Dict
 import os
-import uuid
 from urllib.parse import urlparse
 from urllib.parse import urljoin
-from urllib.request import urlretrieve
+from urllib.request import urlretrieve, urlcleanup
 import json
 import requests
 import signal
-import sys
 
 from bs4 import BeautifulSoup
 
@@ -26,8 +24,11 @@ def normalize_link(base_url: str, link: str) -> str:
 
 
 def follow_redirects(url: str) -> str:
-    r = requests.get(url)
-    return r.url
+    try:
+        r = requests.get(url)
+        return r.url
+    except:
+        return url
 
 
 def link_allowed(url: str) -> bool:
@@ -54,129 +55,115 @@ def extract_links(url: str, file_path: str) -> List[str]:
         return links
 
 
-def process_docs(data: Dict, url: str) -> None:
+def local_path(url: str) -> str:
+    parsed_url = urlparse(url)
+    local = parsed_url.path.removeprefix('/')
+    if local.endswith('/'):
+        local += "index.html"
+    local = os.path.join(f"./data", local)
+    new_pattern = local
+    i = 0
+    while os.path.exists(new_pattern):
+        new_pattern = f"{local.removesuffix('.html')}_{i}.html"
+        i += 1
+    return new_pattern
+
+
+def metadata_path(p: str) -> str:
+    return p.removesuffix('.html') + '_metadata.json'
+
+
+def load_metadata(url: str) -> Dict:
+    lp = local_path(url)
+    mp = metadata_path(lp)
+    if os.path.exists(mp):
+        with open(mp, "r") as f:
+            return json.load(f.read())
+    return {
+        'local_path': lp,
+        'url': url,
+    }
+
+
+def save_metadata(data: Dict) -> None:
+    mp = metadata_path(data['local_path'])
+    with open(mp, "w") as f:
+        return json.dump(data, f, indent=2)
+
+
+def process_docs(url: str) -> None:
     global stop
 
-    to_visit = [url]
-    already_visited = []
-    while len(to_visit) > 0:
+    state = load_state()
+
+    if len(state['to_visit']) == 0:
+        state['to_visit'] += [url]
+        save_state(state)
+    while len(state['to_visit']) > 0:
         if stop:
             print('exiting')
             exit(0)
-        url = to_visit.pop()
-        print(f'processing {url} ({len(already_visited) + 1} of {len(already_visited) + len(to_visit)})')
-        already_visited += [url]
+        url = state['to_visit'].pop()
+        if url in state['already_visited']:
+            continue
+        print(f'processing {url} ({len(state['already_visited']) +
+              1} of {len(state['already_visited']) + len(state['to_visit']) + 1})')
+        state['already_visited'] += [url]
         new_url = follow_redirects(url)
+        metadata = load_metadata(new_url)
         if new_url != url:
-            data['redirects'][url] = new_url
+            if new_url in state['already_visited']:
+                continue
+            metadata['redirect_from'] = url
             url = new_url
-        id = data['by_urls'].get(url) or str(uuid.uuid4())
-        p = os.path.abspath(f"./data/html/{id}.html")
-        failed = False
-        if not os.path.exists(p):
+            state['already_visited'] += [new_url]
+        p = metadata.get('local_path')
+        if os.path.exists(p) and url not in state['failed']:
+            continue
+        try:
             d = os.path.dirname(p)
             os.makedirs(d, exist_ok=True)
-            data['by_urls'][url] = id
-            data['by_ids'][id] = url
-            try:
-                urlretrieve(url, p)
-            except:
-                data['failed'] += [url]
-                failed = True
-            save_map(data)
-        if failed:
-            continue
-        new_links = extract_links(url, p)
-        new_links = [link for link in new_links if link_allowed(link)]
-        new_links = [link for link in new_links if link not in already_visited]
-        new_links = [link for link in new_links if link not in to_visit]
-        to_visit += new_links
 
+            urlretrieve(url, p)
+            urlcleanup()
 
-def cleanup(data: Dict) -> None:
-    data['failed'] = []
+            new_links = extract_links(url, p)
+            new_links = [link for link in new_links if link_allowed(link)]
+            metadata['links'] = new_links
+            new_links = [
+                link for link in new_links if link not in state['already_visited']]
+            new_links = [
+                link for link in new_links if link not in state['to_visit']]
+            state['to_visit'] += new_links
 
-    ids_to_remove = []
-    urls_to_remove = []
-    urls_to_promote = []
-    for id in data['by_ids']:
-        url = data['by_ids'].get(id)
-        if url is None:
-            ids_to_remove += [id]
-    for url in data['by_urls']:
-        id = data['by_urls'].get(url)
-        if id is None:
-            urls_to_remove += [url]
-            continue
-        new_url = data['redirects'].get(url)
-        if new_url is not None:
-            urls_to_remove += [url]
-            urls_to_promote += [{
-                'old_url': url,
-                'new_url': new_url,
-                'id': id,
-            }]
-            url = new_url
-    for entry in urls_to_promote:
-        old_url = entry['old_url']
-        new_url = entry['new_url']
-        id = entry['id']
-        data['by_ids'][id] = new_url
-        data['by_urls'][new_url] = id
-        del data['by_urls'][old_url]
-    for url in data['by_urls']:
-        if not link_allowed(url):
-            id = data['by_urls'][url]
-            try:
-                os.remove(f'./data/html/{id}.html')
-            except:
-                pass
-            urls_to_remove += [url]
-            ids_to_remove += [id]
-    for id in ids_to_remove:
-        try:
-            del data['by_ids'][id]
+            save_metadata(metadata)
         except:
-            pass
-    for url in urls_to_remove:
-        try:
-            del data['by_urls'][url]
-        except:
-            pass
-
-    save_map(data)
-
-    for name in os.listdir("./data/html/"):
-        id = name.removesuffix('.html')
-        if data['by_ids'].get(id) is None:
-            p = f"./data/html/{name}"
-            print(f"removing {p}")
-            os.remove(p)
+            state['failed'] += [url]
+        save_state(state)
 
 
-def path_map() -> str:
-    return os.path.abspath("./data/map.json")
+def path_state() -> str:
+    return os.path.abspath("./data/state.json")
 
 
-def load_map() -> Dict:
-    data = {
-        'by_ids': {},
-        'by_urls': {},
+def load_state() -> Dict:
+    state = {
+        'to_visit': [],
+        'already_visited': [],
         'failed': [],
-        'redirects': {},
     }
 
-    data_path = path_map()
-    if os.path.exists(data_path):
-        with open(data_path, "r") as f:
-            data = json.load(f)
-    return data
+    state_path = path_state()
+    if os.path.exists(state_path):
+        with open(state_path, "r") as f:
+            state = json.load(f)
+    return state
 
 
-def save_map(data: Dict) -> None:
-    data_path = path_map()
-    with open(data_path, "w") as f:
-        json.dump(data, f, indent=2)
+def save_state(state: Dict) -> None:
+    state_path = path_state()
+    with open(state_path, "w") as f:
+        json.dump(state, f, indent=2)
 
 
 def signal_handler(sig, frame):
@@ -190,9 +177,7 @@ def main() -> None:
     signal.signal(signal.SIGTERM, signal_handler)
     signal.signal(signal.SIGABRT, signal_handler)
 
-    data = load_map()
-    cleanup(data)
-    process_docs(data, "https://www.mongodb.com/docs/")
+    process_docs("https://www.mongodb.com/docs/")
 
 
 main()
