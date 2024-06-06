@@ -6,6 +6,7 @@ from llama_index.embeddings.huggingface.utils import \
     DEFAULT_HUGGINGFACE_EMBEDDING_MODEL
 from llama_index.embeddings.openai import OpenAIEmbeddingModeModel
 from llama_index.llms.openai.base import DEFAULT_OPENAI_MODEL
+from llama_index.llms.llama_cpp import DEFAULT_LLAMA_CPP_GGUF_MODEL
 
 
 class Config:
@@ -38,7 +39,7 @@ class Config:
         self.ollama_embed_model: str = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
         self.llama_cpp_model_url: str = os.getenv(
             "LLAMA_CPP_MODEL_URL",
-            "https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q4_0.gguf",
+            DEFAULT_LLAMA_CPP_GGUF_MODEL
         )
         try:
             n_gpu_layers = int(
