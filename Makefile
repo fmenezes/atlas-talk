@@ -19,18 +19,18 @@ collect: $(VENV)/bin/activate
 	. $(VENV)/bin/activate
 	$(PYTHON) collect/main.py
 
-.PHONY: langchain-index
-langchain-index: $(VENV)/bin/activate
+.PHONY: langchain-prepare
+langchain-prepare: $(VENV)/bin/activate
 	. $(VENV)/bin/activate
-	$(PYTHON) langchain-index/main.py
+	$(PYTHON) langchain-prepare/main.py
 
-.PHONY: llamaindex-index
-llamaindex-index: $(VENV)/bin/activate
+.PHONY: llamaindex-prepare
+llamaindex-prepare: $(VENV)/bin/activate
 	. $(VENV)/bin/activate
-	$(PYTHON) llamaindex-index/main.py
+	$(PYTHON) llamaindex-prepare/main.py
 
-.PHONY: index
-index: langchain-index llamaindex-index
+.PHONY: prepare
+prepare: langchain-prepare llamaindex-prepare
 
 $(VENV): $(VENV)/bin/activate
 
