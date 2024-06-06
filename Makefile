@@ -9,11 +9,6 @@ chat: $(VENV)/bin/activate
 	@. $(VENV)/bin/activate
 	@$(PYTHON) chat/main.py
 
-.PHONY: collect
-collect: $(VENV)/bin/activate
-	@. $(VENV)/bin/activate
-	@$(PYTHON) collect/main.py
-
 .PHONY: prepare
 prepare: $(VENV)/bin/activate
 	@. $(VENV)/bin/activate
