@@ -1,4 +1,4 @@
-from typing import Any, List
+from typing import Any
 import uuid
 import os
 
@@ -15,11 +15,7 @@ from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.documents import Document
-from langchain_community.document_transformers import Html2TextTransformer
-from langchain_text_splitters import MarkdownTextSplitter
 from langchain_core.vectorstores import VectorStore
-from langchain_community.document_loaders import BSHTMLLoader
 from langchain_core.embeddings import Embeddings
 
 EMBEDDING_MODEL = "mxbai-embed-large"
@@ -45,7 +41,7 @@ def vector_store() -> VectorStore:
     return FAISS.load_local('./data/langchain_index', embeddings(), allow_dangerous_deserialization=True)
 
 
-def prompt() -> ChatPromptTemplate:
+def prompt_question() -> ChatPromptTemplate:
     return ChatPromptTemplate.from_messages([
         ("system", """You are an assistant helping the user on how to use MongoDB Atlas CLI. If you don't know the answer make sure to say you don't know do not make up an answer. Answer any use questions based on the context below:
 <context>
@@ -57,7 +53,7 @@ def prompt() -> ChatPromptTemplate:
 
 
 def model() -> BaseChatModel:
-    return ChatOllama(model=CHAT_MODEL, temperature=1)
+    return ChatOllama(model=CHAT_MODEL, temperature=0.3)
 
 
 def pull_models() -> None:
@@ -69,12 +65,12 @@ def setup() -> RunnableWithMessageHistory:
     pull_models()
 
     vs = vector_store()
-    ret = vs.as_retriever()
+    ret = vs.as_retriever(search_kwargs={'k': 10})
 
     rag_chain = RunnableParallel({
-        "context": ret,
+        "context":  ret,
         "input": RunnablePassthrough()
-    }) | prompt() | model() | StrOutputParser()
+    }) | prompt_question() | model() | StrOutputParser()
 
     rag_chain_with_source = RunnableParallel({
         "context": ret,
@@ -92,10 +88,11 @@ def setup() -> RunnableWithMessageHistory:
 
 
 def convert_output(input: Any) -> str:
-    out = input['answer'] + '\n\nSources:'
-    for doc in input['context']:
-        out += f'\n- {doc.metadata['source']}\n>{doc.page_content}'
-    return out
+    sources = list(set([doc.metadata['source'] for doc in input['context']]))
+    return f"""{input['answer']}
+
+Sources:
+{'\n'.join([f'- {source}' for source in sources])}"""
 
 
 def invoke(chain: RunnableWithMessageHistory, session_id: str, prompt: str) -> str:
