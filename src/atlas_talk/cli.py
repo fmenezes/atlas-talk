@@ -8,7 +8,10 @@ def main() -> None:
 
     parser.add_argument("--env", type=str, help="env to use", default="default")
 
-    parser.add_argument("--ask", type=str, help="send prompt without repl session")
+    parser.add_argument("--prompt", type=str, help="send initial prompt")
+
+    parser.add_argument("--skip-repl", type=bool, action=argparse.BooleanOptionalAction,
+                        help="skip repl session", default=False)
 
     args = parser.parse_args()
-    run(env=args.env, prompt=args.ask)
+    run(env=args.env, prompt=args.prompt, skip_repl=args.skip_repl)

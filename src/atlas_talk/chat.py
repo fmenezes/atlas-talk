@@ -41,16 +41,20 @@ def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
     return resp.response
 
 
-def _repl(chat_engine: BaseChatEngine) -> None:
-    console = Console()
+def _repl(chat_engine: BaseChatEngine, console: Console = Console(), prompt: Optional[str] = None) -> None:
     console.print(
         """Hello! How can I assist you today?
 
 Note: type '/bye' anytime to end the chat"""
     )
     final_msg = """Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"""
-    while True:
-        try:
+    try:
+        if prompt is not None and prompt.strip() != "":
+            console.print("> " + prompt)
+            with yaspin(Spinners.line, color="cyan"):
+                output = invoke(chat_engine, prompt)
+            console.print(Markdown(output))
+        while True:
             prompt = console.input("> ")
             if prompt == "/bye":
                 console.print(Markdown(final_msg))
@@ -58,20 +62,21 @@ Note: type '/bye' anytime to end the chat"""
             with yaspin(Spinners.line, color="cyan"):
                 output = invoke(chat_engine, prompt)
             console.print(Markdown(output))
-        except KeyboardInterrupt:
-            console.print(Markdown(final_msg))
-            sys.exit(130)
+    except KeyboardInterrupt:
+        console.print(Markdown(final_msg))
+        sys.exit(130)
 
 
-def run(env: str, prompt: Optional[str]) -> None:
+def run(env: str, prompt: Optional[str], skip_repl: bool = False) -> None:
     config = Config(env)
 
     chat_engine = setup(config)
+    console = Console()
 
-    if prompt is not None and prompt.strip() != "":
-        output = invoke(chat_engine, prompt)
-        console = Console()
-        console.print(Markdown(output))
+    if skip_repl:
+        if prompt is not None and prompt.strip() != "":
+            output = invoke(chat_engine, prompt)
+            console.print(Markdown(output))
         return
 
-    _repl(chat_engine)
+    _repl(chat_engine=chat_engine, console=console, prompt=prompt)
