@@ -11,6 +11,7 @@ def vector_store():
         Config.COLLECTION_NAME)
     return ChromaVectorStore(chroma_collection=chroma_collection)
 
+
 def _set_openai() -> None:
     from llama_index.embeddings.openai import OpenAIEmbedding
     from llama_index.llms.openai import OpenAI
@@ -30,11 +31,34 @@ def _set_ollama() -> None:
     Settings.llm = Ollama(model=Config.OLLAMA_MODEL, temperature=0.5)
 
 
+def _set_llama_cpp() -> None:
+    from llama_index.llms.llama_cpp import LlamaCPP
+    from llama_index.llms.llama_cpp.llama_utils import (
+        messages_to_prompt,
+        completion_to_prompt,
+    )
+    from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+
+    Settings.embed_model = HuggingFaceEmbedding(
+        model_name=Config.LLAMA_CPP_EMBED_MODEL
+    )
+    Settings.llm = LlamaCPP(
+        model_url=Config.LLAMA_CPP_MODEL_URL,
+        verbose=False,
+        model_kwargs={'n_gpu_layers':-1},
+        messages_to_prompt=messages_to_prompt,
+        completion_to_prompt=completion_to_prompt
+    )
+
+
 def set_settings() -> None:
     match Config.AI_PLATFORM:
         case 'OLLAMA':
             _set_ollama()
         case 'OPENAI':
             _set_openai()
+        case 'LLAMA_CPP':
+            _set_llama_cpp()
         case _:
             raise RuntimeError(f"invalid platform: {Config.AI_PLATFORM}")
+

@@ -1,4 +1,9 @@
+import os
+import platform
 from setuptools import setup, find_packages
+
+if platform.system() == "Darwin" and platform.machine() == "arm64":
+    os.environ['CMAKE_ARGS'] = "-DLLAMA_METAL=on"
 
 setup(
     name="atlas_talk",
@@ -22,6 +27,9 @@ setup(
         "llama-index-vector-stores-chroma",
         "llama-index-readers-web",
         "llama-index-llms-ollama",
-        "llama-index-embeddings-ollama"
+        "llama-index-embeddings-ollama",
+        "llama-index-llms-llama-cpp",
+        "llama-index-embeddings-huggingface",
+        "yaspin"
     ]
 )
