@@ -105,20 +105,20 @@ def process_docs(url: str) -> None:
             exit(0)
         url = state['to_visit'].pop()
         if url in state['already_visited']:
+            save_state(state)
             continue
         print(f'processing {url} ({len(state['already_visited']) +
               1} of {len(state['already_visited']) + len(state['to_visit']) + 1})')
         state['already_visited'] += [url]
         new_url = follow_redirects(url)
-        metadata = load_metadata(new_url)
         if new_url != url:
-            if new_url in state['already_visited']:
-                continue
-            metadata['redirect_from'] = url
-            url = new_url
-            state['already_visited'] += [new_url]
+            state['to_visit'] += [new_url]
+            save_state(state)
+            continue
+        metadata = load_metadata(url)
         p = metadata.get('local_path')
         if os.path.exists(p) and url not in state['failed']:
+            save_state(state)
             continue
         try:
             d = os.path.dirname(p)
