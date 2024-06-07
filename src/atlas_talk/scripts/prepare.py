@@ -1,3 +1,20 @@
+"""
+Prepare data for atlas-talk.
+
+This module provides functions to load and ingest Markdown files into a vector store.
+The ingestion process involves converting Markdown files into Document objects, and then ingesting these documents into the vector store.
+
+Functions:
+    _load_metadata: Load metadata from a file path.
+    _walk_srcs: Walk through source directories or iterables of directories.
+    _load_docs: Load Markdown files from directories or iterables of directories.
+    _ingest: Ingest Document objects into a vector store.
+    run: Run the ingestion process for a given environment.
+
+Note:
+    This module is designed to be used as part of the atlas-talk application. It provides a way to prepare data for use with that application.
+"""
+
 import argparse
 import os
 from typing import Dict, Iterable, List, Optional
@@ -15,17 +32,24 @@ from atlas_talk.settings import model, vector_store
 
 
 def _load_metadata(p: str) -> Dict:
+    """
+    Load metadata from a file path.
+    """
     metadata = default_file_metadata_func(p)
 
     if "atlascli-command-reference" in p:
         metadata["URL"] = (
-            f"https://www.mongodb.com/docs/atlas/cli/stable/command/{os.path.basename(p).replace("_", "-").removesuffix(".md")}/"
+            f"https://www.mongodb.com/docs/atlas/cli/stable/command/{
+                os.path.basename(p).replace('_', '-').removesuffix('.md')}/"
         )
 
     return metadata
 
 
 def _walk_srcs(srcs: str | Iterable[str]) -> Iterable[str]:
+    """
+    Walk through source directories or iterables of directories.
+    """
     if isinstance(srcs, str):
         yield srcs
     else:
@@ -37,6 +61,9 @@ def _load_docs(
     required_exts: Optional[List[str]] = None,
     exclude: Optional[List] = None,
 ) -> Iterable[Document]:
+    """
+    Load Markdown files from directories or iterables of directories.
+    """
     for src in _walk_srcs(srcs):
         loader = SimpleDirectoryReader(
             input_dir=src,
@@ -49,6 +76,9 @@ def _load_docs(
 
 
 def _ingest(vs: VectorStore, docs: Iterable[Document]):
+    """
+    Ingest Document objects into a vector store.
+    """
     pipeline = IngestionPipeline(
         transformations=[
             MarkdownNodeParser(),
@@ -61,6 +91,9 @@ def _ingest(vs: VectorStore, docs: Iterable[Document]):
 
 
 def run(env: str) -> None:
+    """
+    Run the ingestion process for a given environment.
+    """
     config = Config(env)
 
     model(config)
