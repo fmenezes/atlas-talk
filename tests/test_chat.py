@@ -1,5 +1,4 @@
 import pytest
-import sys
 
 from atlas_talk.config import Config
 from atlas_talk.chat import setup
