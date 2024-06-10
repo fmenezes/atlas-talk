@@ -40,10 +40,7 @@ class TestEvaluation:
             response = engine.chat(query)
             result = evaluator.evaluate_response(
                 query=query, response=response)
-            if isinstance(result.passing, bool):
-                assert result.passing, result.feedback
-            else:
-                pytest.skip(result.feedback)
+            assert result.passing, result.feedback
 
     def test_faithfulness(self, env: str, prompts: List[str]) -> None:
         self.evaluate(FaithfulnessEvaluator, env, prompts)
