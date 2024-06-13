@@ -4,16 +4,16 @@ atlas_talk.py
 This is the main entry point for the Atlas Talk system. It provides a command-line interface (CLI) to interact with an AI chat engine.
 """
 
-import subprocess
 import os
+import subprocess
 import sys
-from typing import Optional, Any
+from typing import Any, Optional
 
 import requests
 from llama_index.core import VectorStoreIndex
-from llama_index.core.tools import FunctionTool, QueryEngineTool
 from llama_index.core.agent.runner.base import AgentRunner
 from llama_index.core.indices.base import BaseIndex
+from llama_index.core.tools import FunctionTool, QueryEngineTool
 from llama_index.core.vector_stores.types import VectorStore
 from rich.console import Console
 from rich.markdown import Markdown
@@ -132,23 +132,22 @@ def setup(config: Config, verbose: bool = False) -> AgentRunner:
     """
     model(config)
 
-
     query_engine_tools = []
 
     if not config.skip_rag:
         index = _setup_index(config)
-        rag_tool = QueryEngineTool.from_defaults(index.as_query_engine(
-        ), description='Atlas CLI Documentation.\nUseful for checking commands and their syntax.')
+        rag_tool = QueryEngineTool.from_defaults(
+            index.as_query_engine(),
+            description="Atlas CLI Documentation.\nUseful for checking commands and their syntax.",
+        )
         query_engine_tools.append(rag_tool)
 
     if not config.skip_docs:
         query_engine_tools.append(FunctionTool.from_defaults(_fetch_docs))
 
     if not config.skip_atlascli_tools:
-        query_engine_tools.append(
-            FunctionTool.from_defaults(_atlas_clusters_list))
-        query_engine_tools.append(
-            FunctionTool.from_defaults(_atlas_clusters_describe))
+        query_engine_tools.append(FunctionTool.from_defaults(_atlas_clusters_list))
+        query_engine_tools.append(FunctionTool.from_defaults(_atlas_clusters_describe))
 
     agent = AgentRunner.from_llm(
         tools=query_engine_tools, system_prompt=config.system_prompt, verbose=verbose
@@ -171,9 +170,7 @@ def invoke(agent: AgentRunner, prompt: str) -> str:
     return resp.response
 
 
-def _repl(
-    agent: AgentRunner, console: Console = Console(), prompt: Optional[str] = None
-) -> None:
+def _repl(agent: AgentRunner, console: Console = Console(), prompt: Optional[str] = None) -> None:
     """
     Start a REPL (Read-Eval-Print Loop) session with the given chat engine.
 
@@ -210,7 +207,9 @@ Note: type '/bye' anytime to end the chat"""
         sys.exit(130)
 
 
-def run(env: Optional[str], prompt: Optional[str], skip_repl: bool = False, verbose: bool = False) -> None:
+def run(
+    env: Optional[str], prompt: Optional[str], skip_repl: bool = False, verbose: bool = False
+) -> None:
     """
     Run the Atlas Talk system with the given environment and initial prompt.
 
