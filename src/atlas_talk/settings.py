@@ -84,7 +84,11 @@ def _set_openai(config: Config) -> None:
     """
 
     Settings.embed_model = OpenAIEmbedding(model=config.openai_embed_model)
-    Settings.llm = OpenAI(model=config.openai_model, api_key=config.openai_api_key)
+    Settings.llm = OpenAI(
+        model=config.openai_model,
+        api_key=config.openai_api_key,
+        api_base=config.openai_api_base_url,
+    )
 
 
 def _set_ollama(config: Config) -> None:

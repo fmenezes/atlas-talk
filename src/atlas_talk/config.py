@@ -113,6 +113,16 @@ class Config:
         return os.getenv("OPENAI_API_KEY")
 
     @property
+    def openai_api_base_url(self) -> Optional[str]:
+        """
+        OpenAI API key for the AI assistant.
+
+        Returns:
+            Optional[str]: The OpenAI API key.
+        """
+        return os.getenv("OPENAI_BASE_URL")
+
+    @property
     def openai_model(self) -> str:
         """
         OpenAI model for the AI assistant.

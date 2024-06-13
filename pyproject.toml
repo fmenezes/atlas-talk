@@ -18,10 +18,12 @@ llama-index-embeddings-ollama = "^0.1.2"
 llama-index-llms-llama-cpp = "^0.1.3"
 llama-index-embeddings-huggingface = "^0.2.1"
 yaspin = "^3.0.2"
+requests = "^2.32.3"
 
 [tool.poetry.scripts]
 prepare = "atlas_talk.scripts.prepare:main"
 chat = "atlas_talk.__main__:main"
+demo = "atlas_talk.scripts.demo:main"
 
 [tool.poetry.group.dev.dependencies]
 pylint = "^3.2.2"
