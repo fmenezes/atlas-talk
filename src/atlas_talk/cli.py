@@ -20,6 +20,7 @@ def main() -> None:
         --env str: The environment to use.
         --prompt str: Send an initial prompt.
         --skip-repl bool (optional): Skip REPL session. Defaults to False.
+        --verbose bool (optional): Skip REPL session. Defaults to False.
 
     Returns:
         None
@@ -38,5 +39,13 @@ def main() -> None:
         default=False,
     )
 
+    parser.add_argument(
+        "--verbose",
+        type=bool,
+        action=argparse.BooleanOptionalAction,
+        help="verbose output",
+        default=False,
+    )
+
     args = parser.parse_args()
-    run(env=args.env, prompt=args.prompt, skip_repl=args.skip_repl)
+    run(env=args.env, prompt=args.prompt, skip_repl=args.skip_repl, verbose=args.verbose)

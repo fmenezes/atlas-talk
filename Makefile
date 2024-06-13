@@ -19,10 +19,6 @@ chat:
 test:
 	$(POETRY) run pytest
 
-.PHONY: demo
-demo:
-	$(POETRY) run demo
-
 .PHONY: lint
 lint:
 	$(POETRY) run pylint src

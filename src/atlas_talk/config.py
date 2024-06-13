@@ -209,3 +209,29 @@ class Config:
             return os.getenv("SKIP_RAG", "False").lower() in ("true", "1", "t")
         except ValueError:
             return False
+
+    @property
+    def skip_docs(self) -> bool:
+        """
+        Flag to skip fetch_docs tool for the AI assistant.
+
+        Returns:
+            bool: The flag.
+        """
+        try:
+            return os.getenv("SKIP_DOCS", "False").lower() in ("true", "1", "t")
+        except ValueError:
+            return False
+
+    @property
+    def skip_atlascli_tools(self) -> bool:
+        """
+        Flag to skip atlascli tool for the AI assistant.
+
+        Returns:
+            bool: The flag.
+        """
+        try:
+            return os.getenv("SKIP_ATLASCLI_TOOLS", "False").lower() in ("true", "1", "t")
+        except ValueError:
+            return False

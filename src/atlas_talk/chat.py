@@ -4,13 +4,15 @@ atlas_talk.py
 This is the main entry point for the Atlas Talk system. It provides a command-line interface (CLI) to interact with an AI chat engine.
 """
 
+import subprocess
 import os
 import sys
-from typing import Optional
+from typing import Optional, Any
 
+import requests
 from llama_index.core import VectorStoreIndex
-from llama_index.core.chat_engine.types import BaseChatEngine
-from llama_index.core.indices import EmptyIndex
+from llama_index.core.tools import FunctionTool, QueryEngineTool
+from llama_index.core.agent.runner.base import AgentRunner
 from llama_index.core.indices.base import BaseIndex
 from llama_index.core.vector_stores.types import VectorStore
 from rich.console import Console
@@ -27,16 +29,91 @@ def _index(vs: VectorStore) -> VectorStoreIndex:
 
 
 def _setup_index(config: Config) -> BaseIndex:
-    if config.skip_rag:
-        return EmptyIndex()
-
     if not os.path.exists(config.index_path):
         raise RuntimeError(f'index "{config.index_path}" not found, perhaps run "make prepare"')
 
     return _index(vector_store(config))
 
 
-def setup(config: Config) -> BaseChatEngine:
+def _fetch_docs(input: str, *args: Any, **kwargs: Any) -> str:
+    """
+    Provides information about many things MongoDB, MongoDB Atlas, Drivers, atlascli.
+    Use a detailed plain text question as input to the tool.
+
+    Args:
+        input : str
+            Question to be answered by the tool.
+
+    Returns:
+        str
+            Answer to the question in plain text.
+    """
+    res = requests.post(
+        "https://knowledge.mongodb.com/api/v1/conversations",
+        headers={
+            "Origin": "https://www.mongodb.com/",
+            "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+        },
+    )
+    if not res.ok:
+        raise RuntimeError("failed to fetch docs")
+
+    conversation = res.json()
+
+    res = requests.post(
+        f"https://knowledge.mongodb.com/api/v1/conversations/{
+            conversation['_id']}/messages",
+        json={"message": input},
+        headers={
+            "Origin": "https://www.mongodb.com/",
+            "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+        },
+    )
+
+    if not res.ok:
+        raise RuntimeError("failed to fetch docs")
+
+    return res.json()["content"]
+
+
+def _atlas_clusters_list(*args: Any, **kwargs: Any) -> str:
+    """
+    Useful to find information about MongoDB Atlas clusters, like number of clusters, cluster's name, state, number of members.
+
+    Args:
+        None
+
+    Returns:
+        str
+            Text output with the clusters details.
+    """
+    output = subprocess.run(["atlas", "clusters", "list"], capture_output=True)
+    return "Here is the list of clusters:\n" + output.stdout.decode("utf-8")
+
+
+def _atlas_clusters_describe(input: str, *args: Any, **kwargs: Any) -> str:
+    """
+    Useful to find information about a particular MongoDB Atlas cluster, like cluster's name, state, number of members or connection string.
+
+    Args:
+        input : str
+            Name of the cluster to describe.
+
+    Returns:
+        str
+            Json output with the cluster details.
+    """
+    output = subprocess.run(
+        ["atlas", "clusters", "describe", input, "-o", "json"], capture_output=True
+    )
+    output = output.stdout.decode("utf-8")
+
+    return "Here is the output with the details of the cluster:\n" + output
+
+
+def setup(config: Config, verbose: bool = False) -> AgentRunner:
     """
     Set up the chat engine with the given configuration.
 
@@ -55,25 +132,47 @@ def setup(config: Config) -> BaseChatEngine:
     """
     model(config)
 
-    return _setup_index(config).as_chat_engine(system_prompt=config.system_prompt)
+
+    query_engine_tools = []
+
+    if not config.skip_rag:
+        index = _setup_index(config)
+        rag_tool = QueryEngineTool.from_defaults(index.as_query_engine(
+        ), description='Atlas CLI Documentation.\nUseful for checking commands and their syntax.')
+        query_engine_tools.append(rag_tool)
+
+    if not config.skip_docs:
+        query_engine_tools.append(FunctionTool.from_defaults(_fetch_docs))
+
+    if not config.skip_atlascli_tools:
+        query_engine_tools.append(
+            FunctionTool.from_defaults(_atlas_clusters_list))
+        query_engine_tools.append(
+            FunctionTool.from_defaults(_atlas_clusters_describe))
+
+    agent = AgentRunner.from_llm(
+        tools=query_engine_tools, system_prompt=config.system_prompt, verbose=verbose
+    )
+
+    return agent
 
 
-def invoke(chat_engine: BaseChatEngine, prompt: str) -> str:
+def invoke(agent: AgentRunner, prompt: str) -> str:
     """Invoke the chat engine to respond to a given prompt.
 
     Args:
-        chat_engine: The chat engine instance.
+        agent: The chat engine instance.
         prompt: The input prompt to be processed by the chat engine.
 
     Returns:
         The response from the chat engine.
     """
-    resp = chat_engine.chat(prompt)
+    resp = agent.chat(prompt)
     return resp.response
 
 
 def _repl(
-    chat_engine: BaseChatEngine, console: Console = Console(), prompt: Optional[str] = None
+    agent: AgentRunner, console: Console = Console(), prompt: Optional[str] = None
 ) -> None:
     """
     Start a REPL (Read-Eval-Print Loop) session with the given chat engine.
@@ -82,7 +181,7 @@ def _repl(
     and the AI chat engine will respond accordingly. To end the session, type "/bye".
 
     Args:
-        chat_engine: The BaseChatEngine instance to use for the REPL.
+        agent: The AgentRunner instance to use for the REPL.
         console: The rich.console.Console object to use for printing output.
         prompt: An optional initial prompt to display in the shell.
     """
@@ -96,7 +195,7 @@ Note: type '/bye' anytime to end the chat"""
         if prompt is not None and prompt.strip() != "":
             console.print("> " + prompt)
             with yaspin(Spinners.line, color="cyan"):
-                output = invoke(chat_engine, prompt)
+                output = invoke(agent, prompt)
             console.print(Markdown(output))
         while True:
             prompt = console.input("> ")
@@ -104,14 +203,14 @@ Note: type '/bye' anytime to end the chat"""
                 console.print(Markdown(final_msg))
                 break
             with yaspin(Spinners.line, color="cyan"):
-                output = invoke(chat_engine, prompt)
+                output = invoke(agent, prompt)
             console.print(Markdown(output))
     except KeyboardInterrupt:
         console.print(Markdown(final_msg))
         sys.exit(130)
 
 
-def run(env: Optional[str], prompt: Optional[str], skip_repl: bool = False) -> None:
+def run(env: Optional[str], prompt: Optional[str], skip_repl: bool = False, verbose: bool = False) -> None:
     """
     Run the Atlas Talk system with the given environment and initial prompt.
 
@@ -128,13 +227,13 @@ def run(env: Optional[str], prompt: Optional[str], skip_repl: bool = False) -> N
     """
     config = Config(env)
 
-    chat_engine = setup(config)
+    agent = setup(config, verbose)
     console = Console()
 
     if skip_repl:
         if prompt is not None and prompt.strip() != "":
-            output = invoke(chat_engine, prompt)
+            output = invoke(agent, prompt)
             console.print(Markdown(output))
         return
 
-    _repl(chat_engine=chat_engine, console=console, prompt=prompt)
+    _repl(agent=agent, console=console, prompt=prompt)
