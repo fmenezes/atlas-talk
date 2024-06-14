@@ -237,11 +237,21 @@ class Config:
             return False
 
     @property
-    def cookie(self) -> Optional[str]:
+    def cookie_url(self) -> Optional[str]:
         """
-        The http cookie to be used by the http client to make the api calls to the model.
+        The url to copy cookie in order to authenticate.
 
         Returns:
-            str: The http cookie to be used.
+            str: The url to copy cookie from.
         """
-        return os.getenv("COOKIE")
+        return os.getenv("COOKIE_URL")
+
+    @property
+    def cookie_domain(self) -> Optional[str]:
+        """
+        The domain to filter cookies in order to authenticate.
+
+        Returns:
+            str: The domain to filter cookies.
+        """
+        return os.getenv("COOKIE_DOMAIN")

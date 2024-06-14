@@ -3,6 +3,7 @@ This module provides functionality for setting up various AI models and platform
 """
 
 from typing import Sequence
+from time import sleep
 
 import chromadb
 from llama_index.core import Settings
@@ -14,9 +15,33 @@ from llama_index.llms.llama_cpp import LlamaCPP
 from llama_index.llms.ollama import Ollama
 from llama_index.llms.openai import OpenAI
 from llama_index.vector_stores.chroma import ChromaVectorStore
+from selenium import webdriver
+from selenium.common.exceptions import WebDriverException
 
 from atlas_talk.config import Config
 
+
+def _get_cookie(url: str, cookie_domain: str) -> str:
+    driver = webdriver.Chrome()
+    driver.get(url)
+
+    try:
+        while True:
+            cookies = driver.get_cookies()
+            filter_cookies = [cookie for cookie in cookies if cookie.get(
+                'domain') == cookie_domain]
+            if len(filter_cookies) > 0:
+                cookie_header = "; ".join(
+                    [f"{cookie['name']}={cookie['value']}" for cookie in filter_cookies])
+                return cookie_header
+            sleep(0.5)
+    except WebDriverException as e:
+        raise e
+    finally:
+        try:
+            driver.quit()
+        except WebDriverException:
+            pass
 
 def _messages_to_prompt(messages: Sequence[ChatMessage]) -> str:
     """
@@ -84,8 +109,8 @@ def _set_openai(config: Config) -> None:
     """
 
     headers = {}
-    if config.cookie is not None:
-        headers["Cookie"] = config.cookie
+    if config.cookie_url is not None and config.cookie_domain is not None:
+        headers["Cookie"] = _get_cookie(config.cookie_url, config.cookie_domain)
 
     Settings.llm = OpenAI(
         model=config.openai_model,
