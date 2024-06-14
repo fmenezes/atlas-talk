@@ -83,11 +83,21 @@ def _set_openai(config: Config) -> None:
         config: The configuration object.
     """
 
-    Settings.embed_model = OpenAIEmbedding(model=config.openai_embed_model)
+    headers = {}
+    if config.cookie is not None:
+        headers["Cookie"] = config.cookie
+
     Settings.llm = OpenAI(
         model=config.openai_model,
         api_key=config.openai_api_key,
         api_base=config.openai_api_base_url,
+        default_headers=headers,
+    )
+    Settings.embed_model = OpenAIEmbedding(
+        model=config.openai_embed_model,
+        api_key=config.openai_api_key,
+        api_base=config.openai_api_base_url,
+        default_headers=headers,
     )
 
 

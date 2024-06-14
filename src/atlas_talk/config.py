@@ -235,3 +235,13 @@ class Config:
             return os.getenv("SKIP_ATLASCLI_TOOLS", "False").lower() in ("true", "1", "t")
         except ValueError:
             return False
+
+    @property
+    def cookie(self) -> Optional[str]:
+        """
+        The http cookie to be used by the http client to make the api calls to the model.
+
+        Returns:
+            str: The http cookie to be used.
+        """
+        return os.getenv("COOKIE")

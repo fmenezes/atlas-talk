@@ -21,9 +21,8 @@ yaspin = "^3.0.2"
 requests = "^2.32.3"
 
 [tool.poetry.scripts]
-prepare = "atlas_talk.scripts.prepare:main"
+prepare = "atlas_talk.scripts.prepare:_main"
 chat = "atlas_talk.__main__:main"
-demo = "atlas_talk.scripts.demo:main"
 
 [tool.poetry.group.dev.dependencies]
 pylint = "^3.2.2"
