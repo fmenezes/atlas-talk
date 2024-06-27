@@ -2,8 +2,8 @@
 This module provides functionality for setting up various AI models and platforms.
 """
 
-from typing import Sequence
 from time import sleep
+from typing import Sequence
 
 import chromadb
 from llama_index.core import Settings
@@ -28,11 +28,11 @@ def _get_cookie(url: str, cookie_domain: str) -> str:
     try:
         while True:
             cookies = driver.get_cookies()
-            filter_cookies = [cookie for cookie in cookies if cookie.get(
-                'domain') == cookie_domain]
+            filter_cookies = [cookie for cookie in cookies if cookie.get("domain") == cookie_domain]
             if len(filter_cookies) > 0:
                 cookie_header = "; ".join(
-                    [f"{cookie['name']}={cookie['value']}" for cookie in filter_cookies])
+                    [f"{cookie['name']}={cookie['value']}" for cookie in filter_cookies]
+                )
                 return cookie_header
             sleep(0.5)
     except WebDriverException as e:
@@ -42,6 +42,7 @@ def _get_cookie(url: str, cookie_domain: str) -> str:
             driver.quit()
         except WebDriverException:
             pass
+
 
 def _messages_to_prompt(messages: Sequence[ChatMessage]) -> str:
     """

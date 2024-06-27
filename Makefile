@@ -11,6 +11,10 @@ install:
 prepare:
 	$(POETRY) run prepare
 
+.PHONY: start
+start:
+	$(POETRY) run start
+
 .PHONY: chat
 chat:
 	$(POETRY) run chat
