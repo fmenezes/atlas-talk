@@ -25,7 +25,7 @@ def _conversation():
     return jsonify({"response": response}), 200
 
 
-def main() -> None:
+def _main() -> None:
     global config
     global agent
 
@@ -36,9 +36,9 @@ def main() -> None:
     args = parser.parse_args()
     
     config = Config(args.env)
-    agent = setup(config)
+    agent = setup(config, verbose=True)
     app.run()
 
 
 if __name__ == "__main__":
-    main()
+    _main()

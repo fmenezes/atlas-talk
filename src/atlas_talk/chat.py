@@ -84,7 +84,7 @@ def _atlas_clusters_list(*args: Any, **kwargs: Any) -> str:
         str
             Text output with the clusters details.
     """
-    output = subprocess.run(["atlas", "clusters", "list"], capture_output=True)
+    output = subprocess.run(["atlas", "clusters", "list"], check=True, capture_output=True)
     return "Here is the list of clusters:\n" + output.stdout.decode("utf-8")
 
 
@@ -101,7 +101,7 @@ def _atlas_clusters_describe(input: str, *args: Any, **kwargs: Any) -> str:
             Json output with the cluster details.
     """
     output = subprocess.run(
-        ["atlas", "clusters", "describe", input, "-o", "json"], capture_output=True
+        ["atlas", "clusters", "describe", input, "-o", "json"], check=True, capture_output=True
     )
     output = output.stdout.decode("utf-8")
 
